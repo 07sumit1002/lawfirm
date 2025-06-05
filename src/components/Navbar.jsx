@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { NavLink, useHref } from 'react-router-dom';
-import { Menu, X, Scale, Phone } from 'lucide-react';
+import { NavLink } from 'react-router-dom';
+import { Menu, X, Scale, Phone, PhoneCallIcon } from 'lucide-react';
 
 function Navbar({ scrolled }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,16 +28,6 @@ function Navbar({ scrolled }) {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex space-x-8 items-center">
-        {/* Call Icon Desktop */}
-          <a
-            href="tel:+91 98765 43210"
-            className={`flex items-center gap-1 px-4 py-2 text-sm rounded-md transition-colors ${
-              scrolled ? 'text-blue-700 hover:text-blue-500' : 'text-white hover:text-blue-300'
-            }`}
-          >
-            <Phone size={18} />
-            Call
-          </a>
           {navItems.map((item) => (
             <NavLink
               key={item}
@@ -56,7 +46,18 @@ function Navbar({ scrolled }) {
             </NavLink>
           ))}
 
-          
+          {/* Separated Call Button */}
+          <a
+            href="tel:+919876543210"
+            className={`ml-4 flex items-center gap-1 px-4 py-2 text-sm rounded-md border ${
+              scrolled
+                ? 'text-blue-700 border-blue-700 hover:text-white hover:bg-blue-700'
+                : 'text-white border-white hover:text-blue-300 hover:border-blue-300'
+            } transition-colors`}
+          >
+            <Phone size={18} />
+            Call
+          </a>
         </nav>
 
         {/* Mobile Menu Toggle */}
@@ -75,15 +76,7 @@ function Navbar({ scrolled }) {
         }`}
       >
         <div className="container mx-auto px-4">
-        
           <div className="flex flex-col space-y-4">
-          <a
-              href="tel:+4733378901"
-              className="flex items-center gap-2 text-white hover:text-blue-300 transition-colors"
-            >
-              <Phone size={18} />
-              Call Us
-            </a>
             {navItems.map((item) => (
               <NavLink
                 key={item}
@@ -99,11 +92,25 @@ function Navbar({ scrolled }) {
               </NavLink>
             ))}
 
-            {/* Call Icon Mobile */}
-            
+            {/* Separated Call Button for Mobile */}
+            {/* <div className="pt-4 border-t border-blue-600">
+              <a
+                href="tel:+919876543210"
+                className="flex items-center gap-2 text-white hover:text-blue-300 transition-colors"
+              >
+                <Phone size={18} />
+              </a>
+            </div> */}
           </div>
         </div>
       </div>
+      <a
+        href="tel:+919876543210"
+        className="fixed bottom-4 right-4 z-50 block md:hidden bg-blue-600 text-white px-4 py-3 rounded-full shadow-lg flex items-center gap-2 hover:bg-blue-500 transition-all"
+      >
+        <PhoneCallIcon size={18} />
+        
+      </a>
     </header>
   );
 }
