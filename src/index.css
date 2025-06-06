@@ -36,6 +36,7 @@
 }
 
 @layer utilities {
+  
   .font-serif {
     font-family: 'Montserrat', sans-serif;
   }
