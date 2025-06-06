@@ -1,10 +1,9 @@
 /* Custom Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 
 @layer base {
   html {
@@ -37,21 +36,12 @@
 }
 
 @layer utilities {
-
-  @media (min-width: 932px) {
-    .custom932\\:flex {
-      display: flex;
-    }
-    .custom932\\:hidden {
-      display: none;
-    }
-  }
   .font-serif {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Montserrat', sans-serif;
   }
   
   .font-sans {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif;
   }
   
   .bg-navy-900 {
@@ -120,6 +110,29 @@
   
   .hover\:border-gold-500:hover {
     border-color: #C4A484;
+  }
+
+  /* Added your custom colors */
+  .text-deep-royal {
+    color: rgb(0, 60, 140);
+  }
+  
+  .bg-deep-royal {
+    background-color: rgb(0, 60, 140);
+  }
+  
+  .border-deep-royal {
+    border-color: rgb(0, 60, 140);
+  }
+
+  /* Your custom media query */
+  @media (min-width: 932px) {
+    .custom932\:flex {
+      display: flex;
+    }
+    .custom932\:hidden {
+      display: none;
+    }
   }
 }
 
