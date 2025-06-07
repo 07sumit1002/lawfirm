@@ -105,30 +105,30 @@ const Testimonials = () => {
               At Aggarwal Law Firm, client satisfaction is our top priority. Here's what some of our clients have to say about their experience working with our team.
             </p>
           </div>
-          <div className="max-w-3xl mx-auto text-center mb-12">
+          <div className="max-w-5xl mx-auto text-center mb-12">
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mt-8">
               {[
                 {
-                  site: "Google Reviews",
+                  icon: "Google Reviews",
                   rating: "4.8/5",
-                  logo: "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg",
+                  logo: "https://static.vecteezy.com/system/resources/previews/011/598/471/original/google-logo-icon-illustration-free-vector.jpg",
                   link: "https://www.google.com/search?q=aggarwal+law+firm+reviews",
                 },
                 {
-                  site: "Justdial",
+                  icon: "Justdial",
                   rating: "4.7/5",
-                  logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Justdial_Logo.svg/2560px-Justdial_Logo.svg.png",
+                  logo: "https://cdn.pnggallery.com/wp-content/uploads/justdial-jd-logo-04.png",
                   link: "https://www.justdial.com/",
                 },
                 {
-                  site: "Trustpilot",
+                  icon: "Trustpilot",
                   rating: "4.6/5",
-                  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREETwJCng9GXlbBkegYUVrSaiLwx5Q34Nr2Q&s",
+                  logo: "https://companieslogo.com/img/orig/TRST.L-5ada9c92.png?t=1663382464",
                   link: "https://www.trustpilot.com/",
                 },{
-                  site: "AmbitionBox",
+                  icon: "AmbitionBox",
                   rating: "4.0/5",
-                  logo: "https://newsmantra.in/wp-content/uploads/2023/11/Group-2242.png",
+                  logo: "https://tse4.mm.bing.net/th?id=OIP.oj0RfAxSQN9uVYe6LMnMZwHaHa&pid=Api&P=0&h=180",
                   link: "https://www.ambitionbox.com/reviews/agarwal-law-associates-reviews",
                 },
               ].map((review, index) => (
@@ -137,15 +137,16 @@ const Testimonials = () => {
                   href={review.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block bg-white shadow-md rounded-lg p-6 border-t-4 border-blue-500 hover:shadow-xl transition-shadow hover:scale-[1.02]"
-                >
+                  className="block bg-white shadow-md rounded-lg p-6 border-t-4 border-blue-500 hover:shadow-xl transition-shadow hover:scale-[1.]"
+                ><div className="flex items-center justify-center space-x-3">
                   <img
                     src={review.logo}
-                    alt={review.site}
-                    className="h-10 mx-auto mb-4"
+                    alt={review.icon}
+                    className="h-10 w-[30px]"
                   />
-                  <h3 className="text-lg font-semibold text-navy-900 text-center">{review.site}</h3>
-                  <p className="text-gray-600 mt-2 text-center">Rating: {review.rating}</p>
+                  {/* <h3 className="text-lg font-semibold text-navy-900 text-center">{review.icon}</h3> */}
+                  <p className="text-gray-600 text-[20px]">Rating: {review.rating}</p>
+                  </div>
                 </a>
               ))}
             </div>

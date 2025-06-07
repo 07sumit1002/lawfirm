@@ -32,13 +32,13 @@ const WhyChooseUs = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <motion.div initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-blue-700 mb-6">Why Choose Aggarwal Law Firm?</h2>
-            <p className="text-blue-600 mb-8">With decades of combined experience, our attorneys bring knowledge, skill, and dedication to every case...</p>
+            <p className="text-blue-600 mb-8" style={{fontWeight:'600'}}>With decades of combined experience, our attorneys bring knowledge, skill, and dedication to every case...</p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {features.map((feature, index) => (
                 <div key={index} className="bg-white p-6 rounded-lg border-l-4 border-blue-500 hover:shadow-md">
                   <div className="mb-4">{feature.icon}</div>
-                  <h3 className="text-xl font-serif font-bold text-blue-700 mb-2">{feature.title}</h3>
-                  <p className="text-blue-600">{feature.description}</p>
+                  <h3 className="text-xl font-serif font-bold text-blue-700 mb-2" style={{fontWeight:'700'}}>{feature.title}</h3>
+                  <p className="text-blue-600" style={{fontWeight:'600'}}>{feature.description}</p>
                 </div>
               ))}
             </div>

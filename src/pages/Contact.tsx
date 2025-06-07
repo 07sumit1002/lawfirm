@@ -1,5 +1,12 @@
 import React, { useState } from 'react';
 import { Phone, Mail, MapPin, Clock } from 'lucide-react';
+import { motion } from 'framer-motion';
+import { FaFacebookF, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
+const fadeInUp = {
+  hidden: { opacity: 0, y: 30 },
+  visible: { opacity: 1, y: 0 },
+};
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -9,14 +16,13 @@ const Contact = () => {
     service: '',
     message: ''
   });
-  
+
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [submitted, setSubmitted] = useState(false);
-  
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
-    // Clear error when user types
     if (errors[name]) {
       setErrors(prev => {
         const newErrors = { ...prev };
@@ -25,41 +31,32 @@ const Contact = () => {
       });
     }
   };
-  
+
   const validateForm = () => {
     const newErrors: Record<string, string> = {};
-    
-    if (!formData.name.trim()) {
-      newErrors.name = 'Name is required';
-    }
-    
+    if (!formData.name.trim()) newErrors.name = 'Name is required';
     if (!formData.email.trim()) {
       newErrors.email = 'Email is required';
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
       newErrors.email = 'Email is invalid';
     }
-    
-    if (!formData.message.trim()) {
-      newErrors.message = 'Message is required';
-    }
-    
+    if (!formData.message.trim()) newErrors.message = 'Message is required';
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
-  
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
     if (validateForm()) {
       // In a real app, you would send the data to the server here
       console.log('Form submitted:', formData);
       setSubmitted(true);
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        service: '',
-        message: ''
+      setFormData({ 
+        name: '', 
+        email: '', 
+        phone: '', 
+        service: '', 
+        message: '' 
       });
     }
   };
@@ -68,111 +65,128 @@ const Contact = () => {
     <div>
       <section className="pt-32 pb-16 bg-navy-900 relative">
         <div className="absolute inset-0 bg-cover bg-center opacity-20" 
-          style={{ 
-            backgroundImage: "url('https://images.pexels.com/photos/5668859/pexels-photo-5668859.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')"
-          }}>
+          style={{ backgroundImage: "url('https://images.pexels.com/photos/5668859/pexels-photo-5668859.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')" }}>
         </div>
-        
         <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-3xl flex flex-col justify-center items-center mx-auto">
-            <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">
-              Contact Us
-            </h1>
-            
-            <p className="text-xl text-gray-300">
-              Get in touch with our team of legal experts today.
-            </p>
-          </div>
+          <motion.div
+            variants={fadeInUp}
+            initial="hidden"
+            whileInView="visible"
+            exit="hidden"
+            transition={{ duration: 0.6 }}
+            viewport={{ once: false, amount: 0.3 }}
+            className="max-w-3xl flex flex-col justify-center items-center mx-auto"
+          >
+            <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">Contact Us</h1>
+            <p className="text-xl text-gray-300">Get in touch with our team of legal experts today.</p>
+          </motion.div>
         </div>
       </section>
-      
+
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <div >
-              <h2 className="text-3xl font-serif font-bold text-navy-900 mb-6">
-                Get In Touch
-              </h2>
-              
-              <p className="text-gray-600 mb-8">
+            <motion.div
+              variants={fadeInUp}
+              initial="hidden"
+              whileInView="visible"
+              exit="hidden"
+              transition={{ duration: 0.5 }}
+              viewport={{ once: false, amount: 0.3 }}
+            >
+              <h2 className="text-3xl font-serif font-bold text-blue-900 mb-6">Get In Touch</h2>
+              <p className="text-blue-600 mb-8">
                 Have questions or need legal assistance? Contact us today to schedule a consultation with one of our experienced attorneys.
               </p>
-              
-              <div className="space-y-6">
-                <div className="flex items-start border-2  hover:bg-slate-100 rounded-2xl border-blue-600 px-3 w-2/3 py-2">
-                  <div className="bg-blue-500 p-3 rounded-full mr-4">
-                    <MapPin className="h-6 w-6 text-navy-900" />
-                  </div>
-                  <div className="">
-                    <h3 className="text-lg font-serif font-bold  text-navy-900 mb-2">Our Office</h3>
-                    <p className="text-gray-600">123 Legal Avenue, New Delhi, India - 110001</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start  hover:bg-slate-100 border-2 rounded-3xl border-blue-600 px-3 w-2/3 py-2">
-                  <div className="bg-blue-500 p-3  rounded-full mr-4">
-                    <Phone className="h-6 w-6 text-navy-900" />
-                  </div>
+              {[{
+                  icon: <MapPin className="h-6 w-6 text-white" />,
+                  title: 'Our Office',
+                  lines: ['123 Legal Avenue, New Delhi, India - 110001'],
+                },
+                {
+                  icon: <Phone className="h-6 w-6 text-white" />,
+                  title: 'Phone',
+                  lines: ['+91 98765 43210', '+91 98765 43211'],
+                },
+                {
+                  icon: <Mail className="h-6 w-6 text-white" />,
+                  title: 'Email',
+                  lines: ['info@aggarwallaw.com', 'contact@aggarwallaw.com'],
+                },
+                {
+                  icon: <Clock className="h-6 w-6 text-white" />,
+                  title: 'Business Hours',
+                  lines: ['Mon - Fri: 9 AM - 6 PM', 'Sat: 10 AM - 2 PM', 'Sun: Closed'],
+                },
+              ].map(({ icon, title, lines }, i) => (
+                <div
+                  key={i}
+                  className="flex items-start hover:bg-slate-100 border-2 rounded-3xl border-blue-600 px-3 w-full sm:w-2/3 py-2 mt-1"
+                >
+                  <div className="bg-blue-500 p-3 rounded-full mr-4">{icon}</div>
                   <div>
-                    <h3 className="text-lg font-serif font-bold text-navy-900 mb-2">Phone</h3>
-                    <p className="text-gray-600">+91 98765 43210</p>
-                    <p className="text-gray-600">+91 98765 43211</p>
+                    <h3 className="text-lg font-serif font-bold text-blue-600 mb-2">{title}</h3>
+                    {lines.map((line, idx) => {
+                      const isEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(line);
+                      const isPhone = /^\+?\d[\d\s-]{7,}$/.test(line);
+                      return (
+                        <p key={idx} className="text-blue-600 break-words text-sm sm:text-base">
+                          {isEmail ? (
+                            <a href={`mailto:${line}`} className="hover:text-blue-300">{line}</a>
+                          ) : isPhone ? (
+                            <a href={`tel:${line.replace(/\s+/g, '')}`} className="hover:text-blue-300">{line}</a>
+                          ): (
+                            line
+                          )}
+                        </p>
+                      );
+                    })}
                   </div>
                 </div>
-                
-                <div className="flex items-start  hover:bg-slate-100 border-2 rounded-3xl border-blue-600 px-3 w-2/3 py-2">
-                  <div className="bg-blue-500 p-3 rounded-full mr-4">
-                    <Mail className="h-6 w-6 text-navy-900" />
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-serif font-bold text-navy-900 mb-2">Email</h3>
-                    <p className="text-gray-600">info@aggarwallaw.com</p>
-                    <p className="text-gray-600">contact@aggarwallaw.com</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start hover:bg-slate-100 border-2 rounded-3xl border-blue-600 px-3 w-2/3 py-2">
-                  <div className="bg-blue-500 p-3 rounded-full mr-4">
-                    <Clock className="h-6 w-6 text-navy-900" />
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-serif font-bold text-navy-900 mb-2">Business Hours</h3>
-                    <p className="text-gray-600">Monday - Friday: 9:00 AM - 6:00 PM</p>
-                    <p className="text-gray-600">Saturday: 10:00 AM - 2:00 PM</p>
-                    <p className="text-gray-600">Sunday: Closed</p>
-                  </div>
-                </div>
-              </div>
-              
+              ))}
+
               <div className="mt-8">
                 <h3 className="text-lg font-serif font-bold text-navy-900 mb-4">Connect With Us</h3>
                 <div className="flex space-x-4">
-                  {['facebook', 'twitter', 'linkedin', 'instagram'].map((platform) => (
+                  {[
+                    { platform: 'facebook', url: '#', icon: <FaFacebookF /> },
+                    { platform: 'twitter', url: '#', icon: <FaXTwitter /> },
+                    { platform: 'linkedin', url: '#', icon: <FaLinkedinIn /> },
+                    { platform: 'instagram', url: '#', icon: <FaInstagram /> },
+                  ].map(({ platform, url, icon }) => (
                     <a
                       key={platform}
-                      href={`#${platform}`}
-                      className="bg-navy-900 text-white hover:bg-blue-500 hover:text-navy-900 w-10 h-10 rounded-full flex items-center justify-center transition-colors"
+                      href={url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-blue-600 text-white hover:bg-blue-200 hover:text-navy-900 w-10 h-10 rounded-full flex items-center justify-center transition-colors mx-1"
+                      aria-label={platform}
                     >
-                      <span className="sr-only">{platform}</span>
-                      <i className={`fab fa-${platform}`}></i>
+                      {/* <span className="sr-only">{platform}</span> */}
+                      {/* <i className={`fab fa-${platform} text-xl`}></i> */}
+                      {icon}
                     </a>
                   ))}
+
                 </div>
               </div>
-            </div>
-            
-            <div>
+            </motion.div>
+
+            <motion.div
+              variants={fadeInUp}
+              initial="hidden"
+              whileInView="visible"
+              exit="hidden"
+              transition={{ duration: 0.6 }}
+              viewport={{ once: false, amount: 0.3 }}
+            >
               <div className="bg-gray-50 rounded-lg shadow-md p-8">
-                <h2 className="text-2xl font-serif font-bold text-navy-900 mb-6">
-                  Send Us a Message
-                </h2>
-                
-                {submitted ? (
+                <h2 className="text-2xl font-serif font-bold text-navy-900 mb-6">Send Us a Message</h2>
+                {submitted && (
                   <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mb-6">
                     <p>Thank you for your message! We will get back to you soon.</p>
                   </div>
-                ) : null}
-                
+                )}
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div>
                     <label className="block text-gray-700 text-sm font-medium mb-2">
@@ -223,6 +237,7 @@ const Contact = () => {
                       onChange={handleChange}
                       className="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
                       placeholder="+91 98765 43210"
+                      maxLength={10}
                     />
                   </div>
                   
@@ -269,43 +284,47 @@ const Contact = () => {
                   <div>
                     <button 
                       type="submit" 
-                      className="w-full px-6 py-3 bg-blue-500 hover:bg-blue-600 text-navy-900 font-medium rounded-md transition-colors transform hover:scale-105"
+                      className="w-full px-6 py-3 bg-blue-500 hover:bg-blue-600 hover:text-white text-navy-900 font-medium rounded-md transition-colors transform"
                     >
                       Send Message
                     </button>
                   </div>
                 </form>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
-      
-      <section className="py-16 bg-gray-50">
+
+      <motion.section
+        className="py-16 bg-gray-50"
+        variants={fadeInUp}
+        initial="hidden"
+        whileInView="visible"
+        exit="hidden"
+        transition={{ duration: 0.6 }}
+        viewport={{ once: false, amount: 0.3 }}
+      >
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-12">
-            <h2 className="text-3xl font-serif font-bold text-navy-900 mb-4">
-              Our Location
-            </h2>
-            <p className="text-gray-600">
-              Conveniently located in the heart of Kurukshetra, our office is easily accessible via public transportation.
-            </p>
+            <h2 className="text-3xl font-serif font-bold text-navy-900 mb-4">Our Location</h2>
+            <p className="text-gray-600">Conveniently located in the heart of Kurukshetra, our office is easily accessible via public transportation.</p>
           </div>
-          
           <div className="rounded-lg overflow-hidden shadow-md h-96">
             <iframe
-    className="w-full h-full border-0"
-    loading="lazy"
-    allowFullScreen
-    referrerPolicy="no-referrer-when-downgrade"
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.838448648001!2d76.8679528!3d29.9690056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjnCsDU4JzA4LjQiTiA3NsKwNTInMDQuNiJF!5e0!3m2!1sen!2sin!4v1717146351234!5m2!1sen!2sin"
-  ></iframe>
+              className="w-full h-full border-0"
+              loading="lazy"
+              allowFullScreen
+              referrerPolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.838448648001!2d76.8679528!3d29.9690056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjnCsDU4JzA4LjQiTiA3NsKwNTInMDQuNiJF!5e0!3m2!1sen!2sin!4v1717146351234!5m2!1sen!2sin"
+            ></iframe>
             <div className="w-full h-full bg-gray-300 flex items-center justify-center">
               <p className="text-gray-600">Google Maps Embed Would Go Here</p>
             </div>
+            
           </div>
         </div>
-      </section>
+      </motion.section>
     </div>
   );
 };

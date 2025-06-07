@@ -16,7 +16,13 @@ function Navbar({ scrolled }) {
       className={`fixed w-full z-50 top-0 transition-all duration-300 ${
         scrolled ? 'bg-white shadow-lg py-2' : 'bg-blue-700/95 py-4'
       }`}
-    >
+    ><a
+        href="tel:+919876543210"
+        className="fixed right-2 z-50 block md:hidden bg-blue-600 text-white px-3 py-3 rounded-[10px] shadow-lg flex items-center gap-2 hover:bg-blue-500 transition-all" style={{top:'70px'}}
+      >
+        <PhoneCallIcon size={18} />
+        
+      </a>
       <div className="container mx-auto px-4 flex justify-between items-center">
         {/* Logo */}
         <NavLink to="/" className="flex items-center">
@@ -104,13 +110,7 @@ function Navbar({ scrolled }) {
           </div>
         </div>
       </div>
-      <a
-        href="tel:+919876543210"
-        className="fixed bottom-4 right-4 z-50 block md:hidden bg-blue-600 text-white px-4 py-3 rounded-full shadow-lg flex items-center gap-2 hover:bg-blue-500 transition-all"
-      >
-        <PhoneCallIcon size={18} />
-        
-      </a>
+      
     </header>
   );
 }
