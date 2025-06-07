@@ -99,14 +99,14 @@ function Navbar({ scrolled }) {
             ))}
 
             {/* Separated Call Button for Mobile */}
-            {/* <div className="pt-4 border-t border-blue-600">
+            <div className="pt-4 border-t border-blue-600">
               <a
                 href="tel:+919876543210"
                 className="flex items-center gap-2 text-white hover:text-blue-300 transition-colors"
               >
                 <Phone size={18} />
               </a>
-            </div> */}
+            </div>
           </div>
         </div>
       </div>
