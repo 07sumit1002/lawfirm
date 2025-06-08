@@ -29,7 +29,7 @@ const About = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl flex flex-col mx-auto items-center justify-center">
             <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">
-              About Aggarwal Law Firm
+              Aggarwal Law Firm
             </h1>
 
             <p className="text-xl text-gray-300">

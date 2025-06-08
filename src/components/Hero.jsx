@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
-function Hero({ title, subtitle, buttonText, buttonLink }) {
+function Hero({ title, subtitle, buttonLink }) {
   return (
     <section className="relative h-screen flex items-center overflow-hidden">
       <div
@@ -32,12 +32,12 @@ function Hero({ title, subtitle, buttonText, buttonLink }) {
             </p>
 
             <div className="flex flex-wrap gap-4">
-              <Link
+              {/* <Link
                 to={buttonLink}
                 className="px-8 py-3 bg-blue-500 hover:bg-blue-600 text-white font-medium rounded-md transition-all transform hover:scale-105 hover:shadow-lg"
               >
                 {buttonText}
-              </Link>
+              </Link> */}
 
               <Link
                 to="/about"

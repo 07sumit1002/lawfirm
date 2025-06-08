@@ -126,10 +126,10 @@ const Testimonials = () => {
                   logo: "https://companieslogo.com/img/orig/TRST.L-5ada9c92.png?t=1663382464",
                   link: "https://www.trustpilot.com/",
                 },{
-                  icon: "AmbitionBox",
+                  icon: "LawRato",
                   rating: "4.0/5",
-                  logo: "https://tse4.mm.bing.net/th?id=OIP.oj0RfAxSQN9uVYe6LMnMZwHaHa&pid=Api&P=0&h=180",
-                  link: "https://www.ambitionbox.com/reviews/agarwal-law-associates-reviews",
+                  logo: "https://play-lh.googleusercontent.com/FrfTAo5rpKvRgubrkpyEtkZeI8epH6IERDroFZIrlOre-gUqHmGUgL2zmAcL4eF-kB4",
+                  link: "https://lawrato.com/advocate-himanshu-aggarwal",
                 },
               ].map((review, index) => (
                 <a

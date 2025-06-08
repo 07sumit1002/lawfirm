@@ -1,15 +1,32 @@
-import React, { useRef } from 'react';
-import { Scale, Home, Briefcase, FileText, Building, Landmark, FileCheck, BookOpen } from 'lucide-react';
-import { useInView, motion } from 'framer-motion';
-import CallToAction from '../components/CallToAction';
+import React, { useRef, useState } from "react";
+import {
+  Scale,
+  Home,
+  Briefcase,
+  FileText,
+  Building,
+  Landmark,
+  FileCheck,
+  BookOpen,
+} from "lucide-react";
+import { useInView, motion } from "framer-motion";
+import CallToAction from "../components/CallToAction";
 
 const AnimatedCard = ({ children, delay = 0 }) => {
   const ref = useRef(null);
   const inView = useInView(ref, { threshold: 0.3 });
 
   const variants = {
-    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: 'easeOut', delay } },
-    hidden: { opacity: 0, y: 20, transition: { duration: 0.8, ease: 'easeOut' } },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.8, ease: "easeOut", delay },
+    },
+    hidden: {
+      opacity: 0,
+      y: 20,
+      transition: { duration: 0.8, ease: "easeOut" },
+    },
   };
 
   return (
@@ -22,6 +39,31 @@ const AnimatedCard = ({ children, delay = 0 }) => {
     >
       {children}
     </motion.div>
+  );
+};
+
+const Popup = ({ isOpen, onClose, service }) => {
+  if (!isOpen) return null;
+
+  return (
+    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+      <div className="bg-white rounded-lg p-8 max-w-lg w-full relative">
+        <button
+          onClick={onClose}
+          className="absolute top-4 right-4 text-gray-600 hover:text-gray-800"
+        >
+          ✕
+        </button>
+        <h2 className="text-2xl font-bold text-deepRoyal mb-4">
+          {service.title}
+        </h2>
+        <p className="text-gray-600 mb-4">{service.description}</p>
+        <h4 className="text-lg font-semibold text-deepRoyal mb-2">
+          More Details
+        </h4>
+        <p className="text-gray-600">{service.details}</p>
+      </div>
+    </div>
   );
 };
 
@@ -93,6 +135,19 @@ const servicesData = [
 ];
 
 const Services = () => {
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const [selectedService, setSelectedService] = useState(null);
+
+  const openPopup = (service) => {
+    setSelectedService(service);
+    setIsPopupOpen(true);
+  };
+
+  const closePopup = () => {
+    setIsPopupOpen(false);
+    setSelectedService(null);
+  };
+
   return (
     <div>
       <section className="pt-32 pb-16 bg-deepRoyal relative">
@@ -106,7 +161,9 @@ const Services = () => {
 
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl flex flex-col items-center justify-center mx-auto">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Our Practice Areas</h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+              Our Practice Areas
+            </h1>
             <p className="text-xl text-white">
               Comprehensive legal services tailored to meet your specific needs.
             </p>
@@ -114,6 +171,7 @@ const Services = () => {
         </div>
       </section>
 
+      {/* <section className="py-16 bg-white"> */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto text-center mb-12">
@@ -161,33 +219,35 @@ const Services = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">Our Approach to Legal Services</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                Our Approach to Legal Services
+              </h2>
               <p className="mb-6 text-base md:text-lg">
-                At Aggarwal Law Firm, we believe in a client-centered approach that focuses on
-                understanding your unique needs and developing tailored legal strategies to achieve
-                your goals.
+                At Aggarwal Law Firm, we believe in a client-centered approach
+                that focuses on understanding your unique needs and developing
+                tailored legal strategies to achieve your goals.
               </p>
               <div className="space-y-6 text-base md:text-lg">
                 {[
                   {
-                    title: 'Initial Consultation',
+                    title: "Initial Consultation",
                     description:
-                      'We begin with a thorough consultation to understand your legal needs and objectives.',
+                      "We begin with a thorough consultation to understand your legal needs and objectives.",
                   },
                   {
-                    title: 'Strategy Development',
+                    title: "Strategy Development",
                     description:
-                      'Our team develops a customized legal strategy tailored to your specific situation.',
+                      "Our team develops a customized legal strategy tailored to your specific situation.",
                   },
                   {
-                    title: 'Execution & Representation',
+                    title: "Execution & Representation",
                     description:
-                      'We implement the strategy with meticulous attention to detail and advocate on your behalf.',
+                      "We implement the strategy with meticulous attention to detail and advocate on your behalf.",
                   },
                   {
-                    title: 'Ongoing Support',
+                    title: "Ongoing Support",
                     description:
-                      'We provide continuous guidance and support throughout the legal process and beyond.',
+                      "We provide continuous guidance and support throughout the legal process and beyond.",
                   },
                 ].map((step, index) => (
                   <div key={index} className="flex">
@@ -197,7 +257,9 @@ const Services = () => {
                       </div>
                     </div>
                     <div>
-                      <h3 className="text-xl font-semibold mb-2">{step.title}</h3>
+                      <h3 className="text-xl font-semibold mb-2">
+                        {step.title}
+                      </h3>
                       <p>{step.description}</p>
                     </div>
                   </div>
@@ -216,6 +278,11 @@ const Services = () => {
       </section>
 
       <CallToAction />
+      <Popup
+        isOpen={isPopupOpen}
+        onClose={closePopup}
+        service={selectedService}
+      />
     </div>
   );
 };
