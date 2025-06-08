@@ -9,6 +9,7 @@ import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
 import ScrollToTop from './components/ScrollToTop';
 import Disclaimer from './components/Disclaimer';
+import TeamMemberDetail from './pages/TeamMemberDetail';
 
 
 const App = () => {
@@ -31,6 +32,7 @@ const App = () => {
           <Route path="testimonials" element={<Testimonials />} />
           <Route path="gallery" element={<Gallery />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="team/:name" element={<TeamMemberDetail />} /> {/* ✅ Added route */}
         </Route>
       </Routes>
     </Router>
