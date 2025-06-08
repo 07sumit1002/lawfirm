@@ -36,6 +36,7 @@ const AnimatedCard = ({ children, delay = 0 }) => {
       initial="hidden"
       animate={inView ? 'visible' : 'hidden'}
       className="will-change-transform group bg-white text-deepRoyal hover:bg-deepRoyal hover:text-white transform transition-all duration-500 rounded-lg shadow-md hover:shadow-xl border border-gray-200 hover:border-deepRoyal overflow-visible relative"
+
     >
       {children}
     </motion.div>
@@ -171,7 +172,7 @@ const Services = () => {
         </div>
       </section>
 
-      {/* <section className="py-16 bg-white"> */}
+
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto text-center mb-12">
@@ -182,6 +183,7 @@ const Services = () => {
               Our team of experienced attorneys provides comprehensive legal services across a wide
               range of practice areas. Whatever your legal needs, we have the expertise to help you
               navigate complex legal matters and achieve favorable outcomes.
+
             </p>
           </div>
 
@@ -208,6 +210,7 @@ const Services = () => {
                   <p className="text-deepRoyal group-hover:text-white transition-colors text-base max-w-xs mx-auto">
                     {service.description}
                   </p>
+
                 </div>
               </AnimatedCard>
             ))}
