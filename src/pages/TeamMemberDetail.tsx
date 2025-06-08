@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import CallToAction from "../components/CallToAction";
 
 const teamMembers = [

@@ -10,6 +10,7 @@ import Contact from './pages/Contact';
 import ScrollToTop from './components/ScrollToTop';
 import Disclaimer from './components/Disclaimer';
 import TeamMemberDetail from './pages/TeamMemberDetail';
+import ServiceDetail from './pages/ServiceDetail';
 
 
 const App = () => {
@@ -33,6 +34,7 @@ const App = () => {
           <Route path="gallery" element={<Gallery />} />
           <Route path="contact" element={<Contact />} />
           <Route path="team/:name" element={<TeamMemberDetail />} /> {/* ✅ Added route */}
+          <Route path="/services/:slug" element={<ServiceDetail />} />
         </Route>
       </Routes>
     </Router>

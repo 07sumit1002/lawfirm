@@ -1,4 +1,5 @@
-import React, { useRef, useState } from "react";
+import React from "react";
+import { Link } from "react-router-dom";
 import {
   Scale,
   Home,
@@ -9,9 +10,92 @@ import {
   FileCheck,
   BookOpen,
 } from "lucide-react";
+import { useRef } from "react";
 import { useInView, motion } from "framer-motion";
 import CallToAction from "../components/CallToAction";
 
+// Shared data with slug added for routing
+const servicesData = [
+  {
+    id: 1,
+    slug: "family-law",
+    icon: <Scale className="h-12 w-12 text-deepRoyal group-hover:text-white transition-colors" />,
+    title: "Family Law",
+    description:
+      "Helping families navigate divorce, custody, and support with compassion and expertise.",
+    image:
+      "https://images.pexels.com/photos/4427612/pexels-photo-4427612.jpeg?auto=compress&cs=tinysrgb&w=600",
+  },
+  {
+    id: 2,
+    slug: "criminal-defense",
+    icon: <FileText className="h-12 w-12 text-deepRoyal group-hover:text-white transition-colors" />,
+    title: "Criminal Defense",
+    description: "Defending your rights against DUI, assault, drug, and other criminal charges.",
+    image:
+      "https://images.pexels.com/photos/4427612/pexels-photo-4427612.jpeg?auto=compress&cs=tinysrgb&w=600",
+  },
+  {
+    id: 3,
+    slug: "corporate-law",
+    icon: <Briefcase className="h-12 w-12 text-deepRoyal group-hover:text-white transition-colors" />,
+    title: "Corporate Law",
+    description:
+      "Guiding business formations, contracts, and mergers to secure your company’s future.",
+    image:
+      "https://images.pexels.com/photos/4427612/pexels-photo-4427612.jpeg?auto=compress&cs=tinysrgb&w=600",
+  },
+  {
+    id: 4,
+    slug: "real-estate-law",
+    icon: <Home className="h-12 w-12 text-deepRoyal group-hover:text-white transition-colors" />,
+    title: "Real Estate Law",
+    description: "Resolving property disputes, transactions, and zoning issues with precision.",
+    image:
+      "https://images.pexels.com/photos/4427612/pexels-photo-4427612.jpeg?auto=compress&cs=tinysrgb&w=600",
+  },
+  {
+    id: 5,
+    slug: "civil-litigation",
+    icon: <Landmark className="h-12 w-12 text-deepRoyal group-hover:text-white transition-colors" />,
+    title: "Civil Litigation",
+    description:
+      "Handling commercial disputes, personal injury claims, and insurance matters effectively.",
+    image:
+      "https://images.pexels.com/photos/4427612/pexels-photo-4427612.jpeg?auto=compress&cs=tinysrgb&w=600",
+  },
+  {
+    id: 6,
+    slug: "intellectual-property",
+    icon: <FileCheck className="h-12 w-12 text-deepRoyal group-hover:text-white transition-colors" />,
+    title: "Intellectual Property",
+    description: "Protecting your inventions, trademarks, copyrights, and IP rights diligently.",
+    image:
+      "https://images.pexels.com/photos/4427612/pexels-photo-4427612.jpeg?auto=compress&cs=tinysrgb&w=600",
+  },
+  {
+    id: 7,
+    slug: "employment-law",
+    icon: <BookOpen className="h-12 w-12 text-deepRoyal group-hover:text-white transition-colors" />,
+    title: "Employment Law",
+    description:
+      "Advising on workplace rights, contracts, harassment, and wrongful termination cases.",
+    image:
+      "https://images.pexels.com/photos/4427612/pexels-photo-4427612.jpeg?auto=compress&cs=tinysrgb&w=600",
+  },
+  {
+    id: 8,
+    slug: "tax-law",
+    icon: <Building className="h-12 w-12 text-deepRoyal group-hover:text-white transition-colors" />,
+    title: "Tax Law",
+    description:
+      "Providing tax planning, audits, dispute resolution, and corporate tax strategies.",
+    image:
+      "https://images.pexels.com/photos/4427612/pexels-photo-4427612.jpeg?auto=compress&cs=tinysrgb&w=600",
+  },
+];
+
+// AnimatedCard component
 const AnimatedCard = ({ children, delay = 0 }) => {
   const ref = useRef(null);
   const inView = useInView(ref, { threshold: 0.3 });
@@ -34,121 +118,15 @@ const AnimatedCard = ({ children, delay = 0 }) => {
       ref={ref}
       variants={variants}
       initial="hidden"
-      animate={inView ? 'visible' : 'hidden'}
-      className="will-change-transform group bg-white text-deepRoyal hover:bg-deepRoyal hover:text-white transform transition-all duration-500 rounded-lg shadow-md hover:shadow-xl border border-gray-200 hover:border-deepRoyal overflow-visible relative"
-
+      animate={inView ? "visible" : "hidden"}
+      className="will-change-transform group bg-white text-deepRoyal hover:bg-deepRoyal hover:text-white transform transition-all duration-500 rounded-lg shadow-md hover:shadow-xl border border-gray-200 hover:border-deepRoyal overflow-visible relative cursor-pointer"
     >
       {children}
     </motion.div>
   );
 };
 
-const Popup = ({ isOpen, onClose, service }) => {
-  if (!isOpen) return null;
-
-  return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-      <div className="bg-white rounded-lg p-8 max-w-lg w-full relative">
-        <button
-          onClick={onClose}
-          className="absolute top-4 right-4 text-gray-600 hover:text-gray-800"
-        >
-          ✕
-        </button>
-        <h2 className="text-2xl font-bold text-deepRoyal mb-4">
-          {service.title}
-        </h2>
-        <p className="text-gray-600 mb-4">{service.description}</p>
-        <h4 className="text-lg font-semibold text-deepRoyal mb-2">
-          More Details
-        </h4>
-        <p className="text-gray-600">{service.details}</p>
-      </div>
-    </div>
-  );
-};
-
-const servicesData = [
-  {
-    id: 1,
-    icon: <Scale className="h-12 w-12 text-deepRoyal group-hover:text-white transition-colors" />,
-    title: 'Family Law',
-    description: 'Helping families navigate divorce, custody, and support with compassion and expertise.',
-    image:
-      'https://images.pexels.com/photos/4427612/pexels-photo-4427612.jpeg?auto=compress&cs=tinysrgb&w=600',
-  },
-  {
-    id: 2,
-    icon: <FileText className="h-12 w-12 text-deepRoyal group-hover:text-white transition-colors" />,
-    title: 'Criminal Defense',
-    description: 'Defending your rights against DUI, assault, drug, and other criminal charges.',
-    image:
-      'https://images.pexels.com/photos/4427612/pexels-photo-4427612.jpeg?auto=compress&cs=tinysrgb&w=600',
-  },
-  {
-    id: 3,
-    icon: <Briefcase className="h-12 w-12 text-deepRoyal group-hover:text-white transition-colors" />,
-    title: 'Corporate Law',
-    description: 'Guiding business formations, contracts, and mergers to secure your company’s future.',
-    image:
-      'https://images.pexels.com/photos/4427612/pexels-photo-4427612.jpeg?auto=compress&cs=tinysrgb&w=600',
-  },
-  {
-    id: 4,
-    icon: <Home className="h-12 w-12 text-deepRoyal group-hover:text-white transition-colors" />,
-    title: 'Real Estate Law',
-    description: 'Resolving property disputes, transactions, and zoning issues with precision.',
-    image:
-      'https://images.pexels.com/photos/4427612/pexels-photo-4427612.jpeg?auto=compress&cs=tinysrgb&w=600',
-  },
-  {
-    id: 5,
-    icon: <Landmark className="h-12 w-12 text-deepRoyal group-hover:text-white transition-colors" />,
-    title: 'Civil Litigation',
-    description: 'Handling commercial disputes, personal injury claims, and insurance matters effectively.',
-    image:
-      'https://images.pexels.com/photos/4427612/pexels-photo-4427612.jpeg?auto=compress&cs=tinysrgb&w=600',
-  },
-  {
-    id: 6,
-    icon: <FileCheck className="h-12 w-12 text-deepRoyal group-hover:text-white transition-colors" />,
-    title: 'Intellectual Property',
-    description: 'Protecting your inventions, trademarks, copyrights, and IP rights diligently.',
-    image:
-      'https://images.pexels.com/photos/4427612/pexels-photo-4427612.jpeg?auto=compress&cs=tinysrgb&w=600',
-  },
-  {
-    id: 7,
-    icon: <BookOpen className="h-12 w-12 text-deepRoyal group-hover:text-white transition-colors" />,
-    title: 'Employment Law',
-    description: 'Advising on workplace rights, contracts, harassment, and wrongful termination cases.',
-    image:
-      'https://images.pexels.com/photos/4427612/pexels-photo-4427612.jpeg?auto=compress&cs=tinysrgb&w=600',
-  },
-  {
-    id: 8,
-    icon: <Building className="h-12 w-12 text-deepRoyal group-hover:text-white transition-colors" />,
-    title: 'Tax Law',
-    description: 'Providing tax planning, audits, dispute resolution, and corporate tax strategies.',
-    image:
-      'https://images.pexels.com/photos/4427612/pexels-photo-4427612.jpeg?auto=compress&cs=tinysrgb&w=600',
-  },
-];
-
 const Services = () => {
-  const [isPopupOpen, setIsPopupOpen] = useState(false);
-  const [selectedService, setSelectedService] = useState(null);
-
-  const openPopup = (service) => {
-    setSelectedService(service);
-    setIsPopupOpen(true);
-  };
-
-  const closePopup = () => {
-    setIsPopupOpen(false);
-    setSelectedService(null);
-  };
-
   return (
     <div>
       <section className="pt-32 pb-16 bg-deepRoyal relative">
@@ -172,7 +150,6 @@ const Services = () => {
         </div>
       </section>
 
-
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto text-center mb-12">
@@ -180,39 +157,39 @@ const Services = () => {
               Expertise Across Multiple Legal Domains
             </h2>
             <p className="text-lg text-blue-gray-400 leading-snug max-w-3.5xl mx-auto">
-              Our team of experienced attorneys provides comprehensive legal services across a wide
-              range of practice areas. Whatever your legal needs, we have the expertise to help you
-              navigate complex legal matters and achieve favorable outcomes.
-
+              Our team of experienced attorneys provides comprehensive legal
+              services across a wide range of practice areas. Whatever your legal
+              needs, we have the expertise to help you navigate complex legal
+              matters and achieve favorable outcomes.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
             {servicesData.map((service, index) => (
-              <AnimatedCard key={service.id} delay={index * 0.1}>
-                <div className="relative pt-12 px-8 pb-8 text-center overflow-visible">
-                  {/* Circular image half above the card */}
-                  <div className="absolute left-1/2 -top-12 transform -translate-x-1/2 z-20">
-                    <div className="w-28 h-28 rounded-full border-4 border-white shadow-lg overflow-hidden">
-                      <img
-                        src={service.image}
-                        alt={service.title}
-                        className="w-full h-full object-cover"
-                      />
+              <Link to={`/services/${service.slug}`} key={service.id}>
+                <AnimatedCard delay={index * 0.1}>
+                  <div className="relative pt-12 px-8 pb-8 text-center overflow-visible">
+                    {/* Circular image half above the card */}
+                    <div className="absolute left-1/2 -top-12 transform -translate-x-1/2 z-20">
+                      <div className="w-28 h-28 rounded-full border-4 border-white shadow-lg overflow-hidden">
+                        <img
+                          src={service.image}
+                          alt={service.title}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
                     </div>
+
+                    <h3 className="mt-12 text-2xl font-bold text-deepRoyal group-hover:text-white mb-4 transition-colors">
+                      {service.title}
+                    </h3>
+
+                    <p className="text-deepRoyal group-hover:text-white transition-colors text-base max-w-xs mx-auto">
+                      {service.description}
+                    </p>
                   </div>
-
-                  <h3 className="mt-12 text-2xl font-bold text-deepRoyal group-hover:text-white mb-4 transition-colors">
-                    {service.title}
-                  </h3>
-
-                  {/* New description text instead of ul */}
-                  <p className="text-deepRoyal group-hover:text-white transition-colors text-base max-w-xs mx-auto">
-                    {service.description}
-                  </p>
-
-                </div>
-              </AnimatedCard>
+                </AnimatedCard>
+              </Link>
             ))}
           </div>
         </div>
@@ -260,9 +237,7 @@ const Services = () => {
                       </div>
                     </div>
                     <div>
-                      <h3 className="text-xl font-semibold mb-2">
-                        {step.title}
-                      </h3>
+                      <h3 className="text-xl font-semibold mb-2">{step.title}</h3>
                       <p>{step.description}</p>
                     </div>
                   </div>
@@ -281,11 +256,6 @@ const Services = () => {
       </section>
 
       <CallToAction />
-      <Popup
-        isOpen={isPopupOpen}
-        onClose={closePopup}
-        service={selectedService}
-      />
     </div>
   );
 };
