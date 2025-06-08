@@ -11,12 +11,7 @@ import { motion } from 'framer-motion';
 const Home = () => {
   return (
     <div>
-      <Hero 
-        title="Experienced & Trusted Legal Solutions"
-        subtitle="Protecting your rights and fighting for justice with expert legal representation."
-        // buttonText="Free Consultation"
-        buttonLink="/contact"
-      />
+      <Hero/>
       
       <StatsCounter />
       

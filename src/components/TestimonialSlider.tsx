@@ -4,23 +4,62 @@ const testimonials = [
   {
     id: 1,
     name: 'Rajiv Mehta',
-    position: 'Business Owner',
-    image: 'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=600',
-    quote: 'The legal expertise provided by Aggarwal Law Firm was exceptional. They helped my business navigate complex regulations with ease and professionalism.'
+    quote: 'The legal expertise provided by Aggarwal Law Firm was exceptional.',
+    rating: 4
   },
   {
     id: 2,
     name: 'Priya Sharma',
-    position: 'Real Estate Developer',
-    image: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=600',
-    quote: 'I was impressed by their attention to detail and dedication to my case. The team at Aggarwal Law Firm goes above and beyond for their clients.'
+    quote: 'I was impressed by their attention to detail and dedication to my case.',
+    rating: 5
   },
   {
     id: 3,
     name: 'Amit Singh',
-    position: 'Corporate Executive',
-    image: 'https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=600',
-    quote: 'The strategic legal advice I received helped me resolve a complex dispute efficiently. Their professionalism and expertise are unmatched.'
+    quote: 'The strategic legal advice helped me resolve a complex dispute efficiently.',
+    rating: 4
+  },
+  {
+    id: 4,
+    name: 'Sohan Lal',
+    quote: 'One of the most reputed lawyer in KKR. Dealt my case very nicely.',
+    rating: 5
+  },
+  {
+    id: 5,
+    name: 'Kirisna Kese',
+    quote: 'He is very humble in nature. Nicely dealt my case. Thanks sir.',
+    rating: 5
+  },
+  {
+    id: 6,
+    name: 'Sonia Garg',
+    quote: 'बहुत ही अच्छे वकील साहब है! मेरे केस को बहुत अच्छे से डील कर रहे है |',
+    rating: 5
+  },
+  {
+    id: 7,
+    name: 'Anil Singh',
+    quote: 'I am from Himachal. Sir dealt my case very effectively.',
+    rating: 5
+  },
+  {
+    id: 8,
+    name: 'Amit Rohilla',
+    quote: 'I contacted sir after seeing him on Google. Very nice dealing.',
+    rating: 5
+  },
+  {
+    id: 9,
+    name: 'Meenu Sharma',
+    quote: 'Great and nice advocate. Thanks sir for helping me.',
+    rating: 5
+  },
+  {
+    id: 10,
+    name: 'Subhan Malik',
+    quote: 'Nice advocate. Contacted sir through Google.',
+    rating: 5
   },
 ];
 
@@ -31,7 +70,6 @@ const TestimonialSlider = () => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev === testimonials.length - 1 ? 0 : prev + 1));
     }, 5000);
-    
     return () => clearInterval(interval);
   }, []);
 
@@ -40,46 +78,34 @@ const TestimonialSlider = () => {
   };
 
   return (
-    <div className="relative max-w-4xl  mx-auto">
-      <div className="overflow-hidden ">
-        <div 
+    <div className="relative max-w-4xl mx-auto">
+      <div className="overflow-hidden">
+        <div
           className="flex transition-transform duration-500 ease-in-out"
           style={{ transform: `translateX(-${currentSlide * 100}%)` }}
         >
           {testimonials.map((testimonial) => (
-            <div 
-              key={testimonial.id} 
-              className="min-w-full px-4"
-            >
+            <div key={testimonial.id} className="min-w-full px-4">
               <div className="bg-white rounded-lg shadow-lg p-8 text-center">
-                <div className="w-20 h-20 rounded-full mx-auto mb-4 overflow-hidden">
-                  <img 
-                    src={testimonial.image} 
-                    alt={testimonial.name} 
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                
                 <div className="mb-4">
                   {[...Array(5)].map((_, i) => (
-                    <span key={i} className="text-blue-500">★</span>
+                    <span key={i} className={i < testimonial.rating ? 'text-blue-600' : 'text-gray-300'}>
+                      ★
+                    </span>
                   ))}
                 </div>
-                
+
                 <blockquote className="text-lg text-blue-600 italic mb-6">
                   "{testimonial.quote}"
                 </blockquote>
-                
-                <div>
-                  <h4 className="text-blue-700 font-bold font-serif">{testimonial.name}</h4>
-                  <p className="text-blue-500 text-sm">{testimonial.position}</p>
-                </div>
+
+                <h4 className="text-blue-700 font-bold font-serif">{testimonial.name}</h4>
               </div>
             </div>
           ))}
         </div>
       </div>
-      
+
       <div className="flex justify-center mt-6 space-x-2">
         {testimonials.map((_, index) => (
           <button
