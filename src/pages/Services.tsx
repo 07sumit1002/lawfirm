@@ -1,15 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {
-  Scale,
-  Home,
-  Briefcase,
-  FileText,
-  Building,
-  Landmark,
-  FileCheck,
-  BookOpen,
-} from "lucide-react";
 import { useRef } from "react";
 import { useInView, motion } from "framer-motion";
 import CallToAction from "../components/CallToAction";
@@ -19,7 +9,6 @@ const servicesData = [
   {
     id: 1,
     slug: "family-law",
-    icon: <Scale className="h-12 w-12 text-deepRoyal group-hover:text-white transition-colors" />,
     title: "Family Law",
     description:
       "Helping families navigate divorce, custody, and support with compassion and expertise.",
@@ -29,7 +18,6 @@ const servicesData = [
   {
     id: 2,
     slug: "criminal-defense",
-    icon: <FileText className="h-12 w-12 text-deepRoyal group-hover:text-white transition-colors" />,
     title: "Criminal Defense",
     description: "Defending your rights against DUI, assault, drug, and other criminal charges.",
     image:
@@ -38,7 +26,6 @@ const servicesData = [
   {
     id: 3,
     slug: "corporate-law",
-    icon: <Briefcase className="h-12 w-12 text-deepRoyal group-hover:text-white transition-colors" />,
     title: "Corporate Law",
     description:
       "Guiding business formations, contracts, and mergers to secure your company’s future.",
@@ -48,7 +35,6 @@ const servicesData = [
   {
     id: 4,
     slug: "real-estate-law",
-    icon: <Home className="h-12 w-12 text-deepRoyal group-hover:text-white transition-colors" />,
     title: "Real Estate Law",
     description: "Resolving property disputes, transactions, and zoning issues with precision.",
     image:
@@ -57,7 +43,6 @@ const servicesData = [
   {
     id: 5,
     slug: "civil-litigation",
-    icon: <Landmark className="h-12 w-12 text-deepRoyal group-hover:text-white transition-colors" />,
     title: "Civil Litigation",
     description:
       "Handling commercial disputes, personal injury claims, and insurance matters effectively.",
@@ -67,7 +52,6 @@ const servicesData = [
   {
     id: 6,
     slug: "intellectual-property",
-    icon: <FileCheck className="h-12 w-12 text-deepRoyal group-hover:text-white transition-colors" />,
     title: "Intellectual Property",
     description: "Protecting your inventions, trademarks, copyrights, and IP rights diligently.",
     image:
@@ -76,7 +60,6 @@ const servicesData = [
   {
     id: 7,
     slug: "employment-law",
-    icon: <BookOpen className="h-12 w-12 text-deepRoyal group-hover:text-white transition-colors" />,
     title: "Employment Law",
     description:
       "Advising on workplace rights, contracts, harassment, and wrongful termination cases.",
@@ -86,7 +69,6 @@ const servicesData = [
   {
     id: 8,
     slug: "tax-law",
-    icon: <Building className="h-12 w-12 text-deepRoyal group-hover:text-white transition-colors" />,
     title: "Tax Law",
     description:
       "Providing tax planning, audits, dispute resolution, and corporate tax strategies.",
@@ -119,7 +101,7 @@ const AnimatedCard = ({ children, delay = 0 }) => {
       variants={variants}
       initial="hidden"
       animate={inView ? "visible" : "hidden"}
-      className="will-change-transform group bg-white text-deepRoyal hover:bg-deepRoyal hover:text-white transform transition-all duration-500 rounded-lg shadow-md hover:shadow-xl border border-gray-200 hover:border-deepRoyal overflow-visible relative cursor-pointer"
+      className="will-change-transform group bg-white text-deepRoyal hover:bg-deepRoyal hover:text-white transform transition-all duration-500 rounded-lg shadow-md hover:shadow-xl border border-gray-200 hover:border-deepRoyal overflow-visible relative cursor-pointer flex flex-col h-full"
     >
       {children}
     </motion.div>
@@ -168,10 +150,10 @@ const Services = () => {
             {servicesData.map((service, index) => (
               <Link to={`/services/${service.slug}`} key={service.id}>
                 <AnimatedCard delay={index * 0.1}>
-                  <div className="relative pt-12 px-8 pb-8 text-center overflow-visible">
+                  <div className="relative pt-10 px-8 pb-8 text-center overflow-visible flex flex-col h-full">
                     {/* Circular image half above the card */}
-                    <div className="absolute left-1/2 -top-12 transform -translate-x-1/2 z-20">
-                      <div className="w-28 h-28 rounded-full border-4 border-white shadow-lg overflow-hidden">
+                    <div className="absolute left-1/2 -top-10 transform -translate-x-1/2 z-20">
+                      <div className="w-20 h-20 rounded-full border-4 border-white shadow-lg overflow-hidden">
                         <img
                           src={service.image}
                           alt={service.title}
@@ -180,11 +162,11 @@ const Services = () => {
                       </div>
                     </div>
 
-                    <h3 className="mt-12 text-2xl font-bold text-deepRoyal group-hover:text-white mb-4 transition-colors">
+                    <h3 className="mt-10 text-2xl font-bold text-deepRoyal group-hover:text-white mb-4 transition-colors">
                       {service.title}
                     </h3>
 
-                    <p className="text-deepRoyal group-hover:text-white transition-colors text-base max-w-xs mx-auto">
+                    <p className="text-deepRoyal group-hover:text-white transition-colors text-base max-w-xs mx-auto flex-grow">
                       {service.description}
                     </p>
                   </div>
