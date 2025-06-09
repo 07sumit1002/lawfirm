@@ -31,7 +31,9 @@ const Home = () => {
             exit={{ opacity: 0, scale: 0.9 }}
             transition={{ duration: 1.5, delay: 0.5 }}
           >
+            <h2 className="text-3xl md:text-4xl font-bold text-deeproyal">Our Practice Areas</h2>
             <div className="w-24 h-1 bg-primary mx-auto mt-4 mb-6"></div>
+            <p className="text-deeproyal max-w-2xl mx-auto">
               Our experienced attorneys provide expert legal representation across a wide range of practice areas.
             </p>
           </motion.div>
