@@ -22,7 +22,7 @@ function Navbar({ scrolled }) {
         <div className="flex items-center">
           <a href="/">
             <h1
-              className={`text-[20px] ${scrolled ? 'text-deeproyal' : 'text-white'} mr-2`}
+              className={`text-[20px] ${scrolled ? 'text-deepRoyal' : 'text-white'} mr-2`}
               style={{ fontWeight: '700' }}
             >
               ALF
