@@ -31,7 +31,6 @@ const Home = () => {
             exit={{ opacity: 0, scale: 0.9 }}
             transition={{ duration: 1.5, delay: 0.5 }}
           >
-            <div className="w-24 h-1 bg-blue-500 mx-auto mt-4 mb-6"></div>
             <div className="w-24 h-1 bg-primary mx-auto mt-4 mb-6"></div>
               Our experienced attorneys provide expert legal representation across a wide range of practice areas.
             </p>
@@ -48,7 +47,6 @@ const Home = () => {
           >
             <a 
               href="/services" 
-              className="inline-flex items-center text-blue-500 font-medium hover:text-blue-600 transition-colors"
               className="inline-flex items-center text-primary font-medium hover:text-deeproyal/80 transition-colors"
             >
               View All Practice Areas
@@ -76,10 +74,9 @@ const Home = () => {
             exit={{ opacity: 0, scale: 0.9 }}
             transition={{ duration: 1.5, delay: 0.5 }}
           >
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-blue-700">What Our Clients Say</h2>
-            <div className="w-24 h-1 bg-blue-500 mx-auto mt-4 mb-6"></div>
             <h2 className="text-3xl md:text-4xl font-bold text-deeproyal">What Our Clients Say</h2>
             <div className="w-24 h-1 bg-primary mx-auto mt-4 mb-6"></div>
+            <p className="text-deeproyal max-w-2xl mx-auto">
               We take pride in delivering exceptional legal services that exceed our clients' expectations.
             </p>
             <div className="max-w-5xl mx-auto text-center mb-12">
