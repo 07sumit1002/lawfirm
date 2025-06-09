@@ -89,17 +89,17 @@ const TestimonialSlider = () => {
               <div className="bg-white rounded-lg shadow-lg p-8 text-center">
                 <div className="mb-4">
                   {[...Array(5)].map((_, i) => (
-                    <span key={i} className={i < testimonial.rating ? 'text-blue-600' : 'text-gray-300'}>
+                    <span key={i} className={i < testimonial.rating ? 'text-deepRoyal' : 'text-gray-300'}>
                       ★
                     </span>
                   ))}
                 </div>
 
-                <blockquote className="text-lg text-blue-600 italic mb-6">
+                <blockquote className="text-lg text-deepRoyal italic mb-6">
                   "{testimonial.quote}"
                 </blockquote>
 
-                <h4 className="text-blue-700 font-bold font-serif">{testimonial.name}</h4>
+                <h4 className="text-deepRoyal font-bold font-serif">{testimonial.name}</h4>
               </div>
             </div>
           ))}

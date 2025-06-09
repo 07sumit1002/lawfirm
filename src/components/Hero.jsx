@@ -47,13 +47,13 @@ function Hero() {
           exit={{ opacity: 0 }}
           transition={{ duration: 1.5, ease: 'easeInOut' }}
         >
-          <div className="absolute inset-0 bg-blue-900/50"></div>
+          <div className="absolute inset-0 bg-deeproyal/50"></div>
         </motion.div>
       </AnimatePresence>
 
       <div className="container mx-auto px-4 relative z-10 h-full flex flex-col md:flex-row items-center justify-center md:justify-between text-center md:text-left">
         <motion.div
-          className="text-white max-w-2xl"
+          className="text-deepRoyal max-w-2xl"
           key={current + '-text'}
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -86,7 +86,7 @@ function Hero() {
           >
             <Link
               to="/about"
-              className="px-8 py-3 border-2 border-white hover:border-blue-400 hover:text-blue-400 text-white font-medium rounded-md transition-all"
+              className="px-8 py-3 border-2 border-deepRoyal hover:border-white hover:text-blue-300 text-deepRoyal font-medium rounded-md transition-all"
             >
               Learn More
             </Link>
@@ -100,7 +100,7 @@ function Hero() {
               key={index}
               onClick={() => setCurrent(index)}
               className={`w-3 h-3 rounded-full transition-colors ${
-                current === index ? 'bg-white' : 'bg-white/50 hover:bg-white'
+                current === index ? 'bg-white' : 'bg-white/50 hover:bg-primary'
               }`}
             ></button>
           ))}

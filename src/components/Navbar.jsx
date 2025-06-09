@@ -13,8 +13,8 @@ function Navbar({ scrolled }) {
 
   return (
     <header
-      className={`fixed w-full z-50 top-0 transition-all duration-300 ${
-        scrolled ? 'bg-white shadow-lg py-2' : 'bg-blue-700/95 py-4'
+      className={`fixed w-full z-50 top-0 transition-all duration-300 font-mont ${
+        scrolled ? 'bg-white shadow-lg py-2' : 'bg-primary/95 py-4'
       }`}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
@@ -22,7 +22,7 @@ function Navbar({ scrolled }) {
         <div className="flex items-center">
           <a href="/">
             <h1
-              className={`text-[20px] ${scrolled ? 'text-blue-500' : 'text-white'} mr-2`}
+              className={`text-[20px] ${scrolled ? 'text-deeproyal' : 'text-white'} mr-2`}
               style={{ fontWeight: '700' }}
             >
               ALF
@@ -39,9 +39,9 @@ function Navbar({ scrolled }) {
               className={({ isActive }) =>
                 `text-sm uppercase tracking-wider transition-colors ${
                   isActive
-                    ? `${scrolled ? 'text-blue-500' : 'text-blue-300'} font-medium`
-                    : `${scrolled ? 'text-blue-700' : 'text-white'} hover:${
-                        scrolled ? 'text-blue-500' : 'text-blue-300'
+                    ? `${scrolled ? 'text-deepRoyal' : 'text-deepRoyal/70'} font-medium`
+                    : `${scrolled ? 'text-deepRoyal' : 'text-white'} hover:${
+                        scrolled ? 'text-deepRoyal/80' : 'text-deepRoyal/70'
                       }`
                 }`
               }
@@ -55,8 +55,8 @@ function Navbar({ scrolled }) {
             href="tel:+919876543210"
             className={`ml-4 flex gap-1 px-4 py-2 text-sm rounded-md border transition-colors ${
               scrolled
-                ? 'text-blue-700 border-blue-700 hover:text-white hover:bg-blue-700'
-                : 'text-white border-white hover:text-blue-300 hover:border-blue-300'
+                ? 'text-deeproyal border-deepRoyal hover:text-white hover:bg-primary'
+                : 'text-white border-white hover:text-deeproyal/70 hover:border-deeproyal/70'
             }`}
           >
             <Phone size={18} />
@@ -71,8 +71,8 @@ function Navbar({ scrolled }) {
             href="tel:+919876543210"
             className={`flex items-center gap-2 px-3 py-2 rounded-[15px] shadow-md transition-colors duration-200 ${
               scrolled
-                ? 'bg-white text-blue-600 hover:bg-blue-200'
-                : 'bg-blue-700 text-white hover:bg-blue-800'
+                ? 'bg-white text-deeproyal hover:bg-white/20'
+                : 'bg-primary text-white hover:bg-deepRoyal/80'
             }`}
           >
             <Phone size={18} />
@@ -81,7 +81,7 @@ function Navbar({ scrolled }) {
 
           {/* Mobile Menu Toggle Button */}
           <button
-            className={`${scrolled ? 'text-blue-700' : 'text-white'} focus:outline-none`}
+            className={`${scrolled ? 'text-deeproyal' : 'text-white'} focus:outline-none`}
             onClick={toggleMenu}
             aria-label="Toggle menu"
           >
@@ -92,7 +92,7 @@ function Navbar({ scrolled }) {
 
       {/* Mobile Navigation Menu */}
       <div
-        className={`md:hidden bg-blue-800 transition-all duration-300 ease-in-out overflow-hidden ${
+        className={`md:hidden bg-primary transition-all duration-300 ease-in-out overflow-hidden ${
           isOpen ? 'max-h-screen py-4' : 'max-h-0'
         }`}
       >
@@ -104,7 +104,7 @@ function Navbar({ scrolled }) {
                 to={item === 'Home' ? '/' : `/${item.toLowerCase()}`}
                 className={({ isActive }) =>
                   `text-sm uppercase tracking-wider py-2 transition-colors ${
-                    isActive ? 'text-blue-300 font-medium' : 'text-white hover:text-blue-300'
+                    isActive ? 'text-deepRoyal/70 font-medium' : 'text-white hover:text-deeproyal/70'
                   }`
                 }
                 onClick={() => setIsOpen(false)}

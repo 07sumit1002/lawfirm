@@ -83,7 +83,7 @@ function StatsCounter() {
   return (
     <motion.section 
       ref={sectionRef}
-      className="py-12 bg-blue-700 text-white relative"
+      className="py-12 bg-deepRoyal text-white relative"
       initial={{ opacity: 0, y: 100 }}
       whileInView={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -100 }}

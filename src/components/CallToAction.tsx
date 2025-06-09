@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 const CallToAction = () => {
   return (
     <motion.section 
-      className="py-16 bg-blue-900 relative"
+      className="py-16 bg-deepRoyal relative"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
@@ -30,16 +30,10 @@ const CallToAction = () => {
             Schedule a consultation...
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link 
-              to="/contact" 
-              className="px-8 py-3 bg-blue-500 hover:bg-blue-600 text-white font-work font-medium rounded-md transition-all transform hover:scale-105 hover:shadow-lg flex items-center"
-            >
+            <Link to="/contact" className="px-8 py-3 bg-deepRoyal hover:bg-blue-400 text-white font-work rounded-md transition-all transform hover:scale-105 hover:shadow-lg flex items-center">
               Contact Us <ArrowRight size={18} className="ml-2" />
             </Link>
-            <a 
-              href="tel:+919876543210" 
-              className="px-8 py-3 border-2 border-white hover:border-blue-500 hover:text-blue-500 text-white font-work font-medium rounded-md transition-colors"
-            >
+            <a href="tel:+919876543210" className="px-8 py-3 border-2 border-white hover:border-blue-500 hover:text-blue-500 text-white font-medium rounded-md transition-colors">
               Call Now: +91 98765 43210
             </a>
           </div>

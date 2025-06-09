@@ -27,11 +27,14 @@ export default {
         },
         deepRoyal: '#003C8C',
         white: '#ffffff',
+        deeproyal: '#2B526E',
+        primary: '#2B526E'
       },
       fontFamily: {
         sans: ['Montserrat', 'sans-serif'],
         serif: ['Montserrat', 'sans-serif'],
         work: ["Work Sans", 'sans-serif'],
+        mont: ['Montserrat', 'sans-serif'],
       },
       boxShadow: {
         'inner-lg': 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)',
