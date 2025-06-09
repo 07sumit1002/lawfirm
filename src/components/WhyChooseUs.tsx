@@ -37,10 +37,10 @@ const WhyChooseUs = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl md:text-4xl font-work font-bold text-blue-700 mb-6">
+            <h2 className="text-3xl md:text-4xl font-work font-bold text-deepRoyal mb-6">
               Why Choose Aggarwal Law Firm?
             </h2>
-            <p className="text-blue-600 mb-8 font-work font-semibold">
+            <p className="text-deepRoyal mb-8 font-work font-semibold">
               With decades of combined experience, our attorneys bring knowledge, skill, and dedication to every case...
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
