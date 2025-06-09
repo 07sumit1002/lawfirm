@@ -65,15 +65,17 @@ function Hero() {
             initial={{ scale: 0.95 }}
             animate={{ scale: 1 }}
             transition={{ duration: 0.8 }}
+            // style={{fontFamily:'monsteratt'}}
           >
             {slides[current].title}
           </motion.h1>
 
           <motion.p
-            className="text-xl mb-8"
+            className="text-xl mb-8 text-mont"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3, duration: 0.8 }}
+            // style={{fontFamily:'monsteratt'}}
           >
             {slides[current].subtitle}
           </motion.p>

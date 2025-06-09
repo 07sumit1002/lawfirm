@@ -4,7 +4,7 @@ import { Scale, Phone, Mail, MapPin, Clock, Facebook, TwitterXFill, Linkedin, In
 
 const Footer = () => {
   return (
-    <footer className="bg-blue-900 text-white m-0">
+    <footer className="bg-deepRoyal text-white m-0">
       <div className="container mx-auto px-4 pt-16 pb-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
@@ -12,7 +12,7 @@ const Footer = () => {
               <Scale className="h-8 w-8 text-blue-100 mr-2" />
               <span className="text-xl font-serif font-bold text-white">Aggarwal Law Firm</span>
             </div>
-            <p className="text-blue-200 mb-4">
+            <p className="text-white font-light mb-4">
               Committed to providing exceptional legal services with integrity and dedication.
               We strive to achieve the best possible outcomes for our clients.
             </p>

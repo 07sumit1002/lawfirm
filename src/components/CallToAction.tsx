@@ -13,7 +13,7 @@ const CallToAction = () => {
       transition={{ duration: 2 }}
     >
       <div 
-        className="absolute inset-0 bg-fixed bg-cover bg-center opacity-20" 
+        className="absolute inset-0 bg-fixed bg-cover bg-center opacity-50" 
         style={{ backgroundImage: "url('https://images.pexels.com/photos/5669619/pexels-photo-5669619.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')" }}
       ></div>
       <div className="container mx-auto px-4 relative z-10">

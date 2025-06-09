@@ -13,37 +13,37 @@ const teamMembers = [
   {
     name: 'Rajesh Aggarwal',
     position: 'Founder & Senior Advocate',
-    image: 'https://images.pexels.com/photos/5668858/pexels-photo-5668858.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: 'https://www.nls.ac.in/wp-content/uploads/2023/05/DSC_0507-1-scaled-e1727334727920.jpg',
     specialization: 'Corporate Law'
   },
   {
     name: 'Sunita Sharma',
     position: 'Managing Partner',
-    image: 'https://images.pexels.com/photos/7645903/pexels-photo-7645903.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: 'https://content.jdmagicbox.com/v2/comp/hyderabad/y9/040pxx40.xx40.160226125303.x3y9/catalogue/anuradha-high-court-advocate-a-and-s-law-firm-kothapet-hyderabad-lawyers-for-criminal-2k0oajwezl.jpg',
     specialization: 'Family Law'
   },
   {
     name: 'Vikram Singh',
     position: 'Senior Associate',
-    image: 'https://images.pexels.com/photos/5668901/pexels-photo-5668901.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFc2sS6rJSsG9kbHujdYF2eFiy2fP6OlSfFA&s',
     specialization: 'Criminal Defense'
   },
   {
     name: 'Priya Mehta',
     position: 'Associate',
-    image: 'https://images.pexels.com/photos/5668765/pexels-photo-5668765.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: 'https://lawrato.com/expert_images/thumb/webp/advocate-sunita-punia.webp',
     specialization: 'Real Estate Law'
   },
   {
     name: 'Amit Patel',
     position: 'Associate',
-    image: 'https://images.pexels.com/photos/8422415/pexels-photo-8422415.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXmH4u3ogtWBSggGrVFTRSBcVGzdT5GJa4jQ&s',
     specialization: 'Civil Litigation'
   },
   {
     name: 'Nisha Verma',
     position: 'Junior Associate',
-    image: 'https://images.pexels.com/photos/5668907/pexels-photo-5668907.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: 'https://www.advotalks.com/images/1719994368-neelam.jpg',
     specialization: 'Intellectual Property'
   }
 ];
@@ -52,7 +52,7 @@ const About = () => {
   return (
     <div>
       <motion.section
-        className="pt-32 pb-16 bg-blue-900 relative"
+        className="pt-32 pb-16 bg-deepRoyal relative"
         initial="hidden"
         whileInView="visible"
         exit="exit"
@@ -61,19 +61,19 @@ const About = () => {
         transition={{ duration: 0.8 }}
       >
         <div
-          className="absolute inset-0 bg-cover bg-center opacity-20"
+          className="absolute inset-0 bg-cover bg-center opacity-50"
           style={{ backgroundImage: "url('https://images.pexels.com/photos/5668858/pexels-photo-5668858.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')" }}
         ></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">Aggarwal Legal Firm</h1>
-            <p className="text-xl text-gray-300">A premier law firm with a commitment to excellence and client satisfaction.</p>
+            <p className="text-xl text-gray-100">A premier law firm with a commitment to excellence and client satisfaction.</p>
           </div>
         </div>
       </motion.section>
 
       <motion.section
-        className="py-16 bg-white"
+        className="py-16 bg-white p-10"
         initial="hidden"
         whileInView="visible"
         exit="exit"
@@ -83,24 +83,24 @@ const About = () => {
       >
         <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div>
-            <h2 className="text-3xl font-serif font-bold text-blue-700 mb-6">Our Story</h2>
-            <p className="text-blue-600 mb-4">Founded in 1998 by Senior Advocate Rajesh Aggarwal, our firm has grown from a small practice to one of the most respected legal establishments in the region.</p>
-            <p className="text-blue-600 mb-4">Our mission is to deliver high-quality legal services with integrity, efficiency, and a focus on results. We believe in building long-term relationships with our clients based on trust and successful outcomes.</p>
-            <p className="text-blue-600 mb-6">Today, Aggarwal Law Firm is home to a diverse team of legal professionals who share a common commitment to excellence and client advocacy.</p>
+            <h2 className="text-3xl font-serif font-bold text-deepRoyal mb-6">Our Story</h2>
+            <p className="text-deepRoyal/80 mb-4 font-extralight">Founded in 1998 by Senior Advocate Rajesh Aggarwal, our firm has grown from a small practice to one of the most respected legal establishments in the region.</p>
+            <p className="text-deepRoyal/80 mb-4 font-normal">Our mission is to deliver high-quality legal services with integrity, efficiency, and a focus on results. We believe in building long-term relationships with our clients based on trust and successful outcomes.</p>
+            <p className="text-deepRoyal/80 mb-6 font-extralight">Today, Aggarwal Law Firm is home to a diverse team of legal professionals who share a common commitment to excellence and client advocacy.</p>
             <div className="space-y-3">
               {["Experienced team of specialized attorneys", "Personalized approach to each case", "Proven track record of successful outcomes", "Commitment to ethical legal practices"].map((text, i) => (
                 <div key={i} className="flex items-start">
                   <Check className="h-5 w-5 text-blue-500 mt-1 mr-2" />
-                  <span className="text-blue-700">{text}</span>
+                  <span className="text-deepRoyal font-light">{text}</span>
                 </div>
               ))}
             </div>
           </div>
           <div className="relative">
             <img src="https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Law firm office" className="rounded-lg shadow-lg h-[700px] w-full" />
-            <div className="absolute -bottom-8 -right-8 bg-blue-500 p-6 rounded-lg shadow-lg">
-              <p className="text-white font-serif text-2xl font-bold">25+</p>
-              <p className="text-white">Years of Excellence</p>
+            <div className="absolute -bottom-8 -right-8 bg-gray-100 p-6 rounded-lg shadow-lg">
+              <p className="text-deepRoyal font-serif text-2xl font-bold">25+</p>
+              <p className="text-deepRoyal">Years of Excellence</p>
             </div>
           </div>
         </div>
@@ -118,7 +118,7 @@ const About = () => {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-blue-900">Our Values</h2>
           <div className="w-24 h-1 bg-blue-500 mx-auto mt-4 mb-6"></div>
-          <p className="text-blue-600 max-w-2xl mx-auto mb-12">These core principles guide our practice and define our approach to legal representation.</p>
+          <p className="text-deepRoyal/80 max-w-2xl mx-auto mb-12">These core principles guide our practice and define our approach to legal representation.</p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               { title: "Integrity", description: "We adhere to the highest ethical standards in all our dealings.", icon: <Shield className="h-12 w-12 text-blue-500" /> },
@@ -129,7 +129,7 @@ const About = () => {
               <div key={idx} className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg border-t-4 border-blue-500 transition-shadow">
                 <div className="mb-4">{val.icon}</div>
                 <h3 className="text-xl font-serif font-bold text-blue-900 mb-2">{val.title}</h3>
-                <p className="text-blue-600">{val.description}</p>
+                <p className="text-deepRoyal/80">{val.description}</p>
               </div>
             ))}
           </div>
@@ -163,8 +163,8 @@ const About = () => {
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-serif font-bold text-navy-900">{member.name}</h3>
-                  <p className="text-blue-600 mb-2">{member.position}</p>
-                  <p className="text-blue-700">Specialization: {member.specialization}</p>
+                  <p className="text-deepRoyal/80 mb-2">{member.position}</p>
+                  <p className="text-deepRoyal">Specialization: {member.specialization}</p>
                 </div>
               </Link>
             ))}

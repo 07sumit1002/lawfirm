@@ -34,7 +34,7 @@ export default {
         sans: ['Montserrat', 'sans-serif'],
         serif: ['Montserrat', 'sans-serif'],
         work: ["Work Sans", 'sans-serif'],
-        mont: ['Montserrat', 'sans-serif'],
+        mont: ['Montserrat'],
       },
       boxShadow: {
         'inner-lg': 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)',

@@ -68,8 +68,8 @@ const WhyChooseUs = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="absolute -bottom-8 -left-8 bg-blue-700 p-6 rounded-lg shadow-lg max-w-xs">
-              <p className="text-white font-serif text-xl mb-2">25+ Years of Experience</p>
+            <div className="absolute -bottom-8 -left-8 bg-deepRoyal p-6 rounded-lg shadow-lg max-w-xs">
+              <p className="text-white font-mont text-xl mb-2">25+ Years of Experience</p>
               <p className="text-white text-sm">Serving clients since 1998.</p>
             </div>
           </motion.div>

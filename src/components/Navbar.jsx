@@ -14,7 +14,7 @@ function Navbar({ scrolled }) {
   return (
     <header
       className={`fixed w-full z-50 top-0 transition-all duration-300 font-mont ${
-        scrolled ? 'bg-white shadow-lg py-2' : 'bg-primary/95 py-4'
+        scrolled ? 'bg-white shadow-lg py-2' : 'bg-transparent py-4'
       }`}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
@@ -37,12 +37,10 @@ function Navbar({ scrolled }) {
               key={item}
               to={item === 'Home' ? '/' : `/${item.toLowerCase()}`}
               className={({ isActive }) =>
-                `text-sm uppercase tracking-wider transition-colors ${
+                `text-sm uppercase tracking-wider transition-colors font-mont ${
                   isActive
-                    ? `${scrolled ? 'text-deepRoyal' : 'text-deepRoyal/70'} font-medium`
-                    : `${scrolled ? 'text-deepRoyal' : 'text-white'} hover:${
-                        scrolled ? 'text-deepRoyal/80' : 'text-deepRoyal/70'
-                      }`
+                    ? `${scrolled ? 'text-deepRoyal' : 'text-white'} font-bold`
+                    : `${scrolled ? 'text-deepRoyal' : 'text-white'} hover:text-blue-500`
                 }`
               }
             >
@@ -55,8 +53,8 @@ function Navbar({ scrolled }) {
             href="tel:+919876543210"
             className={`ml-4 flex gap-1 px-4 py-2 text-sm rounded-md border transition-colors ${
               scrolled
-                ? 'text-deeproyal border-deepRoyal hover:text-white hover:bg-primary'
-                : 'text-white border-white hover:text-deeproyal/70 hover:border-deeproyal/70'
+                ? 'text-deepRoyal border-deepRoyal hover:text-blue-500 hover:border-blue-500'
+                : 'text-white border-white hover:text-blue-500 hover:border-blue-500'
             }`}
           >
             <Phone size={18} />
@@ -71,8 +69,8 @@ function Navbar({ scrolled }) {
             href="tel:+919876543210"
             className={`flex items-center gap-2 px-3 py-2 rounded-[15px] shadow-md transition-colors duration-200 ${
               scrolled
-                ? 'bg-white text-deeproyal hover:bg-white/20'
-                : 'bg-primary text-white hover:bg-deepRoyal/80'
+                ? 'bg-white text-deepRoyal hover:bg-blue-500 hover:text-white'
+                : 'bg-transparent text-white hover:bg-blue-500 hover:text-white'
             }`}
           >
             <Phone size={18} />
@@ -81,7 +79,7 @@ function Navbar({ scrolled }) {
 
           {/* Mobile Menu Toggle Button */}
           <button
-            className={`${scrolled ? 'text-deeproyal' : 'text-white'} focus:outline-none`}
+            className={`${scrolled ? 'text-deepRoyal' : 'text-white'} hover:text-blue-500 focus:outline-none`}
             onClick={toggleMenu}
             aria-label="Toggle menu"
           >
@@ -103,8 +101,8 @@ function Navbar({ scrolled }) {
                 key={item}
                 to={item === 'Home' ? '/' : `/${item.toLowerCase()}`}
                 className={({ isActive }) =>
-                  `text-sm uppercase tracking-wider py-2 transition-colors ${
-                    isActive ? 'text-deepRoyal/70 font-medium' : 'text-white hover:text-deeproyal/70'
+                  `text-sm uppercase tracking-wider py-2 transition-colors font-mont ${
+                    isActive ? 'text-white font-bold' : 'text-white hover:text-blue-500'
                   }`
                 }
                 onClick={() => setIsOpen(false)}
