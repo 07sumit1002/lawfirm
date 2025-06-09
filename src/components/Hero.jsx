@@ -36,7 +36,7 @@ function Hero() {
   }, []);
 
   return (
-    <section className="relative h-screen overflow-hidden">
+    <section className="relative h-screen overflow-hidden font-work">
       <AnimatePresence mode="wait">
         <motion.div
           key={current}
@@ -61,7 +61,7 @@ function Hero() {
           transition={{ duration: 1.2, ease: 'easeOut' }}
         >
           <motion.h1
-            className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold leading-tight mb-6"
+            className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6"
             initial={{ scale: 0.95 }}
             animate={{ scale: 1 }}
             transition={{ duration: 0.8 }}

@@ -31,6 +31,7 @@ export default {
       fontFamily: {
         sans: ['Montserrat', 'sans-serif'],
         serif: ['Montserrat', 'sans-serif'],
+        work: ["Work Sans", 'sans-serif'],
       },
       boxShadow: {
         'inner-lg': 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)',
