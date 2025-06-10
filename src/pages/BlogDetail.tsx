@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 
-// Same JSON data as on the Blog page
+// JSON data (unchanged)
 const articles = [
   {
     id: 1,
@@ -64,26 +64,46 @@ const BlogDetail = () => {
   }
 
   return (
-    <div className="bg-white min-h-screen">
-      <div className="max-w-4xl mx-auto px-4 py-16">
-        <img
-          src={article.image}
-          alt={article.title}
-          className="w-full h-80 object-cover rounded-xl mb-8"
-        />
-        <h1 className="text-4xl font-bold mb-2 text-slate-900">{article.title}</h1>
-        <div className="text-lg text-slate-500 mb-3">{article.subtitle}</div>
-        <div className="text-sm text-slate-400 mb-8">
-          By {article.author} | {article.date}
+    <div className="bg-slate-50 min-h-screen py-12">
+      <div className="max-w-3xl mx-auto px-4">
+        {/* Image Card */}
+        <div className="bg-white rounded-3xl shadow-xl overflow-hidden mb-6">
+          <img
+            src={article.image}
+            alt={article.title}
+            className="w-full h-72 object-cover object-center"
+          />
         </div>
-        <div
-          className="prose max-w-none text-slate-800"
-          dangerouslySetInnerHTML={{ __html: article.content }}
-        />
-        <div className="mt-12">
+
+        {/* Title, Subtitle, Author, Date (not in a card) */}
+        <h1 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-2">
+          {article.title}
+        </h1>
+        <div className="text-lg text-slate-600 mb-1">{article.subtitle}</div>
+        <div className="text-sm text-slate-400 mb-6">
+          By <span className="font-semibold">{article.author}</span> &middot; {article.date}
+        </div>
+
+        {/* Description Card */}
+        <div className="bg-slate-100 rounded-xl px-6 py-4 shadow flex items-center gap-3 mb-8">
+          <span className="inline-block w-2 h-8 bg-slate-300 rounded-full"></span>
+          <span className="text-lg text-slate-700 font-medium">{article.description}</span>
+        </div>
+
+        {/* Content Card */}
+        <div className="bg-white rounded-2xl shadow p-8 md:p-12 mb-8">
+          <div
+            className="prose prose-slate max-w-none text-lg leading-relaxed"
+            style={{ fontSize: '1.15rem' }}
+            dangerouslySetInnerHTML={{ __html: article.content }}
+          />
+        </div>
+
+        {/* Back Button */}
+        <div className="flex justify-end mt-8">
           <Link
             to="/blog"
-            className="inline-block px-6 py-2 bg-gradient-to-r from-amber-500 to-yellow-400 text-slate-900 rounded-lg shadow hover:brightness-90 transition"
+            className="inline-block px-6 py-3 bg-gradient-to-r from-amber-500 to-yellow-400 text-slate-900 font-semibold rounded-lg shadow hover:brightness-90 transition"
           >
             ← Back to Blog
           </Link>
