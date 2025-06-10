@@ -11,6 +11,7 @@ import ScrollToTop from './components/ScrollToTop';
 import Disclaimer from './components/Disclaimer';
 import TeamMemberDetail from './pages/TeamMemberDetail';
 import ServiceDetail from './pages/ServiceDetail';
+import BlogDetail from './pages/BlogDetail';
 
 
 const App = () => {
@@ -32,6 +33,7 @@ const App = () => {
           {/*<Route path="services/:id" element={<ServiceDetail />} />*/} {/* for internal linking */}
           <Route path="testimonials" element={<Testimonials />} />
           <Route path="blog" element={<Blog />} />
+          <Route path="/blog/:slug" element={<BlogDetail />} />   {/* Added route */}
           <Route path="contact" element={<Contact />} />
           <Route path="team/:name" element={<TeamMemberDetail />} /> {/* ✅ Added route */}
           <Route path="/services/:slug" element={<ServiceDetail />} />
