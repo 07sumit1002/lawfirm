@@ -66,7 +66,7 @@ function Hero() {
         >
           <motion.h1
             className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-deepRoyal font-mont"
-            style={{ WebkitTextStroke: '0.5px white', textStroke: '0.5px white' }}
+            // style={{ WebkitTextStroke: '0.5px white', textStroke: '0.5px white' }}
             initial={{ scale: 0.95 }}
             animate={{ scale: 1 }}
             transition={{ duration: 0.8 }}
@@ -76,7 +76,7 @@ function Hero() {
 
           <motion.p
             className="text-3xl mb-8 text-deepRoyal font-mont"
-            style={{ WebkitTextStroke: '0.5px white', textStroke: '0.5px white', fontWeight:'500', color:'#2B526E' }}
+            // style={{ WebkitTextStroke: '0.5px white', textStroke: '0.5px white', fontWeight:'500', color:'#2B526E' }}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0, duration: 0.8 }}

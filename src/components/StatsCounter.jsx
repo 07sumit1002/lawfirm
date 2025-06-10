@@ -101,7 +101,7 @@ function StatsCounter() {
           {statsData.map((stat, index) => (
             <motion.div 
               key={index} 
-              className="text-center p-6 bg-blue-100 border-b-2 border-gray-500 transform transition hover:scale-105 hover:bg-gray-100"
+              className="text-center p-6 bg-white border-b-2 border-gray-500 transform transition hover:scale-105 hover:bg-gray-100"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -30 }}

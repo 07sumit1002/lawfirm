@@ -50,7 +50,7 @@ const FeaturedServices = () => {
               w-72 mt-6 px-6 pt-12 pb-3 m-2 mb-6
               bg-white rounded-xl border shadow-md
               transition-all duration-300
-              hover:bg-deepRoyal hover:text-white hover:shadow-2xl cursor-pointer
+               hover:text-white hover:shadow-2xl cursor-pointer
             "
           >
             {/* Centered circular image */}
@@ -65,7 +65,7 @@ const FeaturedServices = () => {
             </div>
             {/* Title, arrow, and golden underline */}
             <div className="flex items-center justify-center gap-2 mt-14 mb-2">
-              <span className="text-2xl font-bold text-deepRoyal group-hover:text-white transition-colors text-center">
+              <span className="text-2xl font-bold text-deepRoyal group-hover:text-bold transition-colors text-center">
                 {service.title}
               </span>
               <svg
