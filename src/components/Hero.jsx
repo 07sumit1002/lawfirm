@@ -9,25 +9,86 @@ import Integrity from '../assets/integrity.jpg';
 const slides = [
   {
     image: Integrity,
-    title: 'Upholding Justice with Integrity',
-    subtitle: 'Empowering the voice of law through digital innovation.',
+    
+    title: <motion.h1
+              className="text-4xl md:text-5xl lg:text-6xl font-bold leading-relaxed mb-6 text-white font-mont"
+              initial={{ scale: 0.95 }}
+              animate={{ scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+            >Upholding Justice with Integrity
+            </motion.h1>,
+
+    subtitle: <motion.p
+              className="text-xl mb-8 text-white font-bold font-mont"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.8, delay: 0.5 }}
+            >
+              Empowering the voice of law through digital innovation.
+            </motion.p>,
   },
   {
     image: Fair,
-    title: 'Fairness in Every Verdict',
-    subtitle: 'Driven by values, led by experience.',
+
+    title: <motion.h1
+              className="text-4xl md:text-5xl lg:text-6xl font-bold leading-relaxed mb-6 text-white font-mont"
+              initial={{ scale: 0.95 }}
+              animate={{ scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+            >Fairness in Every Verdict
+            </motion.h1>,
+
+    subtitle: <motion.p
+              className="text-xl mb-8 text-white font-mont font-bold"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.8, delay: 0.5 }}
+            >
+              Driven by values, led by experience.
+            </motion.p>,
   },
   {
     image: Rights,
-    title: 'Protecting Constitutional Rights',
-    subtitle: 'Defending justice, empowering people.',
+
+    title: <motion.h1
+              className="text-4xl md:text-5xl lg:text-6xl font-bold leading-relaxed mb-6 text-white font-mont"
+              initial={{ scale: 0.95 }}
+              animate={{ scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+            >Protecting Constitutional Rights
+            </motion.h1>,
+
+    subtitle: <motion.p
+              className="text-xl mb-8 text-white font-bold font-mont"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.8, delay: 0.5 }}
+            >
+              Defending justice, empowering people.
+            </motion.p>,
   },
   {
     image: Mission,
-    title: 'Your Justice, Our Mission',
-    subtitle: 'Advocating with heart and mind.',
+
+    title: <motion.h1
+              className="text-4xl md:text-5xl lg:text-6xl font-bold leading-relaxed mb-6 text-white font-mont"
+              initial={{ scale: 0.95 }}
+              animate={{ scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+            >Your Justice, Our Mission
+            </motion.h1>,
+
+    subtitle: <motion.p
+              className="text-xl mb-8 text-white font-bold font-mont"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.8, delay: 0.5 }}
+            >
+              Advocating with heart and mind.
+            </motion.p>,
   },
 ];
+
 
 function Hero() {
   const [current, setCurrent] = useState(0);
@@ -40,66 +101,50 @@ function Hero() {
   }, []);
 
   return (
-    <section className="relative h-screen overflow-hidden font-work">
+    <section className="relative h-screen w-full overflow-hidden font-mont">
       <AnimatePresence mode="wait">
         <motion.div
           key={current}
-          className="absolute inset-0 bg-cover bg-center bg-fixed"
+          className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: `url(${slides[current].image})` }}
-          initial={{ scale: 1.1, opacity: 0 }}
+          initial={{ scale: 1.1, opacity: 0.3 }}
           animate={{ scale: 1, opacity: 1 }}
-          exit={{ opacity: 0 }}
+          exit={{ opacity: 0.2 }}
           transition={{ duration: 1, ease: 'easeInOut' }}
         >
-          <div className="absolute inset-0 bg-deeproyal/50"></div>
+          <div className="absolute inset-0 bg-blue-400/30"></div>
         </motion.div>
       </AnimatePresence>
 
       <div className="container mx-auto px-4 relative z-10 h-full flex flex-col md:flex-row items-center justify-center md:justify-between text-center md:text-left">
-        <motion.div
-          className="text-deepRoyal max-w-2xl"
-          key={current + '-text'}
-          initial={{ y: 50, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          exit={{ y: -20, opacity: 0 }}
-          transition={{ duration: 1.2, ease: 'easeOut' }}
-        >
-          <motion.h1
-            className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-deepRoyal font-mont"
-            // style={{ WebkitTextStroke: '0.5px white', textStroke: '0.5px white' }}
-            initial={{ scale: 0.95 }}
-            animate={{ scale: 1 }}
-            transition={{ duration: 0.8 }}
+        <AnimatePresence mode="wait">
+          <motion.div
+            className="text-white max-w-2xl"
+            key={current + '-text'}
+            initial={{ y: 50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            exit={{ y: -20, opacity: 0 }}
+            transition={{ duration: 1.2, ease: 'easeOut', delay: 0.3 }}
           >
             {slides[current].title}
-          </motion.h1>
-
-          <motion.p
-            className="text-3xl mb-8 text-deepRoyal font-mont"
-            // style={{ WebkitTextStroke: '0.5px white', textStroke: '0.5px white', fontWeight:'500', color:'#2B526E' }}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0, duration: 0.8 }}
-          >
             {slides[current].subtitle}
-          </motion.p>
 
-          <motion.div
-            className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.6 }}
-          >
-            <Link
-              to="/about"
-              className="px-8 py-3 border-2 border-blue-300 hover:border-white hover:text-blue-300 text-darkblue font-medium rounded-md transition-all"
+            <motion.div
+              className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.8, delay: 0.6 }}
             >
-              Learn More
-            </Link>
+              <Link
+                to="/about"
+                className="px-8 py-3 border-2 border-white hover:border-primary hover:text-primary text-white font-medium rounded-md transition-all"
+              >
+                Learn More
+              </Link>
+            </motion.div>
           </motion.div>
-        </motion.div>
+        </AnimatePresence>
 
-        {/* Vertical Dots (hidden on small screens) */}
         <div className="hidden md:flex flex-col items-center gap-3 absolute right-6 top-1/2 transform -translate-y-1/2 z-20">
           {slides.map((_, index) => (
             <button
