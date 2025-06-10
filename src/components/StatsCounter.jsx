@@ -83,7 +83,7 @@ function StatsCounter() {
   return (
     <motion.section 
       ref={sectionRef}
-      className="py-12 bg-deepRoyal text-white relative"
+      className="py-12 bg-white text-deepRoyal relative"
       initial={{ opacity: 0, y: 100 }}
       whileInView={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -100 }}
@@ -101,11 +101,12 @@ function StatsCounter() {
           {statsData.map((stat, index) => (
             <motion.div 
               key={index} 
-              className="text-center p-6 border-b-2 border-blue-500 transform transition hover:scale-105"
+              className="text-center p-6 bg-blue-100 border-b-2 border-gray-500 transform transition hover:scale-105 hover:bg-gray-100"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -30 }}
               transition={{ duration: 1.5, delay: 0.7 + index * 0.2 }}
+              style={{borderRadius:'20px'}}
             >
               <motion.div 
                 className="mb-4 flex justify-center"
@@ -124,10 +125,10 @@ function StatsCounter() {
                 transition={{ duration: 1.5, delay: 1.1 + index * 0.2 }}
               >
                 {counters[index]}
-                <span className="text-blue-0">{stat.suffix}</span>
+                <span className="text-deepRoyal">{stat.suffix}</span>
               </motion.h3>
               <motion.p 
-                className="text-white uppercase text-sm tracking-wider"
+                className="text-deepRoyal uppercase text-sm tracking-wider"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -20 }}

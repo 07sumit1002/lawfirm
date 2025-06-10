@@ -1,25 +1,29 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
+import Rights from '../assets/rights.jpg';
+import Mission from '../assets/mission.jpg';
+import Fair from '../assets/fairness.jpg';
+import Integrity from '../assets/integrity.jpg';
 
 const slides = [
   {
-    image: 'https://images.inc.com/uploaded_files/image/1024x576/getty_608513846_385239.jpg',
+    image: Integrity,
     title: 'Upholding Justice with Integrity',
     subtitle: 'Empowering the voice of law through digital innovation.',
   },
   {
-    image: 'https://media.istockphoto.com/photos/justice-system-in-india-picture-id1136594579?k=20&m=1136594579&s=612x612&w=0&h=g3fK4AddAz4S0rh5yIioqdjkMojRJGX9KKvRmwQKSdg=',
+    image: Fair,
     title: 'Fairness in Every Verdict',
     subtitle: 'Driven by values, led by experience.',
   },
   {
-    image: 'https://i.pinimg.com/originals/ce/1b/38/ce1b384b31fbb3b81dfce46b87f5dfdc.jpg',
+    image: Rights,
     title: 'Protecting Constitutional Rights',
     subtitle: 'Defending justice, empowering people.',
   },
   {
-    image: 'https://images.unsplash.com/photo-1570129477492-45c003edd2be',
+    image: Mission,
     title: 'Your Justice, Our Mission',
     subtitle: 'Advocating with heart and mind.',
   },
@@ -45,7 +49,7 @@ function Hero() {
           initial={{ scale: 1.1, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 1.5, ease: 'easeInOut' }}
+          transition={{ duration: 1, ease: 'easeInOut' }}
         >
           <div className="absolute inset-0 bg-deeproyal/50"></div>
         </motion.div>
@@ -61,21 +65,21 @@ function Hero() {
           transition={{ duration: 1.2, ease: 'easeOut' }}
         >
           <motion.h1
-            className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6"
+            className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-deepRoyal font-mont"
+            style={{ WebkitTextStroke: '0.5px white', textStroke: '0.5px white' }}
             initial={{ scale: 0.95 }}
             animate={{ scale: 1 }}
             transition={{ duration: 0.8 }}
-            // style={{fontFamily:'monsteratt'}}
           >
             {slides[current].title}
           </motion.h1>
 
           <motion.p
-            className="text-xl mb-8 text-mont"
+            className="text-3xl mb-8 text-deepRoyal font-mont"
+            style={{ WebkitTextStroke: '0.5px white', textStroke: '0.5px white', fontWeight:'500', color:'#2B526E' }}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 0.3, duration: 0.8 }}
-            // style={{fontFamily:'monsteratt'}}
+            transition={{ delay: 0, duration: 0.8 }}
           >
             {slides[current].subtitle}
           </motion.p>
@@ -88,7 +92,7 @@ function Hero() {
           >
             <Link
               to="/about"
-              className="px-8 py-3 border-2 border-deepRoyal hover:border-white hover:text-blue-300 text-deepRoyal font-medium rounded-md transition-all"
+              className="px-8 py-3 border-2 border-blue-300 hover:border-white hover:text-blue-300 text-darkblue font-medium rounded-md transition-all"
             >
               Learn More
             </Link>
