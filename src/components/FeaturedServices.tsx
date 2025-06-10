@@ -5,57 +5,57 @@ const serviceData = [
   {
     id: 1,
     title: 'Family Law',
-    description: 'Helping families navigate divorce, custody, and support with compassion and expertise.',
     image: 'https://images.pexels.com/photos/4427612/pexels-photo-4427612.jpeg?auto=compress&cs=tinysrgb&w=600',
   },
   {
     id: 2,
     title: 'Criminal Defense',
-    description: 'Defending your rights against DUI, assault, drug, and other criminal charges.',
     image: 'https://images.pexels.com/photos/4427612/pexels-photo-4427612.jpeg?auto=compress&cs=tinysrgb&w=600',
   },
   {
     id: 3,
     title: 'Corporate Law',
-    description: 'Guiding business formations, contracts, and mergers to secure your company’s future.',
     image: 'https://images.pexels.com/photos/4427612/pexels-photo-4427612.jpeg?auto=compress&cs=tinysrgb&w=600',
   },
   {
     id: 4,
     title: 'Real Estate Law',
-    description: 'Resolving property disputes, transactions, and zoning issues with precision.',
     image: 'https://images.pexels.com/photos/4427612/pexels-photo-4427612.jpeg?auto=compress&cs=tinysrgb&w=600',
   },
   {
     id: 5,
     title: 'Civil Litigation',
-    description: 'Handling commercial disputes, personal injury claims, and insurance matters effectively.',
     image: 'https://images.pexels.com/photos/4427612/pexels-photo-4427612.jpeg?auto=compress&cs=tinysrgb&w=600',
   },
   {
     id: 6,
     title: 'Personal Injury',
-    description: 'Helping victims of accidents receive fair compensation for injuries and related damages.',
     image: 'https://images.pexels.com/photos/4427612/pexels-photo-4427612.jpeg?auto=compress&cs=tinysrgb&w=600',
   },
 ];
 
 const FeaturedServices = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-5 gap-12 font-work">
-      {serviceData.map((service, index) => (
-        <motion.div
-          key={service.id}
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: index * 0.1, duration: 0.5 }}
-          viewport={{ once: true }}
-          className="group w-full bg-white rounded-lg shadow-md hover:shadow-xl border border-gray-200 hover:bg-deepRoyal hover:text-white transition-all duration-500 relative overflow-visible"
-        >
-          <div className="relative pt-12 px-8 pb-8 text-center overflow-visible">
-            {/* Circular image half above the card */}
+    <div className="max-w-6xl mx-auto px-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
+        {serviceData.map((service, index) => (
+          <motion.div
+            key={service.id}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: index * 0.1, duration: 0.5 }}
+            viewport={{ once: true }}
+            className="
+              group relative flex flex-col items-center justify-start
+              w-72 mt-6 px-6 pt-12 pb-3 m-2 mb-6
+              bg-white rounded-xl border shadow-md
+              transition-all duration-300
+              hover:bg-deepRoyal hover:text-white hover:shadow-2xl cursor-pointer
+            "
+          >
+            {/* Centered circular image */}
             <div className="absolute left-1/2 -top-12 transform -translate-x-1/2 z-20">
-              <div className="w-28 h-28 rounded-full border-4 border-white shadow-lg overflow-hidden">
+              <div className="w-28 h-28 rounded-full border-4 border-white shadow-lg overflow-hidden flex items-center justify-center bg-white">
                 <img
                   src={service.image}
                   alt={service.title}
@@ -63,19 +63,25 @@ const FeaturedServices = () => {
                 />
               </div>
             </div>
-
-            {/* Title */}
-            <h3 className="mt-12 text-2xl font-bold text-deepRoyal group-hover:text-white mb-2 transition-colors">
-              {service.title}
-            </h3>
-
-            {/* Description */}
-            <p className="text-deepRoyal group-hover:text-white transition-colors text-base max-w-xs mx-auto">
-              {service.description}
-            </p>
-          </div>
-        </motion.div>
-      ))}
+            {/* Title, arrow, and golden underline */}
+            <div className="flex items-center justify-center gap-2 mt-14 mb-2">
+              <span className="text-2xl font-bold text-deepRoyal group-hover:text-white transition-colors text-center">
+                {service.title}
+              </span>
+              <svg
+                className="w-5 h-4 text-yellow-500 group-hover:text-white transition-colors"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
+            </div>
+            <div className="mx-auto mb-2 w-10 h-0.5 bg-yellow-500 rounded-full group-hover:bg-white transition-colors"></div>
+          </motion.div>
+        ))}
+      </div>
     </div>
   );
 };
