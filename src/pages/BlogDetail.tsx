@@ -103,7 +103,7 @@ const BlogDetail = () => {
         <div className="flex justify-end mt-8">
           <Link
             to="/blog"
-            className="inline-block px-6 py-3 bg-gradient-to-r from-amber-500 to-yellow-400 text-slate-900 font-semibold rounded-lg shadow hover:brightness-90 transition"
+                    className="inline-block px-6 py-3 bg-slate-900 text-white font-semibold rounded-lg shadow border-2 border-slate-800 transform transition-transform duration-200 hover:scale-105 hover:shadow-lg"                  
           >
             ← Back to Blog
           </Link>

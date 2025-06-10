@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import CallToAction from '../components/CallToAction';
 
-// JSON data placed directly in the file
 const articles = [
   {
     id: 1,
@@ -50,7 +49,6 @@ const articles = [
 ];
 
 const Blog = () => {
-  // Show only 1 or 2 articles
   const visibleArticles = articles.slice(0, 2);
 
   return (
@@ -60,14 +58,8 @@ const Blog = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900 opacity-95"></div>
         <div className="relative z-10 container mx-auto px-4">
           <div className="text-center space-y-8">
-            <div className="inline-flex items-center space-x-3 bg-gradient-to-r from-amber-500 to-yellow-600 text-slate-900 px-8 py-4 rounded-full text-sm font-bold shadow-2xl hover:scale-105 transition-all duration-300 cursor-pointer group">
-              <span className="tracking-wide">From Our Insights Desk</span>
-            </div>
             <h1 className="text-5xl lg:text-7xl font-bold text-white leading-tight">
-              Blog &{' '}
-              <span className="bg-gradient-to-r from-amber-400 via-yellow-500 to-amber-400 bg-clip-text text-transparent">
-                Media Insights
-              </span>
+              Blog & Media Insights
             </h1>
             <p className="text-xl lg:text-2xl text-blue-200 max-w-4xl mx-auto leading-relaxed">
               Stay updated with expert legal insights, thought leadership, and highlights from across the firm.
@@ -116,8 +108,7 @@ const Blog = () => {
                 <div>
                   <Link
                     to={`/blog/${slug}`}
-                    className="inline-block px-6 py-3 bg-gradient-to-r from-amber-500 to-yellow-400 text-slate-900 font-semibold rounded-lg shadow hover:brightness-90 transition"
-                  >
+                    className="inline-block px-6 py-3 bg-slate-900 text-white font-semibold rounded-lg shadow border-2 border-slate-800 transform transition-transform duration-200 hover:scale-105 hover:shadow-lg"                  >
                     Read Article
                   </Link>
                 </div>

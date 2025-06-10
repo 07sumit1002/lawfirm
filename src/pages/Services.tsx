@@ -151,65 +151,67 @@ const Services = () => {
         </div>
       </section>
 
-      <section className="py-16 bg-royal-blue-900 text-white">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Our Approach to Legal Services
-              </h2>
-              <p className="mb-6 text-base md:text-lg">
-                At Aggarwal Law Firm, we believe in a client-centered approach
-                that focuses on understanding your unique needs and developing
-                tailored legal strategies to achieve your goals.
-              </p>
-              <div className="space-y-6 text-base md:text-lg">
-                {[ 
-                  {
-                    title: "Initial Consultation",
-                    description:
-                      "We begin with a thorough consultation to understand your legal needs and objectives.",
-                  },
-                  {
-                    title: "Strategy Development",
-                    description:
-                      "Our team develops a customized legal strategy tailored to your specific situation.",
-                  },
-                  {
-                    title: "Execution & Representation",
-                    description:
-                      "We implement the strategy with meticulous attention to detail and advocate on your behalf.",
-                  },
-                  {
-                    title: "Ongoing Support",
-                    description:
-                      "We provide continuous guidance and support throughout the legal process and beyond.",
-                  },
-                ].map((step, index) => (
-                  <div key={index} className="flex">
-                    <div className="mr-5">
-                      <div className="flex items-center justify-center w-10 h-10 rounded-full bg-white text-royal-blue-900 font-semibold text-base">
-                        {index + 1}
-                      </div>
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-semibold mb-2">{step.title}</h3>
-                      <p>{step.description}</p>
-                    </div>
-                  </div>
-                ))}
+     <section className="py-16 bg-gray-50 text-gray-800">
+  <div className="container mx-auto px-4">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+      <div>
+        <h2 className="text-3xl md:text-4xl font-bold text-deepRoyal mb-6">
+          Our Approach to Legal Services
+        </h2>
+        <p className="mb-6 text-base md:text-lg text-gray-700">
+          At Aggarwal Law Firm, we believe in a client-centered approach that focuses on understanding your unique needs and developing tailored legal strategies to achieve your goals.
+        </p>
+        <div className="space-y-6 text-base md:text-lg text-gray-700">
+          {[
+            {
+              title: "Initial Consultation",
+              description:
+                "We begin with a thorough consultation to understand your legal needs and objectives.",
+            },
+            {
+              title: "Strategy Development",
+              description:
+                "Our team develops a customized legal strategy tailored to your specific situation.",
+            },
+            {
+              title: "Execution & Representation",
+              description:
+                "We implement the strategy with meticulous attention to detail and advocate on your behalf.",
+            },
+            {
+              title: "Ongoing Support",
+              description:
+                "We provide continuous guidance and support throughout the legal process and beyond.",
+            },
+          ].map((step, index) => (
+            <div key={index} className="flex">
+              <div className="mr-5">
+                <div className="flex items-center justify-center w-10 h-10 rounded-full bg-deepRoyal text-white font-semibold text-base">
+                  {index + 1}
+                </div>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-deepRoyal mb-1">
+                  {step.title}
+                </h3>
+                <p>{step.description}</p>
               </div>
             </div>
-            <div className="relative flex items-center justify-center">
-              <img
-                src="/images/laws.png"
-                alt="Attorney working with client"
-                className="rounded-lg shadow-lg w-full h-[480px] md:h-[580px] lg:h-[620px] object-cover"
-              />
-            </div>
-          </div>
+          ))}
         </div>
-      </section>
+      </div>
+
+      <div className="relative flex items-center justify-center">
+        <img
+          src="/images/laws.png"
+          alt="Attorney working with client"
+          className="rounded-lg shadow-lg w-full h-[480px] md:h-[580px] lg:h-[620px] object-cover"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
 
       <CallToAction />
     </div>
