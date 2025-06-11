@@ -116,7 +116,7 @@ function Hero() {
         </motion.div>
       </AnimatePresence>
 
-      <div className="container mx-auto px-4 relative z-10 h-full flex flex-col md:flex-row items-center justify-center md:justify-between text-center md:text-left">
+      <div className="container mx-auto px-4 relative z-10 h-full flex flex-col items-center justify-center text-center">
         <AnimatePresence mode="wait">
           <motion.div
             className="text-white max-w-2xl"
@@ -130,7 +130,7 @@ function Hero() {
             {slides[current].subtitle}
 
             <motion.div
-              className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start"
+              className="flex flex-col sm:flex-row gap-4 justify-center"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.6 }}
@@ -157,6 +157,7 @@ function Hero() {
           ))}
         </div>
       </div>
+
     </section>
   );
 }
