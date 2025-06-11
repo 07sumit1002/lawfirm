@@ -33,6 +33,7 @@ export default {
       fontFamily: {
         sans: ['Montserrat', 'sans-serif'],
         serif: ['Montserrat', 'sans-serif'],
+        hind : ['Hind','sans-serif'],
         work: ["Work Sans", 'sans-serif'],
         mont: ['Montserrat'],
       },

@@ -83,15 +83,15 @@ const About = () => {
       >
         <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div>
-            <h2 className="text-3xl font-serif font-bold text-deepRoyal mb-6">Our Story</h2>
-            <p className="text-deepRoyal/80 mb-4 font-extralight">Founded in 1998 by Senior Advocate Rajesh Aggarwal, our firm has grown from a small practice to one of the most respected legal establishments in the region.</p>
-            <p className="text-deepRoyal/80 mb-4 font-normal">Our mission is to deliver high-quality legal services with integrity, efficiency, and a focus on results. We believe in building long-term relationships with our clients based on trust and successful outcomes.</p>
-            <p className="text-deepRoyal/80 mb-6 font-extralight">Today, Aggarwal Law Firm is home to a diverse team of legal professionals who share a common commitment to excellence and client advocacy.</p>
+            <h2 className="text-4xl font-work font-bold text-deepRoyal mb-6">Our Story</h2>
+            <p className="text-black text-lg mb-4 ">Founded in 1998 by Senior Advocate Rajesh Aggarwal, our firm has grown from a small practice to one of the most respected legal establishments in the region.</p>
+            <p className="text-black text-lg mb-4 font-normal">Our mission is to deliver high-quality legal services with integrity, efficiency, and a focus on results. We believe in building long-term relationships with our clients based on trust and successful outcomes.</p>
+            <p className="text-black text-lg mb-6 font-extralight">Today, Aggarwal Law Firm is home to a diverse team of legal professionals who share a common commitment to excellence and client advocacy.</p>
             <div className="space-y-3">
               {["Experienced team of specialized attorneys", "Personalized approach to each case", "Proven track record of successful outcomes", "Commitment to ethical legal practices"].map((text, i) => (
                 <div key={i} className="flex items-start">
-                  <Check className="h-5 w-5 text-blue-500 mt-1 mr-2" />
-                  <span className="text-deepRoyal font-light">{text}</span>
+                  <Check className="h-5 w-5 text-black mt-1 mr-2" />
+                  <span className="text-black text-lg font-light">{text}</span>
                 </div>
               ))}
             </div>

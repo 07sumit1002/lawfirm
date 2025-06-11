@@ -106,45 +106,49 @@ const Services = () => {
             {servicesData.map((service, index) => (
               <Link to={`/services/${service.slug}`} key={service.id} className="w-full flex justify-center">
                 <motion.div
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ delay: index * 0.1, duration: 0.5 }}
-                  viewport={{ once: true }}
-                  className="
-                    group relative flex flex-col items-center justify-start
-                    w-72 mt-6 px-6 pt-12 pb-3 m-2 mb-6
-                    bg-white rounded-xl border shadow-md
-                    transition-all duration-300
-                    hover:bg-blue-900 hover:text-white hover:shadow-2xl cursor-pointer
-                  "
-                >
-                  {/* Centered circular image */}
-                  <div className="absolute left-1/2 -top-12 transform -translate-x-1/2 z-20">
-                    <div className="w-28 h-28 rounded-full border-4 border-white shadow-lg overflow-hidden flex items-center justify-center bg-white">
-                      <img
-                        src={service.image}
-                        alt={service.title}
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.1, duration: 0.5 }}
+                viewport={{ once: true }}
+                className="
+                  group relative flex flex-col items-center justify-start
+                  w-72 mt-6 px-6 pt-12 pb-3 m-2 mb-6
+                  bg-white rounded-xl border shadow-md
+                  transition-all duration-300
+                  hover:bg-white hover:text-white hover:shadow-2xl cursor-pointer
+                "
+              >
+                {/* Image */}
+                <div className="absolute left-1/2 -top-12 transform -translate-x-1/2 z-20">
+                  <div className="w-28 h-28 rounded-full border-4 border-white shadow-lg overflow-hidden flex items-center justify-center bg-white">
+                    <img
+                      src={service.image}
+                      alt={service.title}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
-                  {/* Title, arrow, and golden underline */}
-                  <div className="flex items-center justify-center gap-2 mt-14 mb-2">
-                    <span className="text-2xl font-bold text-blue-900 group-hover:text-white transition-colors text-center">
-                      {service.title}
-                    </span>
-                    <svg
-                      className="w-5 h-5 text-yellow-500 group-hover:text-white transition-colors"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      viewBox="0 0 24 24"
-                    >
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-                    </svg>
-                  </div>
-                  <div className="mx-auto mb-2 w-10 h-0.5 bg-yellow-500 rounded-full group-hover:bg-white transition-colors"></div>
-                </motion.div>
+                </div>
+
+                {/* Title & Arrow */}
+                <div className="flex items-center justify-center gap-2 mt-14 mb-2">
+                  <span className="text-2xl font-bold text-blue-900 group-hover:text-blue-900 transition-colors text-center">
+                    {service.title}
+                  </span>
+                  <svg
+                    className="w-5 h-5 text-yellow-500 group-hover:text-white transition-colors"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+
+                {/* Underline */}
+                <div className="mx-auto mb-2 w-10 h-0.5 bg-yellow-500 rounded-full group-hover:bg-white transition-colors"></div>
+              </motion.div>
+
               </Link>
             ))}
           </div>
