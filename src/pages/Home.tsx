@@ -48,7 +48,7 @@ const Home = () => {
             transition={{ duration: 1.5, delay: 0.7 }}
           >
             <a 
-              href="/services" 
+              href="/practise areas" 
               className="inline-flex items-center text-primary font-medium hover:text-deeproyal/80 transition-colors"
             >
               View All Practice Areas

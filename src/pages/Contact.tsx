@@ -95,26 +95,26 @@ const Contact = () => {
               viewport={{ once: false, amount: 0.3 }}
             >
               <h2 className="text-3xl font-serif font-bold text-blue-900 mb-6">Get In Touch</h2>
-              <p className="text-blue-600 mb-8">
+              <p className="text-deepRoyal mb-8">
                 Have questions or need legal assistance? Contact us today to schedule a consultation with one of our experienced attorneys.
               </p>
               {[{
-                  icon: <MapPin className="h-6 w-6 text-white" />,
+                  icon: <MapPin className="h-6 w-6 text-deepRoyal" />,
                   title: 'Our Office',
                   lines: ['123 Legal Avenue, New Delhi, India - 110001'],
                 },
                 {
-                  icon: <Phone className="h-6 w-6 text-white" />,
+                  icon: <Phone className="h-6 w-6 text-deepRoyal" />,
                   title: 'Phone',
                   lines: ['+91 98765 43210', '+91 98765 43211'],
                 },
                 {
-                  icon: <Mail className="h-6 w-6 text-white" />,
+                  icon: <Mail className="h-6 w-6 text-deepRoyal" />,
                   title: 'Email',
                   lines: ['info@aggarwallaw.com', 'contact@aggarwallaw.com'],
                 },
                 {
-                  icon: <Clock className="h-6 w-6 text-white" />,
+                  icon: <Clock className="h-6 w-6 text-deepRoyal" />,
                   title: 'Business Hours',
                   lines: ['Mon - Fri: 9 AM - 6 PM', 'Sat: 10 AM - 2 PM', 'Sun: Closed'],
                 },
@@ -123,14 +123,14 @@ const Contact = () => {
                   key={i}
                   className="flex items-start hover:bg-slate-100 border-2 rounded-3xl border-blue-600 px-3 w-full sm:w-2/3 py-2 mt-1"
                 >
-                  <div className="bg-blue-500 p-3 rounded-full mr-4">{icon}</div>
+                  <div className="bg-white p-3 border border-deepRoyal rounded-full mr-4">{icon}</div>
                   <div>
-                    <h3 className="text-lg font-serif font-bold text-blue-600 mb-2">{title}</h3>
+                    <h3 className="text-lg font-serif font-bold text-deepRoyal mb-2">{title}</h3>
                     {lines.map((line, idx) => {
                       const isEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(line);
                       const isPhone = /^\+?\d[\d\s-]{7,}$/.test(line);
                       return (
-                        <p key={idx} className="text-blue-600 break-words text-sm sm:text-base">
+                        <p key={idx} className="text-deepRoyal/70 break-words text-sm sm:text-base">
                           {isEmail ? (
                             <a href={`mailto:${line}`} className="hover:text-blue-300">{line}</a>
                           ) : isPhone ? (
@@ -159,7 +159,7 @@ const Contact = () => {
                       href={url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="bg-blue-600 text-white hover:bg-blue-200 hover:text-navy-900 w-10 h-10 rounded-full flex items-center justify-center transition-colors mx-1"
+                      className="bg-blue-200/40 text-deepRoyal hover:bg-blue-200 hover:text-navy-900 w-10 h-10 rounded-full flex items-center justify-center transition-colors mx-1"
                       aria-label={platform}
                     >
                       {/* <span className="sr-only">{platform}</span> */}
@@ -284,7 +284,7 @@ const Contact = () => {
                   <div>
                     <button 
                       type="submit" 
-                      className="w-full px-6 py-3 bg-blue-500 hover:bg-blue-600 hover:text-white text-navy-900 font-medium rounded-md transition-colors transform"
+                      className="w-full px-6 py-3 bg-blue-200/30 hover:bg-gray-300/30 hover:text-deepRoyal/20 text-deepRoyal font-medium rounded-md transition-colors transform"
                     >
                       Send Message
                     </button>
@@ -308,7 +308,7 @@ const Contact = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="text-3xl font-serif font-bold text-navy-900 mb-4">Our Location</h2>
-            <p className="text-gray-600">Conveniently located in the heart of Kurukshetra, our office is easily accessible via public transportation.</p>
+            <p className="text-deepRoyal">Conveniently located in the heart of Kurukshetra, our office is easily accessible via public transportation.</p>
           </div>
           <div className="rounded-lg overflow-hidden shadow-md h-96">
             <iframe
