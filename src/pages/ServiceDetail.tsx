@@ -370,7 +370,7 @@ const ServiceDetail: React.FC = () => {
         <div className="mt-16 flex justify-center">
           <Link
             to="/contact"
-            className="px-8 py-4 bg-blue-900 text-white rounded-lg hover:bg-blue-800 transition duration-300 text-lg font-semibold shadow-md"
+            className="px-8 py-4 bg-white text-deepRoyal rounded-lg hover:bg-blue-800 transition duration-300 text-lg font-semibold shadow-md"
           >
             Contact Us to know more about {service.title}
           </Link>
