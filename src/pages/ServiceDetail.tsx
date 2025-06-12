@@ -34,7 +34,15 @@ const servicesData=[
       "Court Representation (if needed)",
       "Resolution & Follow-up"
     ],
-    "cta": "Contact our Family Law team for a confidential consultation and let us help you protect your family's future."
+    "cta": "Contact our Family Law team for a confidential consultation and let us help you protect your family's future.",
+     "ipc_sections": [
+      "Section 498A – Cruelty by husband or relatives",
+      "Section 125 CrPC – Maintenance of wife and children",
+      "Section 376 – Rape",
+      "Section 354 – Assault on woman",
+      "Hindu Marriage Act, 1955 – Divorce, Maintenance, Custody",
+      "Protection of Women from Domestic Violence Act, 2005"
+    ]
   },
   {
     "id": 2,
@@ -68,7 +76,15 @@ const servicesData=[
       "Trial Preparation & Representation",
       "Appeals (if necessary)"
     ],
-    "cta": "If you’re facing criminal charges, contact us immediately for a strong defense."
+    "cta": "If you’re facing criminal charges, contact us immediately for a strong defense.",
+    "ipc_sections": [
+      "Section 302 – Murder",
+      "Section 307 – Attempt to murder",
+      "Section 376 – Rape",
+      "Section 420 – Cheating",
+      "Section 120B – Criminal conspiracy",
+      "Section 34 – Common intention"
+    ]
   },
   {
     "id": 3,
@@ -102,7 +118,15 @@ const servicesData=[
       "Ongoing Legal Compliance",
       "Dispute Resolution (if needed)"
     ],
-    "cta": "Secure your business's future—consult our Corporate Law experts today."
+    "cta": "Secure your business's future—consult our Corporate Law experts today.",
+    "ipc_sections": [
+      "Section 405 – Criminal breach of trust",
+      "Section 420 – Cheating and dishonestly inducing delivery of property",
+      "Section 463 – Forgery",
+      "Companies Act, 2013 – Sections 447 (Fraud), 448 (False statement), 449 (False evidence)",
+      "SEBI Act – Insider trading & frauds",
+      "FEMA – Foreign exchange violations"
+    ]
   },
   {
     "id": 4,
@@ -136,7 +160,15 @@ const servicesData=[
       "Due Diligence & Title Search",
       "Transaction Closure"
     ],
-    "cta": "Protect your property investments—speak to our Real Estate Law team."
+    "cta": "Protect your property investments—speak to our Real Estate Law team.",
+    "ipc_sections": [
+      "Section 420 – Cheating",
+      "Section 406 – Criminal breach of trust",
+      "Section 467 – Forgery of valuable security",
+      "RERA Act – Real Estate (Regulation and Development) Act",
+      "Transfer of Property Act, 1882",
+      "Indian Contract Act, 1872"
+    ]
   },
   {
     "id": 5,
@@ -170,7 +202,15 @@ const servicesData=[
       "Trial Representation",
       "Judgment & Enforcement"
     ],
-    "cta": "Need help with a dispute? Contact our Civil Litigation experts."
+    "cta": "Need help with a dispute? Contact our Civil Litigation experts.",
+    "ipc_sections": [
+      "Section 415 – Misrepresentation",
+      "Specific Relief Act – Contract enforcement",
+      "Code of Civil Procedure (CPC), 1908",
+      "Section 9 CPC – Jurisdiction of civil courts",
+      "Section 10 CPC – Stay of suit",
+      "Section 151 CPC – Inherent powers of court"
+    ]
   },
   {
     "id": 6,
@@ -204,7 +244,14 @@ const servicesData=[
       "Enforcement & Monitoring",
       "Litigation (if needed)"
     ],
-    "cta": "Safeguard your ideas—consult our Intellectual Property specialists."
+    "cta": "Safeguard your ideas—consult our Intellectual Property specialists.",
+    "ipc_sections": [
+      "Section 63 of Copyright Act – Infringement",
+      "Section 104 of Trademarks Act – Selling goods with false trademark",
+      "Section 120 IPC – Criminal conspiracy",
+      "Section 463 – Forgery",
+      "Information Technology Act – Section 66 (computer-related offenses)"
+    ]
   },
   {
     "id": 7,
@@ -238,7 +285,15 @@ const servicesData=[
       "Filing Claims",
       "Litigation & Resolution"
     ],
-    "cta": "Protect your workplace rights—speak to our Employment Law team."
+    "cta": "Protect your workplace rights—speak to our Employment Law team.",
+    "ipc_sections": [
+      "Section 509 – Insulting modesty",
+      "Section 506 – Criminal intimidation",
+      "Sexual Harassment of Women at Workplace Act, 2013",
+      "Industrial Disputes Act, 1947",
+      "Minimum Wages Act, 1948",
+      "Factories Act, 1948"
+    ]
   },
   {
     "id": 8,
@@ -272,7 +327,15 @@ const servicesData=[
       "Audit Support",
       "Dispute Resolution"
     ],
-    "cta": "Optimize your taxes—consult our Tax Law experts today."
+    "cta": "Optimize your taxes—consult our Tax Law experts today.",
+    "ipc_sections": [
+      "Section 276C of Income Tax Act – Wilful attempt to evade tax",
+      "Section 277 – False statement in verification",
+      "Section 406 IPC – Criminal breach of trust",
+      "GST Act – Section 132 (Tax evasion)",
+      "Black Money Act – Undisclosed foreign income",
+      "Benami Transactions Prohibition Act"
+    ]
   }
 ]
 ;
@@ -316,17 +379,28 @@ const ServiceDetail: React.FC = () => {
 
       {/* Main Content */}
       <div className="container mx-auto px-4 py-16 max-w-5xl">
-        <p className="text-lg mb-6 text-gray-700">{service.details}</p>
+        <p className="text-lg mb-6 text-gray-700 text-justify">{service.details}</p>
 
         {/* Features Section */}
         {service.features?.length > 0 && (
-          <div className="mt-12">
-            <h2 className="text-2xl font-bold text-deepRoyal mb-4">Key Features</h2>
-            <ul className="list-disc ml-6 text-gray-800 space-y-3 text-lg">
-              {service.features.map((feature, index) => (
-                <li key={index}>{feature}</li>
-              ))}
-            </ul>
+          <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="bg-white shadow-lg rounded-2xl p-6 border border-gray-200 hover:bg-gray-100/70">
+              <h2 className="text-2xl font-bold text-deepRoyal mb-4">Key Features</h2>
+              <ul className="list-disc ml-6 text-gray-800 space-y-3 text-lg">
+                {service.features.map((feature, index) => (
+                  <li key={index}>{feature}</li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="bg-white shadow-lg rounded-2xl p-6 border border-gray-200 hover:bg-gray-100/70">
+              <h2 className="text-2xl font-bold text-deepRoyal mb-4">IPC Sections</h2>
+              <ul className="list-disc ml-6 text-gray-800 space-y-3 text-lg">
+                {service.ipc_sections.map((ipc, index) => (
+                  <li key={index}>{ipc}</li>
+                ))}
+              </ul>
+            </div>
           </div>
         )}
 
@@ -370,7 +444,7 @@ const ServiceDetail: React.FC = () => {
         <div className="mt-16 flex justify-center">
           <Link
             to="/contact"
-            className="px-8 py-4 bg-white text-deepRoyal rounded-lg hover:bg-blue-800 transition duration-300 text-lg font-semibold shadow-md"
+            className="px-8 py-4 bg-white text-deepRoyal rounded-lg hover:bg-deepRoyal/40 transition duration-300 text-lg font-semibold shadow-md"
           >
             Contact Us to know more about {service.title}
           </Link>
