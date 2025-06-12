@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight} from 'lucide-react';
 import Hero from '../components/Hero';
 import StatsCounter from '../components/StatsCounter';
 import FeaturedServices from '../components/FeaturedServices';
@@ -7,6 +7,7 @@ import TestimonialSlider from '../components/TestimonialSlider';
 import WhyChooseUs from '../components/WhyChooseUs';
 import CallToAction from '../components/CallToAction';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
@@ -47,13 +48,11 @@ const Home = () => {
             exit={{ opacity: 0, y: -50 }}
             transition={{ duration: 1.5, delay: 0.7 }}
           >
-            <a 
-              href="/practise areas" 
-              className="inline-flex items-center text-primary font-medium hover:text-deeproyal/80 transition-colors"
+            <Link to="/practise areas" className="inline-flex items-center text-primary font-medium hover:text-deeproyal/80 transition-colors"
             >
               View All Practice Areas
               <ArrowRight size={16} className="ml-2" />
-            </a>
+            </Link>
           </motion.div>
         </div>
       </motion.section>

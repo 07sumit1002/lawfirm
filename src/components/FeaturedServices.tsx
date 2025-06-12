@@ -71,7 +71,7 @@ const FeaturedServices = () => {
 
               {/* Title and icon */}
               <div className="flex items-center justify-center gap-2 mt-14 mb-2">
-                <span className="text-2xl font-bold text-deepRoyal group-hover:text-white transition-colors text-center">
+                <span className="text-2xl font-bold text-deepRoyal group-hover:text-gray-200 transition-colors text-center">
                   {service.title}
                 </span>
                 <svg
