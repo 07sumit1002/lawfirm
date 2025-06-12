@@ -38,7 +38,7 @@ const WhyChooseUs = () => {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-3xl md:text-4xl font-work font-bold text-deepRoyal mb-6">
-              Why Choose Aggarwal Law Firm?
+              Why Choose Aggarwal Legal Firm?
             </h2>
             <p className="text-deepRoyal mb-8 font-work font-semibold">
               With decades of combined experience, our attorneys bring knowledge, skill, and dedication to every case...
@@ -69,8 +69,8 @@ const WhyChooseUs = () => {
               />
             </div>
             <div className="absolute -bottom-8 -left-8 bg-white p-6 rounded-lg shadow-lg max-w-xs">
-              <p className="text-deepRoyal font-mont font-bold text-xl mb-2">25+ Years of Experience</p>
-              <p className="text-deepRoyal  text-sm font-bold">Serving clients since 1998.</p>
+              <p className="text-deepRoyal font-mont font-bold text-xl mb-2">55+ Years of Experience</p>
+              <p className="text-deepRoyal  text-sm font-bold">Serving clients since 1970.</p>
             </div>
           </motion.div>
         </div>

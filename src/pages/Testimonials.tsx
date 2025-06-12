@@ -8,7 +8,7 @@ const testimonials = [
     position: 'Business Owner',
     company: 'Mehta Enterprises',
     image: 'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=600',
-    quote: 'The legal expertise provided by Aggarwal Law Firm was exceptional. They helped my business navigate complex regulations with ease and professionalism. I highly recommend their services to anyone looking for reliable legal counsel.',
+    quote: 'The legal expertise provided by Aggarwal Legal Firm was exceptional. They helped my business navigate complex regulations with ease and professionalism. I highly recommend their services to anyone looking for reliable legal counsel.',
     rating: 5,
     service: 'Corporate Law'
   },
@@ -38,7 +38,7 @@ const testimonials = [
     position: 'Entrepreneur',
     company: 'TechStart Solutions',
     image: 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=600',
-    quote: 'Aggarwal Law Firm provided exceptional guidance for my startup. Their expertise in intellectual property protection was invaluable as we launched our technology platform. They continue to be our trusted legal advisors.',
+    quote: 'Aggarwal Legal Firm provided exceptional guidance for my startup. Their expertise in intellectual property protection was invaluable as we launched our technology platform. They continue to be our trusted legal advisors.',
     rating: 5,
     service: 'Intellectual Property'
   },
@@ -102,7 +102,7 @@ const Testimonials = () => {
               What Our Clients Say
             </h2>
             <p className="text-gray-600">
-              At Aggarwal Law Firm, client satisfaction is our top priority. Here's what some of our clients have to say about their experience working with our team.
+              At Aggarwal Legal Firm, client satisfaction is our top priority. Here's what some of our clients have to say about their experience working with our team.
             </p>
           </div>
           <div className="max-w-5xl mx-auto text-center mb-12">

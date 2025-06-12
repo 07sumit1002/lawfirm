@@ -67,7 +67,7 @@ const About = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">Aggarwal Legal Firm</h1>
-            <p className="text-xl text-gray-100">A premier law firm with a commitment to excellence and client satisfaction.</p>
+            <p className="text-xl text-gray-100">A premier legal firm with a commitment to excellence and client satisfaction.</p>
           </div>
         </div>
       </motion.section>
@@ -86,7 +86,7 @@ const About = () => {
             <h2 className="text-4xl font-work font-bold text-deepRoyal mb-6">Our Story</h2>
             <p className="text-black text-lg mb-4 ">Founded in 1998 by Senior Advocate Rajesh Aggarwal, our firm has grown from a small practice to one of the most respected legal establishments in the region.</p>
             <p className="text-black text-lg mb-4 font-normal">Our mission is to deliver high-quality legal services with integrity, efficiency, and a focus on results. We believe in building long-term relationships with our clients based on trust and successful outcomes.</p>
-            <p className="text-black text-lg mb-6 font-extralight">Today, Aggarwal Law Firm is home to a diverse team of legal professionals who share a common commitment to excellence and client advocacy.</p>
+            <p className="text-black text-lg mb-6 font-extralight">Today, Aggarwal Legal Firm is home to a diverse team of legal professionals who share a common commitment to excellence and client advocacy.</p>
             <div className="space-y-3">
               {["Experienced team of specialized attorneys", "Personalized approach to each case", "Proven track record of successful outcomes", "Commitment to ethical legal practices"].map((text, i) => (
                 <div key={i} className="flex items-start">
@@ -99,7 +99,7 @@ const About = () => {
           <div className="relative">
             <img src="https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Law firm office" className="rounded-lg shadow-lg h-[700px] w-full" />
             <div className="absolute -bottom-8 -right-8 bg-gray-100 p-6 rounded-lg shadow-lg">
-              <p className="text-deepRoyal font-serif text-2xl font-bold">25+</p>
+              <p className="text-deepRoyal font-serif text-2xl font-bold">55+</p>
               <p className="text-deepRoyal">Years of Excellence</p>
             </div>
           </div>

@@ -443,7 +443,7 @@ const Services = () => {
           Our Approach to Legal Services
         </h2>
         <p className="mb-6 text-base md:text-lg text-gray-700">
-          At Aggarwal Law Firm, we believe in a client-centered approach that focuses on understanding your unique needs and developing tailored legal strategies to achieve your goals.
+          At Aggarwal Legal Firm, we believe in a client-centered approach that focuses on understanding your unique needs and developing tailored legal strategies to achieve your goals.
         </p>
         <div className="space-y-6 text-base md:text-lg text-gray-700">
           {[

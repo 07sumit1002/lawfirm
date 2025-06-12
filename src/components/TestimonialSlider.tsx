@@ -4,7 +4,7 @@ const testimonials = [
   {
     id: 1,
     name: 'Rajiv Mehta',
-    quote: 'The legal expertise provided by Aggarwal Law Firm was exceptional.',
+    quote: 'The legal expertise provided by Aggarwal Legal Firm was exceptional.',
     rating: 4
   },
   {

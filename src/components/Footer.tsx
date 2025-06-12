@@ -10,7 +10,7 @@ const Footer = () => {
           <div>
             <div className="flex items-center mb-4">
               <Scale className="h-8 w-8 text-blue-100 mr-2" />
-              <span className="text-xl font-serif font-bold text-white">Aggarwal Law Firm</span>
+              <span className="text-xl font-serif font-bold text-white">Aggarwal Legal Firm</span>
             </div>
             <p className="text-white font-light mb-4">
               Committed to providing exceptional legal services with integrity and dedication.
@@ -89,7 +89,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-blue-700 mt-12 pt-8 text-center text-blue-300">
-          <p>© {new Date().getFullYear()} Aggarwal Law Firm. All Rights Reserved.</p>
+          <p>© {new Date().getFullYear()} Aggarwal Legal Firm. All Rights Reserved.</p>
         </div>
       </div>
     </footer>
