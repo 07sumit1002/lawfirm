@@ -384,7 +384,7 @@ const Services = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
             {servicesData.map((service, index) => (
-              <Link to={`/services/${service.slug}`} key={service.id} className="w-full flex justify-center">
+              <Link to={`/practise areas/${service.slug}`} key={service.id} className="w-full flex justify-center">
                 <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}

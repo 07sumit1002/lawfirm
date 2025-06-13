@@ -35,11 +35,11 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-serif font-semibold mb-4 border-b border-blue-500 pb-2 text-white">Practice Areas</h3>
             <ul className="space-y-2">
-              <li><Link to="/services/family-law" className="text-blue-200 hover:text-blue-500 transition-colors">Family Law</Link></li>
-              <li><Link to="/services/criminal-defense" className="text-blue-200 hover:text-blue-500 transition-colors">Criminal Defense</Link></li>
-              <li><Link to="/services/corporate-law" className="text-blue-200 hover:text-blue-500 transition-colors">Corporate Law</Link></li>
-              <li><Link to="/services/real-estate-law" className="text-blue-200 hover:text-blue-500 transition-colors">Real Estate Law</Link></li>
-              <li><Link to="/services/civil-litigation" className="text-blue-200 hover:text-blue-500 transition-colors">Civil Litigation</Link></li>
+              <li><Link to="/practise areas/family-law" className="text-blue-200 hover:text-blue-500 transition-colors">Family Law</Link></li>
+              <li><Link to="/practise areas/criminal-defense" className="text-blue-200 hover:text-blue-500 transition-colors">Criminal Defense</Link></li>
+              <li><Link to="/practise areas/corporate-law" className="text-blue-200 hover:text-blue-500 transition-colors">Corporate Law</Link></li>
+              <li><Link to="/practise areas/real-estate-law" className="text-blue-200 hover:text-blue-500 transition-colors">Real Estate Law</Link></li>
+              <li><Link to="/practise areas/civil-litigation" className="text-blue-200 hover:text-blue-500 transition-colors">Civil Litigation</Link></li>
             </ul>
 
           </div>
