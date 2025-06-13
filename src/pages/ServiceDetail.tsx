@@ -19,7 +19,7 @@ const servicesData=[
     ],
     "faqs": [
       {
-        "question": "What should I bring to my first consultation?",
+        "question": "What should  I bring to my first consultation?",
         "answer": "Bring any relevant legal documents such as marriage certificates, court orders, financial records, and a list of questions or concerns you have."
       },
       {
@@ -28,11 +28,11 @@ const servicesData=[
       }
     ],
     "process": [
-      "Initial Consultation & Case Assessment",
-      "Document Collection & Review",
-      "Negotiation & Mediation",
-      "Court Representation (if needed)",
-      "Resolution & Follow-up"
+      "Begins with a thorough consultation to understand the unique family situation and legal needs.",
+      "Collects and reviews all necessary documents, such as financial records and court orders, to build the case.",
+      "Engages in negotiation and mediation to seek amicable solutions and minimize conflict wherever possible.",
+      "Provides assertive court representation if needed to protect interests.",
+      "Continues to offer support after resolution to ensure the family's interests remain protected."
     ],
     "cta": "Contact our Family Law team for a confidential consultation and let us help you protect your family's future.",
      "ipc_sections": [
@@ -70,11 +70,11 @@ const servicesData=[
       }
     ],
     "process": [
-      "Case Evaluation & Strategy",
-      "Investigation & Evidence Gathering",
-      "Pre-Trial Motions",
-      "Trial Preparation & Representation",
-      "Appeals (if necessary)"
+      "Starts with a consultation to assess business goals and legal requirements.",
+      "Handles entity formation and prepares all required documentation for legal compliance.",
+      "Negotiates and drafts contracts to protect interests in all business dealings.",
+      "Ensures ongoing legal compliance and advises on regulatory matters as the business grows.",
+      "Resolves disputes efficiently through negotiation or litigation when conflicts arise."
     ],
     "cta": "If you’re facing criminal charges, contact us immediately for a strong defense.",
     "ipc_sections": [
@@ -112,11 +112,11 @@ const servicesData=[
       }
     ],
     "process": [
-      "Consultation & Needs Assessment",
-      "Entity Formation & Documentation",
-      "Contract Negotiation",
-      "Ongoing Legal Compliance",
-      "Dispute Resolution (if needed)"
+      "Starts with a consultation to assess business goals and legal requirements.",
+      "Handles entity formation and prepares all required documentation for legal compliance.",
+      "Negotiates and drafts contracts to protect interests in all business dealings.",
+      "Ensures ongoing legal compliance and advises on regulatory matters as the business grows.",
+      "Resolves disputes efficiently through negotiation or litigation when conflicts arise."
     ],
     "cta": "Secure your business's future—consult our Corporate Law experts today.",
     "ipc_sections": [
@@ -154,11 +154,11 @@ const servicesData=[
       }
     ],
     "process": [
-      "Consultation & Property Review",
-      "Document Preparation",
-      "Negotiation & Agreement",
-      "Due Diligence & Title Search",
-      "Transaction Closure"
+      "Conducts an initial consultation and reviews all details of the property or transaction.",
+      "Prepares and reviews legal documents, including agreements and title papers, for accuracy.",
+      "Negotiates terms and facilitates agreements between all parties to ensure smooth transactions.",
+      "Performs due diligence, including title searches and verification, to safeguard the investment.",
+      "Oversees the closure of transactions and provides support for any post-deal issues."
     ],
     "cta": "Protect your property investments—speak to our Real Estate Law team.",
     "ipc_sections": [
@@ -195,12 +195,12 @@ const servicesData=[
         "answer": "Timelines vary, but many cases resolve within 6-18 months depending on complexity."
       }
     ],
-    "process": [
-      "Case Assessment",
-      "Pleadings & Discovery",
-      "Negotiation & Settlement",
-      "Trial Representation",
-      "Judgment & Enforcement"
+   "process": [
+      "Assesses the case to understand the dispute and determine the best legal approach.",
+      "Drafts pleadings and conducts discovery to gather evidence and clarify the issues involved.",
+      "Engages in negotiation and settlement discussions to resolve disputes outside of court.",
+      "Represents in court during trial proceedings if a settlement cannot be reached.",
+      "Enforces judgments and provides guidance on post-trial matters as needed."
     ],
     "cta": "Need help with a dispute? Contact our Civil Litigation experts.",
     "ipc_sections": [
@@ -237,13 +237,13 @@ const servicesData=[
         "answer": "Copyright protects creative works; trademarks protect brand names, logos, and slogans."
       }
     ],
-    "process": [
-      "IP Assessment & Strategy",
-      "Filing Applications",
-      "Office Actions & Responses",
-      "Enforcement & Monitoring",
-      "Litigation (if needed)"
-    ],
+   "process": [
+      "Assesses intellectual property assets and develops a tailored protection strategy.",
+      "Files applications for patents, trademarks, or copyrights to secure legal rights.",
+      "Responds to office actions and addresses any objections raised by authorities.",
+      "Monitors for infringement and enforces rights through legal action when necessary.",
+      "Handles litigation and resolves disputes to protect intellectual property interests."
+   ],
     "cta": "Safeguard your ideas—consult our Intellectual Property specialists.",
     "ipc_sections": [
       "Section 63 of Copyright Act – Infringement",
@@ -278,12 +278,12 @@ const servicesData=[
         "answer": "Document incidents and consult an attorney to understand your rights and options."
       }
     ],
-    "process": [
-      "Consultation & Case Review",
-      "Investigation & Evidence Collection",
-      "Negotiation & Mediation",
-      "Filing Claims",
-      "Litigation & Resolution"
+   "process": [
+      "Reviews the workplace situation and provides a detailed consultation on legal options.",
+      "Investigates claims and collects evidence to support the case or defense.",
+      "Negotiates settlements or mediates disputes to achieve fair and practical outcomes.",
+      "Files claims with the relevant authorities or courts if informal resolution is not possible.",
+      "Represents in litigation and works toward a satisfactory resolution of the employment matter."
     ],
     "cta": "Protect your workplace rights—speak to our Employment Law team.",
     "ipc_sections": [
@@ -321,12 +321,13 @@ const servicesData=[
       }
     ],
     "process": [
-      "Initial Consultation & Review",
-      "Tax Strategy Development",
-      "Documentation & Filing",
-      "Audit Support",
-      "Dispute Resolution"
-    ],
+      "Begins with an initial consultation and reviews the financial and tax situation.",
+      "Develops a personalized tax strategy to minimize liabilities and ensure compliance.",
+      "Prepares and files all necessary documentation accurately and on time.",
+      "Provides support and representation during audits or inquiries by tax authorities.",
+      "Resolves issues with tax authorities and pursues favorable outcomes if disputes arise."
+    ]
+,
     "cta": "Optimize your taxes—consult our Tax Law experts today.",
     "ipc_sections": [
       "Section 276C of Income Tax Act – Wilful attempt to evade tax",
@@ -433,7 +434,7 @@ const ServiceDetail: React.FC = () => {
                   <span className="mt-2 w-3 h-3 bg-deepRoyal rounded-full flex-shrink-0" />
                   
                   {/* Text */}
-                  <p className="text-gray-800 text-lg leading-relaxed">{step}</p>
+                  <p className="text-gray-800 text-lg leading-relaxed text-justify ">{step}</p>
                 </div>
               ))}
             </div>
