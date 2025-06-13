@@ -442,7 +442,7 @@ const Services = () => {
         <h2 className="text-3xl md:text-4xl font-bold text-deepRoyal mb-6">
           Our Approach to Legal Services
         </h2>
-        <p className="mb-6 text-base md:text-lg text-gray-700">
+        <p className="mb-6 text-base md:text-lg text-gray-700 text-justify">
           At Aggarwal Legal Firm, we believe in a client-centered approach that focuses on understanding your unique needs and developing tailored legal strategies to achieve your goals.
         </p>
         <div className="space-y-6 text-base md:text-lg text-gray-700">
@@ -478,7 +478,7 @@ const Services = () => {
                 <h3 className="text-xl font-semibold text-deepRoyal mb-1">
                   {step.title}
                 </h3>
-                <p>{step.description}</p>
+                <p className="text-justify">{step.description}</p>
               </div>
             </div>
           ))}

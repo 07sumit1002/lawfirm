@@ -103,7 +103,7 @@ const Blog = () => {
                   <div className="text-sm text-slate-400 mb-4">
                     {author && <span>By {author}</span>} {date && <span> | {date}</span>}
                   </div>
-                  <p className="text-lg text-slate-700 mb-6">{description}</p>
+                  <p className="text-lg text-slate-700 mb-6 text-justify">{description}</p>
                 </div>
                 <div>
                   <Link

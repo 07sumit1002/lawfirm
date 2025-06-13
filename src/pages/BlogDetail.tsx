@@ -22,7 +22,7 @@ const articles = [
         <li>Contract enforcement</li>
         <li>Dispute resolution</li>
         <li>Protection of intellectual property</li>
-      </ul>
+      <ul/>
     `,
   },
   {
@@ -39,11 +39,11 @@ const articles = [
     content: `
       <p>Corporate law is evolving rapidly. In 2025, businesses must adapt to new regulations and compliance standards.</p>
       <h2>Key Trends</h2>
-      <ol>
+      <ul>
         <li>Environmental, Social, and Governance (ESG) requirements</li>
         <li>Data privacy and cybersecurity</li>
         <li>Cross-border compliance</li>
-      </ol>
+      <ul/>
     `,
   },
 ];
@@ -87,7 +87,7 @@ const BlogDetail = () => {
         {/* Description Card */}
         <div className="bg-slate-100 rounded-xl px-6 py-4 shadow flex items-center gap-3 mb-8">
           <span className="inline-block w-2 h-8 bg-slate-300 rounded-full"></span>
-          <span className="text-lg text-slate-700 font-medium">{article.description}</span>
+          <span className="text-lg text-slate-700 font-medium text-justify">{article.description}</span>
         </div>
 
         {/* Content Card */}

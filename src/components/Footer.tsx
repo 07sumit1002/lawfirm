@@ -12,7 +12,7 @@ const Footer = () => {
               <Scale className="h-8 w-8 text-blue-100 mr-2" />
               <span className="text-xl font-serif font-bold text-white">Aggarwal Legal Firm</span>
             </div>
-            <p className="text-white font-light mb-4">
+            <p className="text-white font-light mb-4 text-justify">
               Committed to providing exceptional legal services with integrity and dedication.
               We strive to achieve the best possible outcomes for our clients.
             </p>

@@ -48,7 +48,7 @@ const WhyChooseUs = () => {
                 <div key={index} className="bg-white p-6 rounded-lg border-l-4 border-primary hover:shadow-md">
                   <div className="mb-4">{feature.icon}</div>
                   <h3 className="text-xl font-work text-deepRoyal mb-2" style={{fontWeight:'700'}}>{feature.title}</h3>
-                  <p className="text-deepRoyal" style={{fontWeight:'600'}}>{feature.description}</p>
+                  <p className="text-deepRoyal text-justify" style={{fontWeight:'600'}}>{feature.description}</p>
                 </div>
               ))}
             </div>
