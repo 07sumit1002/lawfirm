@@ -11,40 +11,18 @@ const fadeInUp = {
 
 const teamMembers = [
   {
-    name: 'Rajesh Aggarwal',
-    position: 'Founder & Senior Advocate',
+    name: 'Adv Himanshu Aggarwal',
+    position: 'Former Joint Secetary of Bar Association of Kurukshetra',
     image: 'https://www.nls.ac.in/wp-content/uploads/2023/05/DSC_0507-1-scaled-e1727334727920.jpg',
-    specialization: 'Corporate Law'
+    specialization: 'Corporate Law',
+    experience:'15 year of experience'
   },
   {
-    name: 'Sunita Sharma',
-    position: 'Managing Partner',
-    image: 'https://content.jdmagicbox.com/v2/comp/hyderabad/y9/040pxx40.xx40.160226125303.x3y9/catalogue/anuradha-high-court-advocate-a-and-s-law-firm-kothapet-hyderabad-lawyers-for-criminal-2k0oajwezl.jpg',
-    specialization: 'Family Law'
-  },
-  {
-    name: 'Vikram Singh',
-    position: 'Senior Associate',
-    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFc2sS6rJSsG9kbHujdYF2eFiy2fP6OlSfFA&s',
-    specialization: 'Criminal Defense'
-  },
-  {
-    name: 'Priya Mehta',
-    position: 'Associate',
-    image: 'https://lawrato.com/expert_images/thumb/webp/advocate-sunita-punia.webp',
-    specialization: 'Real Estate Law'
-  },
-  {
-    name: 'Amit Patel',
-    position: 'Associate',
+    name: 'Adv Shashank Aggarwal',
+    position: 'Legal Aid Counsel',
     image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXmH4u3ogtWBSggGrVFTRSBcVGzdT5GJa4jQ&s',
-    specialization: 'Civil Litigation'
-  },
-  {
-    name: 'Nisha Verma',
-    position: 'Junior Associate',
-    image: 'https://www.advotalks.com/images/1719994368-neelam.jpg',
-    specialization: 'Intellectual Property'
+    specialization: 'Civil Litigation',
+    experience:'7 year of experience'
   }
 ];
 
@@ -81,12 +59,18 @@ const About = () => {
         variants={fadeInUp}
         transition={{ duration: 0.8 }}
       >
-        <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 text-justify">
           <div>
             <h2 className="text-4xl font-work font-bold text-deepRoyal mb-6">Our Story</h2>
-            <p className="text-black text-lg mb-4 ">Founded in 1998 by Senior Advocate Rajesh Aggarwal, our firm has grown from a small practice to one of the most respected legal establishments in the region.</p>
-            <p className="text-black text-lg mb-4 font-normal">Our mission is to deliver high-quality legal services with integrity, efficiency, and a focus on results. We believe in building long-term relationships with our clients based on trust and successful outcomes.</p>
-            <p className="text-black text-lg mb-6 font-extralight">Today, Aggarwal Legal Firm is home to a diverse team of legal professionals who share a common commitment to excellence and client advocacy.</p>
+            <p className="text-black text-lg mb-4">
+              Established in 1970 by Late Shri V.B. Aggarwal and Late Shri Arvind Kumar Aggarwal, our firm began with a vision to deliver trustworthy and client-focused legal services. Over the decades, we have remained committed to that founding principle.
+            </p>
+            <p className="text-black text-lg mb-4 font-normal">
+              With a legacy spanning more than 50 years, we have had the privilege of serving over 3,000 clients, handling a wide range of legal matters with professionalism and care.
+            </p>
+            <p className="text-black text-lg mb-6 font-extralight">
+              Today, Aggarwal Legal Firm is led by two dedicated professionals -- Adv. Himanshu Aggarwal, bringing 15 years of legal expertise, and Adv. Shashank Aggarwal, with 7 years of experience. Together, they continue the tradition of excellence and ethical practice.
+            </p>
             <div className="space-y-3">
               {["Experienced team of specialized attorneys", "Personalized approach to each case", "Proven track record of successful outcomes", "Commitment to ethical legal practices"].map((text, i) => (
                 <div key={i} className="flex items-start">
@@ -149,26 +133,35 @@ const About = () => {
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-navy-900">Our Team</h2>
             <div className="w-24 h-1 bg-blue-500 mx-auto mt-4 mb-6"></div>
-            <p className="text-gray-600 max-w-2xl mx-auto">Meet our team of experienced attorneys dedicated to providing exceptional legal representation.</p>
+            <p className="text-gray-600 max-w-3xl mx-auto">Meet our team of experienced attorneys dedicated to providing exceptional legal representation.</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {teamMembers.map((member, index) => (
-              <Link
-                to={`/team/${member.name.replace(/\s+/g, '-').toLowerCase()}`}
-                key={index}
-                className="bg-white rounded-lg shadow-md overflow-hidden group hover:shadow-lg transition-shadow"
-              >
-                <div className="h-64 overflow-hidden">
-                  <img src={member.image} alt={member.name} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-serif font-bold text-navy-900">{member.name}</h3>
-                  <p className="text-deepRoyal/80 mb-2">{member.position}</p>
-                  <p className="text-deepRoyal">Specialization: {member.specialization}</p>
-                </div>
-              </Link>
-            ))}
+          <div className="flex justify-center">
+            <div className="flex flex-col items-center gap-8">
+              {teamMembers.map((member, index) => (
+                <Link
+                  to={`/team/${member.name.replace(/\s+/g, '-').toLowerCase()}`}
+                  key={index}
+                  className="flex bg-white rounded-lg shadow-md overflow-hidden group hover:shadow-lg transition-shadow w-full max-w-3xl"
+                >
+                  <div className="w-64 h-48 overflow-hidden">
+                    <img
+                      src={member.image}
+                      alt={member.name}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    />
+                  </div>
+                  <div className="p-6 flex flex-col justify-center">
+                    <h3 className="text-2xl font-serif font-bold text-navy-900">{member.name}</h3>
+                    <p className="text-deepRoyal/80 mb-2">{member.position}</p>
+                    <p className="text-deepRoyal">Experience: {member.experience}</p>
+                    <p className="text-deepRoyal mt-1">Specialization: {member.specialization}</p>
+                  </div>
+                </Link>
+              ))}
+            </div>
+
           </div>
+
         </div>
       </motion.section>
 

@@ -3,52 +3,22 @@ import CallToAction from "../components/CallToAction";
 
 const teamMembers = [
   {
-    name: "Rajesh Aggarwal",
-    position: "Founder & Senior Advocate",
+    name: "Adv Himanshu Aggarwal",
+    position: "Former Joint Secetary of Bar Association of Kurukshetra",
     image:
-      "https://images.pexels.com/photos/5668858/pexels-photo-5668858.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://www.nls.ac.in/wp-content/uploads/2023/05/DSC_0507-1-scaled-e1727334727920.jpg",
     specialization: "Corporate Law",
-    bio: "Rajesh Aggarwal has over 25 years of experience in corporate litigation, compliance advisory, and mergers & acquisitions. He founded the firm with a vision to deliver reliable and ethical legal services.",
+    experience: "15 year of experience",
+    bio: "Hello! I’m Advocate Himanshu Aggarwal, a legal practitioner with over 15 years of experience, serving clients in Kurukshetra, Karnal, Punjab & Haryana High Court, and the Supreme Court of India. I specialize in criminal, civil, family, and property law. With a result-oriented and ethical approach, I aim to provide clear legal guidance. I also had the honor of serving as Joint Secretary of the Kurukshetra Bar Association.",
   },
   {
-    name: "Sunita Sharma",
-    position: "Managing Partner",
+    name: "Adv Shashank Aggarwal",
+    position: "Legal Aid Counsel",
     image:
-      "https://images.pexels.com/photos/7645903/pexels-photo-7645903.jpeg?auto=compress&cs=tinysrgb&w=600",
-    specialization: "Family Law",
-    bio: "Sunita is known for her compassionate yet strategic approach to family and matrimonial cases. She has helped hundreds of clients navigate complex legal matters with dignity.",
-  },
-  {
-    name: "Vikram Singh",
-    position: "Senior Associate",
-    image:
-      "https://images.pexels.com/photos/5668901/pexels-photo-5668901.jpeg?auto=compress&cs=tinysrgb&w=600",
-    specialization: "Criminal Defense",
-    bio: "Vikram specializes in defending high-profile criminal cases with a meticulous eye for detail and unwavering commitment to justice.",
-  },
-  {
-    name: "Priya Mehta",
-    position: "Associate",
-    image:
-      "https://images.pexels.com/photos/5668765/pexels-photo-5668765.jpeg?auto=compress&cs=tinysrgb&w=600",
-    specialization: "Real Estate Law",
-    bio: "Priya handles a wide range of real estate transactions, regulatory compliance, and property dispute resolution with expertise and efficiency.",
-  },
-  {
-    name: "Amit Patel",
-    position: "Associate",
-    image:
-      "https://images.pexels.com/photos/8422415/pexels-photo-8422415.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXmH4u3ogtWBSggGrVFTRSBcVGzdT5GJa4jQ&s",
     specialization: "Civil Litigation",
-    bio: "Amit represents clients in civil courts with a focus on contract disputes, tort claims, and property matters.",
-  },
-  {
-    name: "Nisha Verma",
-    position: "Junior Associate",
-    image:
-      "https://images.pexels.com/photos/5668907/pexels-photo-5668907.jpeg?auto=compress&cs=tinysrgb&w=600",
-    specialization: "Intellectual Property",
-    bio: "Nisha is passionate about protecting intellectual property rights and has successfully handled trademark and copyright cases for startups and artists.",
+    experience: "7 year of experience",
+    bio: "Hello! I’m Advocate Shashank Aggarwal, a Legal Aid Counsel with 7 years of experience practicing in Haryana courts. I hold a B.A.LL.B. (Hons) degree and specialize in civil, criminal, cheque bounce, divorce, and service matters. Fluent in English and Hindi, I am committed to offering effective and empathetic legal support, ensuring justice is accessible to all who seek it.",
   },
 ];
 
@@ -81,6 +51,7 @@ const TeamMemberDetail = () => {
             {member.name}
           </h1>
           <p className="text-lg text-blue-100">{member.position}</p>
+          <p className="text-lg text-blue-100">{member.experience}</p>
         </div>
       </div>
 
@@ -96,7 +67,7 @@ const TeamMemberDetail = () => {
             <h2 className="text-xl text-blue-700 mb-1 font-semibold">
               Specialization: {member.specialization}
             </h2>
-            <p className="text-gray-700 leading-relaxed">{member.bio}</p>
+            <p className="text-gray-700 leading-relaxed text-justify">{member.bio}</p>
           </div>
         </div>
       </div>
