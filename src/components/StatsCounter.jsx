@@ -23,7 +23,7 @@ const statsData = [
   },
   {
     icon: <Briefcase className="h-8 w-8 text-blue-0" />,
-    count: 1500,
+    count: 3000 ,
     label: 'Satisfied Clients',
     suffix: '+'
   }
