@@ -8,7 +8,7 @@ const servicesData=[
     "title": "Family Law",
     "description": "Helping families navigate divorce, custody, and support with compassion and expertise.",
     "details": "Our Family Law practice is dedicated to guiding clients through some of life’s most challenging and sensitive moments. We handle all aspects of family relationships, including divorce, legal separation, child custody and visitation, child and spousal support, adoption, and domestic violence protection. We understand that every family is unique, and we tailor our approach to achieve the best possible outcomes while minimizing emotional and financial stress. Our attorneys combine legal expertise with empathy, working closely with clients to protect their interests and ensure the well-being of their loved ones. Whether you are seeking to resolve disputes amicably through mediation or require assertive representation in court, we are committed to standing by your side every step of the way.",
-    "image": "https://images.pexels.com/photos/4427612/pexels-photo-4427612.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "image": "/images/family-law.jpg",
     "features": [
       "Divorce & Legal Separation",
       "Child Custody & Visitation Arrangements",
@@ -50,7 +50,7 @@ const servicesData=[
     "title": "Criminal Defense",
     "description": "Defending your rights against DUI, assault, drug, and other criminal charges.",
     "details": "Our Criminal Defense attorneys provide aggressive and strategic representation for individuals facing criminal charges. We handle a wide range of cases, including DUI and DWI, drug offenses, assault and battery, theft, white-collar crimes, and juvenile offenses. We understand the stakes are high—your reputation, freedom, and future are on the line. From the moment you contact us, we work tirelessly to investigate the facts, challenge the prosecution’s evidence, and protect your constitutional rights. Our team is experienced in both negotiation and trial advocacy, striving to reduce or dismiss charges whenever possible. We also guide clients through bail hearings, pre-trial motions, and, if necessary, appeals. We believe everyone deserves a robust defense and are committed to providing personalized attention and clear communication throughout the process.",
-    "image": "https://images.pexels.com/photos/4427612/pexels-photo-4427612.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "image": "/images/criminal-litigation.jpg",
     "features": [
       "DUI & DWI Defense",
       "Drug Offense Representation",
@@ -134,7 +134,7 @@ const servicesData=[
     "title": "Real Estate Law",
     "description": "Resolving property disputes, transactions, and zoning issues with precision.",
     "details": "Our Real Estate Law practice provides comprehensive legal support for all types of property transactions and disputes. We represent buyers, sellers, landlords, tenants, developers, and investors in matters ranging from residential and commercial sales to complex zoning and land use issues. Our services include title searches and clearance, lease agreements, landlord-tenant disputes, property development, and real estate litigation. We ensure that every transaction is conducted smoothly and that your rights and investments are protected. Our attorneys are skilled negotiators and litigators, prepared to resolve disputes through negotiation or in court when necessary. We stay current with evolving real estate laws and regulations, offering clients practical advice and innovative solutions for even the most challenging property matters.",
-    "image": "https://images.pexels.com/photos/4427612/pexels-photo-4427612.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "image": "/images/insurance.jpg",
     "features": [
       "Property Sales & Purchases",
       "Title Search & Clearance",
@@ -176,7 +176,7 @@ const servicesData=[
     "title": "Civil Litigation",
     "description": "Handling commercial disputes, personal injury claims, and insurance matters effectively.",
     "details": "Our Civil Litigation team provides assertive representation for individuals and businesses involved in legal disputes. We handle a wide range of civil matters, including contract disputes, personal injury claims, insurance litigation, commercial disagreements, and debt recovery. Our attorneys are skilled in negotiation, mediation, arbitration, and trial advocacy, always striving for the most favorable outcome for our clients. We conduct thorough investigations, develop strong legal arguments, and keep clients informed at every stage of the process. Whether you are seeking to enforce your rights or defend against a claim, our goal is to resolve disputes efficiently while minimizing risk and expense. We are committed to protecting your interests and achieving justice on your behalf.",
-    "image": "https://images.pexels.com/photos/4427612/pexels-photo-4427612.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "image": "/images/civil litigation.jpg",
     "features": [
       "Contract Disputes",
       "Personal Injury Claims",
@@ -218,7 +218,7 @@ const servicesData=[
     "title": "Intellectual Property",
     "description": "Protecting your inventions, trademarks, copyrights, and IP rights diligently.",
     "details": "Our Intellectual Property (IP) practice empowers innovators, creators, and businesses to protect and maximize the value of their ideas. We provide end-to-end services for patents, trademarks, copyrights, and trade secrets, including registration, enforcement, licensing, and litigation. Our attorneys help you identify and secure your IP assets, monitor for infringement, and take swift action to defend your rights. We also advise on IP strategy, portfolio management, and commercialization, ensuring your innovations are protected and leveraged for growth. Whether you are an individual inventor, a startup, or a multinational corporation, our team delivers practical, business-focused solutions to help you stay competitive in a rapidly evolving marketplace.",
-    "image": "https://images.pexels.com/photos/4427612/pexels-photo-4427612.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "image": "/images/cyber-law.jpg",
     "features": [
       "Patent Registration & Enforcement",
       "Trademark Filing & Protection",

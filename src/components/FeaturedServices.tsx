@@ -7,13 +7,13 @@ const serviceData = [
     id: 1,
     slug: 'family-law',
     title: 'Family Law',
-    image: 'https://images.pexels.com/photos/4427612/pexels-photo-4427612.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: '/images/family-law.jpg',
   },
   {
     id: 2,
     slug: 'criminal-defense',
     title: 'Criminal Defense',
-    image: 'https://images.pexels.com/photos/4427612/pexels-photo-4427612.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: '/images/criminal-litigation.jpg',
   },
   {
     id: 3,
@@ -25,19 +25,19 @@ const serviceData = [
     id: 4,
     slug: 'real-estate-law',
     title: 'Real Estate Law',
-    image: 'https://images.pexels.com/photos/4427612/pexels-photo-4427612.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: '/images/insurance.jpg',
   },
   {
     id: 5,
     slug: 'civil-litigation',
     title: 'Civil Litigation',
-    image: 'https://images.pexels.com/photos/4427612/pexels-photo-4427612.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: '/images/civil litigation.jpg',
   },
   {
     id: 6,
     slug: 'intellectual-property',
     title: 'Intellectual Property',
-    image: 'https://images.pexels.com/photos/4427612/pexels-photo-4427612.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: '/images/cyber-law.jpg',
   },
 ];
 

@@ -13,7 +13,7 @@ const servicesData = [
     "title": "Family Law",
     "description": "Helping families navigate divorce, custody, and support with compassion and expertise.",
     "details": "Family Law covers legal issues such as divorce, child custody, child support, alimony, adoption, and domestic violence. Our experienced attorneys provide compassionate guidance and strong representation to protect your family’s interests and help you through difficult times.",
-    "image": "https://images.pexels.com/photos/4427612/pexels-photo-4427612.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "image": "images/family-law.jpg",
     "features": [
       "Divorce & Separation",
       "Child Custody & Visitation",
@@ -55,7 +55,7 @@ const servicesData = [
     "title": "Criminal Defense",
     "description": "Defending your rights against DUI, assault, drug, and other criminal charges.",
     "details": "Our Criminal Defense team aggressively defends clients charged with DUI, assault, theft, drug offenses, and other criminal acts. We protect your rights, work to reduce or dismiss charges, and guide you through the complex criminal justice system.",
-    "image": "https://images.pexels.com/photos/4427612/pexels-photo-4427612.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "image": "images/criminal-litigation.jpg",
     "features": [
       "DUI & DWI Defense",
       "Drug Offense Representation",
@@ -139,7 +139,7 @@ const servicesData = [
     "title": "Real Estate Law",
     "description": "Resolving property disputes, transactions, and zoning issues with precision.",
     "details": "Our Real Estate Law practice handles property sales and purchases, title issues, landlord-tenant disputes, zoning, and land use. We provide clear guidance to protect your property rights and investments.",
-    "image": "https://images.pexels.com/photos/4427612/pexels-photo-4427612.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "image": "images/insurance.jpg",
     "features": [
       "Property Sales & Purchases",
       "Title Search & Clearance",
@@ -181,7 +181,7 @@ const servicesData = [
     "title": "Civil Litigation",
     "description": "Handling commercial disputes, personal injury claims, and insurance matters effectively.",
     "details": "Our Civil Litigation team represents clients in disputes involving contracts, personal injury, insurance claims, and more. We fight to protect your legal rights and achieve favorable resolutions.",
-    "image": "https://images.pexels.com/photos/4427612/pexels-photo-4427612.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "image": "images/civil litigation.jpg",
     "features": [
       "Contract Disputes",
       "Personal Injury Claims",
@@ -223,7 +223,7 @@ const servicesData = [
     "title": "Intellectual Property",
     "description": "Protecting your inventions, trademarks, copyrights, and IP rights diligently.",
     "details": "We help clients protect their inventions, brands, and creative works through patents, trademarks, copyrights, and trade secrets. Our team ensures your intellectual property is secure and enforceable.",
-    "image": "https://images.pexels.com/photos/4427612/pexels-photo-4427612.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "image": "images/cyber-law.jpg",
     "features": [
       "Patent Registration & Enforcement",
       "Trademark Filing & Protection",
