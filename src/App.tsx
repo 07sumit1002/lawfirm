@@ -11,7 +11,7 @@ import ScrollToTop from './components/ScrollToTop';
 import Disclaimer from './components/Disclaimer';
 import TeamMemberDetail from './components/TeamMemberDetail';
 import ServiceDetail from './components/ServiceDetail';
-import BlogDetail from './pages/BlogDetail';
+import BlogDetail from './components/BlogDetail';
 import Learning from './pages/Learning';
 
 

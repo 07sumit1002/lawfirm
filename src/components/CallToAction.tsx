@@ -3,13 +3,13 @@ import { Link } from 'react-router-dom';
 
 const CallToAction = () => {
   return (
-    <section className="py-16 bg-gray-100">
+    <section className="py-16 bg-gray-100 md:pl-28 md:pr-28">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row md:items-start gap-10">
+        <div className="flex flex-col md:flex-row md:items-start gap-10 ">
           {/* Left: Headline, description, map */}
           <div className="flex-1 min-w-0">
-            <h2 className="text-4xl font-bold font-mont text-navy-900 mb-4">
-              Got Legal Needs? <span className="italic font-normal">Tell Us About Them!</span>
+            <h2 className="text-4xl font-bold font-mont text-navy-900 mb-4" style={{fontFamily:'Playfair-italic'}}>
+              Got Legal Needs? <span className="italic font-medium">Tell Us About Them!</span>
             </h2>
             <p className="text-lg text-navy-800 mb-2 font-work">
               At Aggarwal Legal Firm, we are here to help you with all your legal needs.
@@ -45,12 +45,14 @@ const CallToAction = () => {
               </p>
               <Link
                 to="/contact"
-                className="bg-white text-deepRoyal font-work font-semibold px-8 py-3 rounded-full shadow hover:bg-royal-blue-400 hover:text-white transition-all text-lg mb-5 text-center"
+                className="bg-gray-100 text-deepRoyal font-work font-semibold px-8 py-3 rounded-full shadow hover:bg-deepRoyal hover:text-white transition-all text-lg mb-5 text-center"
               >
                 Free Consultation
               </Link>
-              <div className="flex items-center gap-3 mt-4">
-                <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-royal-blue-400">
+              
+          </div>
+          <div className="flex items-center gap-3 mt-4">
+                <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-deepRoyal">
                   {/* Phone SVG */}
                   <svg width="22" height="22" fill="none" viewBox="0 0 22 22">
                     <path
@@ -61,7 +63,7 @@ const CallToAction = () => {
                 </span>
                 <a
                   href="tel:+919876543210"
-                  className="text-deepROyal text-lg font-semibold font-work hover:underline"
+                  className="text-deepRoyal text-lg font-semibold font-work hover:text-deepRoyal/50"
                 >
                   +91 98765 43210
                 </a>
@@ -70,7 +72,6 @@ const CallToAction = () => {
                 * Communication through our website does not establish an attorney-client relationship between you and Aggarwal Legal Firm.
               </p>
             </div>
-          </div>
         </div>
       </div>
     </section>
