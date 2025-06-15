@@ -85,25 +85,25 @@ const Home = () => {
                 {[
                   {
                     icon: "Google Reviews",
-                    rating: "4.8/5",
+                    rating: "★★★★★",
                     logo: "https://static.vecteezy.com/system/resources/previews/011/598/471/original/google-logo-icon-illustration-free-vector.jpg",
                     link: "https://maps.app.goo.gl/CL2eh6WhNGqZuzxS8",
                   },
                   {
                     icon: "Justdial",
-                    rating: "4.7/5",
+                    rating: "★★★★☆",
                     logo: "https://cdn.pnggallery.com/wp-content/uploads/justdial-jd-logo-04.png",
                     link: "https://www.justdial.com/Kurukshetra/Adv-Himanshu-Aggarwal-Near-District-Court-Kurukshetra-H-O/9999P1744-1744-220411194014-Z7M1_BZDET",
                   },
                   {
                     icon: "Pathlegal",
-                    rating: "4.5/5",
+                    rating: "★★★★★",
                     logo: "https://is5-ssl.mzstatic.com/image/thumb/Purple124/v4/3c/b8/5b/3cb85b03-9438-e295-8d4f-91da664fafbc/source/512x512bb.jpg",
                     link: "https://www.pathlegal.in/Advocate-Himanshu-Aggarwal-Kurukshetra/L000000000633267.htm",
                   },
                   {
                     icon: "LawRato",
-                    rating: "4.0/5",
+                    rating: "★★★★☆",
                     logo: "https://play-lh.googleusercontent.com/FrfTAo5rpKvRgubrkpyEtkZeI8epH6IERDroFZIrlOre-gUqHmGUgL2zmAcL4eF-kB4",
                     link: "https://lawrato.com/advocate-himanshu-aggarwal",
                   },
@@ -121,7 +121,7 @@ const Home = () => {
                         alt={review.icon}
                         className="h-10 w-[30px]"
                       />
-                      <p className="text-gray-600 text-[20px]">Rating: {review.rating}</p>
+                      <p className="text-gray-600 text-[20px]">{review.rating}</p>
                     </div>
                   </a>
                 ))}

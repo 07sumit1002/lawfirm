@@ -8,7 +8,7 @@ import Integrity from '../assets/integrity.jpg';
 
 const slides = [
   {
-    image: Integrity,
+    image: 'https://tse1.mm.bing.net/th?id=OIP.UwXaHQL-q65InbX_Ls9dSAHaEw&pid=Api&P=0&h=180',
     
     title: <motion.h1
               className="text-4xl md:text-5xl lg:text-6xl font-bold leading-relaxed mb-6 text-white font-mont"
@@ -28,7 +28,7 @@ const slides = [
             </motion.p>,
   },
   {
-    image: Fair,
+    image: 'https://srb.co.uk/wp-content/uploads/2021/12/cyber-laws-2021-e1639764056507-1024x682.jpg',
 
     title: <motion.h1
               className="text-4xl md:text-5xl lg:text-6xl font-bold leading-relaxed mb-6 text-white font-mont"
@@ -48,7 +48,7 @@ const slides = [
             </motion.p>,
   },
   {
-    image: Rights,
+    image: 'https://tse1.mm.bing.net/th?id=OIP.O_OPH5MS7GVMOIZ5l9ZGXwHaEY&pid=Api&P=0&h=180',
 
     title: <motion.h1
               className="text-4xl md:text-5xl lg:text-6xl font-bold leading-relaxed mb-6 text-white font-mont"
@@ -136,10 +136,10 @@ function Hero() {
               transition={{ duration: 0.8, delay: 0.6 }}
             >
               <Link
-                to="/about"
+                to="/contact"
                 className="px-8 py-3 border-2 border-white hover:border-primary hover:text-primary text-white font-medium rounded-md transition-all"
               >
-                Learn More
+                Free Consultation
               </Link>
             </motion.div>
           </motion.div>
