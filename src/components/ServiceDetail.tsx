@@ -371,7 +371,7 @@ const ServiceDetail: React.FC = () => {
         <img
           src={service.image}
           alt={service.title}
-          className="w-full h-full object-cover brightness-75"
+          className="absolute inset-0 w-full h-full object-cover brightness-75"
         />
         <div className="absolute inset-0 flex items-center justify-center">
           <h1 className="text-white text-5xl font-bold text-center">{service.title}</h1>
