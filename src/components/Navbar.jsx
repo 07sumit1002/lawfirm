@@ -9,7 +9,7 @@ function Navbar({ scrolled }) {
     setIsOpen(!isOpen);
   };
 
-  const navItems = ['Home', 'About', 'Practise Areas', 'Blog', 'Contact'];
+  const navItems = ['Home', 'About', 'Practise Areas', 'Legal Learnigng', 'Blog', 'Contact'];
 
   return (
     <header
