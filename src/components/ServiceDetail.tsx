@@ -8,7 +8,7 @@ const servicesData=[
     "title": "Matrimonial Cases",
     "description": "Guiding families through divorce, custody, and support with empathy and expertise.",
     "details": "Our Matrimonial Cases practice supports clients during sensitive family matters, including divorce, legal separation, child custody, child and spousal support, adoption, and protection from domestic violence. We tailor our approach to minimize emotional and financial strain, combining compassionate guidance with assertive legal strategies. Our attorneys work closely with you to protect your family’s interests, whether through mediation for amicable resolutions or robust court representation. We are dedicated to ensuring your loved ones’ well-being and securing favorable outcomes in complex family disputes.",
-    "image": "/images/family-law.jpg",
+    "image": "/images/nri matrimonial.jpg",
     "features": [
       "Divorce & Legal Separation",
       "Child Custody & Visitation Arrangements",
@@ -47,10 +47,10 @@ const servicesData=[
   {
     "id": 2,
     "slug": "criminal",
-    "title": "Criminal",
+    "title": "Criminal Law",
     "description": "Vigorously defending against charges like DUI, assault, drug offenses, and more.",
     "details": "Our Criminal Defense practice offers strategic and aggressive representation for clients facing charges such as DUI, drug offenses, assault, theft, white-collar crimes, and juvenile offenses. We prioritize protecting your rights, reputation, and freedom by thoroughly investigating cases, challenging evidence, and crafting strong defenses. From bail hearings to trials and appeals, our experienced attorneys provide personalized guidance and clear communication to navigate the criminal justice system and aim for reduced or dismissed charges.",
-    "image": "/images/criminal-litigation.jpg",
+    "image": "/images/criminal law.jpg",
     "features": [
       "DUI & DWI Defense",
       "Drug Offense Representation",
@@ -88,53 +88,11 @@ const servicesData=[
   },
   {
     "id": 3,
-    "slug": "corporate-law",
-    "title": "Corporate Law",
-    "description": "Supporting business formation, contracts, and mergers for long-term success.",
-    "details": "Our Corporate Law practice assists businesses, from startups to corporations, with formation, contracts, mergers, acquisitions, compliance, and governance. We identify risks, protect your interests, and provide strategic advice to support growth. Our services include shareholder agreements, intellectual property protection, and dispute resolution, ensuring your business operates within legal frameworks and thrives in competitive markets. We build lasting partnerships to provide ongoing counsel for your success.",
-    "image": "https://images.pexels.com/photos/4427612/pexels-photo-4427612.jpeg?auto=compress&cs=tinysrgb&w=600",
-    "features": [
-      "Business Formation & Structuring",
-      "Contract Drafting & Review",
-      "Mergers & Acquisitions",
-      "Regulatory Compliance",
-      "Shareholder Agreements",
-      "Corporate Governance"
-    ],
-    "faqs": [
-      {
-        "question": "How do I select the right business structure?",
-        "answer": "We assess your goals to recommend the best structure, such as LLC, partnership, or corporation."
-      },
-      {
-        "question": "What does due diligence entail in mergers?",
-        "answer": "It involves reviewing financial, legal, and operational aspects to ensure a sound merger or acquisition."
-      }
-    ],
-    "process": [
-      "Assesses business goals through a comprehensive consultation.",
-      "Prepares documentation for entity formation and legal compliance.",
-      "Negotiates and drafts contracts to safeguard your business interests.",
-      "Advises on regulatory compliance to support ongoing operations.",
-      "Resolves disputes through negotiation or litigation as needed."
-    ],
-    "cta": "Secure your business’s future—consult our Corporate Law experts today.",
-    "ipc_sections": [
-      "Section 405 – Criminal breach of trust",
-      "Section 420 – Cheating and dishonestly inducing delivery of property",
-      "Section 463 – Forgery",
-      "Companies Act, 2013 – Sections 447 (Fraud), 448 (False statement), 449 (False evidence)",
-      "SEBI Act – Insider trading & frauds",
-      "FEMA – Foreign exchange violations"
-    ]
-  },
-  {
-    "id": 4,
     "slug": "appellate-law",
     "title": "Appellate Law",
     "description": "Challenging court decisions with strategic and precise legal representation.",
     "details": "Our Appellate Law practice specializes in appealing court decisions in civil, criminal, and administrative cases. We meticulously review trial records, identify legal errors, and craft compelling arguments to overturn or modify rulings. Our attorneys are skilled in brief writing, oral advocacy, and navigating complex appellate processes, ensuring your case is presented effectively to higher courts for favorable outcomes.",
-    "image": "/images/appellate-law.jpg",
+    "image": "/images/appleate.jpg",
     "features": [
       "Civil Appeals",
       "Criminal Appeals",
@@ -171,12 +129,12 @@ const servicesData=[
     ]
   },
   {
-    "id": 5,
-    "slug": "civil",
-    "title": "Civil",
+    "id": 4,
+    "slug": "civil-litigation",
+    "title": "Civil Litigation",
     "description": "Resolving disputes in contracts, injuries, and commercial matters efficiently.",
     "details": "Our Civil Litigation practice represents clients in disputes involving contracts, personal injuries, property, insurance, and commercial issues. We aim for favorable resolutions through negotiation, mediation, or assertive trial advocacy. Our attorneys conduct thorough investigations, develop robust legal strategies, and keep you informed, ensuring your rights are protected while minimizing costs and risks.",
-    "image": "/images/civil-litigation.jpg",
+    "image": "/images/civil litigation.jpg",
     "features": [
       "Contract Disputes",
       "Personal Injury Claims",
@@ -213,12 +171,12 @@ const servicesData=[
     ]
   },
   {
-    "id": 6,
+    "id": 5,
     "slug": "intellectual-property",
     "title": "Intellectual Property",
     "description": "Safeguarding inventions, trademarks, copyrights, and IP rights effectively.",
     "details": "Our Intellectual Property practice protects your innovations, brands, and creative works through patents, trademarks, copyrights, and trade secrets. We handle registration, enforcement, licensing, and litigation, ensuring your IP assets are secure and maximized for value. Our attorneys offer strategic advice for portfolio management and commercialization, helping clients from startups to corporations stay competitive.",
-    "image": "/images/cyber-law.jpg",
+    "image": "/images/intellectual.jpg",
     "features": [
       "Patent Registration & Enforcement",
       "Trademark Filing & Protection",
@@ -254,7 +212,7 @@ const servicesData=[
     ]
   },
   {
-    "id": 7,
+    "id": 6,
     "slug": "employment-law",
     "title": "Employment Law",
     "description": "Advising on workplace rights, contracts, harassment, and termination disputes.",
@@ -296,51 +254,9 @@ const servicesData=[
     ]
   },
   {
-    "id": 8,
-    "slug": "tax-law",
-    "title": "Tax Law",
-    "description": "Offering tax planning, audit support, and dispute resolution strategies.",
-    "details": "Our Tax Law practice provides expert guidance on tax planning, audits, dispute resolution, estate taxes, and international taxation for individuals and businesses. We develop strategies to minimize liabilities, ensure compliance, and represent clients before tax authorities. Our attorneys stay updated on evolving tax laws to deliver proactive solutions and protect your financial interests.",
-    "image": "https://images.pexels.com/photos/4427612/pexels-photo-4427612.jpeg?auto=compress&cs=tinysrgb&w=600",
-    "features": [
-      "Tax Planning & Advisory",
-      "Audit Representation",
-      "Tax Dispute Resolution",
-      "Corporate Tax Strategies",
-      "Estate & Gift Tax Planning",
-      "International Taxation"
-    ],
-    "faqs": [
-      {
-        "question": "How can I minimize my tax liability?",
-        "answer": "Strategic tax planning and leveraging deductions can reduce your tax burden."
-      },
-      {
-        "question": "What happens during a tax audit?",
-        "answer": "Authorities review financial records; we guide and represent you through the process."
-      }
-    ],
-    "process": [
-      "Reviews your financial and tax situation in a detailed consultation.",
-      "Develops a customized tax strategy to optimize compliance and savings.",
-      "Prepares and files accurate tax documentation on your behalf.",
-      "Represents you during audits or inquiries by tax authorities.",
-      "Resolves disputes with authorities to achieve favorable outcomes."
-    ],
-    "cta": "Optimize your taxes—consult our Tax Law experts today.",
-    "ipc_sections": [
-      "Section 276C of Income Tax Act – Wilful attempt to evade tax",
-      "Section 277 – False statement in verification",
-      "Section 406 IPC – Criminal breach of trust",
-      "GST Act – Section 132 (Tax evasion)",
-      "Black Money Act – Undisclosed foreign income",
-      "Benami Transactions Prohibition Act"
-    ]
-  },
-  {
-    "id": 9,
+    "id": 7,
     "slug": "digital-crime",
-    "title": "Digital Crime/Cyber Crime",
+    "title": "Cyber Crime",
     "description": "Defending against hacking, fraud, and data breaches with expertise.",
     "details": "Our Digital Crime/Cyber Crime practice addresses legal issues involving hacking, identity theft, cyber fraud, data breaches, and online harassment. We provide robust defense and proactive strategies to protect your digital assets, reputation, and rights. Our attorneys handle investigations, compliance with cyber laws, and litigation, ensuring swift action to mitigate damages and secure justice in the digital realm.",
     "image": "/images/cyber-law.jpg",
@@ -380,12 +296,12 @@ const servicesData=[
     ]
   },
   {
-    "id": 10,
+    "id": 8,
     "slug": "medical-negligence",
     "title": "Medical Negligence",
     "description": "Seeking justice for injuries caused by medical malpractice or negligence.",
     "details": "Our Medical Negligence practice represents clients harmed by medical malpractice, misdiagnosis, surgical errors, or inadequate care. We work with medical experts to build strong cases, seeking fair compensation for injuries, medical costs, and emotional distress. Our attorneys navigate complex healthcare laws to hold providers accountable and ensure justice for victims of negligence.",
-    "image": "/images/medical-negligence.jpg",
+    "image": "/images/medical negligence.jpg",
     "features": [
       "Medical Malpractice Claims",
       "Misdiagnosis & Delayed Diagnosis",
@@ -422,12 +338,12 @@ const servicesData=[
     ]
   },
   {
-    "id": 11,
+    "id": 9,
     "slug": "motor-vehicle-accidental-claims",
     "title": "Motor Vehicle Accidental Claims",
     "description": "Securing compensation for injuries and damages from vehicle accidents.",
     "details": "Our Motor Vehicle Accidental Claims practice helps clients recover compensation for injuries, property damage, and losses from car, motorcycle, or truck accidents caused by negligence. We handle negotiations with insurers, gather evidence like police reports, and pursue litigation if needed to ensure fair settlements for medical expenses, lost wages, and pain and suffering.",
-    "image": "/images/vehicle-accident.jpg",
+    "image": "/images/accident.jpg",
     "features": [
       "Car Accident Claims",
       "Motorcycle Accident Claims",
@@ -464,12 +380,12 @@ const servicesData=[
     ]
   },
   {
-    "id": 12,
+    "id": 10,
     "slug": "insurance-claims",
     "title": "Insurance Claims",
     "description": "Resolving disputes and denials for property, health, and auto insurance claims.",
     "details": "Our Insurance Claims practice assists clients facing denied or underpaid claims for property, health, auto, or other insurance policies. We review policies, negotiate with insurers, and pursue litigation to secure the coverage you’re entitled to. Our attorneys handle bad faith insurance practices and ensure your rights are protected in complex claim disputes.",
-    "image": "/images/insurance-claims.jpg",
+    "image": "/images/insurance.jpg",
     "features": [
       "Property Insurance Disputes",
       "Health Insurance Claims",
@@ -506,12 +422,12 @@ const servicesData=[
     ]
   },
   {
-    "id": 13,
+    "id": 11,
     "slug": "nri-cases",
     "title": "NRI Cases",
     "description": "Supporting NRIs with property, family, and cross-border legal disputes.",
     "details": "Our NRI Cases practice assists Non-Resident Indians with legal matters such as property disputes, matrimonial issues, inheritance, and cross-border litigation. We offer remote representation through power of attorney, coordinate across jurisdictions, and ensure seamless legal support to protect your interests in India while you’re abroad.",
-    "image": "/images/nri-cases.jpg",
+    "image": "/images/nri.jpg",
     "features": [
       "Property Disputes & Management",
       "Matrimonial & Family Law",
@@ -548,7 +464,7 @@ const servicesData=[
     ]
   },
   {
-    "id": 14,
+    "id": 12,
     "slug": "drafting",
     "title": "Drafting",
     "description": "Crafting precise legal documents, contracts, and agreements for your needs.",

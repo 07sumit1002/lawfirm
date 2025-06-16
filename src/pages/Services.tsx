@@ -13,7 +13,7 @@ const servicesData = [
     "title": "Matrimonial Cases",
     "description": "Navigating divorce, custody, and family disputes with compassion and expertise.",
     "details": "Our Matrimonial Cases practice handles legal matters such as divorce, child custody, alimony, adoption, and domestic violence issues. Our experienced attorneys provide empathetic guidance and robust representation to safeguard your family’s interests during challenging times.",
-    "image": "images/family-law.jpg",
+    "image": "images/nri matrimonial.jpg",
     "features": [
       "Divorce & Separation",
       "Child Custody & Visitation",
@@ -55,7 +55,7 @@ const servicesData = [
     "title": "Criminal Defense",
     "description": "Vigorous defense for charges like DUI, assault, drug offenses, and more.",
     "details": "Our Criminal Defense team provides aggressive representation for clients facing charges such as DUI, assault, theft, drug offenses, and white-collar crimes. We protect your rights, aim to reduce or dismiss charges, and guide you through the criminal justice system.",
-    "image": "images/criminal-litigation.jpg",
+    "image": "/images/criminal law.jpg",
     "features": [
       "DUI & DWI Defense",
       "Drug Offense Representation",
@@ -92,54 +92,12 @@ const servicesData = [
   },
   {
     "id": 3,
-    "slug": "corporate-law",
-    "icon": "<Briefcase className=\"h-12 w-12 text-deepRoyal\" />",
-    "title": "Corporate Law",
-    "description": "Guiding business formations, contracts, and mergers to secure your company’s future.",
-    "details": "Our Corporate Law services assist businesses with formation, contracts, compliance, mergers, and acquisitions. We ensure your company operates within the legal framework and protect your business interests at every stage.",
-    "image": "https://images.pexels.com/photos/4427612/pexels-photo-4427612.jpeg?auto=compress&cs=tinysrgb&w=600",
-    "features": [
-      "Business Formation & Structuring",
-      "Contract Drafting & Review",
-      "Mergers & Acquisitions",
-      "Regulatory Compliance",
-      "Shareholder Agreements",
-      "Corporate Governance"
-    ],
-    "faqs": [
-      {
-        "question": "How do I choose the right business structure?",
-        "answer": "Our attorneys assess your goals and recommend the best structure, such as LLC, partnership, or corporation."
-      },
-      {
-        "question": "What is due diligence in mergers?",
-        "answer": "It involves a thorough review of financial, legal, and operational aspects before finalizing a merger or acquisition."
-      }
-    ],
-    "process": [
-      "Consultation & Needs Assessment",
-      "Entity Formation & Documentation",
-      "Contract Negotiation",
-      "Ongoing Legal Compliance",
-      "Dispute Resolution (if needed)"
-    ],
-    "testimonials": [
-      {
-        "client": "Ankit R.",
-        "feedback": "Their expertise made our company merger smooth and secure. Highly recommended."
-      }
-    ],
-    "cta": "Secure your business's future—consult our Corporate Law experts today.",
-    "related_services": ["tax-law", "intellectual-property"]
-  },
-  {
-    "id": 4,
     "slug": "appellate-law",
     "icon": "<Gavel className=\"h-12 w-12 text-deepRoyal\" />",
     "title": "Appellate Law",
     "description": "Appealing court decisions with strategic precision and expertise.",
     "details": "Our Appellate Law practice focuses on reviewing and challenging court decisions to achieve favorable outcomes. We handle appeals in civil, criminal, and administrative cases with meticulous legal strategies.",
-    "image": "images/appellate-law.jpg",
+    "image": "images/appleate.jpg",
     "features": [
       "Civil Appeals",
       "Criminal Appeals",
@@ -175,13 +133,13 @@ const servicesData = [
     "related_services": ["civil-litigation", "criminal"]
   },
   {
-    "id": 5,
+    "id": 4,
     "slug": "civil-litigation",
     "icon": "<Landmark className=\"h-12 w-12 text-deepRoyal\" />",
     "title": "Civil Litigation",
     "description": "Resolving disputes in contracts, injuries, and commercial matters effectively.",
     "details": "Our Civil Litigation team represents clients in disputes involving contracts, personal injuries, property, and commercial issues. We strive for favorable resolutions through negotiation or robust court representation.",
-    "image": "images/civil-litigation.jpg",
+    "image": "images/civil litigation.jpg",
     "features": [
       "Contract Disputes",
       "Personal Injury Claims",
@@ -217,13 +175,13 @@ const servicesData = [
     "related_services": ["appellate-law", "insurance-claims"]
   },
   {
-    "id": 6,
+    "id": 5,
     "slug": "intellectual-property",
     "icon": "<FileCheck className=\"h-12 w-12 text-deepRoyal\" />",
     "title": "Intellectual Property",
     "description": "Protecting your inventions, trademarks, copyrights, and IP rights diligently.",
     "details": "We help clients protect their inventions, brands, and creative works through patents, trademarks, copyrights, and trade secrets. Our team ensures your intellectual property is secure and enforceable.",
-    "image": "images/cyber-law.jpg",
+    "image": "images/intellectual.jpg",
     "features": [
       "Patent Registration & Enforcement",
       "Trademark Filing & Protection",
@@ -259,7 +217,7 @@ const servicesData = [
     "related_services": ["corporate-law", "digital-crime"]
   },
   {
-    "id": 7,
+    "id": 6,
     "slug": "employment-law",
     "icon": "<BookOpen className=\"h-12 w-12 text-deepRoyal\" />",
     "title": "Employment Law",
@@ -301,52 +259,10 @@ const servicesData = [
     "related_services": ["civil-litigation", "matrimonial-cases"]
   },
   {
-    "id": 8,
-    "slug": "tax-law",
-    "icon": "<Building className=\"h-12 w-12 text-deepRoyal\" />",
-    "title": "Tax Law",
-    "description": "Providing tax planning, audits, dispute resolution, and corporate tax strategies.",
-    "details": "Our Tax Law specialists provide advice on tax planning, audits, dispute resolution, estate taxes, and corporate tax matters to minimize liabilities and ensure compliance with tax regulations.",
-    "image": "https://images.pexels.com/photos/4427612/pexels-photo-4427612.jpeg?auto=compress&cs=tinysrgb&w=600",
-    "features": [
-      "Tax Planning & Advisory",
-      "Audit Representation",
-      "Tax Dispute Resolution",
-      "Corporate Tax Strategies",
-      "Estate & Gift Tax Planning",
-      "International Taxation"
-    ],
-    "faqs": [
-      {
-        "question": "How can I reduce my tax liability?",
-        "answer": "Effective tax planning and use of available deductions and credits can help minimize your liability."
-      },
-      {
-        "question": "What happens during a tax audit?",
-        "answer": "Authorities review your financial records to ensure compliance; we represent and guide you through the process."
-      }
-    ],
-    "process": [
-      "Initial Consultation & Review",
-      "Tax Strategy Development",
-      "Documentation & Filing",
-      "Audit Support",
-      "Dispute Resolution"
-    ],
-    "testimonials": [
-      {
-        "client": "Ramesh P.",
-        "feedback": "Their advice saved us significant taxes and made the audit process stress-free."
-      }
-    ],
-    "cta": "Optimize your taxes—consult our Tax Law experts today.",
-    "related_services": ["corporate-law", "nri-cases"]
-  },
-  {
-    "id": 9,
+    "id": 7,
     "slug": "digital-crime",
     "icon": "<Shield className=\"h-12 w-12 text-deepRoyal\" />",
-    "title": "Digital Crime/Cyber Crime",
+    "title": "Cyber Crime",
     "description": "Defending against cybercrimes like hacking, data breaches, and online fraud.",
     "details": "Our Digital Crime/Cyber Crime practice addresses legal issues involving hacking, identity theft, data breaches, cyber fraud, and online harassment. We provide robust defense and proactive strategies to protect your digital assets and reputation.",
     "image": "images/cyber-law.jpg",
@@ -385,13 +301,13 @@ const servicesData = [
     "related_services": ["intellectual-property", "criminal"]
   },
   {
-    "id": 10,
+    "id": 8,
     "slug": "medical-negligence",
     "icon": "<Heart className=\"h-12 w-12 text-deepRoyal\" />",
     "title": "Medical Negligence",
     "description": "Seeking justice for medical malpractice and negligence cases.",
     "details": "Our Medical Negligence practice represents clients harmed by medical malpractice, misdiagnosis, surgical errors, or inadequate care. We fight for fair compensation and accountability from healthcare providers.",
-    "image": "images/medical-negligence.jpg",
+    "image": "images/medical negligence.jpg",
     "features": [
       "Medical Malpractice Claims",
       "Misdiagnosis & Delayed Diagnosis",
@@ -427,13 +343,13 @@ const servicesData = [
     "related_services": ["civil-litigation", "insurance-claims"]
   },
   {
-    "id": 11,
+    "id": 9,
     "slug": "motor-vehicle-accidental-claims",
     "icon": "<Car className=\"h-12 w-12 text-deepRoyal\" />",
     "title": "Motor Vehicle Accidental Claims",
     "description": "Securing compensation for injuries and damages from vehicle accidents.",
     "details": "Our Motor Vehicle Accidental Claims practice helps clients recover compensation for injuries, property damage, and losses from car, motorcycle, or truck accidents caused by negligence.",
-    "image": "images/vehicle-accident.jpg",
+    "image": "images/accident.jpg",
     "features": [
       "Car Accident Claims",
       "Motorcycle Accident Claims",
@@ -469,13 +385,13 @@ const servicesData = [
     "related_services": ["insurance-claims", "medical-negligence"]
   },
   {
-    "id": 12,
+    "id": 10,
     "slug": "insurance-claims",
     "icon": "<FileShield className=\"h-12 w-12 text-deepRoyal\" />",
     "title": "Insurance Claims",
     "description": "Handling disputes and denials for property, health, and auto insurance claims.",
     "details": "Our Insurance Claims practice assists clients in disputes with insurers over denied or underpaid claims for property, health, auto, or other policies. We ensure you receive the coverage you’re entitled to.",
-    "image": "images/insurance-claims.jpg",
+    "image": "images/insurance.jpg",
     "features": [
       "Property Insurance Disputes",
       "Health Insurance Claims",
@@ -511,13 +427,13 @@ const servicesData = [
     "related_services": ["civil-litigation", "motor-vehicle-accidental-claims"]
   },
   {
-    "id": 13,
+    "id": 11,
     "slug": "nri-cases",
     "icon": "<Globe className=\"h-12 w-12 text-deepRoyal\" />",
     "title": "NRI Cases",
     "description": "Assisting NRIs with property, family, and legal disputes across jurisdictions.",
     "details": "Our NRI Cases practice supports Non-Resident Indians with legal issues such as property disputes, matrimonial cases, inheritance, and cross-border litigation, ensuring seamless representation.",
-    "image": "images/nri-cases.jpg",
+    "image": "images/nri.jpg",
     "features": [
       "Property Disputes & Management",
       "Matrimonial & Family Law",
@@ -553,7 +469,7 @@ const servicesData = [
     "related_services": ["matrimonial-cases", "tax-law"]
   },
   {
-    "id": 14,
+    "id": 12,
     "slug": "drafting",
     "icon": "<PenTool className=\"h-12 w-12 text-deepRoyal\" />",
     "title": "Drafting",

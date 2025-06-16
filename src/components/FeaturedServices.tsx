@@ -7,37 +7,37 @@ const serviceData = [
     "id": 1,
     "slug": "matrimonial-cases",
     "title": "Matrimonial Cases",
-    "image": "/images/family-law.jpg"
+    "image": "/images/nri matrimonial.jpg"
   },
   {
     "id": 2,
     "slug": "criminal",
-    "title": "Criminal",
-    "image": "/images/criminal-litigation.jpg"
+    "title": "Criminal Law",
+    "image": "/images/criminal law.jpg"
   },
   {
     "id": 3,
-    "slug": "corporate-law",
-    "title": "Corporate Law",
-    "image": "https://images.pexels.com/photos/4427612/pexels-photo-4427612.jpeg?auto=compress&cs=tinysrgb&w=600"
+    "slug": "insurance-claims",
+    "title": "Insurance Claims",
+    "image": "/images/insurance.jpg"
   },
   {
     "id": 4,
     "slug": "appellate-law",
     "title": "Appellate Law",
-    "image": "/images/insurance.jpg"
+    "image": "/images/appleate.jpg"
   },
   {
     "id": 5,
-    "slug": "civil",
-    "title": "Civil",
-    "image": "/images/civil-litigation.jpg"
+    "slug": "civil-litigation",
+    "title": "Civil Litigation",
+    "image": "/images/civil litigation.jpg"
   },
   {
     "id": 6,
     "slug": "intellectual-property",
     "title": "Intellectual Property",
-    "image": "/images/cyber-law.jpg"
+    "image": "/images/intellectual.jpg"
   }
 ];
 
