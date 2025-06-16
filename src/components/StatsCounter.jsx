@@ -3,12 +3,12 @@ import { Scale, Users, Award, Briefcase } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const statsData = [
-  {
-    icon: <Scale className="h-8 w-8 text-blue-0" />,
-    count: 500,
-    label: 'Cases Won',
-    suffix: '+'
-  },
+  // {
+    // icon: <Scale className="h-8 w-8 text-blue-0" />,
+    // count: 500,
+    // label: 'Cases Won',
+    // suffix: '+'
+  // },
   {
     icon: <Users className="h-8 w-8 text-blue-0" />,
     count: 25,
@@ -81,61 +81,28 @@ function StatsCounter() {
   };
 
   return (
-    <motion.section 
+    <motion.section
       ref={sectionRef}
-      className="py-12 bg-white text-deepRoyal relative"
-      // initial={{ opacity: 0, y: 100 }}
-      // whileInView={{ opacity: 1, y: 0 }}
-      // exit={{ opacity: 0, y: -100 }}
-      // transition={{ duration: 1.5, delay: 0.3 }}
-      // viewport={{ once: false }}
+      className="py-12 bg-white text-deepRoyal"
     >
       <div className="container mx-auto px-4">
-        <motion.div 
-          className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6"
-          // initial={{ opacity: 0, y: 50 }}
-          // whileInView={{ opacity: 1, y: 0 }}
-          // exit={{ opacity: 0, y: -50 }}
-          // transition={{ duration: 1.5, delay: 0.5 }}
-        >
-          {statsData.map((stat, index) => (
-            <motion.div 
-              key={index} 
-              className="text-center p-6 bg-white border-b-2 border-gray-500 transform transition hover:scale-105 hover:bg-gray-100"
-              // initial={{ opacity: 0, y: 30 }}
-              // whileInView={{ opacity: 1, y: 0 }}
-              // exit={{ opacity: 0, y: -30 }}
-              // transition={{ duration: 1.5, delay: 0.7 + index * 0.2 }}
-              style={{borderRadius:'20px'}}
+        {/* FLEX instead of GRID → centered cards */}
+        <motion.div className="flex flex-wrap justify-center gap-6">
+          {statsData.map((stat, idx) => (
+            <motion.div
+              key={idx}
+              className="text-center p-6 bg-white border-b-2 border-gray-500 rounded-2xl transform transition hover:scale-105 hover:bg-gray-100 w-64"
             >
-              <motion.div 
-                className="mb-4 flex justify-center"
-                // initial={{ opacity: 0, y: 20 }}
-                // whileInView={{ opacity: 1, y: 0 }}
-                // exit={{ opacity: 0, y: -20 }}
-                // transition={{ duration: 1.5, delay: 0.9 + index * 0.2 }}
-              >
-                {stat.icon}
-              </motion.div>
-              <motion.h3 
-                className="text-4xl font-bold mb-2 font-serif"
-                // initial={{ opacity: 0, y: 20 }}
-                // whileInView={{ opacity: 1, y: 0 }}
-                // exit={{ opacity: 0, y: -20 }}
-                // transition={{ duration: 1.5, delay: 1.1 + index * 0.2 }}
-              >
-                {counters[index]}
+              <div className="mb-4 flex justify-center">{stat.icon}</div>
+
+              <h3 className="text-4xl font-bold mb-2 font-serif">
+                {counters[idx]}
                 <span className="text-deepRoyal">{stat.suffix}</span>
-              </motion.h3>
-              <motion.p 
-                className="text-deepRoyal uppercase text-sm tracking-wider"
-                // initial={{ opacity: 0, y: 20 }}
-                // whileInView={{ opacity: 1, y: 0 }}
-                // exit={{ opacity: 0, y: -20 }}
-                // transition={{ duration: 1.5, delay: 1.3 + index * 0.2 }}
-              >
+              </h3>
+
+              <p className="text-deepRoyal uppercase text-sm tracking-wider">
                 {stat.label}
-              </motion.p>
+              </p>
             </motion.div>
           ))}
         </motion.div>

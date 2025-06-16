@@ -13,11 +13,9 @@ const Home = () => {
   return (
     <div className="font-work">
       <Hero />
-      
-      <StatsCounter />
-      
+
       <motion.section 
-        className="py-16 bg-white"
+        className="py-8 bg-white"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: -10 }}
@@ -56,6 +54,8 @@ const Home = () => {
           </motion.div>
         </div>
       </motion.section>
+
+      <StatsCounter />
       
       <WhyChooseUs />
       
@@ -88,24 +88,28 @@ const Home = () => {
                     rating: "★★★★★",
                     logo: "https://static.vecteezy.com/system/resources/previews/011/598/471/original/google-logo-icon-illustration-free-vector.jpg",
                     link: "https://maps.app.goo.gl/CL2eh6WhNGqZuzxS8",
+                    reviewcount:'18+ reviews',
                   },
                   {
                     icon: "Justdial",
                     rating: "★★★★☆",
                     logo: "https://cdn.pnggallery.com/wp-content/uploads/justdial-jd-logo-04.png",
                     link: "https://www.justdial.com/Kurukshetra/Adv-Himanshu-Aggarwal-Near-District-Court-Kurukshetra-H-O/9999P1744-1744-220411194014-Z7M1_BZDET",
+                    reviewcount:'1+ reviews',
                   },
                   {
                     icon: "Pathlegal",
                     rating: "★★★★★",
                     logo: "https://is5-ssl.mzstatic.com/image/thumb/Purple124/v4/3c/b8/5b/3cb85b03-9438-e295-8d4f-91da664fafbc/source/512x512bb.jpg",
                     link: "https://www.pathlegal.in/Advocate-Himanshu-Aggarwal-Kurukshetra/L000000000633267.htm",
+                    reviewcount:'1+ reviews',
                   },
                   {
                     icon: "LawRato",
                     rating: "★★★★☆",
                     logo: "https://play-lh.googleusercontent.com/FrfTAo5rpKvRgubrkpyEtkZeI8epH6IERDroFZIrlOre-gUqHmGUgL2zmAcL4eF-kB4",
                     link: "https://lawrato.com/advocate-himanshu-aggarwal",
+                    reviewcount:'2+ reviews',
                   },
                 ].map((review, index) => (
                   <a
@@ -113,17 +117,29 @@ const Home = () => {
                     href={review.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block bg-white shadow-md rounded-lg p-6 border-t-4 border-blue-500 hover:shadow-xl transition-shadow hover:scale-[1.02]"
+                    className="flex w-full max-w-sm h-20 bg-white rounded-xl shadow-md border border-gray-200 overflow-hidden hover:shadow-lg transition-all duration-300"
                   >
-                    <div className="flex items-center justify-center space-x-3">
+                    {/* Logo Section - Left */}
+                    <div className="w-[30%] flex items-center justify-center bg-white">
                       <img
                         src={review.logo}
                         alt={review.icon}
-                        className="h-10 w-[30px]"
+                        className="h-full w-auto object-contain p-2"
                       />
-                      <p className="text-gray-600 text-[20px]">{review.rating}</p>
+                    </div>
+
+                    {/* Review Info Section - Right */}
+                    <div className="w-[70%] flex flex-col justify-center px-4">
+                      <div className="flex justify-start space-x-1 mb-1">
+                        <p className="text-2xl text-gold-700">{review.rating}</p>
+                      </div>
+                      <div className="flex justify-start space-x-1 mb-1">
+                        <p className="text-sm text-gray-700 underline">{review.reviewcount}</p>
+                        </div>
                     </div>
                   </a>
+
+
                 ))}
               </div>
             </div>

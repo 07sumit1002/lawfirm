@@ -5,7 +5,7 @@ const testimonials = [
     id: 1,
     name: 'Rajiv Mehta',
     quote: 'The legal expertise provided by Aggarwal Legal Firm was exceptional.',
-    rating: 4
+    rating: 5
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const testimonials = [
     id: 3,
     name: 'Amit Singh',
     quote: 'The strategic legal advice helped me resolve a complex dispute efficiently.',
-    rating: 4
+    rating: 5
   },
   {
     id: 4,
