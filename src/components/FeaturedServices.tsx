@@ -4,41 +4,41 @@ import { Link } from 'react-router-dom';
 
 const serviceData = [
   {
-    id: 1,
-    slug: 'family-law',
-    title: 'Family Law',
-    image: '/images/family-law.jpg',
+    "id": 1,
+    "slug": "matrimonial-cases",
+    "title": "Matrimonial Cases",
+    "image": "/images/family-law.jpg"
   },
   {
-    id: 2,
-    slug: 'criminal-defense',
-    title: 'Criminal Defense',
-    image: '/images/criminal-litigation.jpg',
+    "id": 2,
+    "slug": "criminal",
+    "title": "Criminal",
+    "image": "/images/criminal-litigation.jpg"
   },
   {
-    id: 3,
-    slug: 'corporate-law',
-    title: 'Corporate Law',
-    image: 'https://images.pexels.com/photos/4427612/pexels-photo-4427612.jpeg?auto=compress&cs=tinysrgb&w=600',
+    "id": 3,
+    "slug": "corporate-law",
+    "title": "Corporate Law",
+    "image": "https://images.pexels.com/photos/4427612/pexels-photo-4427612.jpeg?auto=compress&cs=tinysrgb&w=600"
   },
   {
-    id: 4,
-    slug: 'real-estate-law',
-    title: 'Real Estate Law',
-    image: '/images/insurance.jpg',
+    "id": 4,
+    "slug": "appellate-law",
+    "title": "Appellate Law",
+    "image": "/images/insurance.jpg"
   },
   {
-    id: 5,
-    slug: 'civil-litigation',
-    title: 'Civil Litigation',
-    image: '/images/civil litigation.jpg',
+    "id": 5,
+    "slug": "civil",
+    "title": "Civil",
+    "image": "/images/civil-litigation.jpg"
   },
   {
-    id: 6,
-    slug: 'intellectual-property',
-    title: 'Intellectual Property',
-    image: '/images/cyber-law.jpg',
-  },
+    "id": 6,
+    "slug": "intellectual-property",
+    "title": "Intellectual Property",
+    "image": "/images/cyber-law.jpg"
+  }
 ];
 
 const FeaturedServices = () => {

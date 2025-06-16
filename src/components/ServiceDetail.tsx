@@ -4,10 +4,10 @@ import { useParams, Link, useNavigate } from "react-router-dom";
 const servicesData=[
   {
     "id": 1,
-    "slug": "family-law",
-    "title": "Family Law",
-    "description": "Helping families navigate divorce, custody, and support with compassion and expertise.",
-    "details": "Our Family Law practice is dedicated to guiding clients through some of life’s most challenging and sensitive moments. We handle all aspects of family relationships, including divorce, legal separation, child custody and visitation, child and spousal support, adoption, and domestic violence protection. We understand that every family is unique, and we tailor our approach to achieve the best possible outcomes while minimizing emotional and financial stress. Our attorneys combine legal expertise with empathy, working closely with clients to protect their interests and ensure the well-being of their loved ones. Whether you are seeking to resolve disputes amicably through mediation or require assertive representation in court, we are committed to standing by your side every step of the way.",
+    "slug": "matrimonial-cases",
+    "title": "Matrimonial Cases",
+    "description": "Guiding families through divorce, custody, and support with empathy and expertise.",
+    "details": "Our Matrimonial Cases practice supports clients during sensitive family matters, including divorce, legal separation, child custody, child and spousal support, adoption, and protection from domestic violence. We tailor our approach to minimize emotional and financial strain, combining compassionate guidance with assertive legal strategies. Our attorneys work closely with you to protect your family’s interests, whether through mediation for amicable resolutions or robust court representation. We are dedicated to ensuring your loved ones’ well-being and securing favorable outcomes in complex family disputes.",
     "image": "/images/family-law.jpg",
     "features": [
       "Divorce & Legal Separation",
@@ -19,37 +19,37 @@ const servicesData=[
     ],
     "faqs": [
       {
-        "question": "What should  I bring to my first consultation?",
-        "answer": "Bring any relevant legal documents such as marriage certificates, court orders, financial records, and a list of questions or concerns you have."
+        "question": "What documents should I bring to my first consultation?",
+        "answer": "Bring relevant documents like marriage certificates, court orders, financial records, and a list of your concerns."
       },
       {
-        "question": "How long does a typical divorce process take?",
-        "answer": "The duration varies depending on the complexity of the case and whether it is contested, but most cases resolve within 6-12 months."
+        "question": "How long does a divorce typically take?",
+        "answer": "Contested cases may take 6-12 months, depending on complexity, while uncontested cases may resolve faster."
       }
     ],
     "process": [
-      "Begins with a thorough consultation to understand the unique family situation and legal needs.",
-      "Collects and reviews all necessary documents, such as financial records and court orders, to build the case.",
-      "Engages in negotiation and mediation to seek amicable solutions and minimize conflict wherever possible.",
-      "Provides assertive court representation if needed to protect interests.",
-      "Continues to offer support after resolution to ensure the family's interests remain protected."
+      "Conducts a detailed consultation to assess your family’s unique situation and needs.",
+      "Collects and reviews documents like financial records and court orders to build a strong case.",
+      "Pursues negotiation or mediation to achieve amicable resolutions and reduce conflict.",
+      "Provides assertive representation in court when disputes require litigation.",
+      "Offers ongoing support post-resolution to ensure your family’s interests remain protected."
     ],
-    "cta": "Contact our Family Law team for a confidential consultation and let us help you protect your family's future.",
-     "ipc_sections": [
+    "cta": "Contact our Family Law team for a confidential consultation to safeguard your family’s future.",
+    "ipc_sections": [
       "Section 498A – Cruelty by husband or relatives",
       "Section 125 CrPC – Maintenance of wife and children",
       "Section 376 – Rape",
-      "Section 354 – Assault on woman",
+      "Section 354 – Assault or criminal force to woman",
       "Hindu Marriage Act, 1955 – Divorce, Maintenance, Custody",
       "Protection of Women from Domestic Violence Act, 2005"
     ]
   },
   {
     "id": 2,
-    "slug": "criminal-defense",
-    "title": "Criminal Defense",
-    "description": "Defending your rights against DUI, assault, drug, and other criminal charges.",
-    "details": "Our Criminal Defense attorneys provide aggressive and strategic representation for individuals facing criminal charges. We handle a wide range of cases, including DUI and DWI, drug offenses, assault and battery, theft, white-collar crimes, and juvenile offenses. We understand the stakes are high—your reputation, freedom, and future are on the line. From the moment you contact us, we work tirelessly to investigate the facts, challenge the prosecution’s evidence, and protect your constitutional rights. Our team is experienced in both negotiation and trial advocacy, striving to reduce or dismiss charges whenever possible. We also guide clients through bail hearings, pre-trial motions, and, if necessary, appeals. We believe everyone deserves a robust defense and are committed to providing personalized attention and clear communication throughout the process.",
+    "slug": "criminal",
+    "title": "Criminal",
+    "description": "Vigorously defending against charges like DUI, assault, drug offenses, and more.",
+    "details": "Our Criminal Defense practice offers strategic and aggressive representation for clients facing charges such as DUI, drug offenses, assault, theft, white-collar crimes, and juvenile offenses. We prioritize protecting your rights, reputation, and freedom by thoroughly investigating cases, challenging evidence, and crafting strong defenses. From bail hearings to trials and appeals, our experienced attorneys provide personalized guidance and clear communication to navigate the criminal justice system and aim for reduced or dismissed charges.",
     "image": "/images/criminal-litigation.jpg",
     "features": [
       "DUI & DWI Defense",
@@ -61,22 +61,22 @@ const servicesData=[
     ],
     "faqs": [
       {
-        "question": "What should I do if I'm arrested?",
-        "answer": "Remain calm, exercise your right to remain silent, and request an attorney before answering any questions."
+        "question": "What should I do if arrested?",
+        "answer": "Remain calm, exercise your right to remain silent, and request an attorney immediately."
       },
       {
         "question": "Can charges be dropped before trial?",
-        "answer": "Yes, in some cases charges can be reduced or dismissed depending on the evidence and legal arguments presented."
+        "answer": "Yes, charges may be reduced or dismissed based on evidence strength and legal arguments."
       }
     ],
     "process": [
-      "Starts with a consultation to assess business goals and legal requirements.",
-      "Handles entity formation and prepares all required documentation for legal compliance.",
-      "Negotiates and drafts contracts to protect interests in all business dealings.",
-      "Ensures ongoing legal compliance and advises on regulatory matters as the business grows.",
-      "Resolves disputes efficiently through negotiation or litigation when conflicts arise."
+      "Evaluates the case through a detailed consultation to develop a defense strategy.",
+      "Investigates facts and gathers evidence to challenge the prosecution’s case.",
+      "Files pre-trial motions to suppress evidence or seek dismissals where possible.",
+      "Provides robust trial representation to defend your rights in court.",
+      "Handles appeals if necessary to challenge unfavorable outcomes."
     ],
-    "cta": "If you’re facing criminal charges, contact us immediately for a strong defense.",
+    "cta": "Facing criminal charges? Contact us immediately for a strong defense.",
     "ipc_sections": [
       "Section 302 – Murder",
       "Section 307 – Attempt to murder",
@@ -90,8 +90,8 @@ const servicesData=[
     "id": 3,
     "slug": "corporate-law",
     "title": "Corporate Law",
-    "description": "Guiding business formations, contracts, and mergers to secure your company’s future.",
-    "details": "Our Corporate Law practice supports businesses of all sizes, from startups to established enterprises, in navigating the complex legal landscape of commerce. We assist with business formation and structuring, drafting and reviewing contracts, mergers and acquisitions, regulatory compliance, and corporate governance. Our attorneys are adept at identifying potential risks and opportunities, helping you make informed decisions that support your business goals. We also advise on shareholder agreements, intellectual property protection, and dispute resolution. Our proactive approach ensures that your company operates within the legal framework and is prepared for growth, investment, and market challenges. We are committed to building long-term partnerships with our clients, offering ongoing legal counsel to support your success at every stage.",
+    "description": "Supporting business formation, contracts, and mergers for long-term success.",
+    "details": "Our Corporate Law practice assists businesses, from startups to corporations, with formation, contracts, mergers, acquisitions, compliance, and governance. We identify risks, protect your interests, and provide strategic advice to support growth. Our services include shareholder agreements, intellectual property protection, and dispute resolution, ensuring your business operates within legal frameworks and thrives in competitive markets. We build lasting partnerships to provide ongoing counsel for your success.",
     "image": "https://images.pexels.com/photos/4427612/pexels-photo-4427612.jpeg?auto=compress&cs=tinysrgb&w=600",
     "features": [
       "Business Formation & Structuring",
@@ -103,22 +103,22 @@ const servicesData=[
     ],
     "faqs": [
       {
-        "question": "How do I choose the right business structure?",
-        "answer": "Our attorneys assess your goals and recommend the best structure, such as LLC, partnership, or corporation."
+        "question": "How do I select the right business structure?",
+        "answer": "We assess your goals to recommend the best structure, such as LLC, partnership, or corporation."
       },
       {
-        "question": "What is due diligence in mergers?",
-        "answer": "It involves a thorough review of financial, legal, and operational aspects before finalizing a merger or acquisition."
+        "question": "What does due diligence entail in mergers?",
+        "answer": "It involves reviewing financial, legal, and operational aspects to ensure a sound merger or acquisition."
       }
     ],
     "process": [
-      "Starts with a consultation to assess business goals and legal requirements.",
-      "Handles entity formation and prepares all required documentation for legal compliance.",
-      "Negotiates and drafts contracts to protect interests in all business dealings.",
-      "Ensures ongoing legal compliance and advises on regulatory matters as the business grows.",
-      "Resolves disputes efficiently through negotiation or litigation when conflicts arise."
+      "Assesses business goals through a comprehensive consultation.",
+      "Prepares documentation for entity formation and legal compliance.",
+      "Negotiates and drafts contracts to safeguard your business interests.",
+      "Advises on regulatory compliance to support ongoing operations.",
+      "Resolves disputes through negotiation or litigation as needed."
     ],
-    "cta": "Secure your business's future—consult our Corporate Law experts today.",
+    "cta": "Secure your business’s future—consult our Corporate Law experts today.",
     "ipc_sections": [
       "Section 405 – Criminal breach of trust",
       "Section 420 – Cheating and dishonestly inducing delivery of property",
@@ -130,53 +130,53 @@ const servicesData=[
   },
   {
     "id": 4,
-    "slug": "real-estate-law",
-    "title": "Real Estate Law",
-    "description": "Resolving property disputes, transactions, and zoning issues with precision.",
-    "details": "Our Real Estate Law practice provides comprehensive legal support for all types of property transactions and disputes. We represent buyers, sellers, landlords, tenants, developers, and investors in matters ranging from residential and commercial sales to complex zoning and land use issues. Our services include title searches and clearance, lease agreements, landlord-tenant disputes, property development, and real estate litigation. We ensure that every transaction is conducted smoothly and that your rights and investments are protected. Our attorneys are skilled negotiators and litigators, prepared to resolve disputes through negotiation or in court when necessary. We stay current with evolving real estate laws and regulations, offering clients practical advice and innovative solutions for even the most challenging property matters.",
-    "image": "/images/insurance.jpg",
+    "slug": "appellate-law",
+    "title": "Appellate Law",
+    "description": "Challenging court decisions with strategic and precise legal representation.",
+    "details": "Our Appellate Law practice specializes in appealing court decisions in civil, criminal, and administrative cases. We meticulously review trial records, identify legal errors, and craft compelling arguments to overturn or modify rulings. Our attorneys are skilled in brief writing, oral advocacy, and navigating complex appellate processes, ensuring your case is presented effectively to higher courts for favorable outcomes.",
+    "image": "/images/appellate-law.jpg",
     "features": [
-      "Property Sales & Purchases",
-      "Title Search & Clearance",
-      "Landlord-Tenant Disputes",
-      "Zoning & Land Use",
-      "Lease Agreements",
-      "Real Estate Litigation"
+      "Civil Appeals",
+      "Criminal Appeals",
+      "Administrative Appeals",
+      "Brief Writing & Filing",
+      "Oral Arguments",
+      "Case Review & Strategy"
     ],
     "faqs": [
       {
-        "question": "What is a title search?",
-        "answer": "A title search verifies legal ownership and checks for liens or claims on the property."
+        "question": "What is an appeal?",
+        "answer": "An appeal is a request to a higher court to review and overturn a lower court’s decision."
       },
       {
-        "question": "Do I need a lawyer for property transactions?",
-        "answer": "Legal guidance ensures your interests are protected and all documents are properly executed."
+        "question": "How long does an appeal process take?",
+        "answer": "Appeals may take months to years, depending on case complexity and court schedules."
       }
     ],
     "process": [
-      "Conducts an initial consultation and reviews all details of the property or transaction.",
-      "Prepares and reviews legal documents, including agreements and title papers, for accuracy.",
-      "Negotiates terms and facilitates agreements between all parties to ensure smooth transactions.",
-      "Performs due diligence, including title searches and verification, to safeguard the investment.",
-      "Oversees the closure of transactions and provides support for any post-deal issues."
+      "Reviews trial records to identify grounds for appeal.",
+      "Files a notice of appeal to initiate the appellate process.",
+      "Prepares and submits detailed legal briefs to present arguments.",
+      "Presents oral arguments in court if required.",
+      "Follows up on court decisions and advises on next steps."
     ],
-    "cta": "Protect your property investments—speak to our Real Estate Law team.",
+    "cta": "Need to appeal a court decision? Contact our Appellate Law specialists.",
     "ipc_sections": [
-      "Section 420 – Cheating",
-      "Section 406 – Criminal breach of trust",
-      "Section 467 – Forgery of valuable security",
-      "RERA Act – Real Estate (Regulation and Development) Act",
-      "Transfer of Property Act, 1882",
-      "Indian Contract Act, 1872"
+      "Code of Criminal Procedure (CrPC) – Section 372 (Appeals)",
+      "Code of Civil Procedure (CPC) – Section 96 (First appeal)",
+      "CPC – Section 100 (Second appeal)",
+      "CrPC – Section 397 (Revision)",
+      "Constitution of India – Article 136 (Special Leave Petition)",
+      "Supreme Court Rules, 2013"
     ]
   },
   {
     "id": 5,
-    "slug": "civil-litigation",
-    "title": "Civil Litigation",
-    "description": "Handling commercial disputes, personal injury claims, and insurance matters effectively.",
-    "details": "Our Civil Litigation team provides assertive representation for individuals and businesses involved in legal disputes. We handle a wide range of civil matters, including contract disputes, personal injury claims, insurance litigation, commercial disagreements, and debt recovery. Our attorneys are skilled in negotiation, mediation, arbitration, and trial advocacy, always striving for the most favorable outcome for our clients. We conduct thorough investigations, develop strong legal arguments, and keep clients informed at every stage of the process. Whether you are seeking to enforce your rights or defend against a claim, our goal is to resolve disputes efficiently while minimizing risk and expense. We are committed to protecting your interests and achieving justice on your behalf.",
-    "image": "/images/civil litigation.jpg",
+    "slug": "civil",
+    "title": "Civil",
+    "description": "Resolving disputes in contracts, injuries, and commercial matters efficiently.",
+    "details": "Our Civil Litigation practice represents clients in disputes involving contracts, personal injuries, property, insurance, and commercial issues. We aim for favorable resolutions through negotiation, mediation, or assertive trial advocacy. Our attorneys conduct thorough investigations, develop robust legal strategies, and keep you informed, ensuring your rights are protected while minimizing costs and risks.",
+    "image": "/images/civil-litigation.jpg",
     "features": [
       "Contract Disputes",
       "Personal Injury Claims",
@@ -187,37 +187,37 @@ const servicesData=[
     ],
     "faqs": [
       {
-        "question": "What is civil litigation?",
-        "answer": "It involves legal disputes between individuals or organizations seeking monetary compensation or specific performance."
+        "question": "What does civil litigation involve?",
+        "answer": "It involves disputes between individuals or entities seeking compensation or specific performance."
       },
       {
-        "question": "How long does a civil case take?",
-        "answer": "Timelines vary, but many cases resolve within 6-18 months depending on complexity."
+        "question": "How long does a civil case typically take?",
+        "answer": "Cases may resolve in 6-18 months, depending on complexity and court schedules."
       }
     ],
-   "process": [
-      "Assesses the case to understand the dispute and determine the best legal approach.",
-      "Drafts pleadings and conducts discovery to gather evidence and clarify the issues involved.",
-      "Engages in negotiation and settlement discussions to resolve disputes outside of court.",
-      "Represents in court during trial proceedings if a settlement cannot be reached.",
-      "Enforces judgments and provides guidance on post-trial matters as needed."
+    "process": [
+      "Assesses the dispute through a detailed consultation to determine the best approach.",
+      "Drafts pleadings and conducts discovery to gather evidence.",
+      "Engages in settlement negotiations or mediation to resolve disputes.",
+      "Represents you in court if litigation is necessary.",
+      "Enforces judgments and provides post-trial guidance."
     ],
-    "cta": "Need help with a dispute? Contact our Civil Litigation experts.",
+    "cta": "Facing a legal dispute? Contact our Civil Litigation experts for resolution.",
     "ipc_sections": [
       "Section 415 – Misrepresentation",
       "Specific Relief Act – Contract enforcement",
-      "Code of Civil Procedure (CPC), 1908",
-      "Section 9 CPC – Jurisdiction of civil courts",
-      "Section 10 CPC – Stay of suit",
-      "Section 151 CPC – Inherent powers of court"
+      "Code of Civil Procedure (CPC), 1908 – Section 9 (Jurisdiction)",
+      "CPC – Section 10 (Stay of suit)",
+      "CPC – Section 151 (Inherent powers)",
+      "Indian Contract Act, 1872"
     ]
   },
   {
     "id": 6,
     "slug": "intellectual-property",
     "title": "Intellectual Property",
-    "description": "Protecting your inventions, trademarks, copyrights, and IP rights diligently.",
-    "details": "Our Intellectual Property (IP) practice empowers innovators, creators, and businesses to protect and maximize the value of their ideas. We provide end-to-end services for patents, trademarks, copyrights, and trade secrets, including registration, enforcement, licensing, and litigation. Our attorneys help you identify and secure your IP assets, monitor for infringement, and take swift action to defend your rights. We also advise on IP strategy, portfolio management, and commercialization, ensuring your innovations are protected and leveraged for growth. Whether you are an individual inventor, a startup, or a multinational corporation, our team delivers practical, business-focused solutions to help you stay competitive in a rapidly evolving marketplace.",
+    "description": "Safeguarding inventions, trademarks, copyrights, and IP rights effectively.",
+    "details": "Our Intellectual Property practice protects your innovations, brands, and creative works through patents, trademarks, copyrights, and trade secrets. We handle registration, enforcement, licensing, and litigation, ensuring your IP assets are secure and maximized for value. Our attorneys offer strategic advice for portfolio management and commercialization, helping clients from startups to corporations stay competitive.",
     "image": "/images/cyber-law.jpg",
     "features": [
       "Patent Registration & Enforcement",
@@ -229,36 +229,36 @@ const servicesData=[
     ],
     "faqs": [
       {
-        "question": "How do I protect my invention?",
-        "answer": "File for a patent to secure exclusive rights and prevent unauthorized use."
+        "question": "How can I protect my invention?",
+        "answer": "Filing a patent grants exclusive rights to prevent unauthorized use."
       },
       {
-        "question": "What is the difference between copyright and trademark?",
-        "answer": "Copyright protects creative works; trademarks protect brand names, logos, and slogans."
+        "question": "What’s the difference between copyright and trademark?",
+        "answer": "Copyright protects creative works; trademarks protect brand identifiers like logos."
       }
     ],
-   "process": [
-      "Assesses intellectual property assets and develops a tailored protection strategy.",
-      "Files applications for patents, trademarks, or copyrights to secure legal rights.",
-      "Responds to office actions and addresses any objections raised by authorities.",
-      "Monitors for infringement and enforces rights through legal action when necessary.",
-      "Handles litigation and resolves disputes to protect intellectual property interests."
-   ],
-    "cta": "Safeguard your ideas—consult our Intellectual Property specialists.",
+    "process": [
+      "Evaluates IP assets to develop a tailored protection strategy.",
+      "Files applications for patents, trademarks, or copyrights.",
+      "Addresses office actions and objections from authorities.",
+      "Monitors for infringement and enforces rights through legal action.",
+      "Handles litigation to resolve IP disputes effectively."
+    ],
+    "cta": "Protect your ideas—consult our Intellectual Property specialists today.",
     "ipc_sections": [
       "Section 63 of Copyright Act – Infringement",
-      "Section 104 of Trademarks Act – Selling goods with false trademark",
+      "Section 104 of Trademarks Act – False trademark use",
       "Section 120 IPC – Criminal conspiracy",
       "Section 463 – Forgery",
-      "Information Technology Act – Section 66 (computer-related offenses)"
+      "Information Technology Act – Section 66 (Computer-related offenses)"
     ]
   },
   {
     "id": 7,
     "slug": "employment-law",
     "title": "Employment Law",
-    "description": "Advising on workplace rights, contracts, harassment, and wrongful termination cases.",
-    "details": "Our Employment Law attorneys provide comprehensive legal support for both employees and employers in all aspects of workplace law. We advise on employment contracts, workplace discrimination and harassment, wrongful termination, wage and hour disputes, and compliance with labor laws. Our team is dedicated to ensuring fair treatment in the workplace, helping clients resolve conflicts through negotiation, mediation, or litigation. We also assist employers in developing policies and procedures to prevent legal issues and foster a positive work environment. Whether you are facing a workplace dispute or seeking proactive legal guidance, our attorneys are committed to protecting your rights and achieving practical, effective solutions.",
+    "description": "Advising on workplace rights, contracts, harassment, and termination disputes.",
+    "details": "Our Employment Law practice supports employees and employers in navigating workplace issues, including contracts, discrimination, harassment, wrongful termination, and wage disputes. We ensure compliance with labor laws and resolve conflicts through negotiation, mediation, or litigation. Our attorneys also assist employers with policy development to prevent legal issues, fostering fair and compliant workplaces.",
     "image": "https://images.pexels.com/photos/4427612/pexels-photo-4427612.jpeg?auto=compress&cs=tinysrgb&w=600",
     "features": [
       "Employment Contracts",
@@ -270,22 +270,22 @@ const servicesData=[
     ],
     "faqs": [
       {
-        "question": "What counts as wrongful termination?",
-        "answer": "Termination based on discrimination, retaliation, or breach of contract may be considered wrongful."
+        "question": "What qualifies as wrongful termination?",
+        "answer": "Termination due to discrimination, retaliation, or contract breaches may be wrongful."
       },
       {
-        "question": "How can I address workplace harassment?",
-        "answer": "Document incidents and consult an attorney to understand your rights and options."
+        "question": "How do I address workplace harassment?",
+        "answer": "Document incidents and consult an attorney to explore your legal options."
       }
     ],
-   "process": [
-      "Reviews the workplace situation and provides a detailed consultation on legal options.",
-      "Investigates claims and collects evidence to support the case or defense.",
-      "Negotiates settlements or mediates disputes to achieve fair and practical outcomes.",
-      "Files claims with the relevant authorities or courts if informal resolution is not possible.",
-      "Represents in litigation and works toward a satisfactory resolution of the employment matter."
+    "process": [
+      "Conducts a consultation to review your workplace situation and legal options.",
+      "Investigates claims and gathers evidence to support your case.",
+      "Negotiates or mediates to achieve fair resolutions outside court.",
+      "Files claims with authorities or courts if informal resolution fails.",
+      "Represents you in litigation to secure a favorable outcome."
     ],
-    "cta": "Protect your workplace rights—speak to our Employment Law team.",
+    "cta": "Protect your workplace rights—contact our Employment Law team.",
     "ipc_sections": [
       "Section 509 – Insulting modesty",
       "Section 506 – Criminal intimidation",
@@ -299,8 +299,8 @@ const servicesData=[
     "id": 8,
     "slug": "tax-law",
     "title": "Tax Law",
-    "description": "Providing tax planning, audits, dispute resolution, and corporate tax strategies.",
-    "details": "Our Tax Law team delivers expert advice and representation for individuals and businesses navigating complex tax regulations. We assist with tax planning and advisory, audit representation, dispute resolution, estate and gift tax planning, and international tax matters. Our attorneys work closely with clients to develop strategies that minimize tax liabilities, ensure compliance, and resolve disputes efficiently. We stay up-to-date with constantly evolving tax laws and regulations, enabling us to provide proactive solutions and defend your interests before tax authorities. Whether you are facing an audit, planning your estate, or seeking guidance on corporate tax matters, we are committed to protecting your financial well-being and achieving your goals.",
+    "description": "Offering tax planning, audit support, and dispute resolution strategies.",
+    "details": "Our Tax Law practice provides expert guidance on tax planning, audits, dispute resolution, estate taxes, and international taxation for individuals and businesses. We develop strategies to minimize liabilities, ensure compliance, and represent clients before tax authorities. Our attorneys stay updated on evolving tax laws to deliver proactive solutions and protect your financial interests.",
     "image": "https://images.pexels.com/photos/4427612/pexels-photo-4427612.jpeg?auto=compress&cs=tinysrgb&w=600",
     "features": [
       "Tax Planning & Advisory",
@@ -312,22 +312,21 @@ const servicesData=[
     ],
     "faqs": [
       {
-        "question": "How can I reduce my tax liability?",
-        "answer": "Effective tax planning and use of available deductions and credits can help minimize your liability."
+        "question": "How can I minimize my tax liability?",
+        "answer": "Strategic tax planning and leveraging deductions can reduce your tax burden."
       },
       {
         "question": "What happens during a tax audit?",
-        "answer": "Authorities review your financial records to ensure compliance; we represent and guide you through the process."
+        "answer": "Authorities review financial records; we guide and represent you through the process."
       }
     ],
     "process": [
-      "Begins with an initial consultation and reviews the financial and tax situation.",
-      "Develops a personalized tax strategy to minimize liabilities and ensure compliance.",
-      "Prepares and files all necessary documentation accurately and on time.",
-      "Provides support and representation during audits or inquiries by tax authorities.",
-      "Resolves issues with tax authorities and pursues favorable outcomes if disputes arise."
-    ]
-,
+      "Reviews your financial and tax situation in a detailed consultation.",
+      "Develops a customized tax strategy to optimize compliance and savings.",
+      "Prepares and files accurate tax documentation on your behalf.",
+      "Represents you during audits or inquiries by tax authorities.",
+      "Resolves disputes with authorities to achieve favorable outcomes."
+    ],
     "cta": "Optimize your taxes—consult our Tax Law experts today.",
     "ipc_sections": [
       "Section 276C of Income Tax Act – Wilful attempt to evade tax",
@@ -337,9 +336,260 @@ const servicesData=[
       "Black Money Act – Undisclosed foreign income",
       "Benami Transactions Prohibition Act"
     ]
+  },
+  {
+    "id": 9,
+    "slug": "digital-crime",
+    "title": "Digital Crime/Cyber Crime",
+    "description": "Defending against hacking, fraud, and data breaches with expertise.",
+    "details": "Our Digital Crime/Cyber Crime practice addresses legal issues involving hacking, identity theft, cyber fraud, data breaches, and online harassment. We provide robust defense and proactive strategies to protect your digital assets, reputation, and rights. Our attorneys handle investigations, compliance with cyber laws, and litigation, ensuring swift action to mitigate damages and secure justice in the digital realm.",
+    "image": "/images/cyber-law.jpg",
+    "features": [
+      "Hacking & Data Breach Defense",
+      "Identity Theft Cases",
+      "Cyber Fraud Representation",
+      "Online Harassment & Cyberbullying",
+      "Data Privacy Compliance",
+      "Cybercrime Litigation"
+    ],
+    "faqs": [
+      {
+        "question": "What should I do if I’m a victim of cybercrime?",
+        "answer": "Report the incident, secure your accounts, and consult a lawyer to protect your rights."
+      },
+      {
+        "question": "Are cybercrimes prosecutable?",
+        "answer": "Yes, with proper evidence, cybercrimes like hacking or fraud can be prosecuted."
+      }
+    ],
+    "process": [
+      "Assesses the cyber incident and develops a legal strategy.",
+      "Collects and analyzes digital evidence to support your case.",
+      "Coordinates with authorities and pursues legal action as needed.",
+      "Represents you in court to defend or seek remedies.",
+      "Advises on preventive measures to avoid future cyber risks."
+    ],
+    "cta": "Victimized by cybercrime? Contact our Cyber Law experts for immediate support.",
+    "ipc_sections": [
+      "Information Technology Act – Section 66 (Hacking, data theft)",
+      "Section 66C – Identity theft",
+      "Section 66D – Cheating by personation",
+      "Section 420 IPC – Cheating",
+      "Section 120B – Criminal conspiracy",
+      "Section 463 – Forgery"
+    ]
+  },
+  {
+    "id": 10,
+    "slug": "medical-negligence",
+    "title": "Medical Negligence",
+    "description": "Seeking justice for injuries caused by medical malpractice or negligence.",
+    "details": "Our Medical Negligence practice represents clients harmed by medical malpractice, misdiagnosis, surgical errors, or inadequate care. We work with medical experts to build strong cases, seeking fair compensation for injuries, medical costs, and emotional distress. Our attorneys navigate complex healthcare laws to hold providers accountable and ensure justice for victims of negligence.",
+    "image": "/images/medical-negligence.jpg",
+    "features": [
+      "Medical Malpractice Claims",
+      "Misdiagnosis & Delayed Diagnosis",
+      "Surgical Error Cases",
+      "Hospital Negligence",
+      "Birth Injury Claims",
+      "Wrongful Death due to Negligence"
+    ],
+    "faqs": [
+      {
+        "question": "What constitutes medical negligence?",
+        "answer": "Negligence occurs when a healthcare provider fails to meet the standard of care, causing harm."
+      },
+      {
+        "question": "How long do I have to file a negligence claim?",
+        "answer": "The statute of limitations varies, typically 1-3 years from the incident or discovery."
+      }
+    ],
+    "process": [
+      "Evaluates the case with a consultation and medical record review.",
+      "Gathers expert testimony and evidence to support your claim.",
+      "Negotiates with insurers or healthcare providers for settlements.",
+      "Files claims with courts if negotiation fails.",
+      "Represents you in litigation to secure compensation."
+    ],
+    "cta": "Harmed by medical negligence? Contact us for justice and compensation.",
+    "ipc_sections": [
+      "Section 304A – Causing death by negligence",
+      "Section 337 – Causing hurt by negligence",
+      "Section 338 – Causing grievous hurt by negligence",
+      "Consumer Protection Act – Medical negligence",
+      "Indian Medical Council Act, 1956",
+      "Tort Law – Negligence"
+    ]
+  },
+  {
+    "id": 11,
+    "slug": "motor-vehicle-accidental-claims",
+    "title": "Motor Vehicle Accidental Claims",
+    "description": "Securing compensation for injuries and damages from vehicle accidents.",
+    "details": "Our Motor Vehicle Accidental Claims practice helps clients recover compensation for injuries, property damage, and losses from car, motorcycle, or truck accidents caused by negligence. We handle negotiations with insurers, gather evidence like police reports, and pursue litigation if needed to ensure fair settlements for medical expenses, lost wages, and pain and suffering.",
+    "image": "/images/vehicle-accident.jpg",
+    "features": [
+      "Car Accident Claims",
+      "Motorcycle Accident Claims",
+      "Truck Accident Litigation",
+      "Pedestrian Accident Cases",
+      "Wrongful Death Claims",
+      "Insurance Negotiations"
+    ],
+    "faqs": [
+      {
+        "question": "What can I claim after a vehicle accident?",
+        "answer": "You may claim medical costs, lost wages, pain and suffering, and property damage."
+      },
+      {
+        "question": "Do I need a lawyer for an accident claim?",
+        "answer": "A lawyer ensures fair compensation and handles complex insurer negotiations."
+      }
+    ],
+    "process": [
+      "Reviews the accident details through a consultation.",
+      "Collects evidence, including police reports and witness statements.",
+      "Negotiates with insurers to secure a fair settlement.",
+      "Files claims if negotiations fail to meet your needs.",
+      "Represents you in court to pursue compensation."
+    ],
+    "cta": "Injured in a vehicle accident? Contact us for expert claim support.",
+    "ipc_sections": [
+      "Section 279 – Rash driving",
+      "Section 304A – Causing death by negligence",
+      "Section 337 – Causing hurt by negligence",
+      "Section 338 – Causing grievous hurt by negligence",
+      "Motor Vehicles Act, 1988 – Section 166 (Compensation claims)",
+      "Consumer Protection Act – Insurance disputes"
+    ]
+  },
+  {
+    "id": 12,
+    "slug": "insurance-claims",
+    "title": "Insurance Claims",
+    "description": "Resolving disputes and denials for property, health, and auto insurance claims.",
+    "details": "Our Insurance Claims practice assists clients facing denied or underpaid claims for property, health, auto, or other insurance policies. We review policies, negotiate with insurers, and pursue litigation to secure the coverage you’re entitled to. Our attorneys handle bad faith insurance practices and ensure your rights are protected in complex claim disputes.",
+    "image": "/images/insurance-claims.jpg",
+    "features": [
+      "Property Insurance Disputes",
+      "Health Insurance Claims",
+      "Auto Insurance Claims",
+      "Bad Faith Insurance Practices",
+      "Policy Review & Analysis",
+      "Claim Denials & Appeals"
+    ],
+    "faqs": [
+      {
+        "question": "What is a bad faith insurance claim?",
+        "answer": "It occurs when an insurer unreasonably denies or delays a valid claim."
+      },
+      {
+        "question": "How long does an insurance claim dispute take?",
+        "answer": "Disputes may take months, but we work to expedite fair resolutions."
+      }
+    ],
+    "process": [
+      "Reviews your insurance policy and claim details.",
+      "Collects evidence to support your claim against denials.",
+      "Negotiates with insurers to secure rightful coverage.",
+      "Files appeals or claims in court if disputes persist.",
+      "Represents you in litigation to enforce your rights."
+    ],
+    "cta": "Denied an insurance claim? Contact our experts to fight for your coverage.",
+    "ipc_sections": [
+      "Section 420 – Cheating",
+      "Section 406 – Criminal breach of trust",
+      "Consumer Protection Act – Insurance disputes",
+      "Insurance Act, 1938 – Section 45 (Policy disputes)",
+      "Section 415 – Misrepresentation",
+      "Contract Act – Breach of contract"
+    ]
+  },
+  {
+    "id": 13,
+    "slug": "nri-cases",
+    "title": "NRI Cases",
+    "description": "Supporting NRIs with property, family, and cross-border legal disputes.",
+    "details": "Our NRI Cases practice assists Non-Resident Indians with legal matters such as property disputes, matrimonial issues, inheritance, and cross-border litigation. We offer remote representation through power of attorney, coordinate across jurisdictions, and ensure seamless legal support to protect your interests in India while you’re abroad.",
+    "image": "/images/nri-cases.jpg",
+    "features": [
+      "Property Disputes & Management",
+      "Matrimonial & Family Law",
+      "Inheritance & Succession",
+      "Cross-Border Litigation",
+      "Power of Attorney Services",
+      "Taxation for NRIs"
+    ],
+    "faqs": [
+      {
+        "question": "Can NRIs file cases from abroad?",
+        "answer": "Yes, we handle cases remotely via power of attorney or virtual consultations."
+      },
+      {
+        "question": "What documents are needed for NRI property disputes?",
+        "answer": "Property deeds, ownership records, and related legal agreements are essential."
+      }
+    ],
+    "process": [
+      "Assesses your case through a consultation, including cross-border needs.",
+      "Verifies documents like property deeds or family records.",
+      "Develops a legal strategy tailored to your situation.",
+      "Coordinates across jurisdictions for seamless representation.",
+      "Resolves disputes and enforces outcomes as needed."
+    ],
+    "cta": "NRI facing legal issues? Contact us for expert cross-border support.",
+    "ipc_sections": [
+      "Section 420 – Cheating",
+      "Section 406 – Criminal breach of trust",
+      "Section 498A – Cruelty in matrimonial cases",
+      "Hindu Succession Act, 1956",
+      "FEMA – Foreign exchange violations",
+      "Transfer of Property Act, 1882"
+    ]
+  },
+  {
+    "id": 14,
+    "slug": "drafting",
+    "title": "Drafting",
+    "description": "Crafting precise legal documents, contracts, and agreements for your needs.",
+    "details": "Our Drafting practice creates clear, enforceable legal documents, including contracts, wills, trusts, business agreements, and compliance documents. We ensure precision and compliance with applicable laws, minimizing risks and protecting your interests. Our attorneys work closely with you to tailor documents to your specific needs, offering ongoing support for revisions or execution.",
+    "image": "/images/drafting.jpg",
+    "features": [
+      "Contract Drafting & Review",
+      "Wills & Trusts",
+      "Business Agreements",
+      "Lease & Property Agreements",
+      "Power of Attorney",
+      "Compliance Documents"
+    ],
+    "faqs": [
+      {
+        "question": "Why is professional drafting important?",
+        "answer": "Professional drafting ensures clarity, enforceability, and legal compliance."
+      },
+      {
+        "question": "Can drafted documents be modified later?",
+        "answer": "Yes, documents can be amended with mutual consent and proper execution."
+      }
+    ],
+    "process": [
+      "Consults with you to understand document needs and objectives.",
+      "Drafts precise legal documents tailored to your requirements.",
+      "Reviews drafts with you to incorporate feedback and ensure accuracy.",
+      "Finalizes and executes documents for legal enforceability.",
+      "Provides ongoing support for amendments or related issues."
+    ],
+    "cta": "Need precise legal documents? Contact our Drafting experts today.",
+    "ipc_sections": [
+      "Indian Contract Act, 1872 – Section 10 (Valid agreements)",
+      "Section 406 – Criminal breach of trust",
+      "Section 420 – Cheating",
+      "Indian Succession Act, 1925 – Wills",
+      "Transfer of Property Act, 1882",
+      "Registration Act, 1908"
+    ]
   }
-]
-;
+];
 
 const ServiceDetail: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -355,7 +605,7 @@ const ServiceDetail: React.FC = () => {
           Sorry, we couldn’t find the service you are looking for.
         </p>
         <button
-          onClick={() => navigate("/services")}
+          onClick={() => navigate("/practise areas")}
           className="px-6 py-3 bg-deepRoyal text-white rounded hover:bg-indigo-800 transition"
         >
           Back to Services

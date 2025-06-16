@@ -8,11 +8,11 @@ import CallToAction from "../components/CallToAction";
 const servicesData = [
   {
     "id": 1,
-    "slug": "family-law",
+    "slug": "matrimonial-cases",
     "icon": "<Scale className=\"h-12 w-12 text-deepRoyal\" />",
-    "title": "Family Law",
-    "description": "Helping families navigate divorce, custody, and support with compassion and expertise.",
-    "details": "Family Law covers legal issues such as divorce, child custody, child support, alimony, adoption, and domestic violence. Our experienced attorneys provide compassionate guidance and strong representation to protect your family’s interests and help you through difficult times.",
+    "title": "Matrimonial Cases",
+    "description": "Navigating divorce, custody, and family disputes with compassion and expertise.",
+    "details": "Our Matrimonial Cases practice handles legal matters such as divorce, child custody, alimony, adoption, and domestic violence issues. Our experienced attorneys provide empathetic guidance and robust representation to safeguard your family’s interests during challenging times.",
     "image": "images/family-law.jpg",
     "features": [
       "Divorce & Separation",
@@ -24,12 +24,12 @@ const servicesData = [
     ],
     "faqs": [
       {
-        "question": "What should I bring to my first consultation?",
-        "answer": "Bring any relevant legal documents such as marriage certificates, court orders, financial records, and a list of questions or concerns you have."
+        "question": "What documents are needed for a divorce consultation?",
+        "answer": "Bring marriage certificates, court orders, financial records, and a list of your concerns or questions."
       },
       {
-        "question": "How long does a typical divorce process take?",
-        "answer": "The duration varies depending on the complexity of the case and whether it is contested, but most cases resolve within 6-12 months."
+        "question": "How long does a divorce process typically take?",
+        "answer": "Depending on complexity and whether it’s contested, most cases resolve within 6-12 months."
       }
     ],
     "process": [
@@ -42,19 +42,19 @@ const servicesData = [
     "testimonials": [
       {
         "client": "Priya S.",
-        "feedback": "The team guided me through a difficult custody battle with empathy and professionalism. Highly recommended."
+        "feedback": "Their compassionate approach made my custody case manageable. Highly professional team."
       }
     ],
-    "cta": "Contact our Family Law team for a confidential consultation and let us help you protect your family's future.",
-    "related_services": ["civil-litigation", "employment-law"]
+    "cta": "Contact our Family Law team for a confidential consultation to secure your family’s future.",
+    "related_services": ["civil-litigation", "nri-cases"]
   },
   {
     "id": 2,
-    "slug": "criminal-defense",
+    "slug": "criminal",
     "icon": "<FileText className=\"h-12 w-12 text-deepRoyal\" />",
     "title": "Criminal Defense",
-    "description": "Defending your rights against DUI, assault, drug, and other criminal charges.",
-    "details": "Our Criminal Defense team aggressively defends clients charged with DUI, assault, theft, drug offenses, and other criminal acts. We protect your rights, work to reduce or dismiss charges, and guide you through the complex criminal justice system.",
+    "description": "Vigorous defense for charges like DUI, assault, drug offenses, and more.",
+    "details": "Our Criminal Defense team provides aggressive representation for clients facing charges such as DUI, assault, theft, drug offenses, and white-collar crimes. We protect your rights, aim to reduce or dismiss charges, and guide you through the criminal justice system.",
     "image": "images/criminal-litigation.jpg",
     "features": [
       "DUI & DWI Defense",
@@ -66,12 +66,12 @@ const servicesData = [
     ],
     "faqs": [
       {
-        "question": "What should I do if I'm arrested?",
-        "answer": "Remain calm, exercise your right to remain silent, and request an attorney before answering any questions."
+        "question": "What should I do if arrested?",
+        "answer": "Stay calm, remain silent, and request an attorney before answering questions."
       },
       {
         "question": "Can charges be dropped before trial?",
-        "answer": "Yes, in some cases charges can be reduced or dismissed depending on the evidence and legal arguments presented."
+        "answer": "Yes, charges may be reduced or dismissed based on evidence and legal arguments."
       }
     ],
     "process": [
@@ -84,11 +84,11 @@ const servicesData = [
     "testimonials": [
       {
         "client": "Rahul M.",
-        "feedback": "They fought hard for my case and got the charges dropped. I am grateful for their dedication."
+        "feedback": "Their dedication got my charges dropped. Exceptional defense team."
       }
     ],
-    "cta": "If you’re facing criminal charges, contact us immediately for a strong defense.",
-    "related_services": ["civil-litigation", "family-law"]
+    "cta": "Facing criminal charges? Contact us for a strong and immediate defense.",
+    "related_services": ["civil-litigation", "appellate-law"]
   },
   {
     "id": 3,
@@ -134,70 +134,70 @@ const servicesData = [
   },
   {
     "id": 4,
-    "slug": "real-estate-law",
-    "icon": "<Home className=\"h-12 w-12 text-deepRoyal\" />",
-    "title": "Real Estate Law",
-    "description": "Resolving property disputes, transactions, and zoning issues with precision.",
-    "details": "Our Real Estate Law practice handles property sales and purchases, title issues, landlord-tenant disputes, zoning, and land use. We provide clear guidance to protect your property rights and investments.",
-    "image": "images/insurance.jpg",
+    "slug": "appellate-law",
+    "icon": "<Gavel className=\"h-12 w-12 text-deepRoyal\" />",
+    "title": "Appellate Law",
+    "description": "Appealing court decisions with strategic precision and expertise.",
+    "details": "Our Appellate Law practice focuses on reviewing and challenging court decisions to achieve favorable outcomes. We handle appeals in civil, criminal, and administrative cases with meticulous legal strategies.",
+    "image": "images/appellate-law.jpg",
     "features": [
-      "Property Sales & Purchases",
-      "Title Search & Clearance",
-      "Landlord-Tenant Disputes",
-      "Zoning & Land Use",
-      "Lease Agreements",
-      "Real Estate Litigation"
+      "Civil Appeals",
+      "Criminal Appeals",
+      "Administrative Appeals",
+      "Brief Writing & Filing",
+      "Oral Arguments",
+      "Case Review & Strategy"
     ],
     "faqs": [
       {
-        "question": "What is a title search?",
-        "answer": "A title search verifies legal ownership and checks for liens or claims on the property."
+        "question": "What is an appeal?",
+        "answer": "An appeal is a request to a higher court to review and overturn a lower court’s decision."
       },
       {
-        "question": "Do I need a lawyer for property transactions?",
-        "answer": "Legal guidance ensures your interests are protected and all documents are properly executed."
+        "question": "How long does an appeal take?",
+        "answer": "Appeals can take several months to years, depending on the case complexity and court schedule."
       }
     ],
     "process": [
-      "Consultation & Property Review",
-      "Document Preparation",
-      "Negotiation & Agreement",
-      "Due Diligence & Title Search",
-      "Transaction Closure"
+      "Case Review & Grounds for Appeal",
+      "Filing Notice of Appeal",
+      "Brief Preparation & Submission",
+      "Oral Arguments (if required)",
+      "Court Decision & Follow-up"
     ],
     "testimonials": [
       {
-        "client": "Meera T.",
-        "feedback": "Handled our property dispute efficiently and professionally. Excellent service."
+        "client": "Suresh K.",
+        "feedback": "Their appellate expertise turned my case around. Outstanding representation."
       }
     ],
-    "cta": "Protect your property investments—speak to our Real Estate Law team.",
-    "related_services": ["civil-litigation", "corporate-law"]
+    "cta": "Need to appeal a court decision? Contact our Appellate Law specialists.",
+    "related_services": ["civil-litigation", "criminal"]
   },
   {
     "id": 5,
     "slug": "civil-litigation",
     "icon": "<Landmark className=\"h-12 w-12 text-deepRoyal\" />",
     "title": "Civil Litigation",
-    "description": "Handling commercial disputes, personal injury claims, and insurance matters effectively.",
-    "details": "Our Civil Litigation team represents clients in disputes involving contracts, personal injury, insurance claims, and more. We fight to protect your legal rights and achieve favorable resolutions.",
-    "image": "images/civil litigation.jpg",
+    "description": "Resolving disputes in contracts, injuries, and commercial matters effectively.",
+    "details": "Our Civil Litigation team represents clients in disputes involving contracts, personal injuries, property, and commercial issues. We strive for favorable resolutions through negotiation or robust court representation.",
+    "image": "images/civil-litigation.jpg",
     "features": [
       "Contract Disputes",
       "Personal Injury Claims",
-      "Insurance Litigation",
-      "Commercial Disputes",
+      "Property Disputes",
+      "Commercial Litigation",
       "Debt Recovery",
       "Alternative Dispute Resolution"
     ],
     "faqs": [
       {
         "question": "What is civil litigation?",
-        "answer": "It involves legal disputes between individuals or organizations seeking monetary compensation or specific performance."
+        "answer": "It involves legal disputes between individuals or organizations seeking compensation or specific performance."
       },
       {
         "question": "How long does a civil case take?",
-        "answer": "Timelines vary, but many cases resolve within 6-18 months depending on complexity."
+        "answer": "Cases typically resolve within 6-18 months, depending on complexity and court schedules."
       }
     ],
     "process": [
@@ -213,8 +213,8 @@ const servicesData = [
         "feedback": "They resolved my commercial dispute quickly and professionally."
       }
     ],
-    "cta": "Need help with a dispute? Contact our Civil Litigation experts.",
-    "related_services": ["family-law", "real-estate-law"]
+    "cta": "Facing a legal dispute? Contact our Civil Litigation experts today.",
+    "related_services": ["appellate-law", "insurance-claims"]
   },
   {
     "id": 6,
@@ -256,7 +256,7 @@ const servicesData = [
       }
     ],
     "cta": "Safeguard your ideas—consult our Intellectual Property specialists.",
-    "related_services": ["corporate-law", "civil-litigation"]
+    "related_services": ["corporate-law", "digital-crime"]
   },
   {
     "id": 7,
@@ -298,7 +298,7 @@ const servicesData = [
       }
     ],
     "cta": "Protect your workplace rights—speak to our Employment Law team.",
-    "related_services": ["civil-litigation", "family-law"]
+    "related_services": ["civil-litigation", "matrimonial-cases"]
   },
   {
     "id": 8,
@@ -340,7 +340,259 @@ const servicesData = [
       }
     ],
     "cta": "Optimize your taxes—consult our Tax Law experts today.",
-    "related_services": ["corporate-law", "civil-litigation"]
+    "related_services": ["corporate-law", "nri-cases"]
+  },
+  {
+    "id": 9,
+    "slug": "digital-crime",
+    "icon": "<Shield className=\"h-12 w-12 text-deepRoyal\" />",
+    "title": "Digital Crime/Cyber Crime",
+    "description": "Defending against cybercrimes like hacking, data breaches, and online fraud.",
+    "details": "Our Digital Crime/Cyber Crime practice addresses legal issues involving hacking, identity theft, data breaches, cyber fraud, and online harassment. We provide robust defense and proactive strategies to protect your digital assets and reputation.",
+    "image": "images/cyber-law.jpg",
+    "features": [
+      "Hacking & Data Breach Defense",
+      "Identity Theft Cases",
+      "Cyber Fraud Representation",
+      "Online Harassment & Cyberbullying",
+      "Data Privacy Compliance",
+      "Cybercrime Litigation"
+    ],
+    "faqs": [
+      {
+        "question": "What should I do if I’m a victim of cybercrime?",
+        "answer": "Report the incident to authorities, secure your accounts, and consult a lawyer to protect your rights."
+      },
+      {
+        "question": "Can cybercrimes be prosecuted?",
+        "answer": "Yes, cybercrimes like hacking or fraud are prosecutable under cyber laws with proper evidence."
+      }
+    ],
+    "process": [
+      "Incident Assessment & Reporting",
+      "Evidence Collection & Analysis",
+      "Legal Strategy Development",
+      "Representation in Court",
+      "Resolution & Preventive Measures"
+    ],
+    "testimonials": [
+      {
+        "client": "Neha V.",
+        "feedback": "They handled my data breach case with expertise and protected my business."
+      }
+    ],
+    "cta": "Victimized by cybercrime? Contact our Cyber Law experts for immediate assistance.",
+    "related_services": ["intellectual-property", "criminal"]
+  },
+  {
+    "id": 10,
+    "slug": "medical-negligence",
+    "icon": "<Heart className=\"h-12 w-12 text-deepRoyal\" />",
+    "title": "Medical Negligence",
+    "description": "Seeking justice for medical malpractice and negligence cases.",
+    "details": "Our Medical Negligence practice represents clients harmed by medical malpractice, misdiagnosis, surgical errors, or inadequate care. We fight for fair compensation and accountability from healthcare providers.",
+    "image": "images/medical-negligence.jpg",
+    "features": [
+      "Medical Malpractice Claims",
+      "Misdiagnosis & Delayed Diagnosis",
+      "Surgical Error Cases",
+      "Hospital Negligence",
+      "Birth Injury Claims",
+      "Wrongful Death due to Negligence"
+    ],
+    "faqs": [
+      {
+        "question": "What qualifies as medical negligence?",
+        "answer": "Negligence occurs when a healthcare provider fails to meet the standard of care, causing harm."
+      },
+      {
+        "question": "How long do I have to file a medical negligence claim?",
+        "answer": "The statute of limitations varies by jurisdiction, typically 1-3 years from the incident."
+      }
+    ],
+    "process": [
+      "Case Evaluation & Medical Review",
+      "Evidence & Expert Testimony",
+      "Negotiation with Insurers",
+      "Filing Claims",
+      "Litigation & Resolution"
+    ],
+    "testimonials": [
+      {
+        "client": "Amit K.",
+        "feedback": "They secured fair compensation for my family after a surgical error. Exceptional service."
+      }
+    ],
+    "cta": "Harmed by medical negligence? Contact our experts for justice and compensation.",
+    "related_services": ["civil-litigation", "insurance-claims"]
+  },
+  {
+    "id": 11,
+    "slug": "motor-vehicle-accidental-claims",
+    "icon": "<Car className=\"h-12 w-12 text-deepRoyal\" />",
+    "title": "Motor Vehicle Accidental Claims",
+    "description": "Securing compensation for injuries and damages from vehicle accidents.",
+    "details": "Our Motor Vehicle Accidental Claims practice helps clients recover compensation for injuries, property damage, and losses from car, motorcycle, or truck accidents caused by negligence.",
+    "image": "images/vehicle-accident.jpg",
+    "features": [
+      "Car Accident Claims",
+      "Motorcycle Accident Claims",
+      "Truck Accident Litigation",
+      "Pedestrian Accident Cases",
+      "Wrongful Death Claims",
+      "Insurance Negotiations"
+    ],
+    "faqs": [
+      {
+        "question": "What compensation can I claim after an accident?",
+        "answer": "You may claim medical expenses, lost wages, pain and suffering, and property damage."
+      },
+      {
+        "question": "Do I need a lawyer for an accident claim?",
+        "answer": "A lawyer ensures fair compensation and handles negotiations with insurers."
+      }
+    ],
+    "process": [
+      "Accident Review & Consultation",
+      "Evidence Gathering (Police Reports, Witnesses)",
+      "Insurance Negotiations",
+      "Filing Claims",
+      "Litigation (if needed)"
+    ],
+    "testimonials": [
+      {
+        "client": "Ravi N.",
+        "feedback": "They fought for my accident claim and secured a fair settlement. Highly professional."
+      }
+    ],
+    "cta": "Injured in a vehicle accident? Contact us for expert claim assistance.",
+    "related_services": ["insurance-claims", "medical-negligence"]
+  },
+  {
+    "id": 12,
+    "slug": "insurance-claims",
+    "icon": "<FileShield className=\"h-12 w-12 text-deepRoyal\" />",
+    "title": "Insurance Claims",
+    "description": "Handling disputes and denials for property, health, and auto insurance claims.",
+    "details": "Our Insurance Claims practice assists clients in disputes with insurers over denied or underpaid claims for property, health, auto, or other policies. We ensure you receive the coverage you’re entitled to.",
+    "image": "images/insurance-claims.jpg",
+    "features": [
+      "Property Insurance Disputes",
+      "Health Insurance Claims",
+      "Auto Insurance Claims",
+      "Bad Faith Insurance Practices",
+      "Policy Review & Analysis",
+      "Claim Denials & Appeals"
+    ],
+    "faqs": [
+      {
+        "question": "What is a bad faith insurance claim?",
+        "answer": "It occurs when an insurer unreasonably denies or delays a valid claim."
+      },
+      {
+        "question": "How long does an insurance claim take?",
+        "answer": "Timelines vary, but disputes may take months; we work to expedite fair resolutions."
+      }
+    ],
+    "process": [
+      "Claim Review & Policy Analysis",
+      "Evidence Collection",
+      "Negotiation with Insurers",
+      "Appeals & Dispute Resolution",
+      "Litigation (if necessary)"
+    ],
+    "testimonials": [
+      {
+        "client": "Lata M.",
+        "feedback": "They resolved my denied insurance claim quickly and got me fair compensation."
+      }
+    ],
+    "cta": "Denied insurance claim? Contact our experts to fight for your coverage.",
+    "related_services": ["civil-litigation", "motor-vehicle-accidental-claims"]
+  },
+  {
+    "id": 13,
+    "slug": "nri-cases",
+    "icon": "<Globe className=\"h-12 w-12 text-deepRoyal\" />",
+    "title": "NRI Cases",
+    "description": "Assisting NRIs with property, family, and legal disputes across jurisdictions.",
+    "details": "Our NRI Cases practice supports Non-Resident Indians with legal issues such as property disputes, matrimonial cases, inheritance, and cross-border litigation, ensuring seamless representation.",
+    "image": "images/nri-cases.jpg",
+    "features": [
+      "Property Disputes & Management",
+      "Matrimonial & Family Law",
+      "Inheritance & Succession",
+      "Cross-Border Litigation",
+      "Power of Attorney Services",
+      "Taxation for NRIs"
+    ],
+    "faqs": [
+      {
+        "question": "Can NRIs file cases from abroad?",
+        "answer": "Yes, we represent NRIs remotely through power of attorney or virtual consultations."
+      },
+      {
+        "question": "What documents are needed for NRI property disputes?",
+        "answer": "Property deeds, ownership records, and any related legal agreements are essential."
+      }
+    ],
+    "process": [
+      "Consultation & Case Assessment",
+      "Document Verification",
+      "Legal Strategy & Filing",
+      "Cross-Border Coordination",
+      "Resolution & Enforcement"
+    ],
+    "testimonials": [
+      {
+        "client": "Arjun P.",
+        "feedback": "They handled my overseas property dispute efficiently, saving me time and stress."
+      }
+    ],
+    "cta": "NRI facing legal issues? Contact us for expert cross-border legal support.",
+    "related_services": ["matrimonial-cases", "tax-law"]
+  },
+  {
+    "id": 14,
+    "slug": "drafting",
+    "icon": "<PenTool className=\"h-12 w-12 text-deepRoyal\" />",
+    "title": "Drafting",
+    "description": "Crafting precise legal documents, contracts, and agreements tailored to your needs.",
+    "details": "Our Drafting services provide expertly crafted legal documents, including contracts, wills, trusts, agreements, and compliance documents, ensuring clarity and legal enforceability.",
+    "image": "images/drafting.jpg",
+    "features": [
+      "Contract Drafting & Review",
+      "Wills & Trusts",
+      "Business Agreements",
+      "Lease & Property Agreements",
+      "Power of Attorney",
+      "Compliance Documents"
+    ],
+    "faqs": [
+      {
+        "question": "Why is professional drafting important?",
+        "answer": "Professionally drafted documents ensure clarity, enforceability, and compliance with laws."
+      },
+      {
+        "question": "Can I modify a drafted contract later?",
+        "answer": "Yes, contracts can be amended with mutual consent and proper documentation."
+      }
+    ],
+    "process": [
+      "Consultation & Needs Assessment",
+      "Document Drafting",
+      "Client Review & Feedback",
+      "Finalization & Execution",
+      "Ongoing Support (if needed)"
+    ],
+    "testimonials": [
+      {
+        "client": "Deepa S.",
+        "feedback": "Their precise contract drafting saved my business from potential disputes."
+      }
+    ],
+    "cta": "Need precise legal documents? Contact our Drafting experts today.",
+    "related_services": ["corporate-law", "nri-cases"]
   }
 ];
 

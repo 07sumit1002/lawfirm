@@ -35,7 +35,7 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-serif font-semibold mb-4 border-b border-blue-500 pb-2 text-white">Practice Areas</h3>
             <ul className="space-y-2">
-              <li><Link to="/practise areas/family-law" className="text-blue-200 hover:text-blue-500 transition-colors">Family Law</Link></li>
+              <li><Link to="/practise areas/matrimonial-cases" className="text-blue-200 hover:text-blue-500 transition-colors">Matrimonial Cases</Link></li>
               <li><Link to="/practise areas/criminal-defense" className="text-blue-200 hover:text-blue-500 transition-colors">Criminal Defense</Link></li>
               <li><Link to="/practise areas/corporate-law" className="text-blue-200 hover:text-blue-500 transition-colors">Corporate Law</Link></li>
               <li><Link to="/practise areas/real-estate-law" className="text-blue-200 hover:text-blue-500 transition-colors">Real Estate Law</Link></li>
