@@ -7,20 +7,21 @@ import Himansh from '../assets/himansh.png';
 const teamMembers = [
   {
     name: "Adv Himanshu Aggarwal",
-    position: "Former Joint Secetary of Bar Association of Kurukshetra",
-    image:Himansh,
-    specialization: "Corporate Law",
-    experience: "15 year of experience",
+    position: "Former Joint Secretary of Bar Association of Kurukshetra",
+    image: Himansh,
+    specialization: "Corporate Law, Civil Litigation, Matrimonial Cases, Cyber Crime, Data Protection, Criminal Cases, NRI Matrimonial & Other Matters",
+    experience: "15 years of experience",
     bio: "Hello! I’m Advocate Himanshu Aggarwal, a legal practitioner with over 15 years of experience, serving clients in Kurukshetra, Karnal, Punjab & Haryana High Court, and the Supreme Court of India. I specialize in criminal, civil, family, and property law. With a result-oriented and ethical approach, I aim to provide clear legal guidance. I also had the honor of serving as Joint Secretary of the Kurukshetra Bar Association.",
   },
   {
     name: "Adv Shashank Aggarwal",
     position: "Legal Aid Counsel",
-    image:shahnk,
-    specialization: "Civil Litigation",
-    experience: "7 year of experience",
+    image: shahnk,
+    specialization: "Matrimonial Cases, Cyber Crime, Data Protection, Civil Cases, Criminal Cases",
+    experience: "7 years of experience",
     bio: "Hello! I’m Advocate Shashank Aggarwal, a Legal Aid Counsel with 7 years of experience practicing in Haryana courts. I hold a B.A.LL.B. (Hons) degree and specialize in civil, criminal, cheque bounce, divorce, and service matters. Fluent in English and Hindi, I am committed to offering effective and empathetic legal support, ensuring justice is accessible to all who seek it.",
-  },
+  }
+
 ];
 
 const TeamMemberDetail = () => {
