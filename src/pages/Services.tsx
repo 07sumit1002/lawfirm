@@ -525,7 +525,7 @@ const Services = () => {
         ></div>
 
         <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-3xl flex flex-col items-center justify-center mx-auto">
+          <div className="max-w-3xl flex flex-col text-center items-center justify-center mx-auto">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Our Practice Areas
             </h1>
