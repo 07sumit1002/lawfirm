@@ -189,7 +189,7 @@ function Hero() {
               initial={{ scale: 0.95 }}
               animate={{ scale: 1 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-            >Upholding Justice with Integrity
+            >Your Case, Our Priority
             </motion.h1>
 
           <motion.p
