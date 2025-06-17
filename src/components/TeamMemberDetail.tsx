@@ -1,5 +1,7 @@
 import { Link, useParams } from "react-router-dom";
 import CallToAction from "../components/CallToAction";
+import shahnk from '../assets/shashank.jpeg';
+import Legalaid from '../assets/legalaid.jpg';
 
 const teamMembers = [
   {
@@ -14,8 +16,7 @@ const teamMembers = [
   {
     name: "Adv Shashank Aggarwal",
     position: "Legal Aid Counsel",
-    image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXmH4u3ogtWBSggGrVFTRSBcVGzdT5GJa4jQ&s",
+    image:shahnk,
     specialization: "Civil Litigation",
     experience: "7 year of experience",
     bio: "Hello! I’m Advocate Shashank Aggarwal, a Legal Aid Counsel with 7 years of experience practicing in Haryana courts. I hold a B.A.LL.B. (Hons) degree and specialize in civil, criminal, cheque bounce, divorce, and service matters. Fluent in English and Hindi, I am committed to offering effective and empathetic legal support, ensuring justice is accessible to all who seek it.",
@@ -40,9 +41,9 @@ const TeamMemberDetail = () => {
     <div>
       {/* Parallax Header */}
       <div
-        className="h-[350px] bg-fixed bg-center bg-cover flex items-center justify-center relative"
+        className="h-[500px] bg-fixed bg-center bg-cover flex items-center justify-center relative"
         style={{
-          backgroundImage: `url('${member.image}')`,
+          backgroundImage: `url('${Legalaid}')`,
         }}
       >
         <div className="absolute inset-0 bg-black opacity-60" />

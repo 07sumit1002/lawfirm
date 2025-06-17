@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Check, Award, Users } from "lucide-react";
 import CallToAction from '../components/CallToAction';
 import { Link } from "react-router-dom";
+import Shahsnk from '../assets/shashank.jpeg';
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
@@ -20,7 +21,7 @@ const teamMembers = [
   {
     name: 'Adv Shashank Aggarwal',
     position: 'Legal Aid Counsel',
-    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXmH4u3ogtWBSggGrVFTRSBcVGzdT5GJa4jQ&s',
+    image: Shahsnk,
     specialization: 'Civil Litigation',
     experience:'7 year of experience'
   }
@@ -147,7 +148,7 @@ const About = () => {
                     <img
                       src={member.image}
                       alt={member.name}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                      className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-110"
                     />
                   </div>
                   <div className="p-6 flex flex-col justify-center">
