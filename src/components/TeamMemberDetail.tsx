@@ -65,13 +65,15 @@ const TeamMemberDetail = () => {
             </h2>
             <p className="text-gray-700 leading-relaxed text-justify">{member.bio}</p>
           </div>
-          <div className="w-full max-w-xs sm:max-w-sm md:w-64 md:h-64 flex-shrink-0">
-            <img
-              src={member.image}
-              alt={member.name}
-              className="w-[30px] h-[40px] object-cover rounded-lg shadow-md"
-            />
-          </div>
+        <div className="w-full max-w-xs sm:max-w-sm md:w-64 aspect-square flex-shrink-0">
+        <img
+          src={member.image}
+          alt={member.name}
+          className="w-full h-full object-cover object-top rounded-lg shadow-md"
+        />
+      </div>
+
+
         </div>
       </div>
 
