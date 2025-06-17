@@ -53,19 +53,19 @@ interface Video {
 
 const videos: Video[] = [
   {
-    id: "xxnqZtZ81GQ",
-    title: "Intro to Legal Learning",
-    url: "https://www.youtube.com/watch?v=xxnqZtZ81GQ",
+    id: "hLKbhPmCpKM",
+    title: "How to get Free Advocate & Legal help",
+    url: "https://www.youtube.com/watch?v=hLKbhPmCpKM",
   },
   {
-    id: "k7eTXXbc6bI",
-    title: "Understanding Contracts",
-    url: "https://www.youtube.com/watch?v=k7eTXXbc6bI",
+    id: "kUh2YiK2c8Y",
+    title: "Sexual Harassment at work places",
+    url: "https://www.youtube.com/watch?v=kUh2YiK2c8Y",
   },
   {
-    id: "gTuJmd4Deho",
-    title: "IP Basics for Start‑ups",
-    url: "https://www.youtube.com/watch?v=gTuJmd4Deho",
+    id: "xjsDVg20Lms",
+    title: "Right to Information Act",
+    url: "https://www.youtube.com/watch?v=xjsDVg20Lms",
   },
 ];
 
