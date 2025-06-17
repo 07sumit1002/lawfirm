@@ -2,13 +2,13 @@ import { Link, useParams } from "react-router-dom";
 import CallToAction from "../components/CallToAction";
 import shahnk from '../assets/shashank.jpeg';
 import Legalaid from '../assets/legalaid.jpg';
+import Himansh from '../assets/himansh.png';
 
 const teamMembers = [
   {
     name: "Adv Himanshu Aggarwal",
     position: "Former Joint Secetary of Bar Association of Kurukshetra",
-    image:
-      "https://www.nls.ac.in/wp-content/uploads/2023/05/DSC_0507-1-scaled-e1727334727920.jpg",
+    image:Himansh,
     specialization: "Corporate Law",
     experience: "15 year of experience",
     bio: "Hello! I’m Advocate Himanshu Aggarwal, a legal practitioner with over 15 years of experience, serving clients in Kurukshetra, Karnal, Punjab & Haryana High Court, and the Supreme Court of India. I specialize in criminal, civil, family, and property law. With a result-oriented and ethical approach, I aim to provide clear legal guidance. I also had the honor of serving as Joint Secretary of the Kurukshetra Bar Association.",

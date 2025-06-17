@@ -3,6 +3,7 @@ import { Check, Award, Users } from "lucide-react";
 import CallToAction from '../components/CallToAction';
 import { Link } from "react-router-dom";
 import Shahsnk from '../assets/shashank.jpeg';
+import Himansh from '../assets/himansh.png';
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
@@ -14,7 +15,7 @@ const teamMembers = [
   {
     name: 'Adv Himanshu Aggarwal',
     position: 'Former Joint Secetary of Bar Association of Kurukshetra',
-    image: 'https://www.nls.ac.in/wp-content/uploads/2023/05/DSC_0507-1-scaled-e1727334727920.jpg',
+    image: Himansh,
     specialization: 'Corporate Law',
     experience:'15 year of experience'
   },
