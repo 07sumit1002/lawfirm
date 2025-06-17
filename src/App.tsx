@@ -16,9 +16,17 @@ import Learning from './pages/Learning';
 
 
 const App = () => {
-  const [showDisclaimer, setShowDisclaimer] = useState(true);
+  const [showDisclaimer, setShowDisclaimer] = useState(false);
+
+   useEffect(() => {
+    const disclaimerAgreed = sessionStorage.getItem('disclaimerAgreed');
+    if (!disclaimerAgreed) {
+      setShowDisclaimer(true);
+    }
+  }, []);
 
   const handleAgree = () => {
+    sessionStorage.setItem('disclaimerAgreed', 'true');
     setShowDisclaimer(false);
   };
 
