@@ -46,221 +46,11 @@ const servicesData = [
       }
     ],
     "cta": "Contact our Family Law team for a confidential consultation to secure your family’s future.",
-    "related_services": ["civil-litigation", "nri-cases"]
+    "related_services": ["civil-litigation", "nri-litigation"]
   },
   {
     "id": 2,
-    "slug": "criminal",
-    "icon": "<FileText className=\"h-12 w-12 text-deepRoyal\" />",
-    "title": "Criminal Defense",
-    "description": "Vigorous defense for charges like DUI, assault, drug offenses, and more.",
-    "details": "Our Criminal Defense team provides aggressive representation for clients facing charges such as DUI, assault, theft, drug offenses, and white-collar crimes. We protect your rights, aim to reduce or dismiss charges, and guide you through the criminal justice system.",
-    "image": "/images/criminal law.jpg",
-    "features": [
-      "DUI & DWI Defense",
-      "Drug Offense Representation",
-      "Assault & Battery Cases",
-      "Theft & Burglary Defense",
-      "White Collar Crimes",
-      "Juvenile Defense"
-    ],
-    "faqs": [
-      {
-        "question": "What should I do if arrested?",
-        "answer": "Stay calm, remain silent, and request an attorney before answering questions."
-      },
-      {
-        "question": "Can charges be dropped before trial?",
-        "answer": "Yes, charges may be reduced or dismissed based on evidence and legal arguments."
-      }
-    ],
-    "process": [
-      "Case Evaluation & Strategy",
-      "Investigation & Evidence Gathering",
-      "Pre-Trial Motions",
-      "Trial Preparation & Representation",
-      "Appeals (if necessary)"
-    ],
-    "testimonials": [
-      {
-        "client": "Rahul M.",
-        "feedback": "Their dedication got my charges dropped. Exceptional defense team."
-      }
-    ],
-    "cta": "Facing criminal charges? Contact us for a strong and immediate defense.",
-    "related_services": ["civil-litigation", "appellate-law"]
-  },
-  {
-    "id": 3,
-    "slug": "appellate-law",
-    "icon": "<Gavel className=\"h-12 w-12 text-deepRoyal\" />",
-    "title": "Appellate Law",
-    "description": "Appealing court decisions with strategic precision and expertise.",
-    "details": "Our Appellate Law practice focuses on reviewing and challenging court decisions to achieve favorable outcomes. We handle appeals in civil, criminal, and administrative cases with meticulous legal strategies.",
-    "image": "images/appleate.jpg",
-    "features": [
-      "Civil Appeals",
-      "Criminal Appeals",
-      "Administrative Appeals",
-      "Brief Writing & Filing",
-      "Oral Arguments",
-      "Case Review & Strategy"
-    ],
-    "faqs": [
-      {
-        "question": "What is an appeal?",
-        "answer": "An appeal is a request to a higher court to review and overturn a lower court’s decision."
-      },
-      {
-        "question": "How long does an appeal take?",
-        "answer": "Appeals can take several months to years, depending on the case complexity and court schedule."
-      }
-    ],
-    "process": [
-      "Case Review & Grounds for Appeal",
-      "Filing Notice of Appeal",
-      "Brief Preparation & Submission",
-      "Oral Arguments (if required)",
-      "Court Decision & Follow-up"
-    ],
-    "testimonials": [
-      {
-        "client": "Suresh K.",
-        "feedback": "Their appellate expertise turned my case around. Outstanding representation."
-      }
-    ],
-    "cta": "Need to appeal a court decision? Contact our Appellate Law specialists.",
-    "related_services": ["civil-litigation", "criminal"]
-  },
-  {
-    "id": 4,
-    "slug": "civil-litigation",
-    "icon": "<Landmark className=\"h-12 w-12 text-deepRoyal\" />",
-    "title": "Civil Litigation",
-    "description": "Resolving disputes in contracts, injuries, and commercial matters effectively.",
-    "details": "Our Civil Litigation team represents clients in disputes involving contracts, personal injuries, property, and commercial issues. We strive for favorable resolutions through negotiation or robust court representation.",
-    "image": "images/civil litigation.jpg",
-    "features": [
-      "Contract Disputes",
-      "Personal Injury Claims",
-      "Property Disputes",
-      "Commercial Litigation",
-      "Debt Recovery",
-      "Alternative Dispute Resolution"
-    ],
-    "faqs": [
-      {
-        "question": "What is civil litigation?",
-        "answer": "It involves legal disputes between individuals or organizations seeking compensation or specific performance."
-      },
-      {
-        "question": "How long does a civil case take?",
-        "answer": "Cases typically resolve within 6-18 months, depending on complexity and court schedules."
-      }
-    ],
-    "process": [
-      "Case Assessment",
-      "Pleadings & Discovery",
-      "Negotiation & Settlement",
-      "Trial Representation",
-      "Judgment & Enforcement"
-    ],
-    "testimonials": [
-      {
-        "client": "Vikram D.",
-        "feedback": "They resolved my commercial dispute quickly and professionally."
-      }
-    ],
-    "cta": "Facing a legal dispute? Contact our Civil Litigation experts today.",
-    "related_services": ["appellate-law", "insurance-claims"]
-  },
-  {
-    "id": 5,
-    "slug": "intellectual-property",
-    "icon": "<FileCheck className=\"h-12 w-12 text-deepRoyal\" />",
-    "title": "Intellectual Property",
-    "description": "Protecting your inventions, trademarks, copyrights, and IP rights diligently.",
-    "details": "We help clients protect their inventions, brands, and creative works through patents, trademarks, copyrights, and trade secrets. Our team ensures your intellectual property is secure and enforceable.",
-    "image": "images/intellectual.jpg",
-    "features": [
-      "Patent Registration & Enforcement",
-      "Trademark Filing & Protection",
-      "Copyright Registration",
-      "Trade Secret Protection",
-      "IP Litigation",
-      "Licensing Agreements"
-    ],
-    "faqs": [
-      {
-        "question": "How do I protect my invention?",
-        "answer": "File for a patent to secure exclusive rights and prevent unauthorized use."
-      },
-      {
-        "question": "What is the difference between copyright and trademark?",
-        "answer": "Copyright protects creative works; trademarks protect brand names, logos, and slogans."
-      }
-    ],
-    "process": [
-      "IP Assessment & Strategy",
-      "Filing Applications",
-      "Office Actions & Responses",
-      "Enforcement & Monitoring",
-      "Litigation (if needed)"
-    ],
-    "testimonials": [
-      {
-        "client": "Kiran J.",
-        "feedback": "They secured our brand’s trademarks and handled IP disputes efficiently."
-      }
-    ],
-    "cta": "Safeguard your ideas—consult our Intellectual Property specialists.",
-    "related_services": ["corporate-law", "digital-crime"]
-  },
-  {
-    "id": 6,
-    "slug": "employment-law",
-    "icon": "<BookOpen className=\"h-12 w-12 text-deepRoyal\" />",
-    "title": "Employment Law",
-    "description": "Advising on workplace rights, contracts, harassment, and wrongful termination cases.",
-    "details": "Our Employment Law attorneys guide both employees and employers on workplace rights, contracts, discrimination, harassment, and wrongful termination claims to ensure fair treatment and compliance with labor laws.",
-    "image": "https://images.pexels.com/photos/4427612/pexels-photo-4427612.jpeg?auto=compress&cs=tinysrgb&w=600",
-    "features": [
-      "Employment Contracts",
-      "Workplace Discrimination",
-      "Harassment Claims",
-      "Wrongful Termination",
-      "Wage & Hour Disputes",
-      "Employee Handbook Policies"
-    ],
-    "faqs": [
-      {
-        "question": "What counts as wrongful termination?",
-        "answer": "Termination based on discrimination, retaliation, or breach of contract may be considered wrongful."
-      },
-      {
-        "question": "How can I address workplace harassment?",
-        "answer": "Document incidents and consult an attorney to understand your rights and options."
-      }
-    ],
-    "process": [
-      "Consultation & Case Review",
-      "Investigation & Evidence Collection",
-      "Negotiation & Mediation",
-      "Filing Claims",
-      "Litigation & Resolution"
-    ],
-    "testimonials": [
-      {
-        "client": "Sonal G.",
-        "feedback": "They helped me resolve a workplace harassment issue quickly and professionally."
-      }
-    ],
-    "cta": "Protect your workplace rights—speak to our Employment Law team.",
-    "related_services": ["civil-litigation", "matrimonial-cases"]
-  },
-  {
-    "id": 7,
-    "slug": "digital-crime",
+    "slug": "cyber-crime",
     "icon": "<Shield className=\"h-12 w-12 text-deepRoyal\" />",
     "title": "Cyber Crime",
     "description": "Defending against cybercrimes like hacking, data breaches, and online fraud.",
@@ -298,10 +88,10 @@ const servicesData = [
       }
     ],
     "cta": "Victimized by cybercrime? Contact our Cyber Law experts for immediate assistance.",
-    "related_services": ["intellectual-property", "criminal"]
+    "related_services": ["intellectual-property", "criminal-cases"]
   },
   {
-    "id": 8,
+    "id": 3,
     "slug": "medical-negligence",
     "icon": "<Heart className=\"h-12 w-12 text-deepRoyal\" />",
     "title": "Medical Negligence",
@@ -343,7 +133,133 @@ const servicesData = [
     "related_services": ["civil-litigation", "insurance-claims"]
   },
   {
-    "id": 9,
+    "id": 4,
+    "slug": "nri-litigation",
+    "icon": "<Globe className=\"h-12 w-12 text-deepRoyal\" />",
+    "title": "NRI Litigation",
+    "description": "Assisting NRIs with property, family, and legal disputes across jurisdictions.",
+    "details": "Our NRI Cases practice supports Non-Resident Indians with legal issues such as property disputes, matrimonial cases, inheritance, and cross-border litigation, ensuring seamless representation.",
+    "image": "images/nri.jpg",
+    "features": [
+      "Property Disputes & Management",
+      "Matrimonial & Family Law",
+      "Inheritance & Succession",
+      "Cross-Border Litigation",
+      "Power of Attorney Services",
+      "Taxation for NRIs"
+    ],
+    "faqs": [
+      {
+        "question": "Can NRIs file cases from abroad?",
+        "answer": "Yes, we represent NRIs remotely through power of attorney or virtual consultations."
+      },
+      {
+        "question": "What documents are needed for NRI property disputes?",
+        "answer": "Property deeds, ownership records, and any related legal agreements are essential."
+      }
+    ],
+    "process": [
+      "Consultation & Case Assessment",
+      "Document Verification",
+      "Legal Strategy & Filing",
+      "Cross-Border Coordination",
+      "Resolution & Enforcement"
+    ],
+    "testimonials": [
+      {
+        "client": "Arjun P.",
+        "feedback": "They handled my overseas property dispute efficiently, saving me time and stress."
+      }
+    ],
+    "cta": "NRI facing legal issues? Contact us for expert cross-border legal support.",
+    "related_services": ["matrimonial-cases", "tax-law"]
+  },
+  {
+    "id": 5,
+    "slug": "civil-litigation",
+    "icon": "<Landmark className=\"h-12 w-12 text-deepRoyal\" />",
+    "title": "Civil Litigation",
+    "description": "Resolving disputes in contracts, injuries, and commercial matters effectively.",
+    "details": "Our Civil Litigation team represents clients in disputes involving contracts, personal injuries, property, and commercial issues. We strive for favorable resolutions through negotiation or robust court representation.",
+    "image": "images/civil litigation.jpg",
+    "features": [
+      "Contract Disputes",
+      "Personal Injury Claims",
+      "Property Disputes",
+      "Commercial Litigation",
+      "Debt Recovery",
+      "Alternative Dispute Resolution"
+    ],
+    "faqs": [
+      {
+        "question": "What is civil litigation?",
+        "answer": "It involves legal disputes between individuals or organizations seeking compensation or specific performance."
+      },
+      {
+        "question": "How long does a civil case take?",
+        "answer": "Cases typically resolve within 6-18 months, depending on complexity and court schedules."
+      }
+    ],
+    "process": [
+      "Case Assessment",
+      "Pleadings & Discovery",
+      "Negotiation & Settlement",
+      "Trial Representation",
+      "Judgment & Enforcement"
+    ],
+    "testimonials": [
+      {
+        "client": "Vikram D.",
+        "feedback": "They resolved my commercial dispute quickly and professionally."
+      }
+    ],
+    "cta": "Facing a legal dispute? Contact our Civil Litigation experts today.",
+    "related_services": ["appellate-law", "insurance-claims"]
+  },
+  {
+    "id": 6,
+    "slug": "criminal-cases",
+    "icon": "<FileText className=\"h-12 w-12 text-deepRoyal\" />",
+    "title": "Criminal Cases",
+    "description": "Vigorous defense for charges like DUI, assault, drug offenses, and more.",
+    "details": "Our Criminal Defense team provides aggressive representation for clients facing charges such as DUI, assault, theft, drug offenses, and white-collar crimes. We protect your rights, aim to reduce or dismiss charges, and guide you through the criminal justice system.",
+    "image": "/images/criminal law.jpg",
+    "features": [
+      "DUI & DWI Defense",
+      "Drug Offense Representation",
+      "Assault & Battery Cases",
+      "Theft & Burglary Defense",
+      "White Collar Crimes",
+      "Juvenile Defense"
+    ],
+    "faqs": [
+      {
+        "question": "What should I do if arrested?",
+        "answer": "Stay calm, remain silent, and request an attorney before answering questions."
+      },
+      {
+        "question": "Can charges be dropped before trial?",
+        "answer": "Yes, charges may be reduced or dismissed based on evidence and legal arguments."
+      }
+    ],
+    "process": [
+      "Case Evaluation & Strategy",
+      "Investigation & Evidence Gathering",
+      "Pre-Trial Motions",
+      "Trial Preparation & Representation",
+      "Appeals (if necessary)"
+    ],
+    "testimonials": [
+      {
+        "client": "Rahul M.",
+        "feedback": "Their dedication got my charges dropped. Exceptional defense team."
+      }
+    ],
+    "cta": "Facing criminal charges? Contact us for a strong and immediate defense.",
+    "related_services": ["civil-litigation", "appellate-law"]
+  },
+  {
+    "id": 7,
     "slug": "motor-vehicle-accidental-claims",
     "icon": "<Car className=\"h-12 w-12 text-deepRoyal\" />",
     "title": "Motor Vehicle Accidental Claims",
@@ -385,7 +301,7 @@ const servicesData = [
     "related_services": ["insurance-claims", "medical-negligence"]
   },
   {
-    "id": 10,
+    "id": 8,
     "slug": "insurance-claims",
     "icon": "<FileShield className=\"h-12 w-12 text-deepRoyal\" />",
     "title": "Insurance Claims",
@@ -427,49 +343,49 @@ const servicesData = [
     "related_services": ["civil-litigation", "motor-vehicle-accidental-claims"]
   },
   {
-    "id": 11,
-    "slug": "nri-cases",
-    "icon": "<Globe className=\"h-12 w-12 text-deepRoyal\" />",
-    "title": "NRI Cases",
-    "description": "Assisting NRIs with property, family, and legal disputes across jurisdictions.",
-    "details": "Our NRI Cases practice supports Non-Resident Indians with legal issues such as property disputes, matrimonial cases, inheritance, and cross-border litigation, ensuring seamless representation.",
-    "image": "images/nri.jpg",
-    "features": [
-      "Property Disputes & Management",
-      "Matrimonial & Family Law",
-      "Inheritance & Succession",
-      "Cross-Border Litigation",
-      "Power of Attorney Services",
-      "Taxation for NRIs"
-    ],
-    "faqs": [
-      {
-        "question": "Can NRIs file cases from abroad?",
-        "answer": "Yes, we represent NRIs remotely through power of attorney or virtual consultations."
-      },
-      {
-        "question": "What documents are needed for NRI property disputes?",
-        "answer": "Property deeds, ownership records, and any related legal agreements are essential."
-      }
-    ],
-    "process": [
-      "Consultation & Case Assessment",
-      "Document Verification",
-      "Legal Strategy & Filing",
-      "Cross-Border Coordination",
-      "Resolution & Enforcement"
-    ],
-    "testimonials": [
-      {
-        "client": "Arjun P.",
-        "feedback": "They handled my overseas property dispute efficiently, saving me time and stress."
-      }
-    ],
-    "cta": "NRI facing legal issues? Contact us for expert cross-border legal support.",
-    "related_services": ["matrimonial-cases", "tax-law"]
-  },
+  "id": 9,
+  "slug": "consumer-cases",
+  "icon": "<ShieldCheck className=\"h-12 w-12 text-deepRoyal\" />",
+  "title": "Consumer Cases",
+  "description": "Protecting consumer rights in disputes over defective products, unfair practices, and services.",
+  "details": "Our Consumer Cases practice represents clients in disputes involving defective products, unfair trade practices, fraud, and service-related issues. We advocate for consumer rights, ensuring fair compensation and accountability from businesses and service providers.",
+  "image": "images/consumer-cases.jpg",
+  "features": [
+    "Defective Product Claims",
+    "Unfair Trade Practices",
+    "Consumer Fraud Cases",
+    "Service Contract Disputes",
+    "Warranty Claims",
+    "Consumer Protection Litigation"
+  ],
+  "faqs": [
+    {
+      "question": "What qualifies as a consumer case?",
+      "answer": "A consumer case involves disputes over goods or services, such as defective products, misleading advertisements, or unfair business practices."
+    },
+    {
+      "question": "How long do I have to file a consumer complaint?",
+      "answer": "The statute of limitations varies by jurisdiction, typically 2-3 years from the date of the issue."
+    }
+  ],
+  "process": [
+    "Case Evaluation & Consultation",
+    "Evidence Collection & Review",
+    "Filing Complaints with Consumer Forums",
+    "Negotiation & Mediation",
+    "Litigation & Resolution"
+  ],
+  "testimonials": [
+    {
+      "client": "Anita R.",
+      "feedback": "They resolved my defective product claim swiftly and secured a fair settlement. Highly recommend their expertise."
+    }
+  ],
+  "cta": "Facing a consumer dispute? Contact our Consumer Cases experts for justice and compensation.",
+  "related_services": ["civil-litigation", "insurance-claims"]
+},
   {
-    "id": 12,
+    "id": 10,
     "slug": "drafting",
     "icon": "<PenTool className=\"h-12 w-12 text-deepRoyal\" />",
     "title": "Drafting",
@@ -508,7 +424,133 @@ const servicesData = [
       }
     ],
     "cta": "Need precise legal documents? Contact our Drafting experts today.",
-    "related_services": ["corporate-law", "nri-cases"]
+    "related_services": ["corporate-law", "nri-litigation"]
+  },
+  {
+    "id": 11,
+    "slug": "appellate-law",
+    "icon": "<Gavel className=\"h-12 w-12 text-deepRoyal\" />",
+    "title": "Appellate Law",
+    "description": "Appealing court decisions with strategic precision and expertise.",
+    "details": "Our Appellate Law practice focuses on reviewing and challenging court decisions to achieve favorable outcomes. We handle appeals in civil, criminal, and administrative cases with meticulous legal strategies.",
+    "image": "images/appleate.jpg",
+    "features": [
+      "Civil Appeals",
+      "Criminal Appeals",
+      "Administrative Appeals",
+      "Brief Writing & Filing",
+      "Oral Arguments",
+      "Case Review & Strategy"
+    ],
+    "faqs": [
+      {
+        "question": "What is an appeal?",
+        "answer": "An appeal is a request to a higher court to review and overturn a lower court’s decision."
+      },
+      {
+        "question": "How long does an appeal take?",
+        "answer": "Appeals can take several months to years, depending on the case complexity and court schedule."
+      }
+    ],
+    "process": [
+      "Case Review & Grounds for Appeal",
+      "Filing Notice of Appeal",
+      "Brief Preparation & Submission",
+      "Oral Arguments (if required)",
+      "Court Decision & Follow-up"
+    ],
+    "testimonials": [
+      {
+        "client": "Suresh K.",
+        "feedback": "Their appellate expertise turned my case around. Outstanding representation."
+      }
+    ],
+    "cta": "Need to appeal a court decision? Contact our Appellate Law specialists.",
+    "related_services": ["civil-litigation", "criminal-cases"]
+  },
+  {
+    "id": 12,
+    "slug": "employment-law",
+    "icon": "<BookOpen className=\"h-12 w-12 text-deepRoyal\" />",
+    "title": "Employment Law",
+    "description": "Advising on workplace rights, contracts, harassment, and wrongful termination cases.",
+    "details": "Our Employment Law attorneys guide both employees and employers on workplace rights, contracts, discrimination, harassment, and wrongful termination claims to ensure fair treatment and compliance with labor laws.",
+    "image": "https://images.pexels.com/photos/4427612/pexels-photo-4427612.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "features": [
+      "Employment Contracts",
+      "Workplace Discrimination",
+      "Harassment Claims",
+      "Wrongful Termination",
+      "Wage & Hour Disputes",
+      "Employee Handbook Policies"
+    ],
+    "faqs": [
+      {
+        "question": "What counts as wrongful termination?",
+        "answer": "Termination based on discrimination, retaliation, or breach of contract may be considered wrongful."
+      },
+      {
+        "question": "How can I address workplace harassment?",
+        "answer": "Document incidents and consult an attorney to understand your rights and options."
+      }
+    ],
+    "process": [
+      "Consultation & Case Review",
+      "Investigation & Evidence Collection",
+      "Negotiation & Mediation",
+      "Filing Claims",
+      "Litigation & Resolution"
+    ],
+    "testimonials": [
+      {
+        "client": "Sonal G.",
+        "feedback": "They helped me resolve a workplace harassment issue quickly and professionally."
+      }
+    ],
+    "cta": "Protect your workplace rights—speak to our Employment Law team.",
+    "related_services": ["civil-litigation", "matrimonial-cases"]
+  },
+  {
+    "id": 13,
+    "slug": "intellectual-property",
+    "icon": "<FileCheck className=\"h-12 w-12 text-deepRoyal\" />",
+    "title": "Intellectual Property",
+    "description": "Protecting your inventions, trademarks, copyrights, and IP rights diligently.",
+    "details": "We help clients protect their inventions, brands, and creative works through patents, trademarks, copyrights, and trade secrets. Our team ensures your intellectual property is secure and enforceable.",
+    "image": "images/intellectual.jpg",
+    "features": [
+      "Patent Registration & Enforcement",
+      "Trademark Filing & Protection",
+      "Copyright Registration",
+      "Trade Secret Protection",
+      "IP Litigation",
+      "Licensing Agreements"
+    ],
+    "faqs": [
+      {
+        "question": "How do I protect my invention?",
+        "answer": "File for a patent to secure exclusive rights and prevent unauthorized use."
+      },
+      {
+        "question": "What is the difference between copyright and trademark?",
+        "answer": "Copyright protects creative works; trademarks protect brand names, logos, and slogans."
+      }
+    ],
+    "process": [
+      "IP Assessment & Strategy",
+      "Filing Applications",
+      "Office Actions & Responses",
+      "Enforcement & Monitoring",
+      "Litigation (if needed)"
+    ],
+    "testimonials": [
+      {
+        "client": "Kiran J.",
+        "feedback": "They secured our brand’s trademarks and handled IP disputes efficiently."
+      }
+    ],
+    "cta": "Safeguard your ideas—consult our Intellectual Property specialists.",
+    "related_services": ["corporate-law", "cyber-crime"]
   }
 ];
 

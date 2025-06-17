@@ -504,7 +504,49 @@ const servicesData=[
       "Transfer of Property Act, 1882",
       "Registration Act, 1908"
     ]
-  }
+  },
+  {
+  "id": 13,
+  "slug": "consumer-cases",
+  "title": "Consumer Cases",
+  "description": "Protecting consumer rights in disputes over defective products, unfair practices, and services.",
+  "details": "Our Consumer Cases practice advocates for clients in disputes involving defective products, unfair trade practices, consumer fraud, and service-related issues. We ensure fair compensation and accountability from businesses, leveraging consumer protection laws to safeguard your rights. Our attorneys provide personalized guidance, from filing complaints to representing you in consumer forums or courts.",
+  "image": "/images/consumer-cases.jpg",
+  "features": [
+    "Defective Product Claims",
+    "Unfair Trade Practice Disputes",
+    "Consumer Fraud Cases",
+    "Service Contract Disputes",
+    "Warranty Claims",
+    "Consumer Protection Litigation"
+  ],
+  "faqs": [
+    {
+      "question": "What qualifies as a consumer case?",
+      "answer": "Consumer cases involve disputes over goods or services, such as defective products, misleading advertisements, or unfair business practices."
+    },
+    {
+      "question": "How long do I have to file a consumer complaint?",
+      "answer": "Under the Consumer Protection Act, complaints must typically be filed within two years from the date of the issue."
+    }
+  ],
+  "process": [
+    "Consults with you to understand the consumer dispute and objectives.",
+    "Collects evidence, including receipts, contracts, and communication records.",
+    "Files complaints with consumer forums or relevant authorities.",
+    "Negotiates or mediates with businesses for fair resolutions.",
+    "Represents you in consumer courts for litigation and resolution."
+  ],
+  "cta": "Facing a consumer dispute? Contact our Consumer Cases experts for justice and compensation.",
+  "ipc_sections": [
+    "Consumer Protection Act, 2019 – Section 2 (Definitions)",
+    "Consumer Protection Act, 2019 – Section 35 (Filing complaints)",
+    "Consumer Protection Act, 2019 – Section 47 (Unfair trade practices)",
+    "Indian Contract Act, 1872 – Section 10 (Valid agreements)",
+    "Sale of Goods Act, 1930 – Section 12 (Implied warranties)",
+    "Indian Penal Code, 1860 – Section 420 (Cheating)"
+  ]
+}
 ];
 
 const ServiceDetail: React.FC = () => {
