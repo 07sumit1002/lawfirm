@@ -57,21 +57,24 @@ const TeamMemberDetail = () => {
       </div>
 
       {/* Detail Section */}
-      <div className="max-w-4xl mx-auto p-8">
-        <div className="flex flex-col md:flex-row gap-8 items-center">
-          <img
-            src={member.image}
-            alt={member.name}
-            className="w-64 h-64 object-cover rounded-lg shadow-md"
-          />
-          <div>
-            <h2 className="text-xl text-blue-700 mb-1 font-semibold">
+      <div className="max-w-4xl mx-auto p-6 sm:p-8">
+        <div className="flex flex-col-reverse md:flex-row gap-6 md:gap-10 items-center">
+          <div className="flex-1">
+            <h2 className="text-xl text-blue-700 mb-2 font-semibold">
               Specialization: {member.specialization}
             </h2>
             <p className="text-gray-700 leading-relaxed text-justify">{member.bio}</p>
           </div>
+          <div className="w-full max-w-xs sm:max-w-sm md:w-64 md:h-64 flex-shrink-0">
+            <img
+              src={member.image}
+              alt={member.name}
+              className="w-[30px] h-[40px] object-cover rounded-lg shadow-md"
+            />
+          </div>
         </div>
       </div>
+
       <CallToAction />
     </div>
   );
