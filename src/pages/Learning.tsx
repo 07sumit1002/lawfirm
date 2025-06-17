@@ -101,7 +101,7 @@ const Learn: React.FC = () => {
                   href={video.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-auto inline-block text-center py-2 px-4 rounded-lg bg-[#EC9706] text-white font-medium hover:bg-[#e18c00] transition-colors"
+                  className="mt-auto inline-block text-center py-2 px-4 rounded-lg bg-gray-100 text-deepRoyal font-medium hover:bg-gray-200/60 transition-colors"
                 >
                   Watch on YouTube
                 </a>
