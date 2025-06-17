@@ -156,11 +156,11 @@ const About = () => {
                 >
                   <div className="flex flex-col md:flex-row w-full">
                     {/* Image Section - 3/10 */}
-                    <div className="w-full md:flex-[3] h-48 overflow-hidden">
+                    <div className="w-48 md:flex-[3] h-48 overflow-hidden">
                       <img
                         src={member.image}
                         alt={member.name}
-                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                        className="w-48 h-full object-cover transition-transform duration-500 group-hover:scale-110"
                       />
                     </div>
 
