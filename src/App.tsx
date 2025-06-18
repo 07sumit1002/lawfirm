@@ -42,7 +42,7 @@ const App = () => {
           {/*<Route path="services/:id" element={<ServiceDetail />} />*/} {/* for internal linking */}
           <Route path="testimonials" element={<Testimonials />} />
           <Route path="blog" element={<Blog />} />
-          <Route path="/legal learnigng" element={<Learning/>} />
+          <Route path="/legal learning" element={<Learning/>} />
           <Route path="/blog/:slug" element={<BlogDetail />} />   {/* Added route */}
           <Route path="contact" element={<Contact />} />
           <Route path="team/:name" element={<TeamMemberDetail />} /> {/* ✅ Added route */}
