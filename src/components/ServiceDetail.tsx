@@ -45,8 +45,8 @@ const servicesData=[
     ]
   },
   {
-    "id": 2,
-    "slug": "criminal",
+    "id": 6,
+    "slug": "criminal-cases",
     "title": "Criminal Law",
     "description": "Vigorously defending against charges like DUI, assault, drug offenses, and more.",
     "details": "Our Criminal Defense practice offers strategic and aggressive representation for clients facing charges such as DUI, drug offenses, assault, theft, white-collar crimes, and juvenile offenses. We prioritize protecting your rights, reputation, and freedom by thoroughly investigating cases, challenging evidence, and crafting strong defenses. From bail hearings to trials and appeals, our experienced attorneys provide personalized guidance and clear communication to navigate the criminal justice system and aim for reduced or dismissed charges.",
@@ -87,7 +87,7 @@ const servicesData=[
     ]
   },
   {
-    "id": 3,
+    "id":11,
     "slug": "appellate-law",
     "title": "Appellate Law",
     "description": "Challenging court decisions with strategic and precise legal representation.",
@@ -129,7 +129,7 @@ const servicesData=[
     ]
   },
   {
-    "id": 4,
+    "id": 5,
     "slug": "civil-litigation",
     "title": "Civil Litigation",
     "description": "Resolving disputes in contracts, injuries, and commercial matters efficiently.",
@@ -171,7 +171,7 @@ const servicesData=[
     ]
   },
   {
-    "id": 5,
+    "id": 13,
     "slug": "intellectual-property",
     "title": "Intellectual Property",
     "description": "Safeguarding inventions, trademarks, copyrights, and IP rights effectively.",
@@ -212,7 +212,7 @@ const servicesData=[
     ]
   },
   {
-    "id": 6,
+    "id": 12,
     "slug": "employment-law",
     "title": "Employment Law",
     "description": "Advising on workplace rights, contracts, harassment, and termination disputes.",
@@ -254,8 +254,8 @@ const servicesData=[
     ]
   },
   {
-    "id": 7,
-    "slug": "digital-crime",
+    "id": 2,
+    "slug": "cyber-crime",
     "title": "Cyber Crime",
     "description": "Defending against hacking, fraud, and data breaches with expertise.",
     "details": "Our Digital Crime/Cyber Crime practice addresses legal issues involving hacking, identity theft, cyber fraud, data breaches, and online harassment. We provide robust defense and proactive strategies to protect your digital assets, reputation, and rights. Our attorneys handle investigations, compliance with cyber laws, and litigation, ensuring swift action to mitigate damages and secure justice in the digital realm.",
@@ -296,7 +296,7 @@ const servicesData=[
     ]
   },
   {
-    "id": 8,
+    "id": 3,
     "slug": "medical-negligence",
     "title": "Medical Negligence",
     "description": "Seeking justice for injuries caused by medical malpractice or negligence.",
@@ -338,7 +338,7 @@ const servicesData=[
     ]
   },
   {
-    "id": 9,
+    "id": 7,
     "slug": "motor-vehicle-accidental-claims",
     "title": "Motor Vehicle Accidental Claims",
     "description": "Securing compensation for injuries and damages from vehicle accidents.",
@@ -380,7 +380,7 @@ const servicesData=[
     ]
   },
   {
-    "id": 10,
+    "id": 8,
     "slug": "insurance-claims",
     "title": "Insurance Claims",
     "description": "Resolving disputes and denials for property, health, and auto insurance claims.",
@@ -422,8 +422,8 @@ const servicesData=[
     ]
   },
   {
-    "id": 11,
-    "slug": "nri-cases",
+    "id": 4,
+    "slug": "nri-litigation",
     "title": "NRI Cases",
     "description": "Supporting NRIs with property, family, and cross-border legal disputes.",
     "details": "Our NRI Cases practice assists Non-Resident Indians with legal matters such as property disputes, matrimonial issues, inheritance, and cross-border litigation. We offer remote representation through power of attorney, coordinate across jurisdictions, and ensure seamless legal support to protect your interests in India while you’re abroad.",
@@ -464,7 +464,7 @@ const servicesData=[
     ]
   },
   {
-    "id": 12,
+    "id": 10,
     "slug": "drafting",
     "title": "Drafting",
     "description": "Crafting precise legal documents, contracts, and agreements for your needs.",
@@ -506,7 +506,7 @@ const servicesData=[
     ]
   },
   {
-  "id": 13,
+  "id": 9,
   "slug": "consumer-cases",
   "title": "Consumer Cases",
   "description": "Protecting consumer rights in disputes over defective products, unfair practices, and services.",
