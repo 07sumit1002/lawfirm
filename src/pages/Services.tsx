@@ -554,9 +554,33 @@ const servicesData = [
   }
 ];
 
+const approachSteps = [
+  {
+    title: "Initial Consultation",
+    description:
+      "We begin with a thorough consultation to understand your legal needs and objectives.",
+  },
+  {
+    title: "Strategy Development",
+    description:
+      "Our team develops a customized legal strategy tailored to your specific situation.",
+  },
+  {
+    title: "Execution & Representation",
+    description:
+      "We implement the strategy with meticulous attention to detail and advocate on your behalf.",
+  },
+  {
+    title: "Ongoing Support",
+    description:
+      "We provide continuous guidance and support throughout the legal process and beyond.",
+  },
+];
+
 const Services = () => {
   return (
     <div>
+      {/* Hero Section */}
       <section className="pt-32 pb-16 bg-deepRoyal relative">
         <div
           className="absolute inset-0 bg-cover bg-center opacity-20"
@@ -565,7 +589,6 @@ const Services = () => {
               "url('https://images.pexels.com/photos/5668481/pexels-photo-5668481.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')",
           }}
         ></div>
-
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl flex flex-col text-center items-center justify-center mx-auto">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
@@ -578,6 +601,7 @@ const Services = () => {
         </div>
       </section>
 
+      {/* Services Grid Section */}
       <section className="py-16 bg-white">
         <div className="max-w-[70rem] mx-auto px-4">
           <div className="text-center mb-12">
@@ -593,119 +617,106 @@ const Services = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
-            {servicesData.map((service, index) => (
-              <Link to={`/practise areas/${service.slug}`} key={service.id} className="w-full flex justify-center">
-                <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1, duration: 0.5 }}
-                viewport={{ once: true }}
-                className="
-                  group relative flex flex-col items-center justify-start
-                  w-72 mt-6 px-6 pt-12 pb-3 m-2 mb-6
-                  bg-white rounded-xl border shadow-md
-                  transition-all duration-300
-                  hover:bg-white hover:text-white hover:shadow-2xl cursor-pointer
-                "
-              >
-                {/* Image */}
-                <div className="absolute left-1/2 -top-12 transform -translate-x-1/2 z-20">
-                  <div className="w-28 h-28 rounded-full border-4 border-white shadow-lg overflow-hidden flex items-center justify-center bg-white">
-                    <img
-                      src={service.image}
-                      alt={service.title}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                </div>
-
-                {/* Title & Arrow */}
-                <div className="flex items-center justify-center gap-2 mt-14 mb-2">
-                  <span className="text-2xl font-bold text-blue-900 group-hover:text-blue-900 transition-colors text-center">
-                    {service.title}
-                  </span>
-                  <svg
-                    className="w-5 h-5 text-yellow-500 group-hover:text-white transition-colors"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    viewBox="0 0 24 24"
+            {servicesData.map((service, index) => {
+              const isLast = index === servicesData.length - 1;
+              return (
+                <Link
+                  to={`/practise areas/${service.slug}`}
+                  key={service.id}
+                  className={`w-full flex justify-center ${
+                    isLast && servicesData.length % 3 === 1 ? 'lg:col-span-3' : ''
+                  }`}
+                >
+                  <motion.div
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ delay: index * 0.1, duration: 0.5 }}
+                    viewport={{ once: true }}
+                    className="
+                      group relative flex flex-col items-center justify-start
+                      w-72 mt-6 px-6 pt-12 pb-3 m-2 mb-6
+                      bg-white rounded-xl border shadow-md
+                      transition-all duration-300
+                      hover:bg-white hover:text-white hover:shadow-2xl cursor-pointer
+                    "
                   >
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-                  </svg>
-                </div>
+                    {/* Image */}
+                    <div className="absolute left-1/2 -top-12 transform -translate-x-1/2 z-20">
+                      <div className="w-28 h-28 rounded-full border-4 border-white shadow-lg overflow-hidden flex items-center justify-center bg-white">
+                        <img
+                          src={service.image}
+                          alt={service.title}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                    </div>
 
-                {/* Underline */}
-                <div className="mx-auto mb-2 w-10 h-0.5 bg-yellow-500 rounded-full group-hover:bg-white transition-colors"></div>
-              </motion.div>
+                    {/* Title & Arrow */}
+                    <div className="flex items-center justify-center gap-2 mt-14 mb-2">
+                      <span className="text-2xl font-bold text-blue-900 group-hover:text-blue-900 transition-colors text-center">
+                        {service.title}
+                      </span>
+                      <svg
+                        className="w-5 h-5 text-yellow-500 group-hover:text-white transition-colors"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                      </svg>
+                    </div>
 
-              </Link>
-            ))}
+                    {/* Underline */}
+                    <div className="mx-auto mb-2 w-10 h-0.5 bg-yellow-500 rounded-full group-hover:bg-white transition-colors"></div>
+                  </motion.div>
+                </Link>
+              );
+            })}
           </div>
         </div>
       </section>
 
-     <section className="py-16 bg-gray-50 text-gray-800">
-  <div className="container mx-auto px-4">
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-      <div>
-        <h2 className="text-3xl md:text-4xl font-bold text-deepRoyal mb-6">
-          Our Approach to Legal Services
-        </h2>
-        <p className="mb-6 text-base md:text-lg text-gray-700 text-justify">
-          At Aggarwal Legal Firm, we believe in a client-centered approach that focuses on understanding your unique needs and developing tailored legal strategies to achieve your goals.
-        </p>
-        <div className="space-y-6 text-base md:text-lg text-gray-700">
-          {[
-            {
-              title: "Initial Consultation",
-              description:
-                "We begin with a thorough consultation to understand your legal needs and objectives.",
-            },
-            {
-              title: "Strategy Development",
-              description:
-                "Our team develops a customized legal strategy tailored to your specific situation.",
-            },
-            {
-              title: "Execution & Representation",
-              description:
-                "We implement the strategy with meticulous attention to detail and advocate on your behalf.",
-            },
-            {
-              title: "Ongoing Support",
-              description:
-                "We provide continuous guidance and support throughout the legal process and beyond.",
-            },
-          ].map((step, index) => (
-            <div key={index} className="flex">
-              <div className="mr-5">
-                <div className="flex items-center justify-center w-10 h-10 rounded-full bg-deepRoyal text-white font-semibold text-base">
-                  {index + 1}
-                </div>
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold text-deepRoyal mb-1">
-                  {step.title}
-                </h3>
-                <p className="text-justify">{step.description}</p>
+      {/* Approach Section */}
+      <section className="py-16 bg-gray-50 text-gray-800">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold text-deepRoyal mb-6">
+                Our Approach to Legal Services
+              </h2>
+              <p className="mb-6 text-base md:text-lg text-gray-700 text-justify">
+                At Aggarwal Legal Firm, we believe in a client-centered approach that focuses on understanding your unique needs and developing tailored legal strategies to achieve your goals.
+              </p>
+              <div className="space-y-6 text-base md:text-lg text-gray-700">
+                {approachSteps.map((step, index) => (
+                  <div key={index} className="flex">
+                    <div className="mr-5">
+                      <div className="flex items-center justify-center w-10 h-10 rounded-full bg-deepRoyal text-white font-semibold text-base">
+                        {index + 1}
+                      </div>
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-semibold text-deepRoyal mb-1">
+                        {step.title}
+                      </h3>
+                      <p className="text-justify">{step.description}</p>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
-          ))}
+
+            <div className="relative flex items-center justify-center">
+              <img
+                src="/images/laws.png"
+                alt="Attorney working with client"
+                className="rounded-lg shadow-lg w-full h-[480px] md:h-[580px] lg:h-[620px] object-cover"
+              />
+            </div>
+          </div>
         </div>
-      </div>
-
-      <div className="relative flex items-center justify-center">
-        <img
-          src="/images/laws.png"
-          alt="Attorney working with client"
-          className="rounded-lg shadow-lg w-full h-[480px] md:h-[580px] lg:h-[620px] object-cover"
-        />
-      </div>
-    </div>
-  </div>
-</section>
-
+      </section>
 
       <CallToAction />
     </div>
