@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 import { motion } from 'framer-motion';
-import { FaFacebookF, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
-import { FaXTwitter } from 'react-icons/fa6';
+import { FaYoutube, FaInstagram } from 'react-icons/fa';
+// import { FaXTwitter } from 'react-icons/fa6';
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
   visible: { opacity: 1, y: 0 },
@@ -149,10 +149,10 @@ const Contact = () => {
                 <h3 className="text-lg font-serif font-bold text-navy-900 mb-4">Connect With Us</h3>
                 <div className="flex space-x-4">
                   {[
-                    { platform: 'facebook', url: '#', icon: <FaFacebookF /> },
-                    { platform: 'twitter', url: '#', icon: <FaXTwitter /> },
-                    { platform: 'linkedin', url: '#', icon: <FaLinkedinIn /> },
-                    { platform: 'instagram', url: '#', icon: <FaInstagram /> },
+                    // { platform: 'facebook', url: '#', icon: <FaFacebookF /> },
+                    // { platform: 'twitter', url: '#', icon: <FaXTwitter /> },
+                    { platform: 'Youtube', url: 'https://www.youtube.com/@KanoonKiSALAH', icon: <FaYoutube /> },
+                    { platform: 'instagram', url: 'https://instagram.com/kanoon_ki_salah?igshid=YmMyMTA2M2Y=', icon: <FaInstagram /> },
                   ].map(({ platform, url, icon }) => (
                     <a
                       key={platform}

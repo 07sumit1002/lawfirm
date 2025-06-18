@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { Scale, Phone, Mail, MapPin, Clock, Facebook, TwitterXFill, Linkedin, Instagram } from 'lucide-react';
+import { Scale, Phone, Mail, MapPin, Clock, Youtube, Instagram } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -17,16 +17,10 @@ const Footer = () => {
               We strive to achieve the best possible outcomes for our clients.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-white hover:text-blue-500 transition-colors">
-                <Facebook size={20} />
+              <a href="https://www.youtube.com/@KanoonKiSALAH" className="text-white hover:text-blue-500 transition-colors">
+                <Youtube size={20} />
               </a>
-              <a href="#" className="text-white hover:text-blue-500 transition-colors">
-                <span className="inline-block h-5 w-5 text-center leading-5 text-[20px]">𝕏</span>
-              </a>
-              <a href="#" className="text-white hover:text-blue-500 transition-colors">
-                <Linkedin size={20} />
-              </a>
-              <a href="#" className="text-white hover:text-blue-500 transition-colors">
+              <a href="https://instagram.com/kanoon_ki_salah?igshid=YmMyMTA2M2Y=" className="text-white hover:text-blue-500 transition-colors">
                 <Instagram size={20} />
               </a>
             </div>
