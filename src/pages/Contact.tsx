@@ -101,17 +101,17 @@ const Contact = () => {
               {[{
                   icon: <MapPin className="h-6 w-6 text-deepRoyal" />,
                   title: 'Our Office',
-                  lines: ['123 Legal Avenue, New Delhi, India - 110001'],
+                  lines: ['Chamber no. 246, District Court, kurukshetra'],
                 },
                 {
                   icon: <Phone className="h-6 w-6 text-deepRoyal" />,
                   title: 'Phone',
-                  lines: ['+91 98765 43210', '+91 98765 43211'],
+                  lines: ['+91 97290 79252'],
                 },
                 {
                   icon: <Mail className="h-6 w-6 text-deepRoyal" />,
                   title: 'Email',
-                  lines: ['info@aggarwallaw.com', 'contact@aggarwallaw.com'],
+                  lines: ['aggarwalhimanshu8@gmail.com'],
                 },
                 {
                   icon: <Clock className="h-6 w-6 text-deepRoyal" />,

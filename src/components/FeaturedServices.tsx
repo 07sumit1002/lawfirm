@@ -11,33 +11,37 @@ const serviceData = [
   },
   {
     "id": 2,
-    "slug": "criminal-cases",
-    "title": "Criminal Law",
-    "image": "/images/criminal law.jpg"
+    "slug": "cyber-crime",
+    "title": "Cyber Crime",
+    "image": "/images/cyber-law.jpg"
+    
   },
   {
     "id": 3,
-    "slug": "insurance-claims",
-    "title": "Insurance Claims",
-    "image": "/images/insurance.jpg"
-  },
-  {
-    "id": 4,
-    "slug": "appellate-law",
-    "title": "Appellate Law",
-    "image": "/images/appleate.jpg"
-  },
-  {
-    "id": 5,
     "slug": "civil-litigation",
     "title": "Civil Litigation",
     "image": "/images/civil litigation.jpg"
+    
+  },
+  {
+    "id": 4,
+    "slug": "criminal-cases",
+    "title": "Criminal Law",
+    "image": "/images/criminal law.jpg"
+    
+  },
+  {
+    "id": 5,
+    "slug": "drafting",
+    "title": "Drafting",
+    "image": "/images/drafting.jpg"
+    
   },
   {
     "id": 6,
-    "slug": "intellectual-property",
-    "title": "Intellectual Property",
-    "image": "/images/intellectual.jpg"
+    "slug": "appellate-law",
+    "title": "Appellate Law",
+    "image": "/images/appleate.jpg"
   }
 ];
 

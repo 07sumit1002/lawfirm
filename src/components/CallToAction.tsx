@@ -74,7 +74,7 @@ const CallToAction = () => (
               </a>
 
               {/* Disclaimer (shown only on small screens) */}
-              <p className="text-xs opacity-70 text-deepRoyal font-work md:hidden">
+              <p className="text-xs opacity-70 text-deepRoyal p-2 font-work md:hidden">
                 * Communication through our website does not establish an attorney‑client
                 relationship between you and Aggarwal Legal Firm.
               </p>
@@ -103,7 +103,7 @@ const CallToAction = () => (
             </div>
 
             {/* Disclaimer (shown on md+ screens) */}
-            <p className="text-xs opacity-70 text-deepRoyal font-work">
+            <p className="text-xs opacity-70 text-deepRoyal p-2 font-work">
               * Communication through our website does not establish an attorney‑client
               relationship between you and Aggarwal Legal Firm.
             </p>
