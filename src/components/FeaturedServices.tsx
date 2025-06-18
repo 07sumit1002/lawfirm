@@ -11,7 +11,7 @@ const serviceData = [
   },
   {
     "id": 2,
-    "slug": "criminal",
+    "slug": "criminal-cases",
     "title": "Criminal Law",
     "image": "/images/criminal law.jpg"
   },
