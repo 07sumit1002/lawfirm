@@ -156,21 +156,13 @@ const About = () => {
                 >
                   <div className="flex flex-col md:flex-row w-full">
                     {/* Image Section - 3/10 */}
-     <div className="w-full h-56 md:w-48 md:h-48 overflow-hidden flex items-start justify-center">
-  <img
-    src={member.image}
-    alt={member.name}
-    className="w-full h-full object-cover object-top scale-90 md:scale-100 transition-transform duration-500 group-hover:scale-110"
-  />
-</div>
-
-
-
-
-
-
-
-
+                    <div className="w-full h-56 md:w-48 md:h-48 overflow-hidden flex items-start justify-center">
+                        <img
+                          src={member.image}
+                          alt={member.name}
+                          className="w-full h-full object-cover object-top scale-90 md:scale-100 transition-transform duration-500 group-hover:scale-110"
+                        />
+                      </div>
                     {/* Text Section - 7/10 */}
                     <div className="w-full md:flex-[7] p-6 flex flex-col justify-center">
                       <h3 className="text-2xl font-serif font-bold text-navy-900">{member.name}</h3>

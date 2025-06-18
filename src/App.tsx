@@ -13,6 +13,8 @@ import TeamMemberDetail from './components/TeamMemberDetail';
 import ServiceDetail from './components/ServiceDetail';
 import BlogDetail from './components/BlogDetail';
 import Learning from './pages/Learning';
+import TandC from './pages/tandc';
+import PrivacyPolicy from './pages/privacypolicy';
 
 
 const App = () => {
@@ -42,6 +44,8 @@ const App = () => {
           {/*<Route path="services/:id" element={<ServiceDetail />} />*/} {/* for internal linking */}
           <Route path="testimonials" element={<Testimonials />} />
           <Route path="blog" element={<Blog />} />
+          <Route path="privacy policy" element={<PrivacyPolicy />} />
+          <Route path="terms and condition" element={<TandC />} />
           <Route path="/legal learning" element={<Learning/>} />
           <Route path="/blog/:slug" element={<BlogDetail />} />   {/* Added route */}
           <Route path="contact" element={<Contact />} />
