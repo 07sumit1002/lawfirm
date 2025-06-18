@@ -18,30 +18,30 @@ const serviceData = [
   },
   {
     "id": 3,
-    "slug": "civil-litigation",
-    "title": "Civil Litigation",
-    "image": "/images/civil litigation.jpg"
+    "slug": "medical-negligence",
+    "title": "Medical Negligence",
+    "image": "/images/medical negligence.jpg"
     
   },
   {
     "id": 4,
-    "slug": "criminal-cases",
-    "title": "Criminal Law",
-    "image": "/images/criminal law.jpg"
+    "slug": "nri-litigation",
+    "title": "Nri Litigation",
+    "image": "/images/nri.jpg"
     
   },
   {
     "id": 5,
-    "slug": "drafting",
-    "title": "Drafting",
-    "image": "/images/drafting.jpg"
+    "slug": "civil-litigation",
+    "title": "CIvil Litigation",
+    "image": "/images/civil litigation.jpg"
     
   },
   {
     "id": 6,
-    "slug": "appellate-law",
-    "title": "Appellate Law",
-    "image": "/images/appleate.jpg"
+    "slug": "criminal-cases",
+    "title": "Criminal Cases",
+    "image": "/images/criminal law.jpg"
   }
 ];
 
