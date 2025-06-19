@@ -45,215 +45,6 @@ const servicesData=[
     ]
   },
   {
-    "id": 6,
-    "slug": "criminal-cases",
-    "title": "Criminal Law",
-    "description": "Vigorously defending against charges like DUI, assault, drug offenses, and more.",
-    "details": "Our Criminal Defense practice offers strategic and aggressive representation for clients facing charges such as DUI, drug offenses, assault, theft, white-collar crimes, and juvenile offenses. We prioritize protecting your rights, reputation, and freedom by thoroughly investigating cases, challenging evidence, and crafting strong defenses. From bail hearings to trials and appeals, our experienced attorneys provide personalized guidance and clear communication to navigate the criminal justice system and aim for reduced or dismissed charges.",
-    "image": "/images/criminal law.jpg",
-    "features": [
-      "DUI & DWI Defense",
-      "Drug Offense Representation",
-      "Assault & Battery Cases",
-      "Theft & Burglary Defense",
-      "White Collar Crimes",
-      "Juvenile Defense"
-    ],
-    "faqs": [
-      {
-        "question": "What should I do if arrested?",
-        "answer": "Remain calm, exercise your right to remain silent, and request an attorney immediately."
-      },
-      {
-        "question": "Can charges be dropped before trial?",
-        "answer": "Yes, charges may be reduced or dismissed based on evidence strength and legal arguments."
-      }
-    ],
-    "process": [
-      "Evaluates the case through a detailed consultation to develop a defense strategy.",
-      "Investigates facts and gathers evidence to challenge the prosecution’s case.",
-      "Files pre-trial motions to suppress evidence or seek dismissals where possible.",
-      "Provides robust trial representation to defend your rights in court.",
-      "Handles appeals if necessary to challenge unfavorable outcomes."
-    ],
-    "cta": "Facing criminal charges? Contact us immediately for a strong defense.",
-    "ipc_sections": [
-      "Section 302 – Murder",
-      "Section 307 – Attempt to murder",
-      "Section 376 – Rape",
-      "Section 420 – Cheating",
-      "Section 120B – Criminal conspiracy",
-      "Section 34 – Common intention"
-    ]
-  },
-  {
-    "id":11,
-    "slug": "appellate-law",
-    "title": "Appellate Law",
-    "description": "Challenging court decisions with strategic and precise legal representation.",
-    "details": "Our Appellate Law practice specializes in appealing court decisions in civil, criminal, and administrative cases. We meticulously review trial records, identify legal errors, and craft compelling arguments to overturn or modify rulings. Our attorneys are skilled in brief writing, oral advocacy, and navigating complex appellate processes, ensuring your case is presented effectively to higher courts for favorable outcomes.",
-    "image": "/images/appleate.jpg",
-    "features": [
-      "Civil Appeals",
-      "Criminal Appeals",
-      "Administrative Appeals",
-      "Brief Writing & Filing",
-      "Oral Arguments",
-      "Case Review & Strategy"
-    ],
-    "faqs": [
-      {
-        "question": "What is an appeal?",
-        "answer": "An appeal is a request to a higher court to review and overturn a lower court’s decision."
-      },
-      {
-        "question": "How long does an appeal process take?",
-        "answer": "Appeals may take months to years, depending on case complexity and court schedules."
-      }
-    ],
-    "process": [
-      "Reviews trial records to identify grounds for appeal.",
-      "Files a notice of appeal to initiate the appellate process.",
-      "Prepares and submits detailed legal briefs to present arguments.",
-      "Presents oral arguments in court if required.",
-      "Follows up on court decisions and advises on next steps."
-    ],
-    "cta": "Need to appeal a court decision? Contact our Appellate Law specialists.",
-    "ipc_sections": [
-      "Code of Criminal Procedure (CrPC) – Section 372 (Appeals)",
-      "Code of Civil Procedure (CPC) – Section 96 (First appeal)",
-      "CPC – Section 100 (Second appeal)",
-      "CrPC – Section 397 (Revision)",
-      "Constitution of India – Article 136 (Special Leave Petition)",
-      "Supreme Court Rules, 2013"
-    ]
-  },
-  {
-    "id": 5,
-    "slug": "civil-litigation",
-    "title": "Civil Litigation",
-    "description": "Resolving disputes in contracts, injuries, and commercial matters efficiently.",
-    "details": "Our Civil Litigation practice represents clients in disputes involving contracts, personal injuries, property, insurance, and commercial issues. We aim for favorable resolutions through negotiation, mediation, or assertive trial advocacy. Our attorneys conduct thorough investigations, develop robust legal strategies, and keep you informed, ensuring your rights are protected while minimizing costs and risks.",
-    "image": "/images/civil litigation.jpg",
-    "features": [
-      "Contract Disputes",
-      "Personal Injury Claims",
-      "Insurance Litigation",
-      "Commercial Disputes",
-      "Debt Recovery",
-      "Alternative Dispute Resolution"
-    ],
-    "faqs": [
-      {
-        "question": "What does civil litigation involve?",
-        "answer": "It involves disputes between individuals or entities seeking compensation or specific performance."
-      },
-      {
-        "question": "How long does a civil case typically take?",
-        "answer": "Cases may resolve in 6-18 months, depending on complexity and court schedules."
-      }
-    ],
-    "process": [
-      "Assesses the dispute through a detailed consultation to determine the best approach.",
-      "Drafts pleadings and conducts discovery to gather evidence.",
-      "Engages in settlement negotiations or mediation to resolve disputes.",
-      "Represents you in court if litigation is necessary.",
-      "Enforces judgments and provides post-trial guidance."
-    ],
-    "cta": "Facing a legal dispute? Contact our Civil Litigation experts for resolution.",
-    "ipc_sections": [
-      "Section 415 – Misrepresentation",
-      "Specific Relief Act – Contract enforcement",
-      "Code of Civil Procedure (CPC), 1908 – Section 9 (Jurisdiction)",
-      "CPC – Section 10 (Stay of suit)",
-      "CPC – Section 151 (Inherent powers)",
-      "Indian Contract Act, 1872"
-    ]
-  },
-  {
-    "id": 13,
-    "slug": "intellectual-property",
-    "title": "Intellectual Property",
-    "description": "Safeguarding inventions, trademarks, copyrights, and IP rights effectively.",
-    "details": "Our Intellectual Property practice protects your innovations, brands, and creative works through patents, trademarks, copyrights, and trade secrets. We handle registration, enforcement, licensing, and litigation, ensuring your IP assets are secure and maximized for value. Our attorneys offer strategic advice for portfolio management and commercialization, helping clients from startups to corporations stay competitive.",
-    "image": "/images/intellectual.jpg",
-    "features": [
-      "Patent Registration & Enforcement",
-      "Trademark Filing & Protection",
-      "Copyright Registration",
-      "Trade Secret Protection",
-      "IP Litigation",
-      "Licensing Agreements"
-    ],
-    "faqs": [
-      {
-        "question": "How can I protect my invention?",
-        "answer": "Filing a patent grants exclusive rights to prevent unauthorized use."
-      },
-      {
-        "question": "What’s the difference between copyright and trademark?",
-        "answer": "Copyright protects creative works; trademarks protect brand identifiers like logos."
-      }
-    ],
-    "process": [
-      "Evaluates IP assets to develop a tailored protection strategy.",
-      "Files applications for patents, trademarks, or copyrights.",
-      "Addresses office actions and objections from authorities.",
-      "Monitors for infringement and enforces rights through legal action.",
-      "Handles litigation to resolve IP disputes effectively."
-    ],
-    "cta": "Protect your ideas—consult our Intellectual Property specialists today.",
-    "ipc_sections": [
-      "Section 63 of Copyright Act – Infringement",
-      "Section 104 of Trademarks Act – False trademark use",
-      "Section 120 IPC – Criminal conspiracy",
-      "Section 463 – Forgery",
-      "Information Technology Act – Section 66 (Computer-related offenses)"
-    ]
-  },
-  {
-    "id": 12,
-    "slug": "employment-law",
-    "title": "Employment Law",
-    "description": "Advising on workplace rights, contracts, harassment, and termination disputes.",
-    "details": "Our Employment Law practice supports employees and employers in navigating workplace issues, including contracts, discrimination, harassment, wrongful termination, and wage disputes. We ensure compliance with labor laws and resolve conflicts through negotiation, mediation, or litigation. Our attorneys also assist employers with policy development to prevent legal issues, fostering fair and compliant workplaces.",
-    "image": "https://images.pexels.com/photos/4427612/pexels-photo-4427612.jpeg?auto=compress&cs=tinysrgb&w=600",
-    "features": [
-      "Employment Contracts",
-      "Workplace Discrimination",
-      "Harassment Claims",
-      "Wrongful Termination",
-      "Wage & Hour Disputes",
-      "Employee Handbook Policies"
-    ],
-    "faqs": [
-      {
-        "question": "What qualifies as wrongful termination?",
-        "answer": "Termination due to discrimination, retaliation, or contract breaches may be wrongful."
-      },
-      {
-        "question": "How do I address workplace harassment?",
-        "answer": "Document incidents and consult an attorney to explore your legal options."
-      }
-    ],
-    "process": [
-      "Conducts a consultation to review your workplace situation and legal options.",
-      "Investigates claims and gathers evidence to support your case.",
-      "Negotiates or mediates to achieve fair resolutions outside court.",
-      "Files claims with authorities or courts if informal resolution fails.",
-      "Represents you in litigation to secure a favorable outcome."
-    ],
-    "cta": "Protect your workplace rights—contact our Employment Law team.",
-    "ipc_sections": [
-      "Section 509 – Insulting modesty",
-      "Section 506 – Criminal intimidation",
-      "Sexual Harassment of Women at Workplace Act, 2013",
-      "Industrial Disputes Act, 1947",
-      "Minimum Wages Act, 1948",
-      "Factories Act, 1948"
-    ]
-  },
-  {
     "id": 2,
     "slug": "cyber-crime",
     "title": "Cyber Crime",
@@ -335,6 +126,132 @@ const servicesData=[
       "Consumer Protection Act – Medical negligence",
       "Indian Medical Council Act, 1956",
       "Tort Law – Negligence"
+    ]
+  },
+  {
+    "id": 4,
+    "slug": "nri-litigation",
+    "title": "NRI Cases",
+    "description": "Supporting NRIs with property, family, and cross-border legal disputes.",
+    "details": "Our NRI Cases practice assists Non-Resident Indians with legal matters such as property disputes, matrimonial issues, inheritance, and cross-border litigation. We offer remote representation through power of attorney, coordinate across jurisdictions, and ensure seamless legal support to protect your interests in India while you’re abroad.",
+    "image": "/images/nri.jpg",
+    "features": [
+      "Property Disputes & Management",
+      "Matrimonial & Family Law",
+      "Inheritance & Succession",
+      "Cross-Border Litigation",
+      "Power of Attorney Services",
+      "Taxation for NRIs"
+    ],
+    "faqs": [
+      {
+        "question": "Can NRIs file cases from abroad?",
+        "answer": "Yes, we handle cases remotely via power of attorney or virtual consultations."
+      },
+      {
+        "question": "What documents are needed for NRI property disputes?",
+        "answer": "Property deeds, ownership records, and related legal agreements are essential."
+      }
+    ],
+    "process": [
+      "Assesses your case through a consultation, including cross-border needs.",
+      "Verifies documents like property deeds or family records.",
+      "Develops a legal strategy tailored to your situation.",
+      "Coordinates across jurisdictions for seamless representation.",
+      "Resolves disputes and enforces outcomes as needed."
+    ],
+    "cta": "NRI facing legal issues? Contact us for expert cross-border support.",
+    "ipc_sections": [
+      "Section 420 – Cheating",
+      "Section 406 – Criminal breach of trust",
+      "Section 498A – Cruelty in matrimonial cases",
+      "Hindu Succession Act, 1956",
+      "FEMA – Foreign exchange violations",
+      "Transfer of Property Act, 1882"
+    ]
+  },
+  {
+    "id": 5,
+    "slug": "civil-litigation",
+    "title": "Civil Litigation",
+    "description": "Resolving disputes in contracts, injuries, and commercial matters efficiently.",
+    "details": "Our Civil Litigation practice represents clients in disputes involving contracts, personal injuries, property, insurance, and commercial issues. We aim for favorable resolutions through negotiation, mediation, or assertive trial advocacy. Our attorneys conduct thorough investigations, develop robust legal strategies, and keep you informed, ensuring your rights are protected while minimizing costs and risks.",
+    "image": "/images/civil litigation.jpg",
+    "features": [
+      "Contract Disputes",
+      "Personal Injury Claims",
+      "Insurance Litigation",
+      "Commercial Disputes",
+      "Debt Recovery",
+      "Alternative Dispute Resolution"
+    ],
+    "faqs": [
+      {
+        "question": "What does civil litigation involve?",
+        "answer": "It involves disputes between individuals or entities seeking compensation or specific performance."
+      },
+      {
+        "question": "How long does a civil case typically take?",
+        "answer": "Cases may resolve in 6-18 months, depending on complexity and court schedules."
+      }
+    ],
+    "process": [
+      "Assesses the dispute through a detailed consultation to determine the best approach.",
+      "Drafts pleadings and conducts discovery to gather evidence.",
+      "Engages in settlement negotiations or mediation to resolve disputes.",
+      "Represents you in court if litigation is necessary.",
+      "Enforces judgments and provides post-trial guidance."
+    ],
+    "cta": "Facing a legal dispute? Contact our Civil Litigation experts for resolution.",
+    "ipc_sections": [
+      "Section 415 – Misrepresentation",
+      "Specific Relief Act – Contract enforcement",
+      "Code of Civil Procedure (CPC), 1908 – Section 9 (Jurisdiction)",
+      "CPC – Section 10 (Stay of suit)",
+      "CPC – Section 151 (Inherent powers)",
+      "Indian Contract Act, 1872"
+    ]
+  },
+  {
+    "id": 6,
+    "slug": "criminal-cases",
+    "title": "Criminal Law",
+    "description": "Vigorously defending against charges like DUI, assault, drug offenses, and more.",
+    "details": "Our Criminal Defense practice offers strategic and aggressive representation for clients facing charges such as DUI, drug offenses, assault, theft, white-collar crimes, and juvenile offenses. We prioritize protecting your rights, reputation, and freedom by thoroughly investigating cases, challenging evidence, and crafting strong defenses. From bail hearings to trials and appeals, our experienced attorneys provide personalized guidance and clear communication to navigate the criminal justice system and aim for reduced or dismissed charges.",
+    "image": "/images/criminal law.jpg",
+    "features": [
+      "DUI & DWI Defense",
+      "Drug Offense Representation",
+      "Assault & Battery Cases",
+      "Theft & Burglary Defense",
+      "White Collar Crimes",
+      "Juvenile Defense"
+    ],
+    "faqs": [
+      {
+        "question": "What should I do if arrested?",
+        "answer": "Remain calm, exercise your right to remain silent, and request an attorney immediately."
+      },
+      {
+        "question": "Can charges be dropped before trial?",
+        "answer": "Yes, charges may be reduced or dismissed based on evidence strength and legal arguments."
+      }
+    ],
+    "process": [
+      "Evaluates the case through a detailed consultation to develop a defense strategy.",
+      "Investigates facts and gathers evidence to challenge the prosecution’s case.",
+      "Files pre-trial motions to suppress evidence or seek dismissals where possible.",
+      "Provides robust trial representation to defend your rights in court.",
+      "Handles appeals if necessary to challenge unfavorable outcomes."
+    ],
+    "cta": "Facing criminal charges? Contact us immediately for a strong defense.",
+    "ipc_sections": [
+      "Section 302 – Murder",
+      "Section 307 – Attempt to murder",
+      "Section 376 – Rape",
+      "Section 420 – Cheating",
+      "Section 120B – Criminal conspiracy",
+      "Section 34 – Common intention"
     ]
   },
   {
@@ -422,45 +339,45 @@ const servicesData=[
     ]
   },
   {
-    "id": 4,
-    "slug": "nri-litigation",
-    "title": "NRI Cases",
-    "description": "Supporting NRIs with property, family, and cross-border legal disputes.",
-    "details": "Our NRI Cases practice assists Non-Resident Indians with legal matters such as property disputes, matrimonial issues, inheritance, and cross-border litigation. We offer remote representation through power of attorney, coordinate across jurisdictions, and ensure seamless legal support to protect your interests in India while you’re abroad.",
-    "image": "/images/nri.jpg",
+    "id": 9,
+    "slug": "consumer-cases",
+    "title": "Consumer Cases",
+    "description": "Protecting consumer rights in disputes over defective products, unfair practices, and services.",
+    "details": "Our Consumer Cases practice advocates for clients in disputes involving defective products, unfair trade practices, consumer fraud, and service-related issues. We ensure fair compensation and accountability from businesses, leveraging consumer protection laws to safeguard your rights. Our attorneys provide personalized guidance, from filing complaints to representing you in consumer forums or courts.",
+    "image": "/images/consumer-cases.jpg",
     "features": [
-      "Property Disputes & Management",
-      "Matrimonial & Family Law",
-      "Inheritance & Succession",
-      "Cross-Border Litigation",
-      "Power of Attorney Services",
-      "Taxation for NRIs"
+      "Defective Product Claims",
+      "Unfair Trade Practice Disputes",
+      "Consumer Fraud Cases",
+      "Service Contract Disputes",
+      "Warranty Claims",
+      "Consumer Protection Litigation"
     ],
     "faqs": [
       {
-        "question": "Can NRIs file cases from abroad?",
-        "answer": "Yes, we handle cases remotely via power of attorney or virtual consultations."
+        "question": "What qualifies as a consumer case?",
+        "answer": "Consumer cases involve disputes over goods or services, such as defective products, misleading advertisements, or unfair business practices."
       },
       {
-        "question": "What documents are needed for NRI property disputes?",
-        "answer": "Property deeds, ownership records, and related legal agreements are essential."
+        "question": "How long do I have to file a consumer complaint?",
+        "answer": "Under the Consumer Protection Act, complaints must typically be filed within two years from the date of the issue."
       }
     ],
     "process": [
-      "Assesses your case through a consultation, including cross-border needs.",
-      "Verifies documents like property deeds or family records.",
-      "Develops a legal strategy tailored to your situation.",
-      "Coordinates across jurisdictions for seamless representation.",
-      "Resolves disputes and enforces outcomes as needed."
+      "Consults with you to understand the consumer dispute and objectives.",
+      "Collects evidence, including receipts, contracts, and communication records.",
+      "Files complaints with consumer forums or relevant authorities.",
+      "Negotiates or mediates with businesses for fair resolutions.",
+      "Represents you in consumer courts for litigation and resolution."
     ],
-    "cta": "NRI facing legal issues? Contact us for expert cross-border support.",
+    "cta": "Facing a consumer dispute? Contact our Consumer Cases experts for justice and compensation.",
     "ipc_sections": [
-      "Section 420 – Cheating",
-      "Section 406 – Criminal breach of trust",
-      "Section 498A – Cruelty in matrimonial cases",
-      "Hindu Succession Act, 1956",
-      "FEMA – Foreign exchange violations",
-      "Transfer of Property Act, 1882"
+      "Consumer Protection Act, 2019 – Section 2 (Definitions)",
+      "Consumer Protection Act, 2019 – Section 35 (Filing complaints)",
+      "Consumer Protection Act, 2019 – Section 47 (Unfair trade practices)",
+      "Indian Contract Act, 1872 – Section 10 (Valid agreements)",
+      "Sale of Goods Act, 1930 – Section 12 (Implied warranties)",
+      "Indian Penal Code, 1860 – Section 420 (Cheating)"
     ]
   },
   {
@@ -506,47 +423,130 @@ const servicesData=[
     ]
   },
   {
-  "id": 9,
-  "slug": "consumer-cases",
-  "title": "Consumer Cases",
-  "description": "Protecting consumer rights in disputes over defective products, unfair practices, and services.",
-  "details": "Our Consumer Cases practice advocates for clients in disputes involving defective products, unfair trade practices, consumer fraud, and service-related issues. We ensure fair compensation and accountability from businesses, leveraging consumer protection laws to safeguard your rights. Our attorneys provide personalized guidance, from filing complaints to representing you in consumer forums or courts.",
-  "image": "/images/consumer-cases.jpg",
-  "features": [
-    "Defective Product Claims",
-    "Unfair Trade Practice Disputes",
-    "Consumer Fraud Cases",
-    "Service Contract Disputes",
-    "Warranty Claims",
-    "Consumer Protection Litigation"
-  ],
-  "faqs": [
-    {
-      "question": "What qualifies as a consumer case?",
-      "answer": "Consumer cases involve disputes over goods or services, such as defective products, misleading advertisements, or unfair business practices."
-    },
-    {
-      "question": "How long do I have to file a consumer complaint?",
-      "answer": "Under the Consumer Protection Act, complaints must typically be filed within two years from the date of the issue."
-    }
-  ],
-  "process": [
-    "Consults with you to understand the consumer dispute and objectives.",
-    "Collects evidence, including receipts, contracts, and communication records.",
-    "Files complaints with consumer forums or relevant authorities.",
-    "Negotiates or mediates with businesses for fair resolutions.",
-    "Represents you in consumer courts for litigation and resolution."
-  ],
-  "cta": "Facing a consumer dispute? Contact our Consumer Cases experts for justice and compensation.",
-  "ipc_sections": [
-    "Consumer Protection Act, 2019 – Section 2 (Definitions)",
-    "Consumer Protection Act, 2019 – Section 35 (Filing complaints)",
-    "Consumer Protection Act, 2019 – Section 47 (Unfair trade practices)",
-    "Indian Contract Act, 1872 – Section 10 (Valid agreements)",
-    "Sale of Goods Act, 1930 – Section 12 (Implied warranties)",
-    "Indian Penal Code, 1860 – Section 420 (Cheating)"
-  ]
-}
+    "id": 11,
+    "slug": "appellate-law",
+    "title": "Appellate Law",
+    "description": "Challenging court decisions with strategic and precise legal representation.",
+    "details": "Our Appellate Law practice specializes in appealing court decisions in civil, criminal, and administrative cases. We meticulously review trial records, identify legal errors, and craft compelling arguments to overturn or modify rulings. Our attorneys are skilled in brief writing, oral advocacy, and navigating complex appellate processes, ensuring your case is presented effectively to higher courts for favorable outcomes.",
+    "image": "/images/appleate.jpg",
+    "features": [
+      "Civil Appeals",
+      "Criminal Appeals",
+      "Administrative Appeals",
+      "Brief Writing & Filing",
+      "Oral Arguments",
+      "Case Review & Strategy"
+    ],
+    "faqs": [
+      {
+        "question": "What is an appeal?",
+        "answer": "An appeal is a request to a higher court to review and overturn a lower court’s decision."
+      },
+      {
+        "question": "How long does an appeal process take?",
+        "answer": "Appeals may take months to years, depending on case complexity and court schedules."
+      }
+    ],
+    "process": [
+      "Reviews trial records to identify grounds for appeal.",
+      "Files a notice of appeal to initiate the appellate process.",
+      "Prepares and submits detailed legal briefs to present arguments.",
+      "Presents oral arguments in court if required.",
+      "Follows up on court decisions and advises on next steps."
+    ],
+    "cta": "Need to appeal a court decision? Contact our Appellate Law specialists.",
+    "ipc_sections": [
+      "Code of Criminal Procedure (CrPC) – Section 372 (Appeals)",
+      "Code of Civil Procedure (CPC) – Section 96 (First appeal)",
+      "CPC – Section 100 (Second appeal)",
+      "CrPC – Section 397 (Revision)",
+      "Constitution of India – Article 136 (Special Leave Petition)",
+      "Supreme Court Rules, 2013"
+    ]
+  },
+  {
+    "id": 12,
+    "slug": "employment-law",
+    "title": "Employment Law",
+    "description": "Advising on workplace rights, contracts, harassment, and termination disputes.",
+    "details": "Our Employment Law practice supports employees and employers in navigating workplace issues, including contracts, discrimination, harassment, wrongful termination, and wage disputes. We ensure compliance with labor laws and resolve conflicts through negotiation, mediation, or litigation. Our attorneys also assist employers with policy development to prevent legal issues, fostering fair and compliant workplaces.",
+    "image": "https://images.pexels.com/photos/4427612/pexels-photo-4427612.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "features": [
+      "Employment Contracts",
+      "Workplace Discrimination",
+      "Harassment Claims",
+      "Wrongful Termination",
+      "Wage & Hour Disputes",
+      "Employee Handbook Policies"
+    ],
+    "faqs": [
+      {
+        "question": "What qualifies as wrongful termination?",
+        "answer": "Termination due to discrimination, retaliation, or contract breaches may be wrongful."
+      },
+      {
+        "question": "How do I address workplace harassment?",
+        "answer": "Document incidents and consult an attorney to explore your legal options."
+      }
+    ],
+    "process": [
+      "Conducts a consultation to review your workplace situation and legal options.",
+      "Investigates claims and gathers evidence to support your case.",
+      "Negotiates or mediates to achieve fair resolutions outside court.",
+      "Files claims with authorities or courts if informal resolution fails.",
+      "Represents you in litigation to secure a favorable outcome."
+    ],
+    "cta": "Protect your workplace rights—contact our Employment Law team.",
+    "ipc_sections": [
+      "Section 509 – Insulting modesty",
+      "Section 506 – Criminal intimidation",
+      "Sexual Harassment of Women at Workplace Act, 2013",
+      "Industrial Disputes Act, 1947",
+      "Minimum Wages Act, 1948",
+      "Factories Act, 1948"
+    ]
+  },
+  {
+    "id": 13,
+    "slug": "intellectual-property",
+    "title": "Intellectual Property",
+    "description": "Safeguarding inventions, trademarks, copyrights, and IP rights effectively.",
+    "details": "Our Intellectual Property practice protects your innovations, brands, and creative works through patents, trademarks, copyrights, and trade secrets. We handle registration, enforcement, licensing, and litigation, ensuring your IP assets are secure and maximized for value. Our attorneys offer strategic advice for portfolio management and commercialization, helping clients from startups to corporations stay competitive.",
+    "image": "/images/intellectual.jpg",
+    "features": [
+      "Patent Registration & Enforcement",
+      "Trademark Filing & Protection",
+      "Copyright Registration",
+      "Trade Secret Protection",
+      "IP Litigation",
+      "Licensing Agreements"
+    ],
+    "faqs": [
+      {
+        "question": "How can I protect my invention?",
+        "answer": "Filing a patent grants exclusive rights to prevent unauthorized use."
+      },
+      {
+        "question": "What’s the difference between copyright and trademark?",
+        "answer": "Copyright protects creative works; trademarks protect brand identifiers like logos."
+      }
+    ],
+    "process": [
+      "Evaluates IP assets to develop a tailored protection strategy.",
+      "Files applications for patents, trademarks, or copyrights.",
+      "Addresses office actions and objections from authorities.",
+      "Monitors for infringement and enforces rights through legal action.",
+      "Handles litigation to resolve IP disputes effectively."
+    ],
+    "cta": "Protect your ideas—consult our Intellectual Property specialists today.",
+    "ipc_sections": [
+      "Section 63 of Copyright Act – Infringement",
+      "Section 104 of Trademarks Act – False trademark use",
+      "Section 120 IPC – Criminal conspiracy",
+      "Section 463 – Forgery",
+      "Information Technology Act – Section 66 (Computer-related offenses)"
+    ]
+  }
 ];
 
 const ServiceDetail: React.FC = () => {
