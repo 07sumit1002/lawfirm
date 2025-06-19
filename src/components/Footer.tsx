@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { Scale, Phone, Mail, MapPin, Clock, Youtube, Instagram } from 'lucide-react';
+import { Scale, Phone, Mail, MapPin, Clock, Youtube, Instagram, Linkedin } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -22,6 +22,9 @@ const Footer = () => {
               </a>
               <a href="https://instagram.com/kanoon_ki_salah?igshid=YmMyMTA2M2Y=" className="text-white hover:text-blue-500 transition-colors">
                 <Instagram size={20} />
+              </a>
+              <a href="https://www.linkedin.com/in/himanshu-a-aggarwal-%F0%9F%87%AE%F0%9F%87%B3-51157099?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" className="text-white hover:text-blue-500 transition-colors">
+                <Linkedin size={20} />
               </a>
             </div>
           </div>

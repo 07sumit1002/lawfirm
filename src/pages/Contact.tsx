@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 import { motion } from 'framer-motion';
-import { FaYoutube, FaInstagram } from 'react-icons/fa';
+import { FaYoutube, FaInstagram, FaLinkedin } from 'react-icons/fa';
 // import { FaXTwitter } from 'react-icons/fa6';
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
@@ -150,7 +150,7 @@ const Contact = () => {
                 <div className="flex space-x-4">
                   {[
                     // { platform: 'facebook', url: '#', icon: <FaFacebookF /> },
-                    // { platform: 'twitter', url: '#', icon: <FaXTwitter /> },
+                    { platform: 'Linkedin', url: 'https://www.linkedin.com/in/himanshu-a-aggarwal-%F0%9F%87%AE%F0%9F%87%B3-51157099?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app', icon: <FaLinkedin /> },
                     { platform: 'Youtube', url: 'https://www.youtube.com/@KanoonKiSALAH', icon: <FaYoutube /> },
                     { platform: 'instagram', url: 'https://instagram.com/kanoon_ki_salah?igshid=YmMyMTA2M2Y=', icon: <FaInstagram /> },
                   ].map(({ platform, url, icon }) => (
