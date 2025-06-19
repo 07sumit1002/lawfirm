@@ -58,7 +58,7 @@ const CallToAction = () => (
 
               {/* Phone (small screens) */}
               <a
-                href="tel:+919876543210"
+                href="tel:+919729079252"
                 className="flex items-center justify-center gap-2 px-6 py-3 text-lg font-semibold text-deepRoyal rounded-full border border-deepRoyal md:hidden"
               >
                 <svg
@@ -70,7 +70,7 @@ const CallToAction = () => (
                 >
                   <path d="M16.5 14.5l-2-2a1 1 0 0 0-1.32-.08l-1.2.96a8.5 8.5 0 0 1-4.36-4.36l.96-1.2a1 1 0 0 0-.08-1.32l-2-2A1 1 0 0 0 4 5.5v2A10.5 10.5 0 0 0 14.5 18h2a1 1 0 0 0 .99-1.13z" />
                 </svg>
-                +91&nbsp;98765&nbsp;43210
+                +91&nbsp;97290&nbsp;79252
               </a>
 
               {/* Disclaimer (shown only on small screens) */}
@@ -95,10 +95,10 @@ const CallToAction = () => (
                 </svg>
               </span>
               <a
-                href="tel:+919876543210"
+                href="tel:+919729079252"
                 className="text-lg font-semibold text-deepRoyal font-work hover:text-deepRoyal/50"
               >
-                +91&nbsp;98765&nbsp;43210
+                +91&nbsp;97290&nbsp;79252
               </a>
             </div>
 

@@ -52,7 +52,7 @@ function Navbar({ scrolled }) {
 
             {/* Desktop Call Button */}
             <a
-              href="tel:+919876543210"
+              href="tel:+919729079252"
               className={`ml-4 flex gap-1 px-4 py-2 text-sm rounded-md border transition-colors ${
                 scrolled
                   ? 'text-deepRoyal border-deepRoyal hover:text-blue-500 hover:border-blue-500'
@@ -68,7 +68,7 @@ function Navbar({ scrolled }) {
           <div className="md:hidden flex items-center gap-3">
             {/* Mobile Call Button */}
             <a
-              href="tel:+919876543210"
+              href="tel:+919729079252"
               className={`flex items-center gap-2 px-3 py-2 rounded-[15px] shadow-md transition-colors duration-200 ${
                 scrolled
                   ? 'bg-white text-deepRoyal hover:bg-blue-500 hover:text-white'
@@ -119,7 +119,7 @@ function Navbar({ scrolled }) {
 
       {/* Floating WhatsApp Icon */}
       <a
-        href="https://wa.me/+919876543210"
+        href="https://wa.me/+919729079252"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 z-50 bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition-colors duration-200 flex items-center justify-center"

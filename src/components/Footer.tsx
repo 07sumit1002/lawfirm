@@ -62,18 +62,18 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 text-blue-500 mr-2 mt-0.5" />
-                <span className="text-blue-200">123 Legal Avenue, New Delhi, India - 110001</span>
+                <span className="text-blue-200">Chamber no. 246, District Court, kurukshetra</span>
               </li>
               <li className="flex items-center">
                 <Phone className="h-5 w-5 text-blue-500 mr-2" />
-                <a href="tel:+919876543210" className="text-blue-200 hover:text-blue-500 transition-colors">
-                  +91 98765 43210
+                <a href="tel:+919729079252" className="text-blue-200 hover:text-blue-500 transition-colors">
+                  +91 97290 79252
                 </a>
               </li>
               <li className="flex items-center">
                 <Mail className="h-5 w-5 text-blue-500 mr-2" />
-                <a href="mailto:info@aggarwallaw.com" className="text-blue-200 hover:text-blue-500 transition-colors">
-                  info@aggarwallaw.com
+                <a href="mailto:aggarwalhimanshu8@gmail.com" className="text-blue-200 hover:text-blue-500 transition-colors">
+                  aggarwalhimanshu8@gmail.com
                 </a>
               </li>
 

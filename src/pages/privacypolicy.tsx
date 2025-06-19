@@ -131,7 +131,7 @@ const PrivacyPolicy: React.FC = () => {
           <p>
             Subject to applicable law, you may request access to, correction of,
             or deletion of your Personal Information, or withdraw consent to
-            certain processing, by emailing <a href="mailto:privacy@aggrawallegalfirm.com" className="text-[#EC9706] underline">privacy@aggrawallegalfirm.com</a>.
+            certain processing, by emailing <a href="mailto:aggarwalhimanshu8@gmail.com" className="text-[#EC9706] underline">aggarwalhimanshu8@gmail.com</a>.
             Withdrawal of consent operates prospectively and may impact the
             services we can provide.
           </p>
@@ -152,7 +152,7 @@ const PrivacyPolicy: React.FC = () => {
           <h2 className="text-xl font-semibold text-[#2B526E] mt-6">10. Contact Us</h2>
           <p>
             For any questions or concerns regarding this Policy or our privacy
-            practices, please email us at <a href="mailto:privacy@aggrawallegalfirm.com" className="text-[#EC9706] underline">privacy@aggrawallegalfirm.com</a> or write to
+            practices, please email us at <a href="mailto:aggarwalhimanshu8@gmail.com" className="text-[#EC9706] underline">aggarwalhimanshu8@gmail.com</a> or write to
             Aggarwal Legal Firm, Near District & Sessions Court, Kurukshetra,
             Haryana 136118, India.
           </p>
