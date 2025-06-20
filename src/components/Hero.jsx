@@ -35,7 +35,7 @@ function Hero() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.5 }}
           >
-            Empowering the voice of law through digital innovation.
+            {/* Empowering the voice of law through digital innovation. */}
           </motion.p>
 
           <motion.div
