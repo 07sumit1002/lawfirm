@@ -21,7 +21,7 @@ const Layout = () => {
   }, [scrolled]);
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen overflow-hidden">
       <Navbar scrolled={scrolled} />
       <main className="flex-grow">
         <Outlet />

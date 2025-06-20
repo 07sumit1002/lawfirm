@@ -131,7 +131,7 @@ const Home = () => {
                     {/* Review Info Section - Right */}
                     <div className="w-[70%] flex flex-col justify-center px-4">
                       <div className="flex justify-start space-x-1 mb-1">
-                        <p className="text-2xl text-gold-700">{review.rating}</p>
+                        <p className="text-2xl text-gold-700" style={{padding:'10px'}}>{review.rating}</p>
                       </div>
                       {/* <div className="flex justify-start space-x-1 mb-1">
                         <p className="text-sm text-gray-700 underline">{review.reviewcount}</p>
