@@ -465,88 +465,89 @@ const servicesData=[
     ]
   },
   {
-    "id": 12,
-    "slug": "employment-law",
-    "title": "Employment Law",
-    "description": "Advising on workplace rights, contracts, harassment, and termination disputes.",
-    "details": "Our Employment Law practice supports employees and employers in navigating workplace issues, including contracts, discrimination, harassment, wrongful termination, and wage disputes. We ensure compliance with labor laws and resolve conflicts through negotiation, mediation, or litigation. Our attorneys also assist employers with policy development to prevent legal issues, fostering fair and compliant workplaces.",
-    "image": "https://images.pexels.com/photos/4427612/pexels-photo-4427612.jpeg?auto=compress&cs=tinysrgb&w=600",
-    "features": [
-      "Employment Contracts",
-      "Workplace Discrimination",
-      "Harassment Claims",
-      "Wrongful Termination",
-      "Wage & Hour Disputes",
-      "Employee Handbook Policies"
-    ],
-    "faqs": [
-      {
-        "question": "What qualifies as wrongful termination?",
-        "answer": "Termination due to discrimination, retaliation, or contract breaches may be wrongful."
-      },
-      {
-        "question": "How do I address workplace harassment?",
-        "answer": "Document incidents and consult an attorney to explore your legal options."
-      }
-    ],
-    "process": [
-      "Conducts a consultation to review your workplace situation and legal options.",
-      "Investigates claims and gathers evidence to support your case.",
-      "Negotiates or mediates to achieve fair resolutions outside court.",
-      "Files claims with authorities or courts if informal resolution fails.",
-      "Represents you in litigation to secure a favorable outcome."
-    ],
-    "cta": "Protect your workplace rights—contact our Employment Law team.",
-    "ipc_sections": [
-      "Section 509 – Insulting modesty",
-      "Section 506 – Criminal intimidation",
-      "Sexual Harassment of Women at Workplace Act, 2013",
-      "Industrial Disputes Act, 1947",
-      "Minimum Wages Act, 1948",
-      "Factories Act, 1948"
-    ]
-  },
-  {
-    "id": 13,
-    "slug": "intellectual-property",
-    "title": "Intellectual Property",
-    "description": "Safeguarding inventions, trademarks, copyrights, and IP rights effectively.",
-    "details": "Our Intellectual Property practice protects your innovations, brands, and creative works through patents, trademarks, copyrights, and trade secrets. We handle registration, enforcement, licensing, and litigation, ensuring your IP assets are secure and maximized for value. Our attorneys offer strategic advice for portfolio management and commercialization, helping clients from startups to corporations stay competitive.",
-    "image": "/images/intellectual.jpg",
-    "features": [
-      "Patent Registration & Enforcement",
-      "Trademark Filing & Protection",
-      "Copyright Registration",
-      "Trade Secret Protection",
-      "IP Litigation",
-      "Licensing Agreements"
-    ],
-    "faqs": [
-      {
-        "question": "How can I protect my invention?",
-        "answer": "Filing a patent grants exclusive rights to prevent unauthorized use."
-      },
-      {
-        "question": "What’s the difference between copyright and trademark?",
-        "answer": "Copyright protects creative works; trademarks protect brand identifiers like logos."
-      }
-    ],
-    "process": [
-      "Evaluates IP assets to develop a tailored protection strategy.",
-      "Files applications for patents, trademarks, or copyrights.",
-      "Addresses office actions and objections from authorities.",
-      "Monitors for infringement and enforces rights through legal action.",
-      "Handles litigation to resolve IP disputes effectively."
-    ],
-    "cta": "Protect your ideas—consult our Intellectual Property specialists today.",
-    "ipc_sections": [
-      "Section 63 of Copyright Act – Infringement",
-      "Section 104 of Trademarks Act – False trademark use",
-      "Section 120 IPC – Criminal conspiracy",
-      "Section 463 – Forgery",
-      "Information Technology Act – Section 66 (Computer-related offenses)"
-    ]
-  }
+  "id": 12,
+  "slug": "runaway-couples",
+  "title": "Legal Aid for Runaway Couples",
+  "description": "Protecting the rights of consenting adults who choose to marry without family approval.",
+  "details": "Our legal services for runaway couples focus on protecting their constitutional rights, ensuring their safety, and validating their marriage under Indian law. We assist couples facing threats, coercion, or opposition from families or communities. Our team helps with drafting protection petitions, facilitating marriage registration, securing police protection, and ensuring safe accommodation if needed.",
+  "image": "https://images.pexels.com/photos/6532346/pexels-photo-6532346.jpeg?auto=compress&cs=tinysrgb&w=600",
+  "features": [
+    "Police Protection Petitions",
+    "Marriage Registration Assistance",
+    "High Court Protection Orders",
+    "Legal Validation of Interfaith or Inter-caste Marriages",
+    "Emergency Legal Support",
+    "Safe House & Shelter Coordination"
+  ],
+  "faqs": [
+    {
+      "question": "Can I get legal protection if my family threatens me for marrying by choice?",
+      "answer": "Yes, the Constitution of India guarantees you the right to marry a person of your choice. We can help you file for police and High Court protection."
+    },
+    {
+      "question": "Is my runaway marriage legally valid?",
+      "answer": "If both partners are consenting adults (18+ for women, 21+ for men), the marriage is legally valid under Indian law."
+    }
+  ],
+  "process": [
+    "Initial legal consultation to understand your concerns and requirements.",
+    "Assistance with safe marriage registration and documentation.",
+    "Drafting and filing protection petitions before district or High Courts.",
+    "Liaising with local police for protection and verification.",
+    "Follow-up legal support in case of further threats or opposition."
+  ],
+  "cta": "Your safety and choice matter. Reach out to our legal team for immediate support and protection.",
+  "ipc_sections": [
+    "Article 21 – Right to Life and Personal Liberty",
+    "Section 366 – Kidnapping, abduction for marriage",
+    "Section 506 – Criminal Intimidation",
+    "Special Marriage Act, 1954",
+    "Section 97 CrPC – Recovery of wrongfully confined person",
+    "Protection of Women from Domestic Violence Act, 2005"
+  ]
+}
+
+  // {
+  //   "id": 13,
+  //   "slug": "intellectual-property",
+  //   "title": "Intellectual Property",
+  //   "description": "Safeguarding inventions, trademarks, copyrights, and IP rights effectively.",
+  //   "details": "Our Intellectual Property practice protects your innovations, brands, and creative works through patents, trademarks, copyrights, and trade secrets. We handle registration, enforcement, licensing, and litigation, ensuring your IP assets are secure and maximized for value. Our attorneys offer strategic advice for portfolio management and commercialization, helping clients from startups to corporations stay competitive.",
+  //   "image": "/images/intellectual.jpg",
+  //   "features": [
+  //     "Patent Registration & Enforcement",
+  //     "Trademark Filing & Protection",
+  //     "Copyright Registration",
+  //     "Trade Secret Protection",
+  //     "IP Litigation",
+  //     "Licensing Agreements"
+  //   ],
+  //   "faqs": [
+  //     {
+  //       "question": "How can I protect my invention?",
+  //       "answer": "Filing a patent grants exclusive rights to prevent unauthorized use."
+  //     },
+  //     {
+  //       "question": "What’s the difference between copyright and trademark?",
+  //       "answer": "Copyright protects creative works; trademarks protect brand identifiers like logos."
+  //     }
+  //   ],
+  //   "process": [
+  //     "Evaluates IP assets to develop a tailored protection strategy.",
+  //     "Files applications for patents, trademarks, or copyrights.",
+  //     "Addresses office actions and objections from authorities.",
+  //     "Monitors for infringement and enforces rights through legal action.",
+  //     "Handles litigation to resolve IP disputes effectively."
+  //   ],
+  //   "cta": "Protect your ideas—consult our Intellectual Property specialists today.",
+  //   "ipc_sections": [
+  //     "Section 63 of Copyright Act – Infringement",
+  //     "Section 104 of Trademarks Act – False trademark use",
+  //     "Section 120 IPC – Criminal conspiracy",
+  //     "Section 463 – Forgery",
+  //     "Information Technology Act – Section 66 (Computer-related offenses)"
+  //   ]
+  // }
 ];
 
 const ServiceDetail: React.FC = () => {

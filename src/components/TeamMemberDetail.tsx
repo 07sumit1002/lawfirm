@@ -14,11 +14,25 @@ const teamMembers = [
     bio: "Hello! I’m Advocate Himanshu Aggarwal, a new-age legal aid counsel with over 15 years of experience. I serve clients across Kurukshetra, Karnal, Punjab & Haryana High Court, and the Supreme Court of India. I specialize in a wide array of legal domains including corporate law, civil litigation, matrimonial disputes, cyber crime, data protection, and criminal law, with a focus on NRI and international matters. Committed to ethical advocacy and result-driven solutions, I strive to bring clarity and confidence to my clients. I’ve also had the privilege of serving as the Joint Secretary of the Kurukshetra Bar Association.",
     workExperience: [
       {
-        title: "Legal Advocate",
+        title: "Legal Aid counsel",
         company: "Self-employed",
         location: "Kurukshetra, Haryana",
         duration: "Jun 2011 - Present · 14 yrs 1 mo",
         description: "Practicing in Courts. Speciality in drafting cases, agreements, power of attorney, legal notices, application replies etc. Also well-versed in labour law, especially termination-related matters."
+      },
+      {
+        title: "Former Joint Secretary of Bar Association of Kurukshetra",
+        company: "",
+        location: "Haryana, India",
+        duration: "",
+        description: ""
+      },
+      {
+        title: "Panel Lawyer For PNB",
+        company: "",
+        location: "Haryana, India",
+        duration: "",
+        description: ""
       }
     ],
     education: [
@@ -42,14 +56,21 @@ const teamMembers = [
         title: "Legal Advocate",
         company: "Independent Practitioner",
         location: "Haryana, India",
-        duration: "2017 - Present · 7 yrs",
+        duration: "2017 - Present · 8 yrs 2 mo",
         description: "Representing clients in matrimonial, criminal, civil and cyber law matters. Handling NRI legal support and service-related disputes across district and high courts."
+      },
+      {
+        title: "Panel Lawyer For PNB",
+        company: "",
+        location: "Haryana, India",
+        duration: "",
+        description: ""
       }
     ],
     education: [
       {
-        institute: "Kurukshetra University",
-        degree: "B.A.LL.B. (Hons)",
+        institute: "Institute of law Kurukshetra University Kurukshetra",
+        degree: "B.A.LL.B.",
         specialization: "Matrimonial Law, Cyber Crime, Civil & Criminal Practice",
         duration: "2012 - 2017"
       }
@@ -95,8 +116,8 @@ const TeamMemberDetail = () => {
       <div className="max-w-5xl mx-auto p-6 sm:p-8">
         <div className="flex flex-col-reverse md:flex-row gap-6 md:gap-10 items-center">
           <div className="flex-1">
-            <h2 className="text-xl text-blue-700 mb-2 font-semibold text-justify">
-              Specialization: {member.specialization}
+            <h2 className="text-xl text-deepRoyal mb-2 font-semibold text-justify">
+              <span className="text-blue-700 ">Specialization: </span> {member.specialization}
             </h2>
             <p className="text-gray-700 leading-relaxed text-justify mb-6">{member.bio}</p>
 

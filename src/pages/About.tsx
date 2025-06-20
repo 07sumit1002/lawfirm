@@ -21,7 +21,7 @@ const teamMembers = [
   },
   {
     name: 'Adv Shashank Aggarwal',
-    position: 'Former Joint Secretary of Bar Association of Kurukshetra',
+    position: 'Punjab National Panel Lawyer',
     image: Shahsnk,
     specialization: 'Matrimonial Cases, Cyber Crime, Data Protection, Civil Cases, Criminal Cases',
     experience: '7 years of experience'
@@ -66,7 +66,7 @@ const About = () => {
           <div>
             <h2 className="text-4xl font-work font-bold text-deepRoyal mb-6">Our Story</h2>
             <p className="text-black text-lg mb-4">
-            Our firm was established in 1970 by Late Shri Vishnu Bhagwan Aggarwal (Tauji) and Late Shri Arvind Kumar Aggarwal (father). 
+            Our firm was established in 1970 by Late Shri Vishnu Bhagwan Aggarwal and Late Shri Arvind Kumar Aggarwal. 
             Late Shri Vishnu Bhagwan Aggarwal was a renowned senior advocate in the Punjab and Haryana High Court, with a distinguished career spanning over 50 years. 
             Late Shri Arvind Aggarwal was a senior advocate who practiced in Kurukshetra for more than 30 years. 
             A true expert in his field, he was a guiding light in our legal journey and a milestone in our careers.

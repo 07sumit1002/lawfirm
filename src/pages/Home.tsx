@@ -92,7 +92,7 @@ const Home = () => {
                   },
                   {
                     icon: "Justdial",
-                    rating: "★★★★☆",
+                    rating: "★★★★★",
                     logo: "https://cdn.pnggallery.com/wp-content/uploads/justdial-jd-logo-04.png",
                     link: "https://www.justdial.com/Kurukshetra/Adv-Himanshu-Aggarwal-Near-District-Court-Kurukshetra-H-O/9999P1744-1744-220411194014-Z7M1_BZDET",
                     reviewcount:'1+ reviews',
@@ -106,7 +106,7 @@ const Home = () => {
                   },
                   {
                     icon: "LawRato",
-                    rating: "★★★★☆",
+                    rating: "★★★★★",
                     logo: "https://play-lh.googleusercontent.com/FrfTAo5rpKvRgubrkpyEtkZeI8epH6IERDroFZIrlOre-gUqHmGUgL2zmAcL4eF-kB4",
                     link: "https://lawrato.com/advocate-himanshu-aggarwal",
                     reviewcount:'2+ reviews',
@@ -133,9 +133,9 @@ const Home = () => {
                       <div className="flex justify-start space-x-1 mb-1">
                         <p className="text-2xl text-gold-700">{review.rating}</p>
                       </div>
-                      <div className="flex justify-start space-x-1 mb-1">
+                      {/* <div className="flex justify-start space-x-1 mb-1">
                         <p className="text-sm text-gray-700 underline">{review.reviewcount}</p>
-                        </div>
+                        </div> */}
                     </div>
                   </a>
 

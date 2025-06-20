@@ -26,7 +26,7 @@ const serviceData = [
   {
     "id": 4,
     "slug": "nri-litigation",
-    "title": "Nri Litigation",
+    "title": "NRI Litigation",
     "image": "/images/nri.jpg"
     
   },

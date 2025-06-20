@@ -26,7 +26,8 @@ function Hero() {
             animate={{ scale: 1 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            Your Case, Our Priority
+            <span className="inline-block lg:-ml-[3in] sm:-ml-[1in]">Your Case</span><br />
+            <span className="inline-block lg:pl-[3in] sm:pl-[1in]">Our Priority</span>
           </motion.h1>
 
           <motion.p

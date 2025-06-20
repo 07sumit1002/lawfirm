@@ -467,91 +467,92 @@ const servicesData = [
     ],
     "cta": "Need to appeal a court decision? Contact our Appellate Law specialists.",
     "related_services": ["civil-litigation", "criminal-cases"]
-  },
-  {
-    "id": 12,
-    "slug": "employment-law",
-    "icon": "<BookOpen className=\"h-12 w-12 text-deepRoyal\" />",
-    "title": "Employment Law",
-    "description": "Advising on workplace rights, contracts, harassment, and wrongful termination cases.",
-    "details": "Our Employment Law attorneys guide both employees and employers on workplace rights, contracts, discrimination, harassment, and wrongful termination claims to ensure fair treatment and compliance with labor laws.",
-    "image": "https://images.pexels.com/photos/4427612/pexels-photo-4427612.jpeg?auto=compress&cs=tinysrgb&w=600",
-    "features": [
-      "Employment Contracts",
-      "Workplace Discrimination",
-      "Harassment Claims",
-      "Wrongful Termination",
-      "Wage & Hour Disputes",
-      "Employee Handbook Policies"
-    ],
-    "faqs": [
-      {
-        "question": "What counts as wrongful termination?",
-        "answer": "Termination based on discrimination, retaliation, or breach of contract may be considered wrongful."
-      },
-      {
-        "question": "How can I address workplace harassment?",
-        "answer": "Document incidents and consult an attorney to understand your rights and options."
-      }
-    ],
-    "process": [
-      "Consultation & Case Review",
-      "Investigation & Evidence Collection",
-      "Negotiation & Mediation",
-      "Filing Claims",
-      "Litigation & Resolution"
-    ],
-    "testimonials": [
-      {
-        "client": "Sonal G.",
-        "feedback": "They helped me resolve a workplace harassment issue quickly and professionally."
-      }
-    ],
-    "cta": "Protect your workplace rights—speak to our Employment Law team.",
-    "related_services": ["civil-litigation", "matrimonial-cases"]
-  },
-  {
-    "id": 13,
-    "slug": "intellectual-property",
-    "icon": "<FileCheck className=\"h-12 w-12 text-deepRoyal\" />",
-    "title": "Intellectual Property",
-    "description": "Protecting your inventions, trademarks, copyrights, and IP rights diligently.",
-    "details": "We help clients protect their inventions, brands, and creative works through patents, trademarks, copyrights, and trade secrets. Our team ensures your intellectual property is secure and enforceable.",
-    "image": "images/intellectual.jpg",
-    "features": [
-      "Patent Registration & Enforcement",
-      "Trademark Filing & Protection",
-      "Copyright Registration",
-      "Trade Secret Protection",
-      "IP Litigation",
-      "Licensing Agreements"
-    ],
-    "faqs": [
-      {
-        "question": "How do I protect my invention?",
-        "answer": "File for a patent to secure exclusive rights and prevent unauthorized use."
-      },
-      {
-        "question": "What is the difference between copyright and trademark?",
-        "answer": "Copyright protects creative works; trademarks protect brand names, logos, and slogans."
-      }
-    ],
-    "process": [
-      "IP Assessment & Strategy",
-      "Filing Applications",
-      "Office Actions & Responses",
-      "Enforcement & Monitoring",
-      "Litigation (if needed)"
-    ],
-    "testimonials": [
-      {
-        "client": "Kiran J.",
-        "feedback": "They secured our brand’s trademarks and handled IP disputes efficiently."
-      }
-    ],
-    "cta": "Safeguard your ideas—consult our Intellectual Property specialists.",
-    "related_services": ["corporate-law", "cyber-crime"]
-  }
+  },{
+  "id": 12,
+  "slug": "runaway-couples",
+  "icon": "<Heart className=\"h-12 w-12 text-deepRoyal\" />",
+  "title": "Runaway Couples Law",
+  "description": "Legal protection and assistance for couples who marry by choice, facing family or societal opposition.",
+  "details": "Our Runaway Couples Legal Support service provides immediate legal aid to consenting adults seeking protection after marrying without family approval. We assist with protection petitions, marriage registration, safe housing, and High Court filings to ensure your safety and dignity under Indian law.",
+  "image": "https://images.pexels.com/photos/6532346/pexels-photo-6532346.jpeg?auto=compress&cs=tinysrgb&w=600",
+  "features": [
+    "Police & High Court Protection",
+    "Special Marriage Act Guidance",
+    "Interfaith & Intercaste Marriage Support",
+    "Marriage Registration Assistance",
+    "Emergency Safe House Referrals",
+    "Legal Documentation & Petition Filing"
+  ],
+  "faqs": [
+    {
+      "question": "Can I seek protection from the court if my family opposes my marriage?",
+      "answer": "Yes. You have the right to marry by choice. We can help file for police or High Court protection for your safety."
+    },
+    {
+      "question": "Is my marriage valid if I eloped without family consent?",
+      "answer": "Yes, if both partners are consenting adults (18+ for females, 21+ for males), your marriage is valid under Indian law."
+    }
+  ],
+  "process": [
+    "Confidential Consultation",
+    "Legal Verification of Marriage Documents",
+    "Drafting & Filing Protection Petition",
+    "Coordinating with Police & Authorities",
+    "Post-protection Legal Assistance"
+  ],
+  "testimonials": [
+    {
+      "client": "Nikhil & Priya",
+      "feedback": "They guided us with compassion and ensured we were legally protected when we needed it most."
+    }
+  ],
+  "cta": "Your safety and right to love matter—contact our team for confidential legal protection.",
+  "related_services": ["matrimonial-cases", "civil-litigation"]
+}
+
+  
+  // {
+  //   "id": 13,
+  //   "slug": "intellectual-property",
+  //   "icon": "<FileCheck className=\"h-12 w-12 text-deepRoyal\" />",
+  //   "title": "Intellectual Property",
+  //   "description": "Protecting your inventions, trademarks, copyrights, and IP rights diligently.",
+  //   "details": "We help clients protect their inventions, brands, and creative works through patents, trademarks, copyrights, and trade secrets. Our team ensures your intellectual property is secure and enforceable.",
+  //   "image": "images/intellectual.jpg",
+  //   "features": [
+  //     "Patent Registration & Enforcement",
+  //     "Trademark Filing & Protection",
+  //     "Copyright Registration",
+  //     "Trade Secret Protection",
+  //     "IP Litigation",
+  //     "Licensing Agreements"
+  //   ],
+  //   "faqs": [
+  //     {
+  //       "question": "How do I protect my invention?",
+  //       "answer": "File for a patent to secure exclusive rights and prevent unauthorized use."
+  //     },
+  //     {
+  //       "question": "What is the difference between copyright and trademark?",
+  //       "answer": "Copyright protects creative works; trademarks protect brand names, logos, and slogans."
+  //     }
+  //   ],
+  //   "process": [
+  //     "IP Assessment & Strategy",
+  //     "Filing Applications",
+  //     "Office Actions & Responses",
+  //     "Enforcement & Monitoring",
+  //     "Litigation (if needed)"
+  //   ],
+  //   "testimonials": [
+  //     {
+  //       "client": "Kiran J.",
+  //       "feedback": "They secured our brand’s trademarks and handled IP disputes efficiently."
+  //     }
+  //   ],
+  //   "cta": "Safeguard your ideas—consult our Intellectual Property specialists.",
+  //   "related_services": ["corporate-law", "cyber-crime"]
+  // }
 ];
 
 const approachSteps = [
