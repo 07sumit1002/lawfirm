@@ -167,13 +167,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import Mission from '../assets/mission.jpg'; // You can replace with your preferred static image
+import Mission from '../assets/Legal advice online.jpg'; // You can replace with your preferred static image
 
 function Hero() {
   return (
         <section
       className="relative h-screen w-full overflow-hidden font-mont"
-      style={{ backgroundImage: `url(${Mission})` }}
+      style={{ backgroundImage: `url(${Mission})`, backgroundSize: 'cover',  backgroundPosition: 'center',  backgroundRepeat: 'no-repeat'}}
     >
       <div className="absolute inset-0 bg-deepRoyal/30"></div>
 
@@ -188,7 +188,7 @@ function Hero() {
               className="text-4xl md:text-5xl lg:text-6xl font-bold leading-relaxed mb-6 text-white font-mont"
               initial={{ scale: 0.95 }}
               animate={{ scale: 1 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
+              transition={{ duration: 0.8, delay: 0.4 }} 
             >Your Case, Our Priority
             </motion.h1>
 

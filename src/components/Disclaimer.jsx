@@ -5,15 +5,17 @@ const Disclaimer = ({ onAgree }) => {
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 px-4 sm:px-6">
       <div className="bg-white p-4 sm:p-6 rounded-lg shadow-lg w-full max-w-2xl max-h-[90vh] overflow-y-auto">
         <h2 className="text-lg sm:text-xl font-bold mb-4">Disclaimer</h2>
-        <p className="text-sm text-gray-700 mb-4">
-          As per The Bar Council of India Rules and The Advocates Act, 1961, an advocate cannot approach his/her client or advertise or promote his profession by way of advertisements or solicitation. Thus, this website has not been created to approach or solicit our client or advertise our firm but to provide some necessary information about our firm and services to our existing clients.
+        <p className="text-sm text-gray-700 mb-4 text-justify">
+          As per the Bar Council of India Rules and the Advocates Act, 1961, advocates cannot advertise or solicit clients. This website is intended only to share general information about Aggrawal Legal with those seeking it voluntarily.
         </p>
-        <p className="text-sm text-gray-700 mb-4">
-          Any user of this website is warned that the contents stated herein are not guaranteed to be accurate, up-to-date or complete. Century Law Firm disclaims all responsibilities and liabilities for interpretation or use of information contained on this website nor does it offer any warranty expressed or implied. The information provided under this website is solely available at your request for informational purposes only, should not be interpreted as soliciting or advertisement.
+        <p className="text-sm text-gray-700 mb-4 text-justify">
+          The content on this site is for informational purposes only and may not be accurate, complete, or current. Aggrawal Legal is not liable for any reliance placed on this information.
         </p>
-        <p className="text-sm text-gray-700 mb-4">
-          The contents of this website shall not be considered as Legal Advice as the contents thereof is not exhaustive. It is only introductory. In cases where the user has any legal issues, he/she in all cases must seek independent legal advice. We are not liable for any consequence of any action taken by the user relying on material/information provided under this website. The viewer acknowledges that he or she has read and understood the disclaimer as provided hereinabove.
+        <p className="text-sm text-gray-700 mb-4 text-justify">
+          Nothing on this website should be treated as legal advice. For legal issues, please consult a qualified professional. By using this site, you agree to this disclaimer.
         </p>
+
+
         <div className="flex justify-end">
           <button
             onClick={onAgree}
