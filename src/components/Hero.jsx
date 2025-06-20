@@ -9,7 +9,7 @@ function Hero() {
       <img
         src={Mission}
         alt="Legal Mission"
-        className="w-full h-auto max-h-screen object-contain"
+        className="w-full h-auto max-h-screen object-cover object-[center_20%]"
       />
 
       {/* Overlay content */}
