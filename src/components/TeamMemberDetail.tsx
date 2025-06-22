@@ -1,8 +1,8 @@
 import { useParams } from "react-router-dom";
 import CallToAction from "../components/CallToAction";
-import shashank from '../assets/shashank.jpeg';
-import Legalaid from '../assets/legalaid.jpg';
-import Himansh from '../assets/himansh.png';
+import shashank from '../../public/assets/shashank.jpeg';
+import Legalaid from '../../public/assets/legalaid.jpg';
+import Himansh from '../../public/assets/himansh.png';
 
 const teamMembers = [
   {

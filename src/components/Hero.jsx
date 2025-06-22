@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import Mission from '../assets/21510234301.jpg'; // Replace with your image path
+import Mission from '../../public/assets/21510234301.jpg'; // Replace with your image path
 
 function Hero() {
   return (
