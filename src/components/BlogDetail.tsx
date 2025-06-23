@@ -107,8 +107,6 @@ const BlogDetail = () => {
             {article.description}
           </span>
         </div>
-
-        {/* Content Card */}
         <div className="bg-white rounded-2xl shadow p-10 md:p-16 mb-16">
           <div
             className="prose prose-slate max-w-none text-xl leading-9 text-justify"
@@ -125,8 +123,6 @@ const BlogDetail = () => {
             }}
           />
         </div>
-
-        {/* Back Button */}
         <div className="flex justify-end mt-12">
           <Link
             to="/blog"
