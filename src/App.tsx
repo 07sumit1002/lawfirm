@@ -45,15 +45,14 @@ const App = () => {
           <Route path="practise areas" element={<Services />} />
           <Route path="/admin" element={<AdminLogin />} />
           <Route path="/admin/update" element={<Updte />} />
-          {/*<Route path="services/:id" element={<ServiceDetail />} />*/} {/* for internal linking */}
           <Route path="testimonials" element={<Testimonials />} />
           <Route path="blog" element={<Blog />} />
           <Route path="privacy policy" element={<PrivacyPolicy />} />
           <Route path="terms and condition" element={<TandC />} />
           <Route path="/legal learning" element={<Learning/>} />
-          <Route path="/blog/:slug" element={<BlogDetail />} />   {/* Added route */}
+          <Route path="/blog/:slug" element={<BlogDetail />} />   
           <Route path="contact" element={<Contact />} />
-          <Route path="team/:name" element={<TeamMemberDetail />} /> {/* ✅ Added route */}
+          <Route path="team/:name" element={<TeamMemberDetail />} /> 
           <Route path="/practise areas/:slug" element={<ServiceDetail />} />
         </Route>
       </Routes>
