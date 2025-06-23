@@ -132,7 +132,7 @@ const BlogDetail = () => {
             to="/blog"
             className="inline-block px-8 py-4 bg-slate-900 text-white font-semibold rounded-lg shadow border-2 border-slate-800 transform transition-transform duration-200 hover:scale-105 hover:shadow-lg"
           >
-            ← Back to Blog
+            ← Back to Blogs
           </Link>
         </div>
       </div>
