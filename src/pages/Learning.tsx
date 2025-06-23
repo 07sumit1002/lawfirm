@@ -104,7 +104,7 @@ const Learn: React.FC = () => {
               </div>
               <div className="p-4 flex-1 flex flex-col">
                 <h2 className="text-lg font-semibold text-[#2B526E] mb-2 flex-1">
-                  {video.title}
+                  {/* {video.title} */}
                 </h2>
 
                 <a
