@@ -1,53 +1,63 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import CallToAction from "../components/CallToAction";
 
 /* ════════════ DATA TYPES ════════════ */
 interface Video {
   id: string;
   title: string;
-  url: string; // original YouTube link (watch?v=...)
+  url: string;
 }
 
-/*
-  ──────────────────────────────────────────────────────────────────────────
-  Local video catalogue. If you decide to fetch from a backend later, simply
-  remove this constant and hydrate state from your API instead.
-  ──────────────────────────────────────────────────────────────────────────
-*/
-const videoData: Video[] = [
-  {
-    id: "hLKbhPmCpKM",
-    title: "How to get Free Advocate & Legal help",
-    url: "https://www.youtube.com/watch?v=hLKbhPmCpKM",
-  },
-  {
-    id: "kUh2YiK2c8Y",
-    title: "Sexual Harassment at work places",
-    url: "https://www.youtube.com/watch?v=kUh2YiK2c8Y",
-  },
-  {
-    id: "xjsDVg20Lms",
-    title: "Right to Information Act",
-    url: "https://www.youtube.com/watch?v=xjsDVg20Lms",
-  },
-];
-
-/*
-  Utility to transform a YouTube watch URL or ID into a cookie‑less embed link.
-*/
 const toEmbedUrl = (idOrUrl: string) => {
-  if (idOrUrl.length === 11 && !idOrUrl.includes("http")) return `https://www.youtube-nocookie.com/embed/${idOrUrl}`;
+  if (idOrUrl.length === 11 && !idOrUrl.includes("http"))
+    return `https://www.youtube-nocookie.com/embed/${idOrUrl}`;
   const videoIdMatch = idOrUrl.match(/[?&]v=([^&]+)/);
   const id = videoIdMatch ? videoIdMatch[1] : idOrUrl;
   return `https://www.youtube-nocookie.com/embed/${id}`;
 };
 
 const Learn: React.FC = () => {
-  const videos = videoData;
+  const [videos, setVideos] = useState<Video[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState("");
+
+  useEffect(() => {
+    const fetchVideos = async () => {
+      try {
+        const res = await fetch("http://localhost:3001/api/youtube");
+        if (!res.ok) throw new Error("Failed to fetch videos");
+        const data = await res.json();
+        setVideos(data);
+      } catch (err: any) {
+        console.error(err);
+        setError(err.message || "Something went wrong");
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchVideos();
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="p-10 text-center font-montserrat text-gray-700">
+        Loading videos...
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="p-10 text-center text-red-600 font-montserrat">
+        {error}
+      </div>
+    );
+  }
 
   if (!videos.length) {
     return (
-      <div className="p-10 text-center text-red-600 font-montserrat">
+      <div className="p-10 text-center text-gray-600 font-montserrat">
         No videos found.
       </div>
     );

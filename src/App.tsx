@@ -15,6 +15,8 @@ import BlogDetail from './components/BlogDetail';
 import Learning from './pages/Learning';
 import TandC from './pages/tandc';
 import PrivacyPolicy from './pages/privacypolicy';
+import AdminLogin from './pages/admin/adminlogin';
+import Updte from './pages/admin/updte';
 
 
 const App = () => {
@@ -41,6 +43,8 @@ const App = () => {
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="practise areas" element={<Services />} />
+          <Route path="/admin" element={<AdminLogin />} />
+          <Route path="/admin/update" element={<Updte />} />
           {/*<Route path="services/:id" element={<ServiceDetail />} />*/} {/* for internal linking */}
           <Route path="testimonials" element={<Testimonials />} />
           <Route path="blog" element={<Blog />} />
