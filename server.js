@@ -4,8 +4,8 @@ import mongoose from "mongoose";
 import cors from "cors";
 import bodyParser from "body-parser";
 import dotenv from "dotenv";
-import blogRoutes from "./routes/blogRoutes.js";
-import youtubeRoutes from "./routes/youtube.js";
+import blogRoutes from "./backend/routes/blogRoutes.js";
+import youtubeRoutes from "./backend/routes/youtube.js";
 
 dotenv.config();
 const app = express();
