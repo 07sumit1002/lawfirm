@@ -15,7 +15,7 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use("/api/blogs", blogRoutes);
 app.use("/api/youtube", youtubeRoutes);
-
+console.log(app);
 mongoose
   .connect(process.env.MONGO_URI)
   .then(() => {
