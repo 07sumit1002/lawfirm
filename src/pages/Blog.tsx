@@ -21,7 +21,7 @@ const Blog = () => {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const res = await fetch('https://lawfirm-15vz.onrender.com//api/blogs');
+        const res = await fetch('https://lawfirm-15vz.onrender.com/api/blogs');
         const data = await res.json();
         setArticles(data);
       } catch (error) {

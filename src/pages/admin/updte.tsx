@@ -36,7 +36,7 @@ const AdminUpdate = () => {
     };
 
     try {
-      const res = await fetch("https://lawfirm-15vz.onrender.com//api/blogs", {
+      const res = await fetch("https://lawfirm-15vz.onrender.com/api/blogs", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(blogData),
@@ -65,7 +65,7 @@ const AdminUpdate = () => {
 
         try {
             console.log({ title, url, id });
-            const res = await fetch("https://lawfirm-15vz.onrender.com//api/youtube", {
+            const res = await fetch("https://lawfirm-15vz.onrender.com/api/youtube", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ title, url, id}),
