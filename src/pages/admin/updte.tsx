@@ -25,11 +25,11 @@ const AdminUpdate = () => {
     if (isAdmin !== "true") navigate("/admin");
   }, [navigate]);
 
-  // Fetch blogs and YouTube videos
   useEffect(() => {
     fetch("https://lawfirm-15vz.onrender.com/api/blogs")
       .then((res) => res.json())
       .then(setBlogs);
+
     fetch("https://lawfirm-15vz.onrender.com/api/youtube")
       .then((res) => res.json())
       .then(setVideos);
@@ -122,7 +122,7 @@ const AdminUpdate = () => {
 
   return (
     <div>
-      {/* Hero */}
+      {/* Hero Section */}
       <div
         className="relative h-64 bg-cover bg-center flex items-center justify-center"
         style={{
@@ -134,7 +134,6 @@ const AdminUpdate = () => {
         <h1 className="relative text-white text-4xl font-bold z-10">Admin Panel</h1>
       </div>
 
-      {/* Content */}
       <div className="p-10 space-y-12">
         {/* Blog Form */}
         <section className="bg-white shadow rounded p-6">
@@ -181,10 +180,14 @@ const AdminUpdate = () => {
                   </button>
                   <button
                     onClick={async () => {
+                      const confirm = window.confirm("Are you sure you want to delete this blog?");
+                      if (!confirm) return;
+
                       await fetch(`https://lawfirm-15vz.onrender.com/api/blogs/${blog._id}`, {
                         method: "DELETE",
                       });
                       setBlogs(blogs.filter((b: any) => b._id !== blog._id));
+                      alert("✅ Blog deleted successfully!");
                     }}
                     className="px-3 py-1 bg-red-600 text-white rounded"
                   >
@@ -221,15 +224,19 @@ const AdminUpdate = () => {
             {videos.map((video: any) => (
               <li key={video._id} className="border p-4 rounded">
                 <p>{video.title}</p>
-                <a href={video.url} className="text-blue-500 underline" target="_blank">
+                <a href={video.url} className="text-blue-500 underline" target="_blank" rel="noopener noreferrer">
                   Watch
                 </a>
                 <button
                   onClick={async () => {
+                    const confirm = window.confirm("Are you sure you want to delete this video?");
+                    if (!confirm) return;
+
                     await fetch(`https://lawfirm-15vz.onrender.com/api/youtube/${video._id}`, {
                       method: "DELETE",
                     });
                     setVideos(videos.filter((v: any) => v._id !== video._id));
+                    alert("✅ Video deleted successfully!");
                   }}
                   className="ml-4 px-3 py-1 bg-red-600 text-white rounded"
                 >
