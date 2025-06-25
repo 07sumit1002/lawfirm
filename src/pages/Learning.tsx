@@ -24,7 +24,7 @@ const Learn: React.FC = () => {
   useEffect(() => {
     const fetchVideos = async () => {
       try {
-        const res = await fetch("http://localhost:3001/api/youtube");
+        const res = await fetch("https://lawfirm-fawn.vercel.app:3001/api/youtube");
         if (!res.ok) throw new Error("Failed to fetch videos");
         const data = await res.json();
         setVideos(data);

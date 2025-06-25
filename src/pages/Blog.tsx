@@ -21,7 +21,7 @@ const Blog = () => {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const res = await fetch('http://localhost:3001/api/blogs');
+        const res = await fetch('https://lawfirm-fawn.vercel.app:3001/api/blogs');
         const data = await res.json();
         setArticles(data);
       } catch (error) {

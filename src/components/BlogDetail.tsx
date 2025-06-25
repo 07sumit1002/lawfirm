@@ -23,7 +23,7 @@ const BlogDetail = () => {
   useEffect(() => {
     const fetchArticle = async () => {
       try {
-        const res = await fetch(`http://localhost:3001/api/blogs/slug/${slug}`);
+        const res = await fetch(`https://lawfirm-fawn.vercel.app:3001/api/blogs/slug/${slug}`);
         if (!res.ok) throw new Error("Article not found");
         const data = await res.json();
         setArticle(data);
