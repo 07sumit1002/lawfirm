@@ -25,11 +25,23 @@ router.post("/", async (req, res) => {
 // GET: Retrieve all YouTube videos
 router.get("/", async (req, res) => {
   try {
-    const videos = await Youtube.find();
+    const videos = await Youtube.find().sort({ _id: -1 });
     res.json(videos);
   } catch (err) {
-    console.error("Error adding video:", err);
+    console.error("Error fetching videos:", err);
     res.status(500).json({ error: "Failed to fetch videos" });
+  }
+});
+
+// DELETE: Remove video by ID
+router.delete("/:id", async (req, res) => {
+  try {
+    const deleted = await Youtube.findByIdAndDelete(req.params.id);
+    if (!deleted) return res.status(404).json({ message: "Video not found" });
+    res.json({ message: "Video deleted successfully" });
+  } catch (err) {
+    console.error("Error deleting video:", err);
+    res.status(500).json({ error: "Failed to delete video" });
   }
 });
 
