@@ -17,16 +17,41 @@ const Footer = () => {
               We strive to achieve the best possible outcomes for our clients.
             </p>
             <div className="flex space-x-4">
-              <a href="https://www.youtube.com/@KanoonKiSALAH" className="text-white hover:text-blue-500 transition-colors">
-                <Youtube size={32} />
+              {/* YouTube */}
+              <a
+                href="https://www.youtube.com/@KanoonKiSALAH"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="YouTube"
+              >
+                <span className="inline-flex items-center justify-center rounded-full bg-[#FF0000] w-10 h-10 transition-transform duration-300 hover:scale-110">
+                  <Youtube size={24} color="#fff" />
+                </span>
               </a>
-              <a href="https://instagram.com/kanoon_ki_salah?igshid=YmMyMTA2M2Y=" className="text-white hover:text-blue-500 transition-colors">
-                <Instagram size={28} />
+              {/* Instagram */}
+              <a
+                href="https://instagram.com/kanoon_ki_salah?igshid=YmMyMTA2M2Y="
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                <span className="inline-flex items-center justify-center rounded-full bg-[#E1306C] w-10 h-10 transition-transform duration-300 hover:scale-110">
+                  <Instagram size={22} color="#fff" />
+                </span>
               </a>
-              <a href="https://www.linkedin.com/in/himanshu-a-aggarwal-%F0%9F%87%AE%F0%9F%87%B3-51157099?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" className="text-white hover:text-blue-500 transition-colors">
-                <Linkedin size={28} />
+              {/* LinkedIn */}
+              <a
+                href="https://www.linkedin.com/in/himanshu-a-aggarwal-%F0%9F%87%AE%F0%9F%87%B3-51157099?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
+                <span className="inline-flex items-center justify-center rounded-full bg-[#0077B5] w-10 h-10 transition-transform duration-300 hover:scale-110">
+                  <Linkedin size={22} color="#fff" />
+                </span>
               </a>
             </div>
+
           </div>
 
           <div>
