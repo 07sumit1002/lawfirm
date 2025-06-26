@@ -63,13 +63,18 @@ const FeaturedServices = () => {
                 hover:text-white hover:shadow-2xl cursor-pointer"
             >
               {/* Centered circular image */}
+              
               <div className="absolute left-1/2 -top-12 transform -translate-x-1/2 z-20">
                 <div className="w-28 h-28 rounded-full border-4 border-white shadow-lg overflow-hidden flex items-center justify-center bg-white">
                   <img
                     src={service.image}
                     alt={service.title}
-                    className="w-full h-full object-cover"
+                    className={
+                      "w-full h-full object-cover" +
+                      (service.slug === "civil-litigation" ? " object-[65%_65%]" : "")
+                    }
                   />
+
                 </div>
               </div>
 

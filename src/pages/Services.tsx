@@ -647,7 +647,10 @@ const Services = () => {
                         <img
                           src={service.image}
                           alt={service.title}
-                          className="w-full h-full object-cover"
+                           className={
+                            "w-full h-full object-cover" +
+                            (service.slug === "civil-litigation" ? " object-[65%_65%]" : "")
+                          }
                         />
                       </div>
                     </div>
