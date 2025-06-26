@@ -1,7 +1,7 @@
 import React from 'react';
 import { ArrowRight} from 'lucide-react';
 import Hero from '../components/Hero';
-import StatsCounter from '../components/StatsCounter';
+// import StatsCounter from '../components/StatsCounter';
 import FeaturedServices from '../components/FeaturedServices';
 import TestimonialSlider from '../components/TestimonialSlider';
 import WhyChooseUs from '../components/WhyChooseUs';
@@ -55,7 +55,7 @@ const Home = () => {
         </div>
       </motion.section>
 
-      <StatsCounter />
+      {/* <StatsCounter /> */}
       
       <WhyChooseUs />
       
@@ -131,7 +131,7 @@ const Home = () => {
                     {/* Review Info Section - Right */}
                     <div className="w-[70%] flex flex-col justify-center px-4">
                       <div className="flex justify-start space-x-1 mb-1">
-                        <p className="text-2xl text-gold-700" style={{padding:'10px'}}>{review.rating}</p>
+                        <p className="text-2xl text-blue-600" style={{padding:'10px'}}>{review.rating}</p>
                       </div>
                       {/* <div className="flex justify-start space-x-1 mb-1">
                         <p className="text-sm text-gray-700 underline">{review.reviewcount}</p>

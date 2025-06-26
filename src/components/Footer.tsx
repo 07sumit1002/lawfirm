@@ -37,6 +37,7 @@ const Footer = () => {
               <li><Link to="/practise areas/corporate-law" className="text-blue-200 hover:text-blue-500 transition-colors">Corporate Law</Link></li>
               <li><Link to="/practise areas/real-estate-law" className="text-blue-200 hover:text-blue-500 transition-colors">Real Estate Law</Link></li>
               <li><Link to="/practise areas/civil-litigation" className="text-blue-200 hover:text-blue-500 transition-colors">Civil Litigation</Link></li>
+              <li><Link to="/practise areas/medical-negligence" className="text-blue-200 hover:text-blue-500 transition-colors">Medical Negligence</Link></li>
             </ul>
 
           </div>

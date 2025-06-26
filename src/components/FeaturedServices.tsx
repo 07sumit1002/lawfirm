@@ -33,7 +33,7 @@ const serviceData = [
   {
     "id": 5,
     "slug": "civil-litigation",
-    "title": "CIvil Litigation",
+    "title": "Civil Litigation",
     "image": "/images/civil litigation.jpg"
     
   },
