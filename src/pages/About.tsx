@@ -32,74 +32,74 @@ const teamMembers = [
 const About = () => {
   return (
     <div>
-      <motion.section
-        className="pt-32 pb-16 bg-deepRoyal relative"
-        initial="hidden"
-        whileInView="visible"
-        exit="exit"
-        viewport={{ once: false, amount: 0.2 }}
-        variants={fadeInUp}
-        transition={{ duration: 0.8 }}
-      >
-        <div
-          className="absolute inset-0 bg-cover bg-center opacity-50"
-          style={{ backgroundImage: "url('https://images.pexels.com/photos/5668858/pexels-photo-5668858.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')" }}
-        ></div>
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">Aggarwal Legal Firm</h1>
-            <p className="text-xl text-gray-100">A premier legal firm with a commitment to excellence and client satisfaction.</p>
-          </div>
-        </div>
-      </motion.section>
+<motion.section
+  className="relative w-full h-[350px] md:h-[400px] flex items-center justify-center bg-cover bg-center bg-no-repeat"
+  style={{
+    backgroundImage: "url('https://images.pexels.com/photos/7875996/pexels-photo-7875996.jpeg')"
+  }}
+  initial="hidden"
+  whileInView="visible"
+  exit="exit"
+  viewport={{ once: false, amount: 0.2 }}
+  variants={fadeInUp}
+  transition={{ duration: 0.8 }}
+>
+  {/* Overlay for readability */}
+  <div className="absolute inset-0 bg-black/60"></div>
+  {/* Content */}
+  <div className="relative z-10 w-full flex flex-col items-center justify-center text-center">
+    <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">Aggarwal Legal Firm</h1>
+    <p className="text-xl text-gray-100">A premier legal firm with a commitment to excellence and client satisfaction.</p>
+  </div>
+</motion.section>
 
-      <motion.section
-        className="py-16 bg-white p-10"
-        initial="hidden"
-        whileInView="visible"
-        exit="exit"
-        viewport={{ once: false, amount: 0.2 }}
-        variants={fadeInUp}
-        transition={{ duration: 0.8 }}
-      >
-        <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 text-justify">
-          <div>
-            <h2 className="text-4xl font-work font-bold text-deepRoyal mb-6">Our Story</h2>
-            <p className="text-black text-lg mb-4">
-            Our firm was established in 1970 by Late Shri Vishnu Bhagwan Aggarwal and Late Shri Arvind Kumar Aggarwal. 
-            Late Shri Vishnu Bhagwan Aggarwal was a renowned senior advocate in the Punjab and Haryana High Court, with a distinguished career spanning over 50 years. 
-            Late Shri Arvind Aggarwal was a senior advocate who practiced in Kurukshetra for more than 30 years. 
-            A true expert in his field, he was a guiding light in our legal journey and a milestone in our careers.
-            </p>
-            <p className="text-black text-lg mb-4">
-              Established with a vision to deliver trustworthy and client-focused legal services, our firm has stayed true to its founding principles for over five decades.
-            </p>
-            <p className="text-black text-lg mb-4 font-normal">
-              With a legacy of serving more than 3,000 clients, we have handled a wide range of legal matters with professionalism, empathy, and integrity.
-            </p>
-            <p className="text-black text-lg mb-6 font-extralight">
-              Today, Aggarwal Legal Firm is led by two dedicated professionals — Adv. Himanshu Aggarwal, bringing 15 years of legal expertise, and Adv. Shashank Aggarwal, with 7 years of experience. 
-              Together, they carry forward a rich tradition of legal excellence and ethical practice.
-            </p>
 
-            <div className="space-y-3">
-              {["Experienced team of specialized attorneys", "Personalized approach to each case", "Proven track record of successful outcomes", "Commitment to ethical legal practices"].map((text, i) => (
-                <div key={i} className="flex items-start">
-                  <Check className="h-5 w-5 text-black mt-1 mr-2" />
-                  <span className="text-black text-lg font-light">{text}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-          <div className="relative">
-            <img src="https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Law firm office" className="rounded-lg shadow-lg h-[700px] w-full" />
-            <div className="absolute -bottom-8 -right-8 bg-gray-100 p-6 rounded-lg shadow-lg">
-              <p className="text-deepRoyal font-serif text-2xl font-bold">55+</p>
-              <p className="text-deepRoyal">Years of Excellence</p>
-            </div>
-          </div>
-        </div>
-      </motion.section>
+     <motion.section
+  className="py-16 bg-white p-10"
+  initial="hidden"
+  whileInView="visible"
+  exit="exit"
+  viewport={{ once: false, amount: 0.2 }}
+  variants={fadeInUp}
+  transition={{ duration: 0.8 }}
+>
+  <div className="container mx-auto max-w-6xl px-2">
+    <h2 className="text-5xl font-work font-bold text-deepRoyal mb-8 text-center">Our Story</h2>
+    {/* Paragraph 1: Legacy */}
+    <p className="text-black text-lg mb-6 leading-relaxed text-justify">
+      Aggarwal Legal Firm was established in 1970 by Late Shri Vishnu Bhagwan Aggarwal and Late Shri Arvind Kumar Aggarwal.
+      Late Shri Vishnu Bhagwan Aggarwal was a renowned senior advocate in the Punjab and Haryana High Court, with a distinguished legal career spanning over 50 years. His expertise, integrity, and commitment to justice earned him great respect in the legal community.
+      Late Shri Arvind Aggarwal was a senior advocate who practiced in Kurukshetra for more than 30 years. A true expert in his field, he was a guiding light in our legal journey—a mentor, a leader, and a cornerstone of our firm’s legacy.
+      Founded on the principles of honesty, dedication, and excellence, our firm has continued to uphold these values for over five decades. With a clear vision to provide trustworthy and client-focused legal services, we remain committed to delivering outstanding results for every client we serve.
+    </p>
+    {/* Paragraph 2: Modern Firm */}
+    <p className="text-black text-lg mb-6 leading-relaxed text-justify">
+      Today, Aggarwal Legal Firm continues this legacy under the leadership of Adv. Himanshu Aggarwal and Adv. Shashank Aggarwal. With 15 and 7 years of experience respectively, they bring not only deep legal expertise but also a modern vision for the future of law.
+      We are young, technology-driven advocates who believe in combining traditional legal wisdom with modern tools. Our firm actively embraces artificial intelligence, legal tech platforms, and digital strategies to offer clients faster, smarter, and more efficient legal solutions.<br />
+      With over 3,000 satisfied clients, our approach is built on:
+    </p>
+    <ul className="list-disc ml-8 text-black text-lg mb-6">
+      <li>Expertise in specialized legal areas</li>
+      <li>Personalized strategy for each case</li>
+      <li>Proven track record of success</li>
+      <li>Integrity, empathy, and client-first values</li>
+      <li>A strong focus on innovation through AI and legal technology</li>
+    </ul>
+    <p className="text-black text-lg leading-relaxed text-justify">
+      Whether it’s matrimonial disputes, cybercrime, real estate, or criminal matters, we are equipped to help you navigate legal challenges with modern precision and traditional trust.
+    </p>
+    {/* 
+    <div className="relative">
+      <img src="https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Law firm office" className="rounded-lg shadow-lg h-[700px] w-full" />
+      <div className="absolute -bottom-8 -right-8 bg-gray-100 p-6 rounded-lg shadow-lg">
+        <p className="text-deepRoyal font-serif text-2xl font-bold">55+</p>
+        <p className="text-deepRoyal">Years of Excellence</p>
+      </div>
+    </div>
+    */}
+  </div>
+</motion.section>
+
 
       <motion.section
         className="py-16 bg-gray-50"
