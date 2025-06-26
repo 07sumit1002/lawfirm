@@ -18,13 +18,13 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a href="https://www.youtube.com/@KanoonKiSALAH" className="text-white hover:text-blue-500 transition-colors">
-                <Youtube size={20} />
+                <Youtube size={32} />
               </a>
               <a href="https://instagram.com/kanoon_ki_salah?igshid=YmMyMTA2M2Y=" className="text-white hover:text-blue-500 transition-colors">
-                <Instagram size={20} />
+                <Instagram size={28} />
               </a>
               <a href="https://www.linkedin.com/in/himanshu-a-aggarwal-%F0%9F%87%AE%F0%9F%87%B3-51157099?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" className="text-white hover:text-blue-500 transition-colors">
-                <Linkedin size={20} />
+                <Linkedin size={28} />
               </a>
             </div>
           </div>

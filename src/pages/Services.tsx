@@ -649,7 +649,9 @@ const Services = () => {
                           alt={service.title}
                            className={
                             "w-full h-full object-cover" +
-                            (service.slug === "civil-litigation" ? " object-[65%_65%]" : "")
+                            (service.slug === "civil-litigation" ? " object-[65%_65%]" : "") +    
+                           (service.slug === "nri-litigation" ? " object-[80%_80%]" : "")
+
                           }
                         />
                       </div>
