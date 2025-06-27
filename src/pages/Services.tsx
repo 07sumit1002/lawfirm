@@ -471,10 +471,10 @@ const servicesData = [
   "id": 12,
   "slug": "runaway-couples",
   "icon": "<Heart className=\"h-12 w-12 text-deepRoyal\" />",
-  "title": "Runaway Couples Law",
+  "title": "Court Marriage and Protection Law",
   "description": "Legal protection and assistance for couples who marry by choice, facing family or societal opposition.",
   "details": "Our Runaway Couples Legal Support service provides immediate legal aid to consenting adults seeking protection after marrying without family approval. We assist with protection petitions, marriage registration, safe housing, and High Court filings to ensure your safety and dignity under Indian law.",
-  "image": "https://images.pexels.com/photos/6532346/pexels-photo-6532346.jpeg?auto=compress&cs=tinysrgb&w=600",
+  "image": "/images/court.jpg",
   "features": [
     "Police & High Court Protection",
     "Special Marriage Act Guidance",

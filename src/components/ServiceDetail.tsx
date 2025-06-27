@@ -134,7 +134,7 @@ const servicesData=[
     "title": "NRI Cases",
     "description": "Supporting NRIs with property, family, and cross-border legal disputes.",
     "details": "Our NRI Cases practice assists Non-Resident Indians with legal matters such as property disputes, matrimonial issues, inheritance, and cross-border litigation. We offer remote representation through power of attorney, coordinate across jurisdictions, and ensure seamless legal support to protect your interests in India while you’re abroad.",
-    "image": "/images/nri.jpg",
+    "image": "https://pplx-res.cloudinary.com/image/upload/v1751003029/gpt4o_images/d8jtw0rzbvzygrnikhgs.png",
     "features": [
       "Property Disputes & Management",
       "Matrimonial & Family Law",
@@ -467,10 +467,10 @@ const servicesData=[
   {
   "id": 12,
   "slug": "runaway-couples",
-  "title": "Legal Aid for Runaway Couples",
+  "title": "Court Marriage and Protection Law",
   "description": "Protecting the rights of consenting adults who choose to marry without family approval.",
   "details": "Our legal services for runaway couples focus on protecting their constitutional rights, ensuring their safety, and validating their marriage under Indian law. We assist couples facing threats, coercion, or opposition from families or communities. Our team helps with drafting protection petitions, facilitating marriage registration, securing police protection, and ensuring safe accommodation if needed.",
-  "image": "https://images.pexels.com/photos/6532346/pexels-photo-6532346.jpeg?auto=compress&cs=tinysrgb&w=600",
+  "image": "/images/court.jpg",
   "features": [
     "Police Protection Petitions",
     "Marriage Registration Assistance",
@@ -580,7 +580,21 @@ const ServiceDetail: React.FC = () => {
         <img
           src={service.image}
           alt={service.title}
-          className="absolute inset-0 w-full h-full object-cover brightness-75"
+          className={`absolute inset-0 w-full h-full brightness-75 transition-transform duration-500  ${
+            slug === "matrimonial-cases"
+              ? "object-[80%_80%]"
+              : service.slug === "nri-litigation"
+              ? "object-left object-top "
+              : service.slug === "cyber-crime"
+              ? "object-[40%_10%]"
+              : service.slug === "medical-negligence"
+              ? "object-[80%_80%]"
+              : service.slug === "insurance-claims"
+              ? "object-[20%_20%]"
+              : service.slug === "civil-litigation"
+              ? "object-[20%_20%]"
+              : "object-cover"
+          }`}
         />
         <div className="absolute inset-0 flex items-center justify-center">
           <h1 className="text-white text-5xl font-bold text-center">{service.title}</h1>
