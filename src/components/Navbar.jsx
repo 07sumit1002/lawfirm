@@ -29,7 +29,7 @@ function Navbar({ scrolled }) {
   <img
     src="/images/ALF LOGO.png"
     alt="Logo"
-    className={`w-20 h-20 object-contain transition-all duration-300 ${
+    className={`w-20 h-18 object-contain transition-all duration-300 ${
       scrolled ? '' : ''
     }`}
   />
