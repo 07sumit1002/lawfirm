@@ -593,6 +593,8 @@ const ServiceDetail: React.FC = () => {
               ? "object-[20%_20%]"
               : service.slug === "civil-litigation"
               ? "object-[20%_20%]"
+              : service.slug === "consumer-cases"
+              ? "object-top"
               : "object-cover"
           }`}
         />
