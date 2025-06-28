@@ -9,9 +9,13 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center mb-4">
-              <Scale className="h-8 w-8 text-blue-100 mr-2" />
-              <span className="text-xl font-serif font-bold text-white">Aggarwal Legal Firm</span>
-            </div>
+  <img
+    src="/images/logo.jpg"
+    alt="Logo"
+    className="w-10 h-10 object-contain mr-3 "
+  />
+  <span className="text-xl font-serif font-bold text-white">Aggarwal Legal Firm</span>
+</div>
             <p className="text-white font-light mb-4 text-justify">
               Committed to providing exceptional legal services with integrity and dedication.
               We strive to achieve the best possible outcomes for our clients.

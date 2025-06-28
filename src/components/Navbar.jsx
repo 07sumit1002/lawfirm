@@ -25,14 +25,26 @@ function Navbar({ scrolled }) {
       >
         <div className="container mx-auto px-4 flex justify-between items-center">
           {/* Logo */}
-          <a href="/" className="flex items-center">
-            <h1
-              className={`text-[20px] ${scrolled ? 'text-deepRoyal' : 'text-white'} mr-2`}
-              style={{ fontWeight: '700' }}
-            >
-              ALF
-            </h1>
-          </a>
+<a href="/" className="flex items-center gap-2">
+ <img
+  src={scrolled ? "/images/logo.png" : "/images/logo.jpg"}
+  alt="Logo"
+  className={`w-12 h-12 object-contain transition-all duration-300 ${
+    scrolled ? '' : 'mix-blend-multiply'
+  }`}
+/>
+
+
+
+  <h1
+    className={`text-[20px] ${scrolled ? 'text-deepRoyal' : 'text-white'}`}
+    style={{ fontWeight: '700' }}
+  >
+    ALF
+  </h1>
+</a>
+
+
 
           {/* Desktop nav */}
           <nav className="hidden md:flex space-x-8 items-center">
