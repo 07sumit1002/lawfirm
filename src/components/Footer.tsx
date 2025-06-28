@@ -10,9 +10,9 @@ const Footer = () => {
           <div>
             <div className="flex items-center mb-4">
   <img
-    src="/images/logo.jpg"
+    src="/images/ALF LOGO.png"
     alt="Logo"
-    className="w-10 h-10 object-contain mr-3 "
+    className="w-16 h-22 object-contain mr-3 "
   />
   <span className="text-xl font-serif font-bold text-white">Aggarwal Legal Firm</span>
 </div>

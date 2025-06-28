@@ -26,23 +26,23 @@ function Navbar({ scrolled }) {
         <div className="container mx-auto px-4 flex justify-between items-center">
           {/* Logo */}
 <a href="/" className="flex items-center gap-2">
- <img
-  src={scrolled ? "/images/logo.png" : "/images/logo.jpg"}
-  alt="Logo"
-  className={`w-12 h-12 object-contain transition-all duration-300 ${
-    scrolled ? '' : 'mix-blend-multiply'
-  }`}
-/>
-
-
-
+  <img
+    src="/images/ALF LOGO.png"
+    alt="Logo"
+    className={`w-20 h-20 object-contain transition-all duration-300 ${
+      scrolled ? '' : ''
+    }`}
+  />
   <h1
-    className={`text-[20px] ${scrolled ? 'text-deepRoyal' : 'text-white'}`}
+    className={`text-[22px] tracking-wide transition-colors duration-300 ${
+      scrolled ? 'text-deepRoyal' : 'text-white'
+    }`}
     style={{ fontWeight: '700' }}
   >
     ALF
   </h1>
 </a>
+
 
 
 
