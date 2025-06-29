@@ -6,18 +6,20 @@ import { IoLogoWhatsapp } from 'react-icons/io5';
 function Navbar({ scrolled }) {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
-const decodedPath = decodeURIComponent(location.pathname.toLowerCase());
+  const decodedPath = decodeURIComponent(location.pathname.toLowerCase());
 
-const showWhiteBgLogo =
-  decodedPath === "/" ||
-  decodedPath.startsWith("/practise areas") ||
-  decodedPath.startsWith("/legal learning") ||
-  decodedPath.startsWith("/blog");
+  // --- LOGO SWITCHING LOGIC ---
+  const isSpecialRoute =
+    decodedPath === "/" ||
+    decodedPath.startsWith("/practise areas") ||
+    decodedPath.startsWith("/legal learning") ||
+    decodedPath.startsWith("/blog");
 
-const logoSrc = showWhiteBgLogo
-  ? "/images/ALF LOGO.png"
-  : "/images/ALF LOGO trans.png";
-
+  const logoSrc = scrolled
+    ? "/images/ALF LOGO blue.svg"
+    : isSpecialRoute
+      ? "/images/ALF LOGO new.svg"
+      : "/images/ALF LOGO blue.svg";
 
   const navItems = ['Home', 'About', 'Practise Areas', 'Legal Learning', 'Blog', 'Contact'];
 

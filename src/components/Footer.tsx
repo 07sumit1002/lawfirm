@@ -5,16 +5,15 @@ import { Scale, Phone, Mail, MapPin, Clock, Youtube, Instagram, Linkedin } from 
 const Footer = () => {
   return (
     <footer className="bg-deepRoyal text-white m-0">
-      <div className="container mx-auto px-4 pt-16 pb-8">
+      <div className="container mx-auto px-4 pt-6 pb-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
-            <div className="flex items-center mb-4">
+            <div className="flex items-center justify-start ">
   <img
-    src="/images/ALF LOGO.png"
+    src="/images/ALF LOGO new.svg"
     alt="Logo"
-    className="w-16 h-22 object-contain mr-3 "
+    className="w-50 h-28 object-contain ml-6 "
   />
-  <span className="text-xl font-serif font-bold text-white">Aggarwal Legal Firm</span>
 </div>
             <p className="text-white font-light mb-4 text-justify">
               Committed to providing exceptional legal services with integrity and dedication.
