@@ -41,7 +41,7 @@ const logoSrc = showWhiteBgLogo
             <img
               src={logoSrc}
               alt="Logo"
-              className="w-36 h-16 object-contain transition-all duration-300"
+              className="w-28 h-12 md:w-36 md:h-16 object-contain transition-all duration-300"
             />
           </a>
 
