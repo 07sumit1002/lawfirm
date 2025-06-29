@@ -24,18 +24,27 @@ const CallToAction = () => (
             you don't have to navigate them alone!
           </p>
 
-          <div className="h-72 overflow-hidden rounded-lg shadow-lg">
-            <iframe
-              className="w-full h-full border-0"
-              loading="lazy"
-              allowFullScreen
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Aggarwal Legal Firm Location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.838448648001!2d76.8679528!3d29.9690056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjnCsDU4JzA4LjQiTiA3NsKwNTInMDQuNiJF!5e0!3m2!1sen!2sin!4v1717146351234!5m2!1sen!2sin"
-            />
-          </div>
-        </div>
-
+<div className="relative h-72 overflow-hidden rounded-lg shadow-lg mb-4">
+  <iframe
+    className="w-full h-full border-0"
+    loading="lazy"
+    allowFullScreen
+    referrerPolicy="no-referrer-when-downgrade"
+    title="Aggarwal Legal Firm Location"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.838448648001!2d76.8679528!3d29.9690056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjnCsDU4JzA4LjQiTiA3NsKwNTInMDQuNiJF!5e0!3m2!1sen!2sin!4v1717146351234!5m2!1sen!2sin"
+  />
+  <a
+    href="https://maps.google.com/?q=29.9690056,76.8679528"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="absolute top-3 right-3 z-20 bg-white/90 hover:bg-blue-100 text-blue-900 font-semibold px-3 py-1 rounded shadow transition text-sm"
+    title="Open in Google Maps"
+    style={{ textDecoration: 'none' }}
+  >
+    Open in Google Maps
+  </a>
+</div>
+</div>
         {/* ────────────────────── Right column (CTA card) ────────────────────── */}
         <div className="flex-1 flex flex-col items-center md:items-start">
           <div className="w-full rounded-2xl p-8 shadow-lg bg-white flex flex-col items-center md:items-start">
