@@ -14,7 +14,7 @@ const fadeInUp = {
 const teamMembers = [
   {
     name: 'Adv Himanshu Aggarwal',
-    position: 'Legal Aid Counsel',
+    position: 'Former Joint Secretary of Bar Association of Kurukshetra',
     image: Himansh,
     specialization: 'Cyber Crime, Data Protection, Criminal Cases, NRI Matrimonial & Other Matters',
     experience: '15 years of experience'
@@ -46,7 +46,7 @@ const About = () => {
 
   {/* Background Image */}
   <div
-    className="absolute inset-0 z-0 bg-cover bg-center opacity-100"
+    className="absolute inset-0 z-0 bg-cover bg-center opacity-80"
     style={{
       backgroundImage:
         "url('https://images.pexels.com/photos/7875996/pexels-photo-7875996.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')",
