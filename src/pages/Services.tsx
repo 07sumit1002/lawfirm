@@ -582,25 +582,32 @@ const Services = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="pt-32 pb-16 bg-deepRoyal relative">
-        <div
-          className="absolute inset-0 bg-cover bg-center opacity-20"
-          style={{
-            backgroundImage:
-              "url('https://images.pexels.com/photos/5668481/pexels-photo-5668481.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')",
-          }}
-        ></div>
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-3xl flex flex-col text-center items-center justify-center mx-auto">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              Our Practice Areas
-            </h1>
-            <p className="text-xl text-white">
-              Comprehensive legal services tailored to meet your specific needs.
-            </p>
-          </div>
-        </div>
-      </section>
+<section className="pt-32 pb-16 relative">
+  {/* Background image (z-0) */}
+  <div
+    className="absolute inset-0 bg-cover bg-[70%_center] bg-no-repeat z-0"
+    style={{
+      backgroundImage:
+        "url('https://images.pexels.com/photos/5668473/pexels-photo-5668473.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=2')",
+    }}
+  ></div>
+
+  {/* Dark overlay on top of background */}
+  <div className="absolute inset-0 bg-black/60 z-10"></div>
+
+  {/* Content (above overlay) */}
+  <div className="container mx-auto px-4 relative z-20">
+    <div className="max-w-3xl flex flex-col text-center items-center justify-center mx-auto">
+      <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+        Our Practice Areas
+      </h1>
+      <p className="text-xl text-white">
+        Comprehensive legal services tailored to meet your specific needs.
+      </p>
+    </div>
+  </div>
+</section>
+
 
       {/* Services Grid Section */}
       <section className="py-16 bg-white">

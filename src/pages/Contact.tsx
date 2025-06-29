@@ -63,25 +63,39 @@ const Contact = () => {
 
   return (
     <div>
-      <section className="pt-32 pb-16 bg-navy-900 relative">
-        <div className="absolute inset-0 bg-cover bg-center opacity-20" 
-          style={{ backgroundImage: "url('https://images.pexels.com/photos/5668859/pexels-photo-5668859.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')" }}>
-        </div>
-        <div className="container mx-auto px-4 relative z-10">
-          <motion.div
-            variants={fadeInUp}
-            initial="hidden"
-            whileInView="visible"
-            exit="hidden"
-            transition={{ duration: 0.6 }}
-            viewport={{ once: false, amount: 0.3 }}
-            className="max-w-3xl flex flex-col justify-center items-center mx-auto"
-          >
-            <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">Contact Us</h1>
-            <p className="text-xl text-gray-300">Get in touch with our team of legal experts today.</p>
-          </motion.div>
-        </div>
-      </section>
+<section className="pt-32 pb-16 relative">
+  {/* Gradient Overlay */}
+  <div className="absolute inset-0 z-0 bg-gradient-to-b from-[#0F172A]/90 to-[#0F172A]/60"></div>
+
+  {/* Background image */}
+  <div
+    className="absolute inset-0 z-0 bg-cover bg-center opacity-100"
+    style={{
+      backgroundImage:
+        "url('https://images.pexels.com/photos/5668859/pexels-photo-5668859.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')",
+    }}
+  ></div>
+
+  {/* Content */}
+  <div className="container mx-auto px-4 relative z-10">
+    <motion.div
+      variants={fadeInUp}
+      initial="hidden"
+      whileInView="visible"
+      exit="hidden"
+      transition={{ duration: 0.6 }}
+      viewport={{ once: false, amount: 0.3 }}
+      className="max-w-3xl flex flex-col justify-center items-center mx-auto"
+    >
+      <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">Contact Us</h1>
+      <p className="text-xl text-gray-300">
+        Get in touch with our team of legal experts today.
+      </p>
+    </motion.div>
+  </div>
+</section>
+
+
 
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">

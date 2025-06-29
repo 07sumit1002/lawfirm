@@ -27,20 +27,12 @@ function Navbar({ scrolled }) {
           {/* Logo */}
 <a href="/" className="flex items-center gap-2">
   <img
-    src="/images/ALF LOGO.png"
+    src="/images/ALF LOGO trans.png"
     alt="Logo"
-    className={`w-20 h-18 object-contain transition-all duration-300 ${
+    className={`w-36 h-16 object-contain transition-all duration-300 ${
       scrolled ? '' : ''
     }`}
   />
-  <h1
-    className={`text-[22px] tracking-wide transition-colors duration-300 ${
-      scrolled ? 'text-deepRoyal' : 'text-white'
-    }`}
-    style={{ fontWeight: '700' }}
-  >
-    ALF
-  </h1>
 </a>
 
 

@@ -34,9 +34,6 @@ const About = () => {
     <div>
 <motion.section
   className="relative w-full h-[350px] md:h-[400px] flex items-center justify-center bg-cover bg-center bg-no-repeat"
-  style={{
-    backgroundImage: "url('https://images.pexels.com/photos/7875996/pexels-photo-7875996.jpeg')"
-  }}
   initial="hidden"
   whileInView="visible"
   exit="exit"
@@ -44,12 +41,26 @@ const About = () => {
   variants={fadeInUp}
   transition={{ duration: 0.8 }}
 >
-  {/* Overlay for readability */}
-  <div className="absolute inset-0 bg-black/60"></div>
+  {/* Gradient Overlay */}
+  <div className="absolute inset-0 z-0 bg-gradient-to-b from-[#0F172A]/90 to-[#0F172A]/60"></div>
+
+  {/* Background Image */}
+  <div
+    className="absolute inset-0 z-0 bg-cover bg-center opacity-100"
+    style={{
+      backgroundImage:
+        "url('https://images.pexels.com/photos/7875996/pexels-photo-7875996.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')",
+    }}
+  ></div>
+
   {/* Content */}
-  <div className="relative z-10 w-full flex flex-col items-center justify-center text-center">
-    <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">Aggarwal Legal Firm</h1>
-    <p className="text-xl text-gray-100">A premier legal firm with a commitment to excellence and client satisfaction.</p>
+  <div className="relative z-10 w-full flex flex-col items-center justify-center text-center px-4">
+    <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">
+      Aggarwal Legal Firm
+    </h1>
+    <p className="text-xl text-gray-300">
+      A premier legal firm with a commitment to excellence and client satisfaction.
+    </p>
   </div>
 </motion.section>
 
