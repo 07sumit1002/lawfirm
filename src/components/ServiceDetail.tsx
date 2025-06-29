@@ -383,7 +383,7 @@ const servicesData=[
   {
     "id": 10,
     "slug": "drafting",
-    "title": "Drafting",
+    "title": "Contract Drafting",
     "description": "Crafting precise legal documents, contracts, and agreements for your needs.",
     "details": "Our Drafting practice creates clear, enforceable legal documents, including contracts, wills, trusts, business agreements, and compliance documents. We ensure precision and compliance with applicable laws, minimizing risks and protecting your interests. Our attorneys work closely with you to tailor documents to your specific needs, offering ongoing support for revisions or execution.",
     "image": "/images/drafting.jpg",
@@ -467,7 +467,7 @@ const servicesData=[
   {
   "id": 12,
   "slug": "runaway-couples",
-  "title": "Court Marriage and Protection Law",
+  "title": "Court Marriage and Protection Cases",
   "description": "Protecting the rights of consenting adults who choose to marry without family approval.",
   "details": "Our legal services for runaway couples focus on protecting their constitutional rights, ensuring their safety, and validating their marriage under Indian law. We assist couples facing threats, coercion, or opposition from families or communities. Our team helps with drafting protection petitions, facilitating marriage registration, securing police protection, and ensuring safe accommodation if needed.",
   "image": "/images/court.jpg",
@@ -505,7 +505,49 @@ const servicesData=[
     "Section 97 CrPC – Recovery of wrongfully confined person",
     "Protection of Women from Domestic Violence Act, 2005"
   ]
+},{
+  "id": 13,
+  "slug": "cheque-bounce-cases",
+  "icon": "<CreditCard className=\"h-12 w-12 text-deepRoyal\" />",
+  "title": "Cheque Bounce Cases",
+  "description": "Legal remedies and representation for dishonoured cheques under Section 138 of the Negotiable Instruments Act.",
+  "details": "Our Cheque Bounce Cases practice assists clients in pursuing or defending cases related to dishonoured cheques. We guide you through the legal process under Section 138 of the Negotiable Instruments Act, from issuing legal notices to court representation. Our team ensures strict compliance with statutory timelines and documentation to maximize your chances of recovery or defence.",
+  "image": "/images/cheque-bounce.jpg",
+  "features": [
+    "Section 138 Legal Proceedings",
+    "Drafting & Sending Legal Notices",
+    "Court Representation for Complainants & Accused",
+    "Document Verification & Evidence Preparation",
+    "Settlement Negotiations & Mediation",
+    "Appeals in Higher Courts"
+  ],
+  "faqs": [
+    {
+      "question": "What is a cheque bounce case?",
+      "answer": "A cheque bounce case arises when a cheque is dishonoured by the bank, usually due to insufficient funds or account closure, and the payee seeks legal remedy under Section 138 of the Negotiable Instruments Act."
+    },
+    {
+      "question": "What is the procedure to file a cheque bounce case?",
+      "answer": "The payee must first issue a legal notice within 30 days of receiving the cheque return memo. If the drawer fails to pay within 15 days of receiving the notice, a criminal complaint can be filed in court within 30 days after the grace period expires."
+    }
+  ],
+  "process": [
+    "Cheque Dishonour & Receipt of Bank Return Memo",
+    "Issuance of Legal Demand Notice within 30 days",
+    "15-day Waiting Period for Drawer to Pay",
+    "Filing Complaint in Court within 30 days after expiry of grace period",
+    "Court Proceedings: Scrutiny, Summons, and Trial",
+    "Judgment, Penalty, or Settlement"
+  ],
+  "cta": "Facing a cheque bounce issue? Contact our legal experts for swift and effective remedies under Section 138.",
+  "ipc_sections": [
+    "Section 138 – Dishonour of cheque for insufficiency of funds",
+    "Section 142 – Cognizance of offences",
+    "Section 143 – Power of court to try cases summarily",
+    "Section 139 – Presumption in favour of holder"
+  ]
 }
+
 
   // {
   //   "id": 13,
