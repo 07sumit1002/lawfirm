@@ -1,23 +1,35 @@
-import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { NavLink, useLocation } from 'react-router-dom';
 import { Menu, X, Phone } from 'lucide-react';
 import { IoLogoWhatsapp } from 'react-icons/io5';
 
 function Navbar({ scrolled }) {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
+const decodedPath = decodeURIComponent(location.pathname.toLowerCase());
+
+const showWhiteBgLogo =
+  decodedPath === "/" ||
+  decodedPath.startsWith("/practise areas") ||
+  decodedPath.startsWith("/legal learning") ||
+  decodedPath.startsWith("/blog");
+
+const logoSrc = showWhiteBgLogo
+  ? "/images/ALF LOGO.png"
+  : "/images/ALF LOGO trans.png";
+
+
   const navItems = ['Home', 'About', 'Practise Areas', 'Legal Learning', 'Blog', 'Contact'];
 
   return (
     <>
-      {/* ───────────────────────────── Overlay ───────────────────────────── */}
       {isOpen && (
         <div
-          className="fixed inset-0 z-40 bg-black/0"   // transparent blocker behind header
+          className="fixed inset-0 z-40 bg-black/0"
           onClick={() => setIsOpen(false)}
         />
       )}
 
-      {/* ───────────────────────────── Header ───────────────────────────── */}
       <header
         className={`fixed w-full z-50 top-0 transition-all duration-300 font-mont ${
           scrolled ? 'bg-white shadow-lg py-2' : 'bg-transparent py-4'
@@ -25,18 +37,13 @@ function Navbar({ scrolled }) {
       >
         <div className="container mx-auto px-4 flex justify-between items-center">
           {/* Logo */}
-<a href="/" className="flex items-center gap-2">
-  <img
-    src="/images/ALF LOGO trans.png"
-    alt="Logo"
-    className={`w-36 h-16 object-contain transition-all duration-300 ${
-      scrolled ? '' : ''
-    }`}
-  />
-</a>
-
-
-
+          <a href="/" className="flex items-center gap-2">
+            <img
+              src={logoSrc}
+              alt="Logo"
+              className="w-36 h-16 object-contain transition-all duration-300"
+            />
+          </a>
 
           {/* Desktop nav */}
           <nav className="hidden md:flex space-x-8 items-center">
@@ -116,7 +123,7 @@ function Navbar({ scrolled }) {
         </div>
       </header>
 
-      {/* Floating WhatsApp */}
+      {/* WhatsApp Button */}
       <a
         href="https://wa.me/+919729079252"
         target="_blank"
