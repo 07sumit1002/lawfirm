@@ -62,11 +62,11 @@ const Footer = () => {
             <h3 className="text-lg font-serif font-semibold mb-4 border-b border-blue-500 pb-2 text-white">Practice Areas</h3>
             <ul className="space-y-2">
               <li><Link to="/practise areas/matrimonial-cases" className="text-blue-200 hover:text-blue-500 transition-colors">Matrimonial Cases</Link></li>
-              <li><Link to="/practise areas/criminal-cases" className="text-blue-200 hover:text-blue-500 transition-colors">Criminal Defense</Link></li>
-              <li><Link to="/practise areas/nri-litigation" className="text-blue-200 hover:text-blue-500 transition-colors">NRI Litigation</Link></li>
-              <li><Link to="/practise areas/insurance-claims" className="text-blue-200 hover:text-blue-500 transition-colors">Insurance Law</Link></li>
-              <li><Link to="/practise areas/civil-litigation" className="text-blue-200 hover:text-blue-500 transition-colors">Civil Litigation</Link></li>
+              <li><Link to="/practise areas/cyber-crime" className="text-blue-200 hover:text-blue-500 transition-colors">Cyber Crime</Link></li>
               <li><Link to="/practise areas/medical-negligence" className="text-blue-200 hover:text-blue-500 transition-colors">Medical Negligence</Link></li>
+              <li><Link to="/practise areas/nri-litigation" className="text-blue-200 hover:text-blue-500 transition-colors">NRI Litigation</Link></li>
+              <li><Link to="/practise areas/civil-litigation" className="text-blue-200 hover:text-blue-500 transition-colors">Civil Litigation</Link></li>
+              <li><Link to="/practise areas/criminal-cases" className="text-blue-200 hover:text-blue-500 transition-colors">Criminal Cases</Link></li>
             </ul>
 
           </div>
