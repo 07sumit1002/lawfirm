@@ -31,10 +31,10 @@ const CallToAction = () => (
     allowFullScreen
     referrerPolicy="no-referrer-when-downgrade"
     title="Aggarwal Legal Firm Location"
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.838448648001!2d76.8679528!3d29.9690056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjnCsDU4JzA4LjQiTiA3NsKwNTInMDQuNiJF!5e0!3m2!1sen!2sin!4v1717146351234!5m2!1sen!2sin"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.3622292630757!2d76.86779059999999!3d29.9690183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390e473de8c4d90b%3A0x363b2d45f0e8a98c!2z8J2XlPCdl7HwnZiDLiDwnZeb8J2XtvCdl7rwnZeu8J2Xu_CdmIDwnZe18J2YgiDwnZeU8J2XtPCdl7TwnZeu8J2Xv_CdmITwnZeu8J2XuS1NYXRyaW1vbmlhbCBDYXNlcy9DaXZpbCBsYXd5ZXIvQ3JpbWluYWwgTGF3eWVyL0Jlc3QgQWR2b2NhdGUgaW4gS3VydWtzaGV0cmE!5e0!3m2!1sen!2sin!4v1751317372437!5m2!1sen!2sin"
   />
   <a
-    href="https://maps.google.com/?q=29.9690056,76.8679528"
+    href="https://www.google.com/maps/place/%F0%9D%97%94%F0%9D%97%B1%F0%9D%98%83.+%F0%9D%97%9B%F0%9D%97%B6%F0%9D%97%BA%F0%9D%97%AE%F0%9D%97%BB%F0%9D%98%80%F0%9D%97%B5%F0%9D%98%82+%F0%9D%97%94%F0%9D%97%B4%F0%9D%97%B4%F0%9D%97%AE%F0%9D%97%BF%F0%9D%98%84%F0%9D%97%AE%F0%9D%97%B9-Matrimonial+Cases%2FCivil+lawyer%2FCriminal+Lawyer%2FBest+Advocate+in+Kurukshetra/@29.9690229,76.8629197,17z/data=!3m1!4b1!4m6!3m5!1s0x390e473de8c4d90b:0x363b2d45f0e8a98c!8m2!3d29.9690183!4d76.8677906!16s%2Fg%2F11twj6y71m?entry=ttu&g_ep=EgoyMDI1MDYyNi4wIKXMDSoASAFQAw%3D%3D"
     target="_blank"
     rel="noopener noreferrer"
     className="absolute top-3 right-3 z-20 bg-white/90 hover:bg-blue-100 text-blue-900 font-semibold px-3 py-1 rounded shadow transition text-sm"
