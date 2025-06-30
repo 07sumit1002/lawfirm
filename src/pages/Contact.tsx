@@ -331,10 +331,9 @@ const Contact = () => {
             allowFullScreen
             referrerPolicy="no-referrer-when-downgrade"
             title="Aggarwal Legal Firm Location"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.838448648001!2d76.8679528!3d29.9690056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjnCsDU4JzA4LjQiTiA3NsKwNTInMDQuNiJF!5e0!3m2!1sen!2sin!4v1717146351234!5m2!1sen!2sin"
-          />
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.3622292630757!2d76.86779059999999!3d29.9690183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390e473de8c4d90b%3A0x363b2d45f0e8a98c!2z8J2XlPCdl7HwnZiDLiDwnZeb8J2XtvCdl7rwnZeu8J2Xu_CdmIDwnZe18J2YgiDwnZeU8J2XtPCdl7TwnZeu8J2Xv_CdmITwnZeu8J2XuS1NYXRyaW1vbmlhbCBDYXNlcy9DaXZpbCBsYXd5ZXIvQ3JpbWluYWwgTGF3eWVyL0Jlc3QgQWR2b2NhdGUgaW4gS3VydWtzaGV0cmE!5e0!3m2!1sen!2sin!4v1751317372437!5m2!1sen!2sin"/>
           <a
-            href="https://maps.google.com/?q=29.9690056,76.8679528"
+            href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.3622292630757!2d76.86779059999999!3d29.9690183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390e473de8c4d90b%3A0x363b2d45f0e8a98c!2z8J2XlPCdl7HwnZiDLiDwnZeb8J2XtvCdl7rwnZeu8J2Xu_CdmIDwnZe18J2YgiDwnZeU8J2XtPCdl7TwnZeu8J2Xv_CdmITwnZeu8J2XuS1NYXRyaW1vbmlhbCBDYXNlcy9DaXZpbCBsYXd5ZXIvQ3JpbWluYWwgTGF3eWVyL0Jlc3QgQWR2b2NhdGUgaW4gS3VydWtzaGV0cmE!5e0!3m2!1sen!2sin!4v1751317372437!5m2!1sen!2sin"
             target="_blank"
             rel="noopener noreferrer"
             className="absolute top-3 right-3 z-20 bg-white/90 hover:bg-blue-100 text-blue-900 font-semibold px-3 py-1 rounded shadow transition text-sm"
