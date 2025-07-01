@@ -24,7 +24,7 @@ const teamMembers = [
     position: 'Punjab National Panel Lawyer',
     image: Shahsnk,
     specialization: 'Matrimonial Cases, Cyber Crime, Data Protection, Civil Cases, Criminal Cases',
-    experience: '7 years of experience'
+    experience: '8 years of experience'
   }
 
 ];
