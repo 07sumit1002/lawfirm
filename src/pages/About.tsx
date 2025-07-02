@@ -85,7 +85,7 @@ const About = () => {
     </p>
     {/* Paragraph 2: Modern Firm */}
     <p className="text-black text-lg mb-6 leading-relaxed text-justify">
-      Today, Aggarwal Legal Firm continues this legacy under the leadership of Adv. Himanshu Aggarwal and Adv. Shashank Aggarwal. With 15 and 7 years of experience respectively, they bring not only deep legal expertise but also a modern vision for the future of law.
+      Today, Aggarwal Legal Firm continues this legacy under the leadership of Adv. Himanshu Aggarwal and Adv. Shashank Aggarwal. With 15 and 8 years of experience respectively, they bring not only deep legal expertise but also a modern vision for the future of law.
       We are young, technology-driven advocates who believe in combining traditional legal wisdom with modern tools. Our firm actively embraces artificial intelligence, legal tech platforms, and digital strategies to offer clients faster, smarter, and more efficient legal solutions.<br />
       With over 3,000 satisfied clients, our approach is built on:
     </p>
