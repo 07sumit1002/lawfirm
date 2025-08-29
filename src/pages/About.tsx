@@ -3,7 +3,7 @@ import { Check, Award, Users } from "lucide-react";
 import CallToAction from '../components/CallToAction';
 import { Link } from "react-router-dom";
 import Shahsnk from '../../public/assets/shashank.jpeg';
-import Himansh from '../../public/assets/himansh.png';
+import Himansh from '../../public/assets/himansh.jpeg';
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },

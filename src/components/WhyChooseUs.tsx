@@ -1,4 +1,5 @@
 import React from 'react';
+import Whychooseus from '../../public/images/whychooseus.jpeg'
 import { Award, Clock, Shield, Users } from 'lucide-react';
 import { motion } from 'framer-motion';
 
@@ -63,7 +64,7 @@ const WhyChooseUs = () => {
           >
             <div className="rounded-lg overflow-hidden shadow-xl">
               <img
-                src="https://images.pexels.com/photos/5668859/pexels-photo-5668859.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                src={Whychooseus}
                 alt="Attorneys"
                 className="w-full h-full object-cover"
               />
